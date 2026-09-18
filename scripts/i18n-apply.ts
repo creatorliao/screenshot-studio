@@ -2,30 +2,37 @@
  * 汉化 codemod：按字典把源码里的英文文案就地替换为简体中文。
  *
  * 用法：
- *   npx tsx scripts/i18n-apply.ts          # dry-run，只报告与抽样
- *   npx tsx scripts/i18n-apply.ts --write  # 实际写盘（先自动备份）
+ *   npx tsx scripts/i18n-apply.ts            # dry-run，只报告与抽样
+ *   npx tsx scripts/i18n-apply.ts --write    # 实际写盘
+ *   npx tsx scripts/i18n-apply.ts --restore  # 从英文原文快照整体还原为英文
  *
  * 设计要点：
  *   - 只改字符串内容，不改任何代码结构（无新 import、无 hook、无类型变更）
  *   - 未命中字典的文案保持英文（自然降级，不会渲染成 key）
  *   - 从后往前替换，保证偏移量有效
  *   - JSX 文本若译文含 { } < > 会被跳过并告警（会破坏 JSX 语法）
+ *   - **不再写目录备份**：写盘前只校验英文原文快照存在。
+ *     "撤销上一次替换"交给 git（`git checkout`），见 scripts/lib/i18n-paths.ts
  */
 import ts from "typescript";
 import fs from "node:fs";
 import path from "node:path";
 import { collectEdits, encodeLiteral, isExcluded, type Edit } from "./lib/i18n-detect";
+import { ORIGINAL_EN_DIR, ORIGINAL_EN_REL } from "./lib/i18n-paths";
 
 const ROOT = process.cwd();
 const DIRS = ["app", "components", "lib", "hooks"];
 const WRITE = process.argv.includes("--write");
 const RESTORE = process.argv.includes("--restore");
 
-// ---------- 0. 还原模式：从 backup 覆盖回源码，用于撤销上一次替换 ----------
+// ---------- 0. 还原模式：从英文原文快照覆盖回源码 ----------
+// 语义是「整体回到汉化前」，不是「撤销上一次替换」。
+// 想撤销单次替换请用 git（`git checkout -- <file>` / `git revert`）。
 if (RESTORE) {
-  const bakRoot = path.join(ROOT, "i18n-work", "backup");
+  const bakRoot = ORIGINAL_EN_DIR;
   if (!fs.existsSync(bakRoot)) {
-    console.error("✗ 没有 i18n-work/backup/，无法还原");
+    console.error(`✗ 没有 ${ORIGINAL_EN_REL}/，无法还原`);
+    console.error("  先跑 npx tsx scripts/i18n-snapshot.ts 生成英文原文快照。");
     process.exit(1);
   }
   let n = 0;
@@ -40,7 +47,7 @@ if (RESTORE) {
     }
   };
   walkBak(bakRoot);
-  console.log(`✅ 已从备份还原 ${n} 个文件`);
+  console.log(`✅ 已从 ${ORIGINAL_EN_REL}/ 还原 ${n} 个文件（界面回到英文）`);
   process.exit(0);
 }
 
@@ -135,7 +142,15 @@ function walk(dir: string, out: string[] = []): string[] {
 }
 
 const files = DIRS.flatMap((d) => walk(path.join(ROOT, d)));
-const backupDir = path.join(ROOT, "i18n-work", "backup");
+
+// 写盘前必须确认「汉化前英文原文」这棵树在 —— 它是全流水线唯一的原文来源，
+// 也是 --restore 的还原源。缺了就停，不要靠"反正有 git"糊过去。
+if (WRITE && !fs.existsSync(ORIGINAL_EN_DIR)) {
+  console.error(`✗ 写盘前检查失败：找不到 ${ORIGINAL_EN_REL}/`);
+  console.error("  先跑 npx tsx scripts/i18n-snapshot.ts 生成英文原文快照，再 --write。");
+  process.exit(1);
+}
+
 let filesChanged = 0;
 let totalReplaced = 0;
 let totalSites = 0;
@@ -195,9 +210,6 @@ for (const file of files) {
       if (samples.length < 25) samples.push(`${rel}:${a.key.slice(0, 45)} → ${a.zh.slice(0, 45)}`);
     }
     if (WRITE) {
-      const bak = path.join(backupDir, rel);
-      fs.mkdirSync(path.dirname(bak), { recursive: true });
-      fs.writeFileSync(bak, src);
       fs.writeFileSync(file, out);
     }
   }
@@ -228,7 +240,7 @@ if (WRITE) {
     path.join(ROOT, "i18n-work", "en-zh-snapshot.json"),
     JSON.stringify(Object.fromEntries(enToZh), null, 2),
   );
-  console.log(`\n✅ 已写盘。备份在 i18n-work/backup/，原文快照 i18n-work/en-zh-snapshot.json`);
+  console.log(`\n✅ 已写盘。英文原文快照 i18n-work/en-zh-snapshot.json（回退用 git checkout 或 --restore）`);
 } else {
   console.log("\n(dry-run，未写盘。加 --write 才会实际替换)");
 }

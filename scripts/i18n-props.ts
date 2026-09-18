@@ -9,9 +9,11 @@
 import ts from "typescript";
 import fs from "node:fs";
 import path from "node:path";
+import { ORIGINAL_EN_DIR } from "./lib/i18n-paths";
 
 const ROOT = process.cwd();
-const SRC_ROOT = path.join(ROOT, "i18n-work", "backup");
+// 属性名统计同样只对英文原文有意义（中文里没有这些标识符）。
+const SRC_ROOT = ORIGINAL_EN_DIR;
 const DIRS = ["app", "components", "lib", "hooks"];
 
 function walk(dir: string, out: string[] = []): string[] {

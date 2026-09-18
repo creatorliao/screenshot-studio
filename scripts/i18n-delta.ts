@@ -11,11 +11,12 @@ import ts from "typescript";
 import fs from "node:fs";
 import path from "node:path";
 import { collectEdits, isExcluded } from "./lib/i18n-detect";
+import { ORIGINAL_EN_DIR, ORIGINAL_EN_REL } from "./lib/i18n-paths";
 
 const ROOT = process.cwd();
 // 必须对「汉化前」的英文原文做增量分析：
 // 对本已汉化的源码扫描只会把中文当成"新文案"，结论无效。
-const SRC_ROOT = path.join(ROOT, "i18n-work", "backup");
+const SRC_ROOT = ORIGINAL_EN_DIR;
 const DIRS = ["app", "components", "lib", "hooks"];
 
 // 现有字典：id -> zh，配合 todo 分片得到 en -> zh
@@ -60,7 +61,7 @@ const agg = new Map<string, { en: string; count: number; files: Set<string>; kin
 let totalSites = 0;
 
 if (!fs.existsSync(SRC_ROOT)) {
-  console.error("✗ 找不到 i18n-work/backup/，无法做增量分析");
+  console.error(`✗ 找不到 ${ORIGINAL_EN_REL}/，无法做增量分析`);
   process.exit(1);
 }
 

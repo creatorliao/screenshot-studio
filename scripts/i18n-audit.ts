@@ -11,9 +11,12 @@ import ts from "typescript";
 import fs from "node:fs";
 import path from "node:path";
 import { collectEdits, isExcluded, TEXT_PROP_KEYS, isDisplayShaped } from "./lib/i18n-detect";
+import { ORIGINAL_EN_DIR } from "./lib/i18n-paths";
 
 const ROOT = process.cwd();
-const SRC_ROOT = path.join(ROOT, "i18n-work", "backup");
+// 审计必须针对「汉化前」的英文原文：对已汉化的源码扫描，
+// 中文会被当成"新文案"，风险判定与位点统计都无意义。
+const SRC_ROOT = ORIGINAL_EN_DIR;
 const DIRS = ["app", "components", "lib", "hooks"];
 
 const TEXT_PROP_KEYS_LOCAL = TEXT_PROP_KEYS;
