@@ -8,6 +8,7 @@ import { EditorContent } from "./EditorContent";
 import { EditorCanvas } from "@/components/canvas/EditorCanvas";
 import { EditorStoreSync } from "@/components/canvas/EditorStoreSync";
 import { EditorHeader } from "./EditorHeader";
+import { PostImportHint } from "./PostImportHint";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -19,19 +20,12 @@ import { TimelineEditor } from "@/components/timeline";
 import { useImageStore } from "@/lib/store";
 import { trackEditorOpen } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
-import {
-  hasVisibleMockups,
-  shouldRenderSourceImage,
-} from "@/lib/device-mockups/layouts";
+import { useHasRenderableContent } from "@/hooks/use-has-renderable-content";
 
 function EditorMain() {
   const isMobile = useIsMobile();
   const [mobileSheetOpen, setMobileSheetOpen] = React.useState(false);
   const {
-    uploadedImageUrl,
-    slides,
-    mockups,
-    editorMode,
     showTimeline,
     toggleTimeline,
     showTemplates,
@@ -41,12 +35,8 @@ function EditorMain() {
   // enable autosave
   useAutosaveDraft();
 
-  const hasSourceContent = (
-    !!uploadedImageUrl || slides.length > 0
-  ) && shouldRenderSourceImage(editorMode, mockups);
-  const hasContent = hasSourceContent || (
-    editorMode === "device" && hasVisibleMockups(mockups)
-  );
+  // 全仓统一判据，见 hooks/use-has-renderable-content.ts
+  const hasContent = useHasRenderableContent();
 
   React.useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -80,7 +70,9 @@ function EditorMain() {
 
       <EditorHeader />
 
-      {isMobile && (
+      <PostImportHint />
+
+      {isMobile && hasContent && (
         <div className="bg-background border-b border-foreground/10 flex items-center justify-end px-3 py-2 z-10 shrink-0">
           <Button
             variant="ghost"
@@ -95,7 +87,13 @@ function EditorMain() {
       )}
 
       <div className="flex-1 flex overflow-hidden">
-        {!isMobile && <LeftEditPanel />}
+        {/*
+          空画布时收起左右两个属性面板。
+          改造前它们照常全量渲染（左 9 个区块、右 34 个 3D 预设），控件可点但什么
+          都不会发生 —— 用户进来看到的是"一个已经开好的编辑器和一堆控件"，而不是
+          "请先放一张图"。见 `03-分析报告_现状诊断.md` §3 R1。
+        */}
+        {!isMobile && hasContent && <LeftEditPanel />}
 
         <div className="flex-1 flex flex-col overflow-hidden bg-background relative min-w-0">
           <div
@@ -133,7 +131,7 @@ function EditorMain() {
           {hasContent && showTimeline && !isMobile && <TimelineEditor />}
         </div>
 
-        {!isMobile && <RightSettingsPanel />}
+        {!isMobile && hasContent && <RightSettingsPanel />}
 
         {isMobile && (
           <Sheet open={mobileSheetOpen} onOpenChange={handleMobileSheetOpenChange}>

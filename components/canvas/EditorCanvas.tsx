@@ -11,10 +11,7 @@ import { CanvasStageLoadingOverlay } from "@/components/canvas/CanvasStageLoadin
 import ClientCanvas from "@/components/canvas/ClientCanvas";
 import { cn } from "@/lib/utils";
 import { Cancel01Icon } from "hugeicons-react";
-import {
-  hasVisibleMockups,
-  shouldRenderSourceImage,
-} from "@/lib/device-mockups/layouts";
+import { useHasRenderableContent } from "@/hooks/use-has-renderable-content";
 
 export function EditorCanvas() {
   const { screenshot } = useEditorStore();
@@ -28,16 +25,10 @@ export function EditorCanvas() {
     stopPreview,
     uploadedImageUrl,
     showTimeline,
-    editorMode,
-    mockups,
   } = useImageStore();
 
-  // Check both stores - imageStore is the source of truth (tracked by undo/redo)
-  const hasImage = !!uploadedImageUrl
-    && !!screenshot.src
-    && shouldRenderSourceImage(editorMode, mockups);
-  const hasDeviceScene = editorMode === "device" && hasVisibleMockups(mockups);
-  const hasRenderableContent = hasImage || hasDeviceScene;
+  // 全仓统一判据，见 hooks/use-has-renderable-content.ts
+  const hasRenderableContent = useHasRenderableContent();
   const [exportOpen, setExportOpen] = useState(false);
   const [canvasReady, setCanvasReady] = useState(false);
   const loadStartedAtRef = React.useRef<number | null>(null);

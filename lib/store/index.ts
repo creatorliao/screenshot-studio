@@ -573,6 +573,18 @@ export interface ImageState {
   };
   setUploadedImageUrl: (url: string | null, name: string | null) => void;
   setImage: (file: File) => void;
+  /**
+   * 只换主图，**保留**用户已经调好的样式（背景 / 阴影 / 圆角 / 缩放 / 滤镜 /
+   * 文字 / 贴纸 / 标注 / 动效）。
+   *
+   * 改造前不存在这条路径：`setImage()` 会重置一切，`addImages()` 什么都不重置
+   * 却把主图切回第一张幻灯片，`GlobalDropZone` 在已有主图时一律当贴纸叠加 ——
+   * 于是"换一张图但保留我的样式"完全走不通。见
+   * `docs/01-Projects/R20260915-01-编辑器工作流与信息架构改善/03-分析报告_现状诊断.md` §3 R2。
+   *
+   * @param options.resetStyles 传 true 时退化为 `setImage()` 的全量重置语义。
+   */
+  replaceMainImage: (file: File, options?: { resetStyles?: boolean }) => void;
   clearImage: () => void;
   setGradient: (gradient: GradientKey) => void;
   setBorderRadius: (radius: number) => void;
@@ -887,9 +899,45 @@ export const useImageStore = create<ImageState>()(
       });
     },
 
+    replaceMainImage: (file: File, options?: { resetStyles?: boolean }) => {
+      if (options?.resetStyles) {
+        get().setImage(file);
+        return;
+      }
+
+      const { uploadedImageUrl: oldUrl, slides, activeSlideId } = get();
+      const newUrl = URL.createObjectURL(file);
+
+      // 主图同时可能是一张幻灯片（addImages / setActiveSlide 会让两者共用同一个
+      // objectURL）。换图时要把那张幻灯片的 src 一起换掉，否则缩略图会指向
+      // 已被回收的 URL；反过来，回收旧 URL 前也必须确认没有别的幻灯片还在用它。
+      const targetSlide =
+        slides.find((s) => s.src === oldUrl) ??
+        slides.find((s) => s.id === activeSlideId);
+      const nextSlides = targetSlide
+        ? slides.map((s) =>
+            s.id === targetSlide.id ? { ...s, src: newUrl, name: file.name } : s,
+          )
+        : slides;
+
+      set({
+        uploadedImageUrl: newUrl,
+        imageName: file.name,
+        slides: nextSlides,
+      });
+
+      if (oldUrl && oldUrl !== newUrl && !nextSlides.some((s) => s.src === oldUrl)) {
+        URL.revokeObjectURL(oldUrl);
+      }
+
+      trackImageUpload('file', file.size);
+
+      // 立刻同步到 editor store，避免等 EditorStoreSync 的 useEffect 周期
+      useEditorStore.getState().setScreenshot({ src: newUrl });
+    },
+
     clearImage: () => {
       const { uploadedImageUrl, slides, imageOverlays } = get();
-
       // Revoke main image URL
       if (uploadedImageUrl) {
         URL.revokeObjectURL(uploadedImageUrl);

@@ -3,9 +3,17 @@
 import * as React from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'motion/react';
-import { useEditorStore, useImageStore } from '@/lib/store';
-import { ALLOWED_IMAGE_TYPES, MAX_IMAGE_SIZE } from '@/lib/constants';
-import { isDeviceScreenDropTarget } from '@/lib/drop-routing';
+import { useImageStore } from '@/lib/store';
+import { IMPORT_FORMAT_HINT, importImageFiles } from '@/lib/editor/import-image';
+import {
+  isDeviceScreenDropTarget,
+  isUploadDropzoneTarget,
+} from '@/lib/drop-routing';
+
+/** 设备屏与首屏上传区各自有专用 dropzone，全局这一层要让路。 */
+function shouldDeferToLocalDropzone(target: EventTarget | null): boolean {
+  return isDeviceScreenDropTarget(target) || isUploadDropzoneTarget(target);
+}
 
 interface GlobalDropZoneProps {
   children: React.ReactNode;
@@ -15,81 +23,52 @@ export function GlobalDropZone({ children }: GlobalDropZoneProps) {
   const [isDraggingOver, setIsDraggingOver] = React.useState(false);
   const [isProcessing, setIsProcessing] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
+  /** 拖拽时按住 Shift = 添加为贴纸；默认是替换主图。 */
+  const [asSticker, setAsSticker] = React.useState(false);
   const dragCounterRef = React.useRef(0);
   const router = useRouter();
   const pathname = usePathname();
 
-  const { setScreenshot } = useEditorStore();
-  const { addImages, addImageOverlay } = useImageStore();
-
   const isEditorPage = pathname === '/';
-
-  const validateFile = React.useCallback((file: File): string | null => {
-    if (!ALLOWED_IMAGE_TYPES.includes(file.type)) {
-      return 'File type not supported. Use PNG, JPG, or WEBP.';
-    }
-    if (file.size > MAX_IMAGE_SIZE) {
-      return `File too large. Max ${MAX_IMAGE_SIZE / 1024 / 1024}MB.`;
-    }
-    return null;
-  }, []);
+  const hasMainImage = useImageStore((s) => !!s.uploadedImageUrl);
 
   const handleFiles = React.useCallback(
-    (files: File[]) => {
+    (files: File[], mode: 'auto' | 'sticker' = 'auto') => {
       const imageFiles = files.filter((f) => f.type.startsWith('image/'));
       if (imageFiles.length === 0) return;
-
-      const validationError = validateFile(imageFiles[0]);
-      if (validationError) {
-        setError(validationError);
-        setTimeout(() => setError(null), 3000);
-        return;
-      }
 
       setIsProcessing(true);
       setError(null);
 
       // Small delay for the animation to play
       setTimeout(() => {
-        const hasMainImage = !!useImageStore.getState().uploadedImageUrl;
+        const result = importImageFiles(imageFiles, { mode });
 
-        if (isEditorPage && hasMainImage) {
-          // Add as overlay images on top of existing canvas
-          imageFiles.forEach((file) => {
-            const url = URL.createObjectURL(file);
-            addImageOverlay({
-              src: url,
-              position: { x: 200 + Math.random() * 100, y: 200 + Math.random() * 100 },
-              size: 250,
-              rotation: 0,
-              opacity: 1,
-              flipX: false,
-              flipY: false,
-              isVisible: true,
-              isCustom: true,
-            });
-          });
-        } else {
-          const imageUrl = URL.createObjectURL(imageFiles[0]);
-          addImages(imageFiles);
-          setScreenshot({ src: imageUrl });
+        if (result.error && result.imported === 0) {
+          setError(result.error);
+          setTimeout(() => setError(null), 3000);
+        } else if (result.error) {
+          // 部分成功：说明被跳过的原因，别让用户以为全都进去了
+          setError(`${result.error}（已跳过 ${result.rejected.length} 个文件）`);
+          setTimeout(() => setError(null), 3000);
+        }
 
-          if (!isEditorPage) {
-            router.push('/');
-          }
+        if (!isEditorPage) {
+          router.push('/');
         }
 
         setIsProcessing(false);
         setIsDraggingOver(false);
+        setAsSticker(false);
       }, 300);
     },
-    [validateFile, addImages, addImageOverlay, setScreenshot, isEditorPage, router]
+    [isEditorPage, router]
   );
 
   // Global drag events
   React.useEffect(() => {
     const handleDragEnter = (e: DragEvent) => {
-      if (isDeviceScreenDropTarget(e.target)) {
+      if (shouldDeferToLocalDropzone(e.target)) {
         dragCounterRef.current = 0;
         setIsDraggingOver(false);
         return;
@@ -103,25 +82,28 @@ export function GlobalDropZone({ children }: GlobalDropZoneProps) {
     };
 
     const handleDragOver = (e: DragEvent) => {
-      if (isDeviceScreenDropTarget(e.target)) return;
+      if (shouldDeferToLocalDropzone(e.target)) return;
       e.preventDefault();
       if (e.dataTransfer) {
         e.dataTransfer.dropEffect = 'copy';
       }
+      // Shift 是"添加为贴纸"的修饰键，拖动过程中就要让用户看到结果会不同
+      setAsSticker(e.shiftKey);
     };
 
     const handleDragLeave = (e: DragEvent) => {
-      if (isDeviceScreenDropTarget(e.target)) return;
+      if (shouldDeferToLocalDropzone(e.target)) return;
       e.preventDefault();
       dragCounterRef.current--;
       if (dragCounterRef.current <= 0) {
         dragCounterRef.current = 0;
         setIsDraggingOver(false);
+        setAsSticker(false);
       }
     };
 
     const handleDrop = (e: DragEvent) => {
-      if (isDeviceScreenDropTarget(e.target)) {
+      if (shouldDeferToLocalDropzone(e.target)) {
         dragCounterRef.current = 0;
         setIsDraggingOver(false);
         return;
@@ -132,7 +114,7 @@ export function GlobalDropZone({ children }: GlobalDropZoneProps) {
 
       const files = Array.from(e.dataTransfer?.files || []);
       if (files.length > 0) {
-        handleFiles(files);
+        handleFiles(files, e.shiftKey ? 'sticker' : 'auto');
       }
     };
 
@@ -149,26 +131,30 @@ export function GlobalDropZone({ children }: GlobalDropZoneProps) {
     };
   }, [handleFiles]);
 
-  // Global paste handler (only on non-editor pages; editor has its own)
+  // 全局粘贴：编辑器页与营销页共用同一条导入语义。
+  // 改造前编辑器页刻意 return（"编辑器有自己的"），结果是空画布上 document 级、
+  // 容器级、React onPaste 三处监听同时命中同一次粘贴 → addImages 被调用 2–3 次。
+  // 现在由这一处统一处理，CleanUploadState 不再重复注册。
   React.useEffect(() => {
-    if (isEditorPage) return;
-
     const handlePaste = (e: ClipboardEvent) => {
       const items = e.clipboardData?.items;
       if (!items) return;
+      const files: File[] = [];
       for (let i = 0; i < items.length; i++) {
         if (items[i].type.startsWith('image/')) {
-          e.preventDefault();
           const file = items[i].getAsFile();
-          if (file) handleFiles([file]);
-          break;
+          if (file) files.push(file);
         }
+      }
+      if (files.length > 0) {
+        e.preventDefault();
+        handleFiles(files);
       }
     };
 
     document.addEventListener('paste', handlePaste);
     return () => document.removeEventListener('paste', handlePaste);
-  }, [isEditorPage, handleFiles]);
+  }, [handleFiles]);
 
   return (
     <>
@@ -264,13 +250,18 @@ export function GlobalDropZone({ children }: GlobalDropZoneProps) {
 
                     <div className="text-center">
                       <p className="text-lg font-semibold text-foreground">
-                        把图片拖到这里
-                      
+                        {asSticker ? '松开即添加为贴纸' : '松开即导入'}
                       </p>
                       <p className="text-sm text-muted-foreground mt-1">
-                        PNG、JPG 或 WEBP
-                      
+                        {hasMainImage && !asSticker
+                          ? '将替换主图，已调好的背景与文字会保留'
+                          : IMPORT_FORMAT_HINT}
                       </p>
+                      {hasMainImage ? (
+                        <p className="text-xs text-muted-foreground/80 mt-2">
+                          按住 Shift 松开 = 添加为贴纸
+                        </p>
+                      ) : null}
                     </div>
                   </>
                 )}

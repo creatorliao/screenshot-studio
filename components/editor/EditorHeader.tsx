@@ -20,8 +20,11 @@ import {
   GridIcon,
   RulerIcon,
   FileZipIcon,
+  ImageUpload01Icon,
 } from "hugeicons-react";
-import { useEditorStore, useImageStore } from "@/lib/store";
+import { toast } from "sonner";
+import { useImageStore } from "@/lib/store";
+import { IMPORT_ACCEPT, importImageFiles } from "@/lib/editor/import-image";
 import { useExport } from "@/hooks/useExport";
 import { useBatchExport } from "@/hooks/useBatchExport";
 import { aspectRatios } from "@/lib/constants/aspect-ratios";
@@ -44,20 +47,14 @@ import { cn } from "@/lib/utils";
 import { GitHubStarButton } from "@/components/ui/github-star-button";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { useIsMobile } from "@/hooks/use-mobile";
-import {
-  hasVisibleMockups,
-  shouldRenderSourceImage,
-} from "@/lib/device-mockups/layouts";
+import { useHasRenderableContent } from "@/hooks/use-has-renderable-content";
 
 export function EditorHeader() {
   const isMobile = useIsMobile();
-  const { screenshot } = useEditorStore();
   const {
     selectedAspectRatio,
     slides,
     uploadedImageUrl,
-    editorMode,
-    mockups,
     clearImage,
     timeline,
     animationClips,
@@ -75,15 +72,41 @@ export function EditorHeader() {
   const [exportOpen, setExportOpen] = React.useState(false);
   const [exportSlideshowOpen, setExportSlideshowOpen] = React.useState(false);
   const [exportError, setExportError] = React.useState<string | null>(null);
+  const importInputRef = React.useRef<HTMLInputElement | null>(null);
+
+  /**
+   * 常驻的「导入 / 替换图片」入口。
+   * 改造前头部 12 个控件里没有任何一个叫"导入/上传/打开"，唯一的导入 UI 绑在
+   * "空画布"状态上、有图即消失 —— 用户拿不到一个稳定的"我要导入"入口。
+   * 见 `03-分析报告_现状诊断.md` §3 R1。
+   */
+  const handleImportFiles = React.useCallback((files: File[]) => {
+    if (files.length === 0) return;
+    const result = importImageFiles(files);
+
+    if (result.error && result.imported === 0) {
+      toast.error(result.error);
+      return;
+    }
+    if (result.error) {
+      toast.warning(`${result.error}（已跳过 ${result.rejected.length} 个文件）`);
+    }
+    if (result.imported === 0) return;
+
+    if (result.action === "replace-main") {
+      toast.success("已替换主图，背景与文字等样式保留");
+    } else if (result.action === "add-stickers") {
+      toast.success(`已添加 ${result.imported} 张为贴纸`);
+    } else {
+      toast.success(`已导入 ${result.imported} 张图片`);
+    }
+  }, []);
 
   const currentAspectRatio = aspectRatios.find(
     (ar) => ar.id === selectedAspectRatio,
   );
-  const hasImage = (
-    !!screenshot.src && shouldRenderSourceImage(editorMode, mockups)
-  ) || (
-    editorMode === "device" && hasVisibleMockups(mockups)
-  );
+  // 全仓统一判据（改造前这里只看 screenshot.src，与画布口径不一致）
+  const hasImage = useHasRenderableContent();
 
   // Undo/redo state
   const [canUndo, setCanUndo] = React.useState(false);
@@ -191,6 +214,41 @@ export function EditorHeader() {
             )}
             aria-hidden
           />
+
+          {/* 常驻导入入口：空画布叫「导入」，有图叫「替换图片」 */}
+          <input
+            ref={importInputRef}
+            type="file"
+            accept={IMPORT_ACCEPT}
+            multiple
+            className="hidden"
+            onChange={(e) => {
+              handleImportFiles(Array.from(e.target.files ?? []));
+              // 允许连续选择同一个文件
+              e.target.value = "";
+            }}
+          />
+          <button
+            type="button"
+            onClick={() => importInputRef.current?.click()}
+            aria-label={hasImage ? "替换图片" : "导入图片"}
+            title={
+              hasImage
+                ? "替换主图（保留已调好的背景、文字与样式）"
+                : "导入图片（也可直接拖拽或粘贴）"
+            }
+            className={cn(
+              "inline-flex items-center gap-1.5 h-8 rounded-md shrink-0 cursor-pointer",
+              "text-sm font-medium leading-none transition-colors duration-150",
+              isMobile ? "px-2" : "px-2.5",
+              "bg-foreground/[0.06] text-foreground border border-foreground/10",
+              "hover:bg-foreground/[0.1] hover:border-foreground/15",
+              "active:scale-[0.97]"
+            )}
+          >
+            <ImageUpload01Icon size={14} className="shrink-0" />
+            {!isMobile ? <span>{hasImage ? "替换图片" : "导入"}</span> : null}
+          </button>
 
           <button
             type="button"
