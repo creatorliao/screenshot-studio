@@ -43,7 +43,7 @@ export function LandingPage({
   heroTitle,
   heroSubtitle,
   heroDescription,
-  ctaLabel = "Start Creating",
+  ctaLabel = "开始创作",
   ctaHref = "/",
   howItWorks,
   brandName = "Screenshot Studio",

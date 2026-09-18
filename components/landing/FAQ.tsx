@@ -115,9 +115,11 @@ function FAQItemRow({
 }
 
 export function FAQ({
-  title = "Questions",
+  // 这两个默认值是函数参数的默认值，汉化 codemod 的四个收集通道都不覆盖，
+  // 于是页面上曾渲染出「常见 Questions .」这种中英拼接。
+  title = "问题",
   faqs = defaultFAQs,
-  ctaLabel = "Open Editor",
+  ctaLabel = "打开编辑器",
   ctaHref = "/",
 }: FAQProps) {
   const [openId, setOpenId] = useState<number | null>(null);

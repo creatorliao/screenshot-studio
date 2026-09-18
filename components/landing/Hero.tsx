@@ -61,7 +61,7 @@ export function Hero({
   title,
   subtitle,
   description,
-  ctaLabel = "Start Creating",
+  ctaLabel = "开始创作",
   ctaHref = "/",
 }: HeroProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);

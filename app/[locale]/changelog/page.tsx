@@ -40,7 +40,7 @@ interface ChangelogEntry {
 
 const changelog: ChangelogEntry[] = [
   {
-    date: "August 30, 2026",
+    date: "2026 年 8 月 30 日",
     version: "2.6.0",
     title: "代码图片",
     description:
@@ -61,7 +61,7 @@ const changelog: ChangelogEntry[] = [
     ],
   },
   {
-    date: "March 9, 2026",
+    date: "2026 年 3 月 9 日",
     version: "2.5.0",
     title: "浏览器模型",
     description:
@@ -94,7 +94,7 @@ const changelog: ChangelogEntry[] = [
     ],
   },
   {
-    date: "March 7, 2026",
+    date: "2026 年 3 月 7 日",
     version: "2.4.0",
     title: "推文导入、代码片段与叠加层改进",
     description:
@@ -135,7 +135,7 @@ const changelog: ChangelogEntry[] = [
     ],
   },
   {
-    date: "March 6, 2026",
+    date: "2026 年 3 月 6 日",
     version: "2.3.0",
     title: "标注工具、文字叠加改版与 UI 打磨",
     description:
@@ -196,7 +196,7 @@ const changelog: ChangelogEntry[] = [
     ],
   },
   {
-    date: "February 28, 2026",
+    date: "2026 年 2 月 28 日",
     version: "2.2.0",
     title: "模板侧边栏、标签切换动画与导出修复",
     description:
@@ -208,7 +208,7 @@ const changelog: ChangelogEntry[] = [
       },
       {
         type: "added",
-        text: "平滑的标签页内容切换。在 Settings、Edit、BG、3D 和 Animate 标签之间切换时，现在会以轻微的滑动动画淡入淡出",
+        text: "平滑的标签页内容切换。在「调整」「设计」「背景」「3D」和「动效」标签之间切换时，现在会以轻微的滑动动画淡入淡出",
       },
       {
         type: "improved",
@@ -229,7 +229,7 @@ const changelog: ChangelogEntry[] = [
     ],
   },
   {
-    date: "February 23, 2026",
+    date: "2026 年 2 月 23 日",
     version: "2.1.0",
     title: "叠加层缩放、自定义预设与弧形控制",
     description:
@@ -258,7 +258,7 @@ const changelog: ChangelogEntry[] = [
     ],
   },
   {
-    date: "February 20, 2026",
+    date: "2026 年 2 月 20 日",
     version: "2.0.0",
     title: "动画与视频导出",
     description:
@@ -315,7 +315,7 @@ const changelog: ChangelogEntry[] = [
     ],
   },
   {
-    date: "February 14, 2026",
+    date: "2026 年 2 月 14 日",
     version: "1.0.0",
     title: "全面改版",
     description:

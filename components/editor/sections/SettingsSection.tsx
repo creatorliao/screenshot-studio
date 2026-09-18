@@ -4,26 +4,17 @@ import * as React from 'react';
 import { useImageStore, type ImageFilters } from '@/lib/store';
 import { Slider } from '@/components/ui/slider';
 import { Button } from '@/components/ui/button';
-import { SegmentedControl } from '@/components/ui/segmented-control';
 import { SectionWrapper } from './SectionWrapper';
 import { RotateClockwiseIcon } from 'hugeicons-react';
-
-type FilterTarget = 'foreground' | 'background';
 
 export function SettingsSection() {
   const {
     imageFilters,
     backgroundBorderRadius,
-    backgroundBlur,
-    backgroundNoise,
     setImageFilter,
     resetImageFilters,
     setBackgroundBorderRadius,
-    setBackgroundBlur,
-    setBackgroundNoise,
   } = useImageStore();
-
-  const [filterTarget, setFilterTarget] = React.useState<FilterTarget>('foreground');
 
   const foregroundFilters: { key: keyof ImageFilters; label: string; min: number; max: number; defaultValue: number; suffix: string }[] = [
     { key: 'brightness', label: '亮度', min: 0, max: 200, defaultValue: 100, suffix: '' },
@@ -41,90 +32,40 @@ export function SettingsSection() {
     return filter && value !== filter.defaultValue;
   });
 
-  const isBackgroundFiltersModified = backgroundBlur !== 0 || backgroundNoise !== 0;
-
-  const resetBackgroundFilters = () => {
-    setBackgroundBlur(0);
-    setBackgroundNoise(0);
-  };
-
   return (
     <>
+      {/*
+        这里只保留「图片」滤镜。
+        改造前它有一个 图片 / 背景 的二选一，把"背景模糊/噪点"也放在这里 ——
+        于是"调背景"这件事被切在两个 Tab 里：背景本身在「BG」，背景的模糊与颗粒
+        却在「设计 → 颜色滤镜」。现在背景的模糊/颗粒/不透明度统一收进背景面板
+        （见 `04-方案` 模块 3 第 6 条）。
+      */}
       <SectionWrapper title="颜色滤镜" defaultOpen={false}>
-        <div className="space-y-3">
-          <SegmentedControl
-            value={filterTarget}
-            onChange={(id) => setFilterTarget(id as FilterTarget)}
-            options={[
-              { id: 'foreground', label: '图片' },
-              { id: 'background', label: '背景' },
-            ]}
-          />
+        <div className="space-y-2">
+          {foregroundFilters.map((filter) => (
+            <Slider
+              key={filter.key}
+              value={[imageFilters[filter.key]]}
+              onValueChange={(value) => setImageFilter(filter.key, value[0])}
+              min={filter.min}
+              max={filter.max}
+              step={1}
+              label={filter.label}
+              valueDisplay={`${imageFilters[filter.key]}${filter.suffix}`}
+            />
+          ))}
 
-          {filterTarget === 'foreground' && (
-            <div className="space-y-2">
-              {foregroundFilters.map((filter) => (
-                <Slider
-                  key={filter.key}
-                  value={[imageFilters[filter.key]]}
-                  onValueChange={(value) => setImageFilter(filter.key, value[0])}
-                  min={filter.min}
-                  max={filter.max}
-                  step={1}
-                  label={filter.label}
-                  valueDisplay={`${imageFilters[filter.key]}${filter.suffix}`}
-                />
-              ))}
-
-              {isFiltersModified && (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={resetImageFilters}
-                  className="w-full h-8 text-xs text-muted-foreground hover:text-foreground"
-                >
-                  <RotateClockwiseIcon size={14} className="mr-2" />
-                  重置所有滤镜
-                
-                </Button>
-              )}
-            </div>
-          )}
-
-          {filterTarget === 'background' && (
-            <div className="space-y-2">
-              <Slider
-                value={[backgroundBlur]}
-                onValueChange={(value) => setBackgroundBlur(value[0])}
-                min={0}
-                max={50}
-                step={1}
-                label="模糊"
-                valueDisplay={`${backgroundBlur}px`}
-              />
-              <Slider
-                value={[backgroundNoise]}
-                onValueChange={(value) => setBackgroundNoise(value[0])}
-                min={0}
-                max={100}
-                step={1}
-                label="噪点"
-                valueDisplay={`${backgroundNoise}%`}
-              />
-
-              {isBackgroundFiltersModified && (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={resetBackgroundFilters}
-                  className="w-full h-8 text-xs text-muted-foreground hover:text-foreground"
-                >
-                  <RotateClockwiseIcon size={14} className="mr-2" />
-                  重置背景滤镜
-                
-                </Button>
-              )}
-            </div>
+          {isFiltersModified && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={resetImageFilters}
+              className="w-full h-8 text-xs text-muted-foreground hover:text-foreground"
+            >
+              <RotateClockwiseIcon size={14} className="mr-2" />
+              重置所有滤镜
+            </Button>
           )}
         </div>
       </SectionWrapper>

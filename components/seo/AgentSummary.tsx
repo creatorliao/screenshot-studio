@@ -1,7 +1,7 @@
 const FEATURES = [
   "100+ 渐变、网格与图案背景",
   "Safari、Chrome 与 Arc 浏览器模型，支持深色与浅色模式",
-  "macOS window chrome, Polaroid, glass, outline, and border device frames",
+  "macOS 窗口边框、Polaroid、玻璃、描边、边框等设备边框样式",
   "3D 透视变换，阴影完全可配置",
   "20+ 动画预设，由关键帧时间轴编辑器驱动",
   "视频导出为 MP4、WebM 与 GIF，在浏览器中用 FFmpeg WASM 编码",

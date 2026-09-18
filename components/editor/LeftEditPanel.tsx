@@ -35,7 +35,7 @@ type LeftTabType = "edit" | "background" | "depth";
 
 const leftTabs: { id: LeftTabType; icon: React.ReactNode; label: string }[] = [
   { id: "edit", icon: <SlidersHorizontalIcon size={14} />, label: "设计" },
-  { id: "background", icon: <ColorsIcon size={14} />, label: "BG" },
+  { id: "background", icon: <ColorsIcon size={14} />, label: "背景" },
   { id: "depth", icon: <LayersLogoIcon size={14} />, label: "图层" },
 ];
 

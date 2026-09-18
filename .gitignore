@@ -64,3 +64,6 @@ prisma/*.db-journal
 
 #files
 moving-forward.md
+
+# 历史对话回顾的工作副本（从 DSH 会话库导出，可再生），不入库
+/prompts-master/
