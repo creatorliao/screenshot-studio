@@ -47,6 +47,7 @@ public/backgrounds
 #  docs/01-Projects/R20260914-01-简体中文界面/05-执行记录_汉化落地.md §4）
 /scripts/*
 !/scripts/i18n-*.ts
+!/scripts/user-sim*.mjs
 !/scripts/lib/
 !/scripts/lib/i18n-detect.ts
 
@@ -67,3 +68,6 @@ moving-forward.md
 
 # 历史对话回顾的工作副本（从 DSH 会话库导出，可再生），不入库
 /prompts-master/
+
+# 用户旅程模拟的临时夹具与产物
+/.sim/

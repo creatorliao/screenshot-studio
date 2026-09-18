@@ -124,7 +124,11 @@ function Swatch({
         title={label}
         aria-pressed={selected}
         className={cn(
-          'w-full overflow-hidden rounded-lg border transition-all duration-150 cursor-pointer',
+          // `relative` 是必需的：CachedImage 内部用 next/image 的 fill，
+          // 需要一个已定位的父元素（否则 next/image 会打印
+          // "has fill and parent element with invalid position" 且图片铺不满）；
+          // 同时它也是下面选中对勾 absolute inset-0 的定位基准。
+          'relative w-full overflow-hidden rounded-lg border transition-all duration-150 cursor-pointer',
           size === 'large' ? 'aspect-square' : 'aspect-square',
           selected
             ? 'border-foreground/40 ring-2 ring-foreground/25'
@@ -297,7 +301,16 @@ export function BackgroundSection() {
     getInputProps: getBgInputProps,
   } = useDropzone({
     onDrop: onBgDrop,
-    accept: { 'image/*': ALLOWED_IMAGE_TYPES.map((type) => type.split('/')[1]) },
+    // 改造前这里是 `{ 'image/*': ALLOWED_IMAGE_TYPES.map(t => t.split('/')[1]) }`，
+    // 即"通配 MIME + 扩展名"的非法组合 —— react-dropzone 会打印
+    // `Skipped "image/*" because an invalid file extension was provided.`
+    // 并把该条整条丢弃，等于 accept 形同虚设（任何类型都会进 onDrop，
+    // 只靠下面的 validateFile 兜底）。这里按 MIME 正确声明。
+    accept: {
+      'image/png': ['.png'],
+      'image/jpeg': ['.jpg', '.jpeg'],
+      'image/webp': ['.webp'],
+    },
     maxSize: MAX_IMAGE_SIZE,
     multiple: false,
   });
@@ -751,7 +764,8 @@ export function BackgroundSection() {
                         title={`阴影 ${index + 1}`}
                         aria-pressed={selected}
                         className={cn(
-                          'aspect-square w-full overflow-hidden rounded-lg border bg-card transition-colors cursor-pointer',
+                          // `relative` 是下面选中对勾 absolute inset-0 的定位基准
+                          'relative aspect-square w-full overflow-hidden rounded-lg border bg-card transition-colors cursor-pointer',
                           selected
                             ? 'border-foreground/40 ring-2 ring-foreground/25'
                             : 'border-foreground/10 hover:border-foreground/25',

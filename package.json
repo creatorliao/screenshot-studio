@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "test": "tsx --test tests/*.test.ts",
     "verify:agents": "tsx tests/verify-agent-endpoints.ts",
+    "sim:user": "node scripts/user-sim.mjs",
     "lint:fix": "eslint . --fix",
     "upload-to-r2": "tsx scripts/upload-to-r2.ts",
     "upload-all-to-r2": "tsx scripts/upload-all-to-r2.ts",
