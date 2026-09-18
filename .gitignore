@@ -51,11 +51,12 @@ public/backgrounds
 !/scripts/lib/
 !/scripts/lib/i18n-detect.ts
 
-# 汉化工作目录：字典、清单、对照快照要入库；备份树不入库
-# （backup/ 与 backup-original-en/ 是 156 个源文件的整树副本，
-#  与 git 历史重复，回退请用 git checkout）
-/i18n-work/backup/
-/i18n-work/backup-original-en/
+# 汉化工作目录：字典、清单、对照快照要入库；英文原文整树副本不入库
+# （original-en/ 是源文件的整树副本，与 git 历史重复，回退请用 git checkout。
+#  它是全流水线**唯一**一棵原文树，只读，由 scripts/i18n-snapshot.ts 生成。
+#  早先还有一棵 backup/ 作为"撤销上一次替换"的缓冲，会在第二次 apply 后
+#  混入中文，与 audit/delta/props 需要的"永不改变的英文原文"角色冲突，已删除。）
+/i18n-work/original-en/
 
 prisma/migrations
 /lib/generated/prisma

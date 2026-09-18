@@ -63,6 +63,11 @@ export default defineConfig([
       'coverage/**',
       'prisma/migrations/**',
       'scripts/**',
+      // 汉化流水线的备份整树与工作副本：已 gitignore，内容与源码重复。
+      // 不排除会让 `npm run lint` 把同一批问题数两遍（实测多出 6 条 error）。
+      'i18n-work/**',
+      // 用户旅程模拟的产物与测试夹具（已 gitignore）。
+      '.sim/**',
       '*.tsbuildinfo',
       'next-env.d.ts',
     ],

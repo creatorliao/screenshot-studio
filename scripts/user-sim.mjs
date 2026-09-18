@@ -11,6 +11,7 @@
  * 退出码：应用自身有 pageerror / console.error / 步骤失败 → 1；否则 0。
  */
 import { chromium } from 'playwright';
+import sharp from 'sharp';
 import path from 'node:path';
 import fs from 'node:fs';
 
@@ -19,6 +20,48 @@ const ROOT = path.resolve('.');
 const OUT = path.join(ROOT, '.sim', 'out');
 const FIXTURES = path.join(ROOT, '.sim');
 fs.mkdirSync(OUT, { recursive: true });
+
+/**
+ * 测试用的两张图**当场生成**，不从仓库读。
+ *
+ * 起因：`.sim/` 整个目录是 gitignore 的，之前这两张图只存在于本机磁盘上，
+ * 换一台机器（或清掉 .sim 后）`npm run sim:user` 会在第 2 步直接挂掉，
+ * 而报错看起来像"导入功能坏了"。生成出来才能保证"新克隆一个仓库就能跑"。
+ */
+function gradientBuffer(width, height, from, to) {
+  const buf = Buffer.alloc(width * height * 3);
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const t = (x / (width - 1) + y / (height - 1)) / 2;
+      const i = (y * width + x) * 3;
+      for (let c = 0; c < 3; c++) buf[i + c] = Math.round(from[c] + (to[c] - from[c]) * t);
+    }
+  }
+  return { data: buf, raw: { width, height, channels: 3 } };
+}
+
+async function ensureFixtures() {
+  fs.mkdirSync(FIXTURES, { recursive: true });
+  const png = path.join(FIXTURES, 'shot-a.png');
+  const jpg = path.join(FIXTURES, 'shot-b.jpg');
+  if (!fs.existsSync(png)) {
+    await sharp(gradientBuffer(1200, 800, [40, 90, 200], [250, 120, 60]).data, {
+      raw: { width: 1200, height: 800, channels: 3 },
+    })
+      .png()
+      .toFile(png);
+  }
+  if (!fs.existsSync(jpg)) {
+    await sharp(gradientBuffer(900, 600, [20, 160, 120], [240, 220, 80]).data, {
+      raw: { width: 900, height: 600, channels: 3 },
+    })
+      .jpeg({ quality: 90 })
+      .toFile(jpg);
+  }
+  return { png, jpg };
+}
+
+await ensureFixtures();
 
 /**
  * 本机安装的 Chromium 构建号可能比当前 playwright 包期望的新，
