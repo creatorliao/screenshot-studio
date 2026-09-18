@@ -139,7 +139,8 @@ export function TimelineTrack({
         {track.keyframes.length === 0 && !track.isLocked && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <span className="text-[9px] text-foreground/30 italic">
-              Double-click to add keyframe
+              双击添加关键帧
+            
             </span>
           </div>
         )}

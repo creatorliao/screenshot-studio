@@ -164,10 +164,11 @@ export function ToolWorkspace({ tool }: ToolWorkspaceProps) {
             <>
               <Button disabled className="w-full">
                 <Loading03Icon size={16} className="animate-spin" aria-hidden="true" />
-                {queue.completed} of {queue.items.length}
+                {queue.completed} 共  {queue.items.length}
               </Button>
               <Button variant="ghost" onClick={queue.cancel} className="w-full">
-                Stop
+                停止
+              
               </Button>
             </>
           ) : (
@@ -186,7 +187,7 @@ export function ToolWorkspace({ tool }: ToolWorkspaceProps) {
               className="w-full"
             >
               <Download04Icon size={16} aria-hidden="true" />
-              {queue.doneCount > 1 ? "Download all as zip" : "Download"}
+              {queue.doneCount > 1 ? "全部下载为 zip" : "下载"}
             </Button>
           ) : null}
 
@@ -198,7 +199,8 @@ export function ToolWorkspace({ tool }: ToolWorkspaceProps) {
             className="w-full text-muted-foreground"
           >
             <Delete02Icon size={15} aria-hidden="true" />
-            Clear
+            清除
+          
           </Button>
         </div>
 
@@ -209,7 +211,8 @@ export function ToolWorkspace({ tool }: ToolWorkspaceProps) {
             {totalSaved > 0 ? (
               <span className="font-medium text-emerald-600 dark:text-emerald-500">
                 {" "}
-                ({totalSaved}% smaller)
+                ({totalSaved}% 更小)
+              
               </span>
             ) : null}
           </p>

@@ -229,11 +229,11 @@ export function Sponsors({
                         {sponsor.amount && (
                           <div className="mb-2.5">
                             <p className="text-sm font-medium text-primary">
-                              {sponsor.amount} {sponsor.amountType || "one time"}
+                              {sponsor.amount} {sponsor.amountType || "一次性"}
                             </p>
                             {sponsor.total && (
                               <p className="text-xs text-primary/80 mt-0.5">
-                                Total: {sponsor.total}
+                                总计：  {sponsor.total}
                               </p>
                             )}
                           </div>
@@ -315,7 +315,8 @@ export function Sponsors({
         ) : (
           <div className="text-center py-12">
             <p className="text-muted-foreground mb-6 text-base sm:text-lg">
-              Become a sponsor and support Screenshot Studio development
+              成为赞助者，支持 Screenshot Studio 的开发
+            
             </p>
             <Link
               href="https://buymeacoffee.com/code_kartik"
@@ -323,7 +324,8 @@ export function Sponsors({
               rel="noopener noreferrer"
               className="cursor-pointer inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium"
             >
-              Sponsor Screenshot Studio
+              赞助 Screenshot Studio
+            
             </Link>
           </div>
         )}

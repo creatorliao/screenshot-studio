@@ -5,9 +5,9 @@ import { AgentSummary } from "@/components/seo/AgentSummary";
 import { OG_DEFAULTS } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = {
-  title: "Online Screenshot Editor & Mockup Maker",
+  title: "在线截图编辑器与模型制作工具",
   description:
-    "Online screenshot editor and mockup maker that runs in your browser. Add gradient backgrounds, Safari and Chrome browser mockups, shadows, 3D effects, and animations. No signup.",
+    "在浏览器中运行的在线截图编辑器与模型制作工具。可添加渐变背景、Safari 和 Chrome 浏览器模型、阴影、3D 效果和动画。无需注册。",
   keywords: [
     "screenshot editor online free",
     "free screenshot editor",
@@ -71,9 +71,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Screenshot Studio - Free Screenshot Editor & Mockup Maker",
+    title: "Screenshot Studio - 免费截图编辑器与模型生成器",
     description:
-      "Free screenshot editor online: add backgrounds, shadows, 3D effects, and animations. Export as PNG, JPG, or video.",
+      "免费在线截图编辑器：添加背景、阴影、3D 效果和动画。导出为 PNG、JPG 或视频。",
     url: "/",
   },
 };

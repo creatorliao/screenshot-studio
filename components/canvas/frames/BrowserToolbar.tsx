@@ -178,7 +178,7 @@ export function ChromeToolbar({ windowHeader, isDark, title, screenshotRadius }:
           }}
         >
           <span style={{ fontSize: `${fs}px`, color: urlColor, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', flex: 1, fontWeight: 400 }}>
-            {title || 'New Tab'}
+            {title || '新建标签页'}
           </span>
           <svg width={Math.max(6, Math.round(ico * 0.85))} height={Math.max(6, Math.round(ico * 0.85))} viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0, opacity: 0.5 }}>
             <path d="M4 4l6 6M10 4l-6 6" stroke={iconColor} strokeWidth="1.3" strokeLinecap="round" />

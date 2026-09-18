@@ -6,11 +6,11 @@ import { cn } from "@/lib/utils";
 import "./BentoCardVisuals.css";
 
 const BACKGROUND_PRESETS = [
-  { name: "Mesh", tone: "a" as const },
-  { name: "Noise", tone: "b" as const },
-  { name: "Solid", tone: "c" as const },
-  { name: "Blur", tone: "d" as const },
-  { name: "Grain", tone: "e" as const },
+  { name: "网格", tone: "a" as const },
+  { name: "噪点", tone: "b" as const },
+  { name: "纯色", tone: "c" as const },
+  { name: "模糊", tone: "d" as const },
+  { name: "颗粒", tone: "e" as const },
 ];
 
 const FRAME_PRESETS = [
@@ -27,16 +27,16 @@ type ListEvent = {
 };
 
 const MOTION_EVENTS: ListEvent[] = [
-  { title: "Fade In", meta: "0.4s · ease-out", icon: "play" },
-  { title: "Slide Up", meta: "0.5s · spring", icon: "play" },
-  { title: "Zoom Soft", meta: "0.6s · ease", icon: "play" },
-  { title: "Export MP4", meta: "Ready", icon: "check" },
+  { title: "淡入", meta: "0.4s · ease-out", icon: "play" },
+  { title: "上滑", meta: "0.5s · spring", icon: "play" },
+  { title: "柔和缩放", meta: "0.6s · ease", icon: "play" },
+  { title: "导出 MP4", meta: "Ready", icon: "check" },
 ];
 
 const CAPTURE_EVENTS: ListEvent[] = [
-  { title: "Tweet imported", meta: "x.com/…", icon: "tweet" },
-  { title: "Code themed", meta: "Dracula", icon: "code" },
-  { title: "Snippet ready", meta: "tsx", icon: "check" },
+  { title: "推文已导入", meta: "x.com/…", icon: "tweet" },
+  { title: "代码主题", meta: "Dracula", icon: "code" },
+  { title: "代码片段已就绪", meta: "tsx", icon: "check" },
 ];
 
 function loopEvents(events: ListEvent[], times = 10): ListEvent[] {
@@ -193,7 +193,7 @@ export function ExportVisual(): React.JSX.Element {
       className="bento-visual bento-visual--export"
       aria-hidden="true"
     >
-      <ExportDropVisual title="Drop to export" />
+      <ExportDropVisual title="拖放以导出" />
     </div>
   );
 }

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s0840",
+    "en": "Duplicate device",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0841",
+    "en": "Easy-to-Use Controls",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0842",
+    "en": "Edit Overlay",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s0843",
+    "en": "Editing",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0844",
+    "en": "Editing runs in your browser. Imported images are not uploaded to edit them, and export compression returns the finished image without storing it.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0845",
+    "en": "Editing, compositing, and preview rendering happen on your device in the browser canvas. Three features do send data off your device: export compression, capturing a screenshot from a URL, and importing a tweet. Each one is described below. We do not sell your data.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0846",
+    "en": "Editor",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0847",
+    "en": "Editor right panel now includes dedicated Animate tab",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0848",
+    "en": "Editor settings",
+    "count": 1,
+    "where": "components/editor/EditorLayout.tsx"
+  },
+  {
+    "id": "s0849",
+    "en": "Editorial",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s0850",
+    "en": "Editorial Offset",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0851",
+    "en": "Elegant crossfade between multiple slides",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0852",
+    "en": "Email",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0853",
+    "en": "Email Marketing",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0854",
+    "en": "Email us to have a cached screenshot of a page you control removed.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0855",
+    "en": "Empty text",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s0856",
+    "en": "Endpoint",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0857",
+    "en": "endpoint, recompressed in memory with Sharp, and returned to you. It is not written to disk, not stored, and not logged. Images above 4MB, and any failure or timeout, fall back to compression inside your browser.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0858",
+    "en": "Endpoints",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0859",
+    "en": "Endpoints, schemas, rate limits, and error codes for the public Screenshot Studio API.",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0860",
+    "en": "Enter a website URL to capture a viewport screenshot. Choose desktop (1920x1080) or mobile (375x667) viewport size.",
+    "count": 1,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s0861",
+    "en": "Enter website URL...",
+    "count": 1,
+    "where": "components/controls/CleanUploadState.tsx"
+  },
+  {
+    "id": "s0862",
+    "en": "Enters from the left, slides right",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0863",
+    "en": "Enters from the right with a 3D rotation",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0864",
+    "en": "Enters from the right, slides left",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0865",
+    "en": "error",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0866",
+    "en": "Error boundaries and lazy loading for gradient components",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0867",
+    "en": "Errors",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0868",
+    "en": "Esc",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0869",
+    "en": "Every browser frame comes in both light and dark variants to match your screenshot content or brand style.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0870",
+    "en": "Every failing request returns JSON with the same shape. Branch on",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0871",
+    "en": "Every failing request returns the same JSON envelope. Branch on code.",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0872",
+    "en": "Every page on this site serves Markdown to clients that ask for it. Responses set",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0873",
+    "en": "Every setting is saved to the URL, so you can share a link or export a 2x or 4x PNG.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0874",
+    "en": "Every theme ships its own gradient, or pick from dozens of gradients, image backgrounds, and patterns, or turn the background off for a transparent PNG.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0875",
+    "en": "Every time you share a screenshot on social media, in documentation, or on a landing page, presentation matters. But existing tools either cost too much, require signups, add watermarks, or upload your images to their servers. We wanted something better: a tool that runs entirely in your browser, respects your privacy, and is completely free to use.",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s0876",
+    "en": "Everything in Free",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s0877",
+    "en": "Everything You Need for a Great Code Screenshot",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0878",
+    "en": "Everything You Need to Beautify Screenshots",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0879",
+    "en": "Everything you need to create stunning visuals from screenshots. 100% free, no signup required.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0880",
+    "en": "Everything You Need to Edit Screenshots",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0881",
+    "en": "Everything you need to know about our free screenshot editor.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0882",
+    "en": "Example designs",
+    "count": 1,
+    "where": "components/landing/MasonryGrid.tsx"
+  },
+  {
+    "id": "s0883",
+    "en": "example.com or https://example.com",
+    "count": 1,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s0884",
+    "en": "Exit editing",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0885",
+    "en": "Export a frame from Figma, Sketch, or your running app, drop it into Screenshot Studio, and get a presentation-ready UI mockup in under a minute. Pick a browser frame or a clean device-style window, set the padding and corner radius, and choose from more than a hundred gradient and solid backgrounds.",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0886",
+    "en": "Export All (",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0887",
+    "en": "Export as MP4 video or animated GIF. Perfect for social media and presentations.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0888",
+    "en": "Export as Video",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0889",
+    "en": "Export at",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0890",
+    "en": "Export at any dimension for blogs, presentations, or documentation.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0891",
+    "en": "Export at up to 5x resolution for crisp graphics on any device.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0892",
+    "en": "Export at up to 5x resolution. Perfect for retina displays and print.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0893",
+    "en": "Export Canvas",
+    "count": 1,
+    "where": "components/canvas/dialogs/ExportDialog.tsx"
+  },
+  {
+    "id": "s0894",
+    "en": "Export compression:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0895",
+    "en": "Export frame timing improved with double-RAF technique ensuring React DOM commits are fully painted before each frame capture",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0896",
+    "en": "Export image",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0897",
+    "en": "Export images as PNG (with transparency) or JPG at up to 5x resolution. For animations, export as MP4, WebM, or GIF with quality presets ranging from 5 to 25 Mbps.",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s0898",
+    "en": "Export MP4",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s0899",
+    "en": "Export Options",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0900",
+    "en": "Export or Share",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0901",
+    "en": "Export PNG",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0902",
+    "en": "Export PNG or JPG at up to 5x resolution. Retina-ready images for any platform.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0903",
+    "en": "Export progress dialog with real-time frame count and status tracking",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0904",
+    "en": "Export Type",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0905",
+    "en": "Exporting All Slides",
+    "count": 1,
+    "where": "components/canvas/dialogs/BatchExportProgressDialog.tsx"
+  },
+  {
+    "id": "s0906",
+    "en": "Exporting Image",
+    "count": 1,
+    "where": "components/canvas/dialogs/ExportDialog.tsx"
+  },
+  {
+    "id": "s0907",
+    "en": "Exporting Video",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0908",
+    "en": "Exporting...",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0909",
+    "en": "Extreme",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0910",
+    "en": "Extreme Angle",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s0911",
+    "en": "Extreme Reverse",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s0912",
+    "en": "Eye-catching hero images that showcase your product from dynamic angles.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0913",
+    "en": "Facebook Post",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s0914",
+    "en": "Fade Rise",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0915",
+    "en": "Fade Scale",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0916",
+    "en": "Fade Transitions",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0917",
+    "en": "Fade Zoom Out",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0918",
+    "en": "Fades in while rising slightly — minimal and elegant",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0919",
+    "en": "Fades in while zooming out from close-up",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0920",
+    "en": "Fades in with a subtle scale-up — popular app entrance",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0921",
+    "en": "Falcon",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s0922",
+    "en": "Falls from above with a tilt and fades in",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0923",
+    "en": "Fardeen Mansoori",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0924",
+    "en": "Fast & Lightweight",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0925",
+    "en": "Faster Than Figma or Canva",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0926",
+    "en": "Feature",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s0927",
+    "en": "Feature Comparison",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s0928",
+    "en": "features",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0929",
+    "en": "Features - Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0930",
+    "en": "Features Designers Love",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0931",
+    "en": "Features: Screenshot & Mockup Tools",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0932",
+    "en": "Fetch tweet",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0933",
+    "en": "Fetch, preview, then add to canvas.",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0934",
+    "en": "Fetching post details and media",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0935",
+    "en": "Fetching tweet",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0936",
+    "en": "File bugs and feature requests on",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0937",
+    "en": "final_cta",
+    "count": 1,
+    "where": "components/landing/FinalCTA.tsx"
+  },
+  {
+    "id": "s0938",
+    "en": "Fine Tune",
+    "count": 1,
+    "where": "components/editor/RightSettingsPanel.tsx"
+  },
+  {
+    "id": "s0939",
+    "en": "Fine-tune timing with our visual timeline. Adjust duration, easing, and keyframes.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0940",
+    "en": "Fira Code",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s0941",
+    "en": "Fits Your Workflow",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0942",
+    "en": "fixed",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0943",
+    "en": "Flare",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0944",
+    "en": "Flat",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0945",
+    "en": "Flip horizontally",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0946",
+    "en": "Flip Reveal",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0947",
+    "en": "Flip vertically",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0948",
+    "en": "Float Down",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0949",
+    "en": "Float Up",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0950",
+    "en": "Floating",
+    "count": 1,
+    "where": "components/controls/ShadowControls.tsx"
+  },
+  {
+    "id": "s0951",
+    "en": "Follow @screenshotstdio for release notes, tips, and product updates.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0952",
+    "en": "For anything else, drop us an email and we'll get back to you.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0953",
+    "en": "For case studies and Dribbble shots, tilt the mockup in 3D to add depth, or stack several screens into an animated walkthrough and export it as a video. Everything renders at high resolution so your work looks sharp on portfolio sites, Behance, and LinkedIn.",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0954",
+    "en": "For Designers",
+    "count": 1,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s0955",
+    "en": "For developers",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0956",
+    "en": "For marketers",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0957",
+    "en": "For Marketers",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0958",
+    "en": "For questions about these terms, please visit our",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0959",
+    "en": "For serious creators",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s0960",
+    "en": "For the best experience, please use Screenshot Studio on a desktop device.",
+    "count": 1,
+    "where": "components/editor/MobileBanner.tsx"
+  },
+  {
+    "id": "s0961",
+    "en": "Forever free",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s0962",
+    "en": "Format converters",
+    "count": 1,
+    "where": "app/[locale]/tools/page.tsx"
+  },
+  {
+    "id": "s0963",
+    "en": "Found something broken? Open an issue on GitHub and we'll look into it.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0964",
+    "en": "Frame Size",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s0965",
+    "en": "Frames",
+    "count": 1,
+    "where": "components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s0966",
+    "en": "Free 3D Screenshot Effects",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0967",
+    "en": "Free 3D Screenshot Effects - Add Perspective & Depth",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0968",
+    "en": "Free and open source.",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0969",
+    "en": "Free Animation Maker - Create Animated Screenshots & Slideshows",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0970",
+    "en": "Free Browser Mockup Generator - Safari & Chrome Frames",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0971",
+    "en": "Free browser mockup generator. Add Safari and Chrome frames to screenshots with light and dark modes, custom URL bar, and 3D perspective. No signup required.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0972",
+    "en": "Free code to image tool: pick a syntax theme, gradient background, line numbers, and window frame, then export a crisp PNG. A free ray.so and carbon.now.sh alternative. No signup.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0973",
+    "en": "Free editor",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0974",
+    "en": "Free forever · No signup required",
+    "count": 1,
+    "where": "components/landing/FinalCTA.tsx"
+  },
+  {
+    "id": "s0975",
+    "en": "Free mockup tool for UI/UX designers. Create app mockups, UI mockups, and portfolio screenshots with backgrounds, browser frames, and 3D effects. No signup.",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0976",
+    "en": "Free online tool that turns code into beautiful, shareable images with syntax themes, gradient backgrounds, and a window frame.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0977",
+    "en": "Free online tool to add 3D perspective, rotation, and depth effects to screenshots.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0978",
+    "en": "Free online tool to add Safari and Chrome browser frames to screenshots with light/dark modes and custom URL.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0979",
+    "en": "Free online tool to beautify screenshots with backgrounds, shadows, and professional styling.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  }
+]

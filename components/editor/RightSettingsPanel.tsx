@@ -33,7 +33,7 @@ type RightTabType = 'transforms' | 'animate';
 
 const rightTabs: { id: RightTabType; icon: React.ReactNode; label: string }[] = [
   { id: 'transforms', icon: <RotateSquareIcon size={14} />, label: '3D' },
-  { id: 'animate', icon: <VideoReplayIcon size={14} />, label: 'Motion' },
+  { id: 'animate', icon: <VideoReplayIcon size={14} />, label: '动效' },
 ];
 
 type ControlMode = 'zoom' | 'tilt';
@@ -230,7 +230,7 @@ function TransformPreview({ mode }: { mode: ControlMode }) {
           <div className="w-[85%] h-[85%]" style={transformStyle}>
             <img
               src={previewImageUrl}
-              alt="Preview"
+              alt="预览"
               className="w-full h-full object-contain"
               draggable={false}
               style={{
@@ -274,7 +274,7 @@ function PerspectiveSliders() {
   const { perspective3D, setPerspective3D } = useImageStore();
 
   return (
-    <SectionWrapper title="Fine Tune" defaultOpen={false}>
+    <SectionWrapper title="微调" defaultOpen={false}>
       <div className="space-y-2">
         <Slider
           value={[perspective3D.perspective]}
@@ -282,7 +282,7 @@ function PerspectiveSliders() {
           min={500}
           max={3000}
           step={50}
-          label="Depth"
+          label="深度"
           valueDisplay={`${perspective3D.perspective}px`}
         />
         <Slider
@@ -291,7 +291,7 @@ function PerspectiveSliders() {
           min={-60}
           max={60}
           step={1}
-          label="Rotate X"
+          label="X 轴旋转"
           valueDisplay={`${perspective3D.rotateX}°`}
         />
         <Slider
@@ -300,7 +300,7 @@ function PerspectiveSliders() {
           min={-60}
           max={60}
           step={1}
-          label="Rotate Y"
+          label="Y 轴旋转"
           valueDisplay={`${perspective3D.rotateY}°`}
         />
         <Slider
@@ -309,7 +309,7 @@ function PerspectiveSliders() {
           min={-45}
           max={45}
           step={1}
-          label="Rotate Z"
+          label="Z 轴旋转"
           valueDisplay={`${perspective3D.rotateZ}°`}
         />
         <Slider
@@ -318,7 +318,7 @@ function PerspectiveSliders() {
           min={0.5}
           max={1.5}
           step={0.01}
-          label="Scale"
+          label="缩放"
           valueDisplay={perspective3D.scale.toFixed(2)}
         />
       </div>
@@ -337,7 +337,7 @@ function ZoomSlider() {
       min={0.1}
       max={2}
       step={0.01}
-      label="Zoom"
+      label="缩放"
       valueDisplay={`${Math.round(imageScale)}%`}
     />
   );
@@ -352,8 +352,8 @@ function TransformControls() {
     <div className="space-y-3">
       <SegmentedControl
         options={[
-          { id: 'zoom', label: 'Zoom' },
-          { id: 'tilt', label: 'Tilt' },
+          { id: 'zoom', label: '缩放' },
+          { id: 'tilt', label: '倾斜' },
         ]}
         value={controlMode}
         onChange={(v) => setControlMode(v as ControlMode)}
@@ -371,7 +371,7 @@ function TransformControls() {
           min={-45}
           max={45}
           step={1}
-          label="Rotation"
+          label="旋转"
           valueDisplay={`${perspective3D.rotateZ}°`}
         />
       )}
@@ -431,7 +431,7 @@ function AnimationControls() {
       {hasAnimation && (
         <div className="flex items-center justify-between px-2 py-1.5 mb-2 rounded-md bg-foreground/5 border border-foreground/10">
           <span className="text-xs font-medium text-foreground">
-            {animationClips.length} clip{animationClips.length > 1 ? 's' : ''}
+            {animationClips.length} 片段{animationClips.length > 1 ? 's' : ''}
           </span>
           <Button
             variant="ghost"
@@ -440,7 +440,8 @@ function AnimationControls() {
             onClick={clearAnimationClips}
           >
             <Delete02Icon size={12} className="mr-1" />
-            Clear
+            清除
+          
           </Button>
         </div>
       )}
@@ -530,7 +531,8 @@ function AnimationControls() {
       {!previewImageUrl && (
         <div className="p-3 rounded-md bg-foreground/[0.04] border border-foreground/10 text-center">
           <p className="text-xs text-muted-foreground">
-            Upload an image to see animation previews
+            上传图片以预览动画
+          
           </p>
         </div>
       )}
@@ -594,7 +596,8 @@ export function RightSettingsPanel() {
 
               <div className="flex items-center gap-2 py-3 px-2">
                 <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  Layout Presets
+                  布局预设
+                
                 </span>
               </div>
 

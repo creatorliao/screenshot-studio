@@ -1,3 +1,7 @@
+// 作为模块编译，避免与 scripts/ 下同为全局脚本的文件（如 i18n-verify.ts）
+// 在同一编译单元里争抢 `const BASE` 等顶层声明。
+export {};
+
 const BASE = process.env.VERIFY_BASE_URL ?? "http://localhost:3000";
 
 interface Check {

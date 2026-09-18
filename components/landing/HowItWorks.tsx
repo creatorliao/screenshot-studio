@@ -30,7 +30,7 @@ const ICON_HOVER = [
 export function HowItWorks({ steps }: HowItWorksProps) {
   return (
     <section
-      aria-label="How it works"
+      aria-label="工作原理"
       className="bg-background px-6 pt-4 pb-12 sm:pb-16 md:pt-12 md:pb-20"
     >
       <div className="mx-auto w-full max-w-6xl">

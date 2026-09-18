@@ -81,7 +81,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "apple-watch-ultra-trail-loop",
-    name: "Apple Watch Ultra with Trail Loop",
+    name: "Apple Watch Ultra 越野回环表带",
     family: "watch",
     finish: "graphite",
     perspective: "front",
@@ -94,7 +94,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "apple-watch-ultra-ocean-band",
-    name: "Apple Watch Ultra with Ocean Band",
+    name: "Apple Watch Ultra 海洋表带",
     family: "watch",
     finish: "graphite",
     perspective: "front",
@@ -107,7 +107,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "apple-watch-red-braided-solo-loop",
-    name: "Apple Watch Red with Braided Solo Loop",
+    name: "Apple Watch 红色编织单圈表带",
     family: "watch",
     finish: "dark",
     perspective: "front",
@@ -120,7 +120,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "apple-watch-gold-orange-leather-band",
-    name: "Apple Watch Gold with Orange Leather Band",
+    name: "Apple Watch 金色橙色皮革表带",
     family: "watch",
     finish: "light",
     perspective: "front",
@@ -133,7 +133,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "apple-watch-silver-blue-sport-band",
-    name: "Apple Watch Silver with Blue Sport Band",
+    name: "Apple Watch 银色蓝色运动表带",
     family: "watch",
     finish: "light",
     perspective: "front",
@@ -146,7 +146,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "apple-watch-midnight-pride-sport-loop",
-    name: "Apple Watch Midnight with Pride Sport Loop",
+    name: "Apple Watch 午夜色 Pride 运动回环表带",
     family: "watch",
     finish: "dark",
     perspective: "front",
@@ -159,7 +159,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "apple-watch-gold-milanese-loop",
-    name: "Apple Watch Gold with Milanese Loop",
+    name: "Apple Watch 金色米兰尼斯表带",
     family: "watch",
     finish: "light",
     perspective: "front",
@@ -198,7 +198,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "macbook-air-15-perspective",
-    name: "MacBook Air 15-inch",
+    name: "MacBook Air 15 英寸",
     family: "laptop",
     finish: "dark",
     perspective: "right",
@@ -214,7 +214,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "macbook-pro-14-front",
-    name: "MacBook Pro 14-inch",
+    name: "MacBook Pro 14 英寸",
     family: "laptop",
     finish: "dark",
     perspective: "front",
@@ -227,7 +227,7 @@ export const MOCKUP_DEFINITIONS: MockupDefinition[] = [
   },
   {
     id: "macbook-pro-16-front",
-    name: "MacBook Pro 16-inch",
+    name: "MacBook Pro 16 英寸",
     family: "laptop",
     finish: "dark",
     perspective: "front",
@@ -254,8 +254,8 @@ const LEGACY_MOCKUP_DEFINITION_IDS = new Map([
 export const DEVICE_LAYOUTS: DeviceLayoutDefinition[] = [
   {
     id: "center-stage",
-    name: "Center Stage",
-    description: "A single device with balanced focus.",
+    name: "居中展示",
+    description: "单一设备，焦点均衡。",
     slots: [{
       position: { x: 0.5, y: 0.5 },
       size: 0.42,
@@ -265,14 +265,14 @@ export const DEVICE_LAYOUTS: DeviceLayoutDefinition[] = [
   },
   {
     id: "editorial-offset",
-    name: "Editorial Offset",
-    description: "An asymmetric layout with room for copy.",
+    name: "杂志风偏移",
+    description: "非对称布局，为文案留出空间。",
     slots: [{ position: { x: 0.62, y: 0.5 }, size: 0.4, rotation: 4 }],
   },
   {
     id: "duo-split",
-    name: "Duo Split",
-    description: "Two devices presented side by side.",
+    name: "双联分屏",
+    description: "两台设备并排展示。",
     slots: [
       { position: { x: 0.34, y: 0.51 }, size: 0.3, rotation: -4 },
       { position: { x: 0.66, y: 0.49 }, size: 0.3, rotation: 4 },
@@ -280,8 +280,8 @@ export const DEVICE_LAYOUTS: DeviceLayoutDefinition[] = [
   },
   {
     id: "duo-depth",
-    name: "Duo Depth",
-    description: "A layered pair with visual depth.",
+    name: "双联深度",
+    description: "一对层叠设备，富有视觉深度。",
     slots: [
       { position: { x: 0.42, y: 0.51 }, size: 0.37, rotation: -5 },
       { position: { x: 0.64, y: 0.48 }, size: 0.25, rotation: 7 },
@@ -289,8 +289,8 @@ export const DEVICE_LAYOUTS: DeviceLayoutDefinition[] = [
   },
   {
     id: "trio-fan",
-    name: "Trio Fan",
-    description: "Three devices in a compact fan.",
+    name: "三设备扇形",
+    description: "三台设备紧凑扇形排列。",
     slots: [
       { position: { x: 0.34, y: 0.52 }, size: 0.25, rotation: -10 },
       { position: { x: 0.5, y: 0.47 }, size: 0.28, rotation: 0 },
@@ -299,8 +299,8 @@ export const DEVICE_LAYOUTS: DeviceLayoutDefinition[] = [
   },
   {
     id: "product-suite",
-    name: "Product Suite",
-    description: "Laptop, phone, and watch together.",
+    name: "产品套件",
+    description: "笔记本电脑、手机和手表同框。",
     slots: [
       { family: "laptop", definitionId: "macbook-pro-studio-front", position: { x: 0.47, y: 0.48 }, size: 0.53, rotation: 0 },
       { family: "phone", definitionId: "iphone-17-pro-front", position: { x: 0.75, y: 0.58 }, size: 0.16, rotation: 4 },

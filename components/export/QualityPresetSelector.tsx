@@ -21,7 +21,7 @@ export function QualityPresetSelector({
 
   return (
     <div className="space-y-3">
-      <label className="text-sm font-medium text-foreground">Quality</label>
+      <label className="text-sm font-medium text-foreground">质量</label>
       <SegmentedControl
         value={qualityPreset}
         onChange={(id) => onQualityPresetChange(id as QualityPreset)}

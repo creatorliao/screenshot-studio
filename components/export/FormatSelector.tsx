@@ -9,15 +9,15 @@ interface FormatSelectorProps {
 }
 
 const FORMATS: { value: ExportFormat; label: string; description: string }[] = [
-  { value: 'jpeg', label: 'JPEG', description: 'Smaller files, great for sharing' },
-  { value: 'png', label: 'PNG', description: 'Lossless, supports transparency' },
-  { value: 'webp', label: 'WebP', description: 'Best compression, small & sharp' },
+  { value: 'jpeg', label: 'JPEG', description: '文件更小，适合分享' },
+  { value: 'png', label: 'PNG', description: '无损，支持透明度' },
+  { value: 'webp', label: 'WebP', description: '压缩效果最佳，小巧且清晰' },
 ];
 
 export function FormatSelector({ format, onFormatChange }: FormatSelectorProps) {
   return (
     <div className="space-y-3">
-      <label className="text-sm font-medium text-foreground">Format</label>
+      <label className="text-sm font-medium text-foreground">格式</label>
       <SegmentedControl
         value={format}
         onChange={(id) => onFormatChange(id as ExportFormat)}

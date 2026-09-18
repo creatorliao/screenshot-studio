@@ -62,7 +62,7 @@ function OverlayElement({
       >
         <img
           src={overlayImg.src}
-          alt="Shadow overlay"
+          alt="阴影叠加层"
           draggable={false}
           style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
         />
@@ -99,7 +99,7 @@ function OverlayElement({
     >
       <img
         src={overlayImg.src}
-        alt="Overlay"
+        alt="叠加层"
         draggable={false}
         style={{
           width: '100%',
@@ -151,7 +151,7 @@ function ContextToolbar({
           'flex h-7 w-7 cursor-pointer items-center justify-center rounded-md transition-colors duration-150',
           'text-muted-foreground hover:bg-foreground/[0.06] hover:text-foreground'
         )}
-        title={isFront ? 'Send behind image' : 'Bring to front'}
+        title={isFront ? '置于图片后方' : '置于顶层'}
       >
         {isFront ? <LayerSendToBackIcon size={14} /> : <LayerBringToFrontIcon size={14} />}
       </button>
@@ -162,7 +162,7 @@ function ContextToolbar({
           onDuplicate();
         }}
         className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-md text-muted-foreground transition-colors duration-150 hover:bg-foreground/[0.06] hover:text-foreground"
-        title="Duplicate"
+        title="复制"
       >
         <Copy01Icon size={14} />
       </button>
@@ -174,7 +174,7 @@ function ContextToolbar({
           onDelete();
         }}
         className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-md text-muted-foreground transition-colors duration-150 hover:bg-destructive/15 hover:text-destructive"
-        title="Delete"
+        title="删除"
       >
         <Delete02Icon size={14} />
       </button>

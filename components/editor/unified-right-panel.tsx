@@ -41,18 +41,18 @@ type EditorMode = 'screenshot' | 'browser' | 'device';
 type TabType = 'settings' | 'edit' | 'background' | 'transforms' | 'animate' | 'depth';
 
 const modeTabs: { id: EditorMode; icon: React.ReactNode; label: string }[] = [
-  { id: 'screenshot', icon: <Image01Icon size={14} />, label: 'Image' },
-  { id: 'browser', icon: <Globe02Icon size={14} />, label: 'Browser' },
-  { id: 'device', icon: <SmartPhone01Icon size={14} />, label: 'Device' },
+  { id: 'screenshot', icon: <Image01Icon size={14} />, label: '图片' },
+  { id: 'browser', icon: <Globe02Icon size={14} />, label: '浏览器' },
+  { id: 'device', icon: <SmartPhone01Icon size={14} />, label: '设备' },
 ];
 
 const tabs: { id: TabType; icon: React.ReactNode; label: string }[] = [
-  { id: 'edit', icon: <SlidersHorizontalIcon size={14} />, label: 'Design' },
-  { id: 'depth', icon: <LayersLogoIcon size={14} />, label: 'Layers' },
+  { id: 'edit', icon: <SlidersHorizontalIcon size={14} />, label: '设计' },
+  { id: 'depth', icon: <LayersLogoIcon size={14} />, label: '图层' },
   { id: 'background', icon: <ColorsIcon size={14} />, label: 'BG' },
-  { id: 'settings', icon: <Settings02Icon size={14} />, label: 'Adjust' },
+  { id: 'settings', icon: <Settings02Icon size={14} />, label: '调整' },
   { id: 'transforms', icon: <RotateSquareIcon size={14} />, label: '3D' },
-  { id: 'animate', icon: <VideoReplayIcon size={14} />, label: 'Motion' },
+  { id: 'animate', icon: <VideoReplayIcon size={14} />, label: '动效' },
 ];
 
 export function UnifiedRightPanel({
@@ -115,7 +115,7 @@ export function UnifiedRightPanel({
               type="button"
               onClick={onClose}
               className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-foreground/[0.06] hover:text-foreground"
-              aria-label="Close"
+              aria-label="关闭"
             >
               <Cancel01Icon size={16} />
             </button>
@@ -200,7 +200,7 @@ export function UnifiedRightPanel({
         <div className="flex shrink-0 items-center justify-between border-b border-foreground/10 px-4 py-3">
           <div className="flex items-center gap-2.5">
             <MagicWand01Icon size={18} className="text-foreground" />
-            <h2 className="text-sm font-semibold text-foreground">Templates</h2>
+            <h2 className="text-sm font-semibold text-foreground">模板</h2>
           </div>
           <button
             type="button"

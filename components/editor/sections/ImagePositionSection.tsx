@@ -9,15 +9,15 @@ import { cn } from '@/lib/utils';
 type PositionKey = 'tl' | 'tc' | 'tr' | 'ml' | 'mc' | 'mr' | 'bl' | 'bc' | 'br';
 
 const positions: { key: PositionKey; label: string; x: number; y: number }[] = [
-  { key: 'tl', label: 'Top Left', x: -1, y: -1 },
-  { key: 'tc', label: 'Top', x: 0, y: -1 },
-  { key: 'tr', label: 'Top Right', x: 1, y: -1 },
-  { key: 'ml', label: 'Left', x: -1, y: 0 },
-  { key: 'mc', label: 'Center', x: 0, y: 0 },
-  { key: 'mr', label: 'Right', x: 1, y: 0 },
-  { key: 'bl', label: 'Bottom Left', x: -1, y: 1 },
-  { key: 'bc', label: 'Bottom', x: 0, y: 1 },
-  { key: 'br', label: 'Bottom Right', x: 1, y: 1 },
+  { key: 'tl', label: '左上', x: -1, y: -1 },
+  { key: 'tc', label: '顶部', x: 0, y: -1 },
+  { key: 'tr', label: '右上', x: 1, y: -1 },
+  { key: 'ml', label: '左', x: -1, y: 0 },
+  { key: 'mc', label: '居中', x: 0, y: 0 },
+  { key: 'mr', label: '右', x: 1, y: 0 },
+  { key: 'bl', label: '左下', x: -1, y: 1 },
+  { key: 'bc', label: '底部', x: 0, y: 1 },
+  { key: 'br', label: '右下', x: 1, y: 1 },
 ];
 
 function PositionIcon({ x, y }: { x: number; y: number }) {
@@ -97,14 +97,15 @@ export function ImagePositionSection() {
   }, [screenshot.offsetX, screenshot.offsetY, canvasDimensions]);
 
   return (
-    <SectionWrapper title="Position" defaultOpen={true}>
+    <SectionWrapper title="位置" defaultOpen={true}>
       <div className="space-y-2">
         <button
           type="button"
           onClick={handleAuto}
           className="flex h-9 w-full items-center justify-center rounded-md bg-foreground/[0.04] text-[11px] font-semibold tracking-wide text-muted-foreground transition-colors hover:bg-foreground/[0.06] hover:text-foreground"
         >
-          Auto
+          自动
+        
         </button>
 
         <div className="mx-auto grid w-full max-w-[220px] grid-cols-3 gap-1.5">

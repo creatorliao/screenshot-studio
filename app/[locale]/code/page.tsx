@@ -10,9 +10,9 @@ import {
 } from '@/components/ui/accordion';
 
 export const metadata: Metadata = {
-  title: 'Code to Image: Create Beautiful Code Screenshots',
+  title: '代码转图片：创建精美的代码截图',
   description:
-    'Turn code into a shareable image. 14 themes plus gradient, image, and pattern backgrounds, export a crisp PNG. Free, no signup, no watermark.',
+    '把代码变成可分享的图片。14 款主题，外加渐变、图片和图案背景，导出清晰的 PNG。免费、无需注册、无水印。',
   keywords: [
     'code to image',
     'code snippet screenshot',
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: 'Code to Image: Create Beautiful Code Screenshots',
+    title: '代码转图片：创建精美的代码截图',
     description:
-      'Turn code into beautiful, shareable images. 14 themes, gradients, images, and window frames. Free, no signup.',
+      '把代码变成精美、可分享的图片。14 款主题、渐变、图片和窗口边框。免费，无需注册。',
     url: '/code',
   },
   alternates: {
@@ -41,24 +41,24 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: 'Is this code to image tool free?',
+    question: '这个代码转图片工具免费吗？',
     answer:
-      'Yes. Every theme, background, and export option is free, with no signup and no watermark.',
+      '是的。所有主题、背景和导出选项都免费，无需注册，也没有水印。',
   },
   {
-    question: 'How many syntax themes are included?',
+    question: '包含多少种语法主题？',
     answer:
-      '14 color themes (Midnight, Candy, Sunset, and more), each pairable with its own gradient, one of Screenshot Studio\'s gradient and image backgrounds, or a simple pattern.',
+      '14 种配色主题（午夜、糖果、日落等），每种都可搭配专属渐变、Screenshot Studio 的渐变与图片背景之一，或简单的图案。',
   },
   {
-    question: 'Can I export a transparent background?',
+    question: '可以导出透明背景吗？',
     answer:
-      'Yes. Turn the Background switch off before exporting and the PNG keeps a transparent backdrop.',
+      '可以。导出前关闭背景开关，PNG 就会保留透明底色。',
   },
   {
-    question: 'What kind of backgrounds can I use?',
+    question: '我可以使用哪些类型的背景？',
     answer:
-      'Pick the theme\'s own gradient, one of dozens of gradient presets, a real image background, or a simple grid, dot, or line pattern, all from the Background picker.',
+      '可以选主题自带的渐变、数十款渐变预设之一、真实图片背景，或简单的网格、圆点、线条图案，全部在背景选择器中完成。',
   },
 ];
 
@@ -109,12 +109,12 @@ export default function CodeImagePage() {
       <section className="bg-background px-6 pt-16 pb-48">
         <div className="mx-auto max-w-3xl">
           <h1 className="mb-3 text-2xl font-semibold tracking-[-0.02em] text-foreground">
-            Code to Image Generator
+            代码转图片生成器
+          
           </h1>
           <p className="mb-10 text-muted-foreground">
-            Paste a snippet, pick a theme and background, and export a crisp
-            PNG in seconds. No signup, no watermark, everything runs in your
-            browser.
+            粘贴代码片段，选择主题和背景，几秒内导出清晰的 PNG。无需注册、没有水印，一切都在浏览器中运行。
+          
           </p>
           <Accordion type="single" collapsible>
             {faqs.map((faq) => (
@@ -125,13 +125,13 @@ export default function CodeImagePage() {
             ))}
           </Accordion>
           <p className="mt-10 text-sm text-muted-foreground">
-            Coming from another tool? See how it compares to{' '}
+            从其他工具换过来？看看它与{' '}
             <Link href="/compare/carbon" className="underline">Carbon</Link>
-            {' '}and{' '}
-            <Link href="/compare/ray-so" className="underline">Ray.so</Link>,
-            or explore the{' '}
+            {' '}和{' '}
+            <Link href="/compare/ray-so" className="underline">Ray.so</Link>，或浏览{' '}
             <Link href="/features/code-snippets" className="underline">
-              code snippet feature
+              代码片段功能
+            
             </Link>
             .
           </p>

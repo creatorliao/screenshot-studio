@@ -72,7 +72,7 @@ function DialogContent({
             className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-foreground/[0.06] hover:text-foreground focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
           >
             <Cancel01Icon className="size-4" />
-            <span className="sr-only">Close</span>
+            <span className="sr-only">关闭</span>
           </DialogPrimitive.Close>
         )}
       </DialogPrimitive.Content>

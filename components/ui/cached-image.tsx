@@ -35,7 +35,8 @@ export function CachedImage({
           className
         )}
       >
-        Failed
+        失败
+      
       </div>
     );
   }

@@ -301,7 +301,7 @@ function AnimationTrack({ width, onAddAnimation }: { width: number; onAddAnimati
             <path d="M16.376 21.304c.457 0 .755-.265 1.148-.93l4.135-7.168c.231-.404.341-.719.341-1.056s-.11-.652-.341-1.056l-4.135-7.169C17.131 3.261 16.833 3 16.376 3c-.462 0-.764.261-1.153.925l-4.139 7.169c-.231.404-.34.719-.34 1.056s.113.652.344 1.056l4.135 7.168c.389.665.691.93 1.153.93m-.138-1.794-4.027-7.022c-.082-.144-.117-.237-.117-.338s.031-.194.109-.338l4.035-7.022a.149.149 0 0 1 .267 0l4.031 7.022c.082.144.117.237.117.338s-.035.194-.117.338l-4.031 7.022c-.061.114-.206.114-.267 0" />
           </g>
         </svg>
-        <span className="text-[11px] text-muted-foreground font-medium">Animations</span>
+        <span className="text-[11px] text-muted-foreground font-medium">动画</span>
       </div>
 
       <div
@@ -337,7 +337,7 @@ function AnimationTrack({ width, onAddAnimation }: { width: number; onAddAnimati
               )}
             >
               <Add01Icon size={13} />
-              <span>Add animation</span>
+              <span>添加动画</span>
             </button>
           </div>
         ) : (
@@ -347,7 +347,7 @@ function AnimationTrack({ width, onAddAnimation }: { width: number; onAddAnimati
               e.stopPropagation();
               onAddAnimation?.();
             }}
-            title="Add animation"
+            title="添加动画"
             className={cn(
               'absolute right-2 top-1/2 z-10 flex h-7 w-7 -translate-y-1/2 cursor-pointer items-center justify-center rounded-md',
               'border border-foreground/10 bg-card text-muted-foreground',
@@ -391,7 +391,7 @@ function VideoTrack({ width }: { width: number }) {
           <Image01Icon size={16} className="text-muted-foreground shrink-0" />
         )}
         <span className="text-[11px] text-muted-foreground font-medium truncate">
-          {imageName || 'Screenshot'}
+          {imageName || '截图'}
         </span>
       </div>
 
@@ -419,10 +419,10 @@ function VideoTrack({ width }: { width: number }) {
                     </div>
                     <div className="flex min-w-0 flex-col">
                       <span className="truncate text-[10px] font-medium text-foreground/80">
-                        {slides.length > 1 ? `Slide ${mediaItems.indexOf(item) + 1}` : 'Mockup'}
+                        {slides.length > 1 ? `Slide ${mediaItems.indexOf(item) + 1}` : '模型'}
                       </span>
                       <span className="truncate text-[9px] text-muted-foreground">
-                        {imageName || 'Screenshot'}
+                        {imageName || '截图'}
                       </span>
                     </div>
                   </div>
@@ -513,7 +513,8 @@ function SlideDurationHandle({ trackWidth }: { trackWidth: number }) {
 
       {(showHint || isDragging) && (
         <div className="pointer-events-none absolute top-1/2 left-5 z-50 -translate-y-1/2 whitespace-nowrap rounded-md border border-foreground/10 bg-card px-2 py-1 text-[10px] font-medium text-foreground shadow-lg">
-          Drag to adjust duration
+          拖动调整时长
+        
         </div>
       )}
     </div>

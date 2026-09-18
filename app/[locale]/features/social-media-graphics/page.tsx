@@ -11,9 +11,9 @@ import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Free Social Media Graphics Maker",
+  title: "免费社交媒体图片制作工具",
   description:
-    "Create social media graphics for Twitter, LinkedIn, and Instagram. Turn screenshots into shareable posts with perfect dimensions. Free, no signup.",
+    "为 Twitter、LinkedIn 和 Instagram 制作社交媒体图形。把截图变成尺寸完美的可分享帖子。免费，无需注册。",
   keywords: [
     "social media graphics maker",
     "twitter card generator",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     "twitter banner maker free",
   ],
   openGraph: {
-    title: "Free Social Media Graphics Maker - Create Stunning Posts",
+    title: "免费社交媒体图片制作工具 - 制作出色的帖子",
     description:
-      "Create professional social media graphics. Perfect dimensions for every platform.",
+      "制作专业的社交媒体图形。适配每个平台的完美尺寸。",
     url: "/features/social-media-graphics",
   },
   alternates: {
@@ -58,75 +58,75 @@ const platforms = [
     name: "Twitter / X",
     dimensions: "1200 x 675px",
     description:
-      "Create eye-catching Twitter cards and post images that drive engagement.",
+      "制作抢眼的 Twitter 卡片和帖子图片，提升互动率。",
   },
   {
     icon: Linkedin01Icon,
     name: "LinkedIn",
     dimensions: "1200 x 627px",
     description:
-      "Professional graphics for LinkedIn posts that establish authority.",
+      "为 LinkedIn 帖子制作专业图形，树立权威形象。",
   },
   {
     icon: InstagramIcon,
     name: "Instagram",
     dimensions: "1080 x 1080px",
-    description: "Square posts and stories that stand out in crowded feeds.",
+    description: "在拥挤的信息流中脱颖而出的方形帖子和快拍。",
   },
   {
     icon: Share08Icon,
-    name: "Any Platform",
+    name: "任意平台",
     dimensions: "Custom sizes",
     description:
-      "Export at any dimension for blogs, presentations, or documentation.",
+      "可按任意尺寸导出，用于博客、演示或文档。",
   },
 ] as const;
 
 const benefits = [
   {
-    title: "No Design Skills Needed",
+    title: "无需设计技能",
     description:
-      "Our intuitive editor makes it easy to create professional graphics in minutes.",
+      "我们直观易用的编辑器让你几分钟就能轻松做出专业图形。",
   },
   {
-    title: "Consistent Branding",
+    title: "品牌形象统一",
     description:
-      "Use custom backgrounds and colors to match your brand identity across all posts.",
+      "使用自定义背景和配色，让所有帖子的视觉与品牌形象保持一致。",
   },
   {
-    title: "High Resolution Output",
+    title: "高分辨率输出",
     description:
-      "Export at up to 5x resolution for crisp graphics on any device.",
+      "最高可导出 5x 分辨率，在任何设备上都清晰锐利。",
   },
   {
-    title: "Zero Cost",
+    title: "零成本",
     description:
-      "Create unlimited graphics without watermarks. 100% free forever.",
+      "无水印创建无限图形。100% 永久免费。",
   },
 ];
 
 const createItems = [
   {
-    title: "Product Announcements",
+    title: "产品公告",
     description:
-      "Share new features with beautiful screenshots that get clicks.",
+      "用能带来点击的漂亮截图分享新功能。",
   },
   {
-    title: "Tutorial Screenshots",
+    title: "教程截图",
     description:
-      "Create professional how-to content that builds authority.",
+      "制作专业的方法教程内容，树立权威。",
   },
   {
-    title: "Code Snippets",
+    title: "代码片段",
     description:
-      "Share code with beautiful backgrounds that developers love.",
+      "用开发者喜爱的漂亮背景分享代码。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/features/screenshot-beautifier", label: "Screenshot Beautifier" },
-  { href: "/features/animation-maker", label: "Animation Maker" },
-  { href: "/features/3d-effects", label: "3D Effects" },
+  { href: "/features/screenshot-beautifier", label: "截图美化" },
+  { href: "/features/animation-maker", label: "动画制作" },
+  { href: "/features/3d-effects", label: "3D 效果" },
 ] as const;
 
 export default function SocialMediaGraphicsPage() {
@@ -197,23 +197,24 @@ export default function SocialMediaGraphicsPage() {
               className="mb-6 text-4xl font-semibold tracking-[-0.03em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Social Media Graphics Maker
+              社交媒体图片制作器
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Create stunning graphics for Twitter, LinkedIn, and Instagram in
-              seconds. Transform screenshots into shareable content that drives
-              engagement.
+              几秒钟为 Twitter、LinkedIn 和 Instagram 制作出色的图形。把截图变成能提升互动率的可分享内容。
+            
             </p>
             <div className="flex flex-col items-center">
               <Link href="/" className={ctaClassName}>
-                Create Graphics Free
+                免费创建图形
+              
               </Link>
               <p className="mt-4 inline-flex flex-wrap items-center justify-center gap-2 text-sm font-medium text-muted-foreground/70">
-                <span>No Signup</span>
+                <span>无需注册</span>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>No Watermarks</span>
+                <span>无水印</span>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>Completely Free</span>
+                <span>完全免费</span>
               </p>
             </div>
           </div>
@@ -225,11 +226,12 @@ export default function SocialMediaGraphicsPage() {
               className="mb-4 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Perfect Dimensions for Every Platform
+              适配每个平台的完美尺寸
+            
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-              Create graphics optimized for each social platform with the right
-              aspect ratios and resolutions.
+              用合适的宽高比和分辨率，为每个社交平台制作优化的图形。
+            
             </p>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               {platforms.map((platform) => (
@@ -259,7 +261,8 @@ export default function SocialMediaGraphicsPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Why Creators Choose Screenshot Studio
+              创作者为什么选择 Screenshot Studio
+            
             </h2>
             <div className="grid gap-8 md:grid-cols-2">
               {benefits.map((benefit) => (
@@ -286,7 +289,8 @@ export default function SocialMediaGraphicsPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              What Can You Create?
+              你能创作什么？
+            
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
               {createItems.map((item) => (
@@ -305,7 +309,8 @@ export default function SocialMediaGraphicsPage() {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Explore More Features
+              探索更多功能
+            
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {relatedLinks.map((link) => (
@@ -331,13 +336,16 @@ export default function SocialMediaGraphicsPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Start Creating Social Media Graphics
+              开始制作社交媒体图片
+            
             </h2>
             <p className="mb-8 text-muted-foreground">
-              No design experience required. Start creating in 30 seconds.
+              无需设计经验。30 秒即可开始创作。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Try Free Now
+              立即免费试用
+            
             </Link>
           </div>
         </section>

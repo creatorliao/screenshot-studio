@@ -163,19 +163,21 @@ export default async function ComparisonPage({ params }: PageProps) {
               className="mb-6 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground"
               style={{ fontFamily: INTER }}
             >
-              Comparison
+              对比
+            
             </p>
             <h1
               className="mb-6 text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-5xl"
               style={{ fontFamily: INTER }}
             >
-              Screenshot Studio vs {data.competitorName}
+              Screenshot Studio 对比  {data.competitorName}
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
               {data.tagline}
             </p>
             <Link href="/" className={ctaClassName}>
-              Try Screenshot Studio Free
+              免费试用 Screenshot Studio
+            
             </Link>
           </div>
         </section>
@@ -186,14 +188,16 @@ export default async function ComparisonPage({ params }: PageProps) {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Feature Comparison
+              功能对比
+            
             </h2>
             <div className="overflow-x-auto rounded-2xl bg-card ring-1 ring-inset ring-border shadow-[var(--card-highlight-shadow)]">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="border-b border-border">
                     <th className="px-4 py-4 text-left text-sm font-semibold text-muted-foreground">
-                      Feature
+                      功能
+                    
                     </th>
                     <th className="px-4 py-4 text-left text-sm font-semibold text-foreground">
                       Screenshot Studio
@@ -234,7 +238,8 @@ export default async function ComparisonPage({ params }: PageProps) {
                   className="mb-6 text-2xl font-semibold tracking-[-0.03em] text-foreground"
                   style={{ fontFamily: INTER }}
                 >
-                  Screenshot Studio Advantages
+                  Screenshot Studio 优势
+                
                 </h2>
                 <ul className="space-y-3">
                   {data.studioAdvantages.map((adv) => (
@@ -254,7 +259,8 @@ export default async function ComparisonPage({ params }: PageProps) {
                   className="mb-6 text-2xl font-semibold tracking-[-0.03em] text-muted-foreground"
                   style={{ fontFamily: INTER }}
                 >
-                  {data.competitorName} Limitations
+                  {data.competitorName} 局限
+                
                 </h2>
                 <ul className="space-y-3">
                   {data.competitorLimitations.map((lim) => (
@@ -282,7 +288,8 @@ export default async function ComparisonPage({ params }: PageProps) {
               className="mb-4 text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              The Verdict
+              结论
+            
             </h2>
             <p className="text-lg text-muted-foreground">{data.verdict}</p>
           </div>
@@ -294,7 +301,8 @@ export default async function ComparisonPage({ params }: PageProps) {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Frequently Asked Questions
+              常见问题
+            
             </h2>
             <div className="space-y-6">
               {data.faqs.map((faq) => (
@@ -318,7 +326,8 @@ export default async function ComparisonPage({ params }: PageProps) {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Other Comparisons
+              其他对比
+            
             </h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {otherComparisons.map((comp) => (
@@ -328,7 +337,7 @@ export default async function ComparisonPage({ params }: PageProps) {
                   className={chipLinkClassName}
                 >
                   <span>
-                    vs {comp.competitorName}
+                    对比  {comp.competitorName}
                   </span>
                   <ArrowRight01Icon
                     size={14}
@@ -347,14 +356,16 @@ export default async function ComparisonPage({ params }: PageProps) {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
               style={{ fontFamily: INTER }}
             >
-              Try Screenshot Studio Free
+              免费试用 Screenshot Studio
+            
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              No signup. No downloads. No watermarks. Open the editor and see
-              the difference.
+              无需注册。无需下载。没有水印。打开编辑器，看看有什么不同。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Open Free Editor
+              打开免费编辑器
+            
             </Link>
           </div>
         </section>

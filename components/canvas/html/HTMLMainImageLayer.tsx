@@ -585,7 +585,7 @@ export function HTMLMainImageLayer({
         <div style={getImageContainerStyle()}>
           <img
             src={image.src}
-            alt="Main image"
+            alt="主图"
             draggable={false}
             style={{
               width: '100%',

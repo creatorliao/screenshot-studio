@@ -6,14 +6,14 @@ import { Input } from '@/components/ui/input'
 import { Slider } from '@/components/ui/slider'
 
 const frameOptions = [
-  { value: 'none', label: 'None' },
-  { value: 'arc-light', label: 'Arc Light' },
-  { value: 'arc-dark', label: 'Arc Dark' },
-  { value: 'macos-light', label: 'macOS Light' },
-  { value: 'macos-dark', label: 'macOS Dark' },
-  { value: 'windows-light', label: 'Windows Light' },
-  { value: 'windows-dark', label: 'Windows Dark' },
-  { value: 'photograph', label: 'Photograph' },
+  { value: 'none', label: '无' },
+  { value: 'arc-light', label: 'Arc 浅色' },
+  { value: 'arc-dark', label: 'Arc 深色' },
+  { value: 'macos-light', label: 'macOS 浅色' },
+  { value: 'macos-dark', label: 'macOS 深色' },
+  { value: 'windows-light', label: 'Windows 浅色' },
+  { value: 'windows-dark', label: 'Windows 深色' },
+  { value: 'photograph', label: '照片' },
 ] as const
 
 type FrameType = (typeof frameOptions)[number]['value']
@@ -130,10 +130,10 @@ export function BorderControls() {
 
   return (
     <div className="space-y-4">
-      <div className="text-sm font-semibold text-foreground">Frame</div>
+      <div className="text-sm font-semibold text-foreground">边框</div>
       <div className="space-y-4 pt-2">
         <div>
-          <label className="mb-2 block text-xs text-muted-foreground">Style</label>
+          <label className="mb-2 block text-xs text-muted-foreground">样式</label>
           <div className="grid grid-cols-4 gap-x-2 gap-y-4">
             {frameOptions.map(({ value }) => (
               <FramePreview
@@ -156,7 +156,7 @@ export function BorderControls() {
               min={1}
               max={20}
               step={1}
-              label="Frame Size"
+              label="边框尺寸"
               valueDisplay={`${imageBorder.width}px`}
             />
             <Slider
@@ -165,7 +165,7 @@ export function BorderControls() {
               min={0}
               max={100}
               step={1}
-              label="Opacity"
+              label="不透明度"
               valueDisplay={`${Math.round((imageBorder.opacity ?? (imageBorder.type === 'arc-light' ? 0.5 : 0.7)) * 100)}%`}
             />
           </div>
@@ -174,13 +174,13 @@ export function BorderControls() {
         {showTitleInput && (
           <div>
             <label className="text-xs text-muted-foreground mb-2 block">
-              {isPhotograph ? 'Caption' : 'Title'}
+              {isPhotograph ? '说明文字' : '标题'}
             </label>
             <Input
               type="text"
               value={imageBorder.title || ''}
               onChange={(e) => setImageBorder({ title: e.target.value, enabled: true })}
-              placeholder={isPhotograph ? 'Write something...' : 'Window title'}
+              placeholder={isPhotograph ? '写点什么...' : '窗口标题'}
             />
           </div>
         )}

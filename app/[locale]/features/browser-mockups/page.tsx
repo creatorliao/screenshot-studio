@@ -12,9 +12,9 @@ import { Footer } from "@/components/landing/Footer";
 import { OG_DEFAULTS } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = {
-  title: "Free Browser Mockup Generator",
+  title: "免费浏览器模型生成器",
   description:
-    "Free browser mockup generator. Add Safari and Chrome frames to screenshots with light and dark modes, custom URL bar, and 3D perspective. No signup required.",
+    "免费浏览器模型生成器。为截图添加 Safari 和 Chrome 边框，支持浅色与深色模式、自定义 URL 栏和 3D 透视。无需注册。",
   keywords: [
     "browser mockup generator",
     "mockup screenshot",
@@ -69,9 +69,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Free Browser Mockup Generator - Safari & Chrome Frames",
+    title: "免费浏览器模型生成器 - Safari 与 Chrome 边框",
     description:
-      "Add realistic Safari and Chrome browser frames to screenshots. Light and dark modes, custom URL. Free, no signup.",
+      "为截图添加逼真的 Safari 和 Chrome 浏览器边框。亮色和暗色模式，自定义 URL。免费，无需注册。",
     url: "/features/browser-mockups",
   },
   alternates: {
@@ -94,78 +94,78 @@ const chipLinkClassName =
 const features = [
   {
     icon: BrowserIcon,
-    title: "Safari Browser Frame",
+    title: "Safari 浏览器边框",
     description:
-      "Realistic macOS Safari toolbar with traffic lights, sidebar, back/forward navigation, and centered address bar with lock icon.",
+      "逼真的 macOS Safari 工具栏，包含红绿灯按钮、侧边栏、前进/后退导航，以及带锁图标的居中地址栏。",
   },
   {
     icon: ComputerIcon,
-    title: "Chrome Browser Frame",
+    title: "Chrome 浏览器边框",
     description:
-      "Authentic Chrome toolbar with tab bar, active tab, colored traffic lights, and omnibox address bar.",
+      "逼真的 Chrome 工具栏，包含标签栏、活动标签、彩色红绿灯按钮和地址栏。",
   },
   {
     icon: Sun01Icon,
-    title: "Light & Dark Modes",
+    title: "浅色与深色模式",
     description:
-      "Every browser frame comes in both light and dark variants to match your screenshot content or brand style.",
+      "每个浏览器边框都提供浅色和深色两种变体，以匹配你的截图内容或品牌风格。",
   },
   {
     icon: Settings01Icon,
-    title: "Custom URL & Header Size",
+    title: "自定义 URL 与页头尺寸",
     description:
-      "Set a custom URL displayed in the address bar and adjust the toolbar height from 50% to 200% of the default size.",
+      "设置显示在地址栏中的自定义 URL，并在默认尺寸的 50% 到 200% 之间调整工具栏高度。",
   },
 ] as const;
 
 const useCases = [
   {
-    title: "SaaS Landing Pages",
+    title: "SaaS 落地页",
     description:
-      "Show your product in a browser frame to give visitors a realistic preview of your web app.",
+      "把产品放进浏览器边框展示，让访客真实预览你的 Web 应用。",
   },
   {
-    title: "Portfolio & Case Studies",
+    title: "作品集与案例",
     description:
-      "Present website designs with professional browser chrome for client portfolios.",
+      "用专业的浏览器外框展示网站设计，适用于客户作品集。",
   },
   {
-    title: "Blog & Documentation",
+    title: "博客与文档",
     description:
-      "Add browser context to screenshots in tutorials, guides, and technical articles.",
+      "为教程、指南和技术文章中的截图添加浏览器语境。",
   },
   {
-    title: "Social Media Posts",
+    title: "社交媒体帖子",
     description:
-      "Make your product screenshots stand out on Twitter, LinkedIn, and Product Hunt with polished browser frames.",
+      "用精致的浏览器边框，让你的产品截图在 Twitter、LinkedIn 和 Product Hunt 上脱颖而出。",
   },
 ];
 
 const howToSteps = [
   {
     step: "1",
-    title: "Upload Your Screenshot",
+    title: "上传你的截图",
     description:
-      "Drag and drop any image or paste from clipboard. Supports PNG, JPG, and WebP.",
+      "拖放任意图片，或从剪贴板粘贴。支持 PNG、JPG 和 WebP。",
   },
   {
     step: "2",
-    title: "Choose a Browser Frame",
+    title: "选择浏览器边框",
     description:
-      "Select Safari or Chrome in light or dark mode. Set a custom URL and adjust the header size to your liking.",
+      "在浅色或深色模式下选择 Safari 或 Chrome。设置自定义 URL，并按喜好调整标题栏尺寸。",
   },
   {
     step: "3",
-    title: "Export",
+    title: "导出",
     description:
-      "Download as PNG or JPG at up to 5x resolution. Add 3D perspective for even more depth.",
+      "以最高 5x 分辨率下载为 PNG 或 JPG。添加 3D 透视，层次更丰富。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/features/screenshot-beautifier", label: "Screenshot Beautifier" },
-  { href: "/features/3d-effects", label: "3D Effects" },
-  { href: "/features/social-media-graphics", label: "Social Media Graphics" },
+  { href: "/features/screenshot-beautifier", label: "截图美化" },
+  { href: "/features/3d-effects", label: "3D 效果" },
+  { href: "/features/social-media-graphics", label: "社交媒体图片" },
 ] as const;
 
 export default function BrowserMockupsPage() {
@@ -258,20 +258,22 @@ export default function BrowserMockupsPage() {
               className="mb-6 text-4xl font-semibold tracking-[-0.03em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Free Browser Mockup Generator
+              免费浏览器模型生成器
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Add realistic Safari and Chrome browser frames to your screenshots.
-              Light and dark modes, custom URL, adjustable header size.
+              为你的截图添加逼真的 Safari 和 Chrome 浏览器边框。亮色和暗色模式，自定义 URL，可调整顶栏高度。
+            
             </p>
             <div className="flex flex-col items-center">
               <Link href="/" className={ctaClassName}>
-                Add Browser Frame
+                添加浏览器边框
+              
               </Link>
               <p className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground/70">
-                <span>100% Free</span>
+                <span>100% 免费</span>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>No Signup Required</span>
+                <span>无需注册</span>
               </p>
             </div>
           </div>
@@ -283,7 +285,8 @@ export default function BrowserMockupsPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Realistic Browser Frames for Any Screenshot
+              适用于任何截图的逼真浏览器边框
+            
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {features.map((feature) => (
@@ -313,10 +316,12 @@ export default function BrowserMockupsPage() {
               className="mb-4 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Perfect For Every Use Case
+              适用于各种场景
+            
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-              Browser mockups add context and professionalism to any screenshot.
+              浏览器模型能为任何截图增添语境与专业感。
+            
             </p>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               {useCases.map((useCase) => (
@@ -339,7 +344,8 @@ export default function BrowserMockupsPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              How to Add a Browser Frame
+              如何添加浏览器边框
+            
             </h2>
             <div className="space-y-8">
               {howToSteps.map((item) => (
@@ -365,7 +371,8 @@ export default function BrowserMockupsPage() {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Explore More Features
+              探索更多功能
+            
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {relatedLinks.map((link) => (
@@ -391,14 +398,16 @@ export default function BrowserMockupsPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Ready to Add Browser Frames?
+              准备好添加浏览器边框了吗？
+            
             </h2>
             <p className="mb-8 text-muted-foreground">
-              Make your screenshots look professional with realistic browser
-              mockups.
+              用逼真的浏览器模型让截图更显专业。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Start Free
+              免费开始
+            
             </Link>
           </div>
         </section>

@@ -248,7 +248,7 @@ export const metadata: Metadata = {
     // bing: "your-bing-verification",
   },
   description:
-    "Free screenshot editor and mockup maker. Add gradient backgrounds, browser frames, shadows, 3D effects, and animations to screenshots in seconds. No signup.",
+    "免费截图编辑器与模型制作工具。几秒内为截图添加渐变背景、浏览器边框、阴影、3D 效果和动画。无需注册。",
   keywords: [
     // Primary keywords
     "screenshot editor online free",
@@ -345,9 +345,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Screenshot Studio",
-    title: "Screenshot Studio - Free Screenshot Editor Online",
+    title: "Screenshot Studio - 免费在线截图编辑器",
     description:
-      "Free screenshot editor online: create stunning social media graphics in seconds. 100+ backgrounds, animations, 3D effects, video export. No signup required.",
+      "免费在线截图编辑器：几秒内制作出色的社交媒体图片。100+ 背景、动画、3D 效果、视频导出。无需注册。",
     images: [
       {
         url: "https://www.screenshot-studio.com/og.jpg",
@@ -359,9 +359,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Screenshot Studio - Free Screenshot Editor Online",
+    title: "Screenshot Studio - 免费在线截图编辑器",
     description:
-      "Free screenshot editor online: transform screenshots into stunning graphics. Animations, 3D effects, video export. No signup.",
+      "免费在线截图编辑器：把截图变成出色的图片。动画、3D 效果、视频导出。无需注册。",
     images: ["https://www.screenshot-studio.com/og.jpg"],
     creator: "@screenshotstdio",
     site: "@screenshotstdio",
@@ -420,7 +420,7 @@ export default async function RootLayout({
         rel="alternate"
         type="text/markdown"
         href="/llms-full.txt"
-        title="LLMs Full Documentation"
+        title="LLMs 完整文档"
       />
       <body className={`${fontVariables} antialiased`}>
         <script

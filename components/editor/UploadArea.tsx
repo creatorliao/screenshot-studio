@@ -96,9 +96,10 @@ export function UploadArea({ onUpload, error, className }: UploadAreaProps) {
     <div ref={containerRef} className={cn("w-full max-w-2xl mx-auto", className)}>
       <div className="space-y-6 sm:space-y-8">
         <div className="text-center space-y-3">
-          <h2 className="text-xl sm:text-2xl font-semibold tracking-tight text-foreground">Upload Image</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold tracking-tight text-foreground">上传图片</h2>
           <p className="text-xs sm:text-sm text-muted-foreground px-2">
-            Drag and drop, paste, or click to upload an image
+            拖放、粘贴或点击上传图片
+          
           </p>
         </div>
 
@@ -128,14 +129,16 @@ export function UploadArea({ onUpload, error, className }: UploadAreaProps) {
           </div>
 
           {active ? (
-            <p className="text-sm sm:text-base font-medium text-foreground">Drop the image here...</p>
+            <p className="text-sm sm:text-base font-medium text-foreground">将图片拖到此处…</p>
           ) : (
             <div className="space-y-2 text-center px-2">
               <p className="text-sm sm:text-base font-medium text-foreground">
-                Drag & drop an image here
+                将图片拖放到此处
+              
               </p>
               <p className="text-xs sm:text-sm text-muted-foreground">
-                or tap to browse • PNG, JPG, WEBP up to {MAX_IMAGE_SIZE / 1024 / 1024}MB • or paste an image
+                或点击浏览 • PNG、JPG、WEBP，最大  {MAX_IMAGE_SIZE / 1024 / 1024}MB • 或粘贴图片
+              
               </p>
             </div>
           )}

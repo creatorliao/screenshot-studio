@@ -105,7 +105,7 @@ export function BackgroundPicker({
         <button
           type="button"
           disabled={disabled}
-          aria-label="Choose background"
+          aria-label="选择背景"
           className="size-6 shrink-0 rounded-md border border-white/15 disabled:opacity-40"
           style={{
             backgroundImage: previewCss.backgroundImage,
@@ -120,9 +120,9 @@ export function BackgroundPicker({
         className="max-h-[420px] w-80 overflow-y-auto border-white/10 bg-[#1f1f1f] p-3 text-white"
       >
         <div className="mb-3">
-          <SectionLabel>Theme</SectionLabel>
+          <SectionLabel>主题</SectionLabel>
           <Swatch
-            title="Theme gradient"
+            title="主题渐变"
             selected={background.kind === 'theme'}
             onClick={() => onBackgroundChange({ kind: 'theme', id: '' })}
             style={{
@@ -132,7 +132,7 @@ export function BackgroundPicker({
         </div>
 
         <div className="mb-3">
-          <SectionLabel>Gradients</SectionLabel>
+          <SectionLabel>渐变</SectionLabel>
           <div className="flex flex-wrap gap-1.5">
             {Object.entries(GRADIENT_PRESETS).map(([id, css]) => (
               <Swatch
@@ -147,7 +147,7 @@ export function BackgroundPicker({
         </div>
 
         <div className="mb-3">
-          <SectionLabel>Images</SectionLabel>
+          <SectionLabel>图片</SectionLabel>
           {IMAGE_CATEGORIES.map((category) => (
             <div key={category.id} className="mb-2 last:mb-0">
               <span className="mb-1 block text-[10px] text-white/40">{category.label}</span>
@@ -166,7 +166,7 @@ export function BackgroundPicker({
         </div>
 
         <div>
-          <SectionLabel>Patterns</SectionLabel>
+          <SectionLabel>图案</SectionLabel>
           <div className="flex flex-wrap gap-1.5">
             {PATTERN_PRESETS.map((pattern) => {
               const css = patternCss(pattern.id, dark ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.3)');

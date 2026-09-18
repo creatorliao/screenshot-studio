@@ -14,9 +14,9 @@ import {
 } from "hugeicons-react";
 
 export const metadata: Metadata = {
-  title: "Mockup & Screenshot Tool for Designers",
+  title: "面向设计师的模型与截图工具",
   description:
-    "Free mockup tool for UI/UX designers. Create app mockups, UI mockups, and portfolio screenshots with backgrounds, browser frames, and 3D effects. No signup.",
+    "面向 UI/UX 设计师的免费模型工具。用背景、浏览器边框和 3D 效果创建应用模型、UI 模型和作品集截图。无需注册。",
   keywords: [
     "screenshot tool for designers",
     "UI mockup creator",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Mockup & Screenshot Tool for Designers",
+    title: "面向设计师的模型与截图工具",
     description:
-      "Create app mockups, UI mockups, and portfolio screenshots with backgrounds, browser frames, and 3D effects. Free, no signup.",
+      "用背景、浏览器边框和 3D 效果制作应用模型、UI 模型和作品集截图。免费，无需注册。",
     url: "/for/designers",
   },
   alternates: {
@@ -84,50 +84,50 @@ const INTER =
 const useCases = [
   {
     icon: PaintBoardIcon,
-    title: "Portfolio Presentations",
+    title: "作品集演示",
     description:
-      "Showcase your UI designs with professional mockups and beautiful presentations",
+      "用专业模型和精美呈现展示你的 UI 设计",
   },
   {
     icon: ColorsIcon,
-    title: "Client Presentations",
+    title: "客户演示",
     description:
-      "Create polished mockups for client reviews and design presentations",
+      "为客户评审和设计演示制作精致的模型",
   },
   {
     icon: PenTool01Icon,
-    title: "Design Systems",
+    title: "设计系统",
     description:
-      "Document your design systems with clear, consistent visual examples",
+      "用清晰、一致的视觉示例记录你的设计系统",
   },
   {
     icon: SmartPhone01Icon,
-    title: "App Store Assets",
+    title: "App Store 素材",
     description:
-      "Generate stunning screenshots for App Store and Play Store listings",
+      "为 App Store 和 Play Store 商品页生成出色的截图",
   },
 ];
 
 const features = [
   {
     icon: Layers01Icon,
-    title: "Advanced Layering",
-    description: "Full control over layers, shadows, and visual hierarchy",
+    title: "高级图层",
+    description: "完全掌控图层、阴影和视觉层次",
   },
   {
     icon: EyeIcon,
-    title: "Precise Controls",
-    description: "Pixel-perfect adjustments for professional results",
+    title: "精准控制",
+    description: "像素级精准调整，成就专业效果",
   },
   {
     icon: ColorsIcon,
-    title: "Color Palettes",
-    description: "Beautiful gradients and solid colors for any brand",
+    title: "配色方案",
+    description: "适用于任何品牌的精美渐变和纯色",
   },
   {
     icon: SparklesIcon,
-    title: "Export Options",
-    description: "High-resolution exports in multiple formats",
+    title: "导出选项",
+    description: "多种格式的高分辨率导出",
   },
 ];
 
@@ -143,24 +143,28 @@ export default function ForDesignersPage() {
               className="mb-6 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground"
               style={{ fontFamily: INTER }}
             >
-              Built for Designers
+              专为设计师
+            
             </p>
             <h1
               className="mb-6 text-5xl font-semibold tracking-[-0.04em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Design Tools That Match Your Standards
+              符合你标准的设计工具
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-xl leading-relaxed text-muted-foreground">
-              Create portfolio-worthy screenshots and mockups with the precision
-              and control that designers demand. No compromises on quality.
+              用设计师要求的精确度和控制力，制作值得放进作品集的截图和模型。品质绝不妥协。
+            
             </p>
             <div className="mb-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/" className={ctaClassName}>
-                Start Designing Free
+                免费开始设计
+              
               </Link>
               <Link href="/features" className={secondaryCtaClassName}>
-                See All Features
+                查看全部功能
+              
               </Link>
             </div>
           </div>
@@ -174,11 +178,12 @@ export default function ForDesignersPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
               style={{ fontFamily: INTER }}
             >
-              Perfect for Every Design Workflow
+              适配各种设计流程
+            
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              From client presentations to portfolio pieces, we&apos;ve got you
-              covered
+              从客户提案到作品集，我们都能帮你搞定
+            
             </p>
           </div>
 
@@ -208,7 +213,8 @@ export default function ForDesignersPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
               style={{ fontFamily: INTER }}
             >
-              Features Designers Love
+              设计师喜爱的功能
+            
             </h2>
           </div>
 
@@ -240,26 +246,21 @@ export default function ForDesignersPage() {
               className="mb-6 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
               style={{ fontFamily: INTER }}
             >
-              A Mockup Tool Built for UI and UX Work
+              为 UI 和 UX 工作打造的模型工具
+            
             </h2>
             <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
               <p>
-                Export a frame from Figma, Sketch, or your running app, drop it
-                into Screenshot Studio, and get a presentation-ready UI mockup in
-                under a minute. Pick a browser frame or a clean device-style
-                window, set the padding and corner radius, and choose from more
-                than a hundred gradient and solid backgrounds.
+                从 Figma、Sketch 或正在运行的应用中导出画面，拖进 Screenshot Studio，不到一分钟就能得到可直接用于演示的 UI 模型。选择一个浏览器边框或简洁的设备样式窗口，设置内边距和圆角，再从一百多种渐变和纯色背景中挑选。
+              
               </p>
               <p>
-                For case studies and Dribbble shots, tilt the mockup in 3D to
-                add depth, or stack several screens into an animated walkthrough
-                and export it as a video. Everything renders at high resolution
-                so your work looks sharp on portfolio sites, Behance, and
-                LinkedIn.
+                对于案例研究和 Dribbble 作品，可以把模型做 3D 倾斜来增加纵深感，或者把多个界面叠成一段动画演示并导出为视频。所有内容都以高分辨率渲染，让你的作品在作品集网站、Behance 和 LinkedIn 上都清晰锐利。
+              
               </p>
               <p>
-                Screenshot Studio is free and open source, so you can use it for
-                client work without licenses, watermarks, or accounts.
+                Screenshot Studio 免费且开源，因此你可以把它用于客户项目，无需许可证、水印或账号。
+              
               </p>
             </div>
           </div>
@@ -273,13 +274,16 @@ export default function ForDesignersPage() {
               className="mb-6 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
               style={{ fontFamily: INTER }}
             >
-              Ready to Elevate Your Design Presentations?
+              准备好提升你的设计演示了吗？
+            
             </h2>
             <p className="mb-8 text-xl text-muted-foreground">
-              Join thousands of designers creating stunning visual content
+              加入成千上万设计师的行列，一起创作惊艳的视觉内容
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Start Creating Free
+              免费开始创作
+            
             </Link>
           </div>
         </div>

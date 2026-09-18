@@ -4,9 +4,9 @@ import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions",
+  title: "条款与条件",
   description:
-    "Terms and Conditions for using Screenshot Studio, the free, open-source screenshot beautifier.",
+    "使用 Screenshot Studio 的条款与条件，这是一款免费开源的截图美化工具。",
   alternates: {
     canonical: "/terms",
   },
@@ -28,10 +28,12 @@ export default function TermsPage() {
           className="mb-2 text-3xl font-semibold tracking-[-0.03em] text-foreground sm:text-4xl"
           style={{ fontFamily: INTER }}
         >
-          Terms & Conditions
+          条款与条件
+        
         </h1>
         <p className="mb-12 text-sm text-muted-foreground">
-          Last updated: June 2, 2026
+          最后更新：2026 年 6 月 2 日
+        
         </p>
 
         <div className="space-y-8">
@@ -40,12 +42,12 @@ export default function TermsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              1. Acceptance of Terms
+              1. 条款的接受
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              By accessing and using Screenshot Studio (&quot;the Service&quot;),
-              you agree to be bound by these Terms and Conditions. If you do not
-              agree to these terms, please do not use the Service.
+              访问并使用 Screenshot Studio（&quot;本服务&quot;）即表示你同意受本条款与条件的约束。如果你不同意这些条款，请勿使用本服务。
+            
             </p>
           </section>
 
@@ -54,20 +56,17 @@ export default function TermsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              2. Description of Service
+              2. 服务说明
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Screenshot Studio is a free, browser-based screenshot editing tool
-              that allows users to beautify screenshots with backgrounds,
-              frames, effects, and more. Editing happens in your browser, and images
-              you import are not uploaded to edit them. Exporting sends the
-              finished image to our compression endpoint, which returns it
-              without storing it, and capturing a screenshot from a URL sends
-              that address to a third-party capture service. Our{" "}
+              Screenshot Studio 是一款免费的、基于浏览器的截图编辑工具，用户可以用背景、边框、效果等美化截图。编辑在浏览器中进行，你导入的图片不会为了编辑而上传。导出会把成品图片发送到我们的压缩接口，接口返回图片后不会存储；从 URL 截取截图时，会把该地址发送给第三方截图服务。我们的{" "}
               <Link href="/privacy-policy" className={linkClassName}>
-                privacy policy
+                隐私政策
+              
               </Link>{" "}
-              describes both in full.
+              对两者都有完整说明。
+            
             </p>
           </section>
 
@@ -76,25 +75,26 @@ export default function TermsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              3. Use of Service
+              3. 服务的使用
+            
             </h2>
             <p className="mb-3 leading-relaxed text-muted-foreground">
-              You agree to use the Service only for lawful purposes. You may
-              not:
+              你同意仅将本服务用于合法目的。你不得：
+            
             </p>
             <ul className="list-inside list-disc space-y-2 text-muted-foreground">
-              <li>Use the Service to create or distribute harmful content</li>
+              <li>使用本服务创建或传播有害内容</li>
               <li>
-                Attempt to interfere with the Service&apos;s operation or
-                security
+                试图干扰本服务的运行或安全
+              
               </li>
               <li>
-                Reverse-engineer the Service beyond what the open-source license
-                permits
+                对服务进行超出开源许可范围的反向工程
+              
               </li>
               <li>
-                Use the Service in any way that violates applicable laws or
-                regulations
+                以任何违反适用法律法规的方式使用本服务
+              
               </li>
             </ul>
           </section>
@@ -104,20 +104,19 @@ export default function TermsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              4. Intellectual Property
+              4. 知识产权
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              The images you create with Screenshot Studio belong to you. We
-              claim no ownership or rights over content you produce using the
-              tool. The Screenshot Studio software itself is open source and
-              licensed under the terms specified in our{" "}
+              你用 Screenshot Studio 创建的图片归你所有。我们不对你使用该工具创作的内容主张任何所有权或权利。Screenshot Studio 软件本身是开源的，其许可条款见我们的{" "}
               <Link
                 href="https://github.com/opennookorg/screenshot-studio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={linkClassName}
               >
-                GitHub repository
+                GitHub 仓库
+              
               </Link>
               .
             </p>
@@ -128,13 +127,12 @@ export default function TermsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              5. Disclaimer of Warranties
+              5. 免责声明
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              The Service is provided &quot;as is&quot; and &quot;as
-              available&quot; without warranties of any kind, either express or
-              implied. We do not guarantee that the Service will be
-              uninterrupted, error-free, or free of harmful components.
+              本服务按“原样”和“现有可用”提供，不附带任何明示或暗示的保证。我们不保证本服务不会中断、没有错误或不含有害组件。
+            
             </p>
           </section>
 
@@ -143,12 +141,12 @@ export default function TermsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              6. Limitation of Liability
+              6. 责任限制
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              In no event shall Screenshot Studio or its creator be liable for
-              any indirect, incidental, special, consequential, or punitive
-              damages arising out of or related to your use of the Service.
+              在任何情况下，Screenshot Studio 或其创作者均不对因你使用本服务而产生或与之相关的任何间接、附带、特殊、后果性或惩罚性损害承担责任。
+            
             </p>
           </section>
 
@@ -157,12 +155,12 @@ export default function TermsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              7. Changes to Terms
+              7. 条款变更
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              We reserve the right to modify these terms at any time. Changes
-              will be posted on this page with an updated date. Continued use of
-              the Service after changes constitutes acceptance of the new terms.
+              我们保留随时修改这些条款的权利。变更将在本页面公布并附上更新日期。变更后继续使用本服务即视为接受新条款。
+            
             </p>
           </section>
 
@@ -171,12 +169,14 @@ export default function TermsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              8. Contact
+              8. 联系我们
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              For questions about these terms, please visit our{" "}
+              如对这些条款有疑问，请访问我们的{" "}
               <Link href="/contact" className={linkClassName}>
-                contact page
+                联系页面
+              
               </Link>
               .
             </p>

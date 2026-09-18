@@ -79,24 +79,25 @@ export function DraftIndicator({
               className="h-7 px-2 text-xs text-destructive hover:text-primary  hover:bg-secondary/10"
             >
               <Delete02Icon size={12} className="mr-1" />
-              <span className="hidden sm:inline">Clear Draft</span>
+              <span className="hidden sm:inline">清除草稿</span>
             </Button>
           </AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>Delete draft?</AlertDialogTitle>
+              <AlertDialogTitle>删除草稿？</AlertDialogTitle>
               <AlertDialogDescription>
-                This will permanently delete your saved draft and clear the
-                current canvas. This action cannot be undone.
+                这将永久删除你保存的草稿并清空当前画布。此操作无法撤销。
+              
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogCancel>取消</AlertDialogCancel>
               <AlertDialogAction
                 onClick={onClearDraft}
                 className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
               >
-                Delete Draft
+                删除草稿
+              
               </AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>

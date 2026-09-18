@@ -196,7 +196,7 @@ export function EditorHeader() {
             type="button"
             onClick={() => setShowTemplates(!showTemplates)}
             aria-expanded={showTemplates}
-            aria-label="Templates"
+            aria-label="模板"
             className={cn(
               "inline-flex items-center gap-1.5 h-8 px-2 rounded-md shrink-0 cursor-pointer",
               "text-sm font-medium leading-none transition-colors duration-150",
@@ -206,7 +206,7 @@ export function EditorHeader() {
             )}
           >
             <MagicWand01Icon size={14} className="shrink-0" />
-            {!isMobile ? <span>Templates</span> : null}
+            {!isMobile ? <span>模板</span> : null}
           </button>
         </div>
 
@@ -228,7 +228,7 @@ export function EditorHeader() {
                     ? "hover:text-foreground active:scale-95"
                     : "opacity-40 cursor-not-allowed",
                 )}
-                title="Undo (Cmd+Z)"
+                title="撤销（Cmd+Z）"
               >
                 <ArrowTurnBackwardIcon size={16} />
               </button>
@@ -242,7 +242,7 @@ export function EditorHeader() {
                     ? "hover:text-foreground active:scale-95"
                     : "opacity-40 cursor-not-allowed",
                 )}
-                title="Redo (Cmd+Shift+Z)"
+                title="重做（Cmd+Shift+Z）"
               >
                 <ArrowTurnForwardIcon size={16} />
               </button>
@@ -263,7 +263,7 @@ export function EditorHeader() {
                     ? "bg-muted text-foreground"
                     : "text-muted-foreground hover:text-foreground",
                 )}
-                title="Toggle rulers"
+                title="切换标尺"
               >
                 <RulerIcon size={15} />
               </button>
@@ -272,7 +272,7 @@ export function EditorHeader() {
                   value={rulerInterval}
                   onChange={(e) => setRulerInterval(Number(e.target.value))}
                   className="h-8 px-1.5 text-[11px] rounded-md bg-muted text-foreground border-0 outline-none cursor-pointer shrink-0"
-                  title="Ruler interval"
+                  title="标尺间隔"
                 >
                   <option value={25}>25px</option>
                   <option value={50}>50px</option>
@@ -288,7 +288,7 @@ export function EditorHeader() {
                     ? "bg-muted text-foreground"
                     : "text-muted-foreground hover:text-foreground",
                 )}
-                title="Toggle grid"
+                title="切换网格"
               >
                 <GridIcon size={15} />
               </button>
@@ -314,7 +314,7 @@ export function EditorHeader() {
                   <span className="text-xs leading-none">
                     {currentAspectRatio
                       ? `${currentAspectRatio.width}:${currentAspectRatio.height}`
-                      : "Auto"}
+                      : "自动"}
                   </span>
                 </Button>
               </PopoverTrigger>
@@ -345,7 +345,7 @@ export function EditorHeader() {
                 />
                 <span className="h-8 inline-flex items-center justify-center gap-1.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted text-xs leading-none transition-all font-medium px-2.5">
                   <Add01Icon size={14} />
-                  <span>Add Slide</span>
+                  <span>添加幻灯片</span>
                 </span>
               </label>
             ) : null}
@@ -359,14 +359,14 @@ export function EditorHeader() {
               disabled={!hasImage || isExporting || isCopying}
               variant="ghost"
               size="sm"
-              aria-label="Copy"
+              aria-label="复制"
               className={cn(
                 "h-8 gap-1.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-transparent dark:hover:bg-transparent text-xs leading-none shrink-0",
                 isMobile ? "px-1.5" : "px-2.5"
               )}
             >
               <Copy01Icon size={15} />
-              {!isMobile ? <span>Copy</span> : null}
+              {!isMobile ? <span>复制</span> : null}
             </Button>
 
             <Popover
@@ -377,14 +377,14 @@ export function EditorHeader() {
                 <Button
                   disabled={!hasImage}
                   size="sm"
-                  aria-label="Save"
+                  aria-label="保存"
                   className={cn(
                     "h-8 gap-1.5 rounded-md text-xs font-medium leading-none shrink-0",
                     isMobile ? "px-2" : "px-3"
                   )}
                 >
                   <Download04Icon size={15} />
-                  {!isMobile ? <span>Save</span> : null}
+                  {!isMobile ? <span>保存</span> : null}
                 </Button>
               </PopoverTrigger>
               <PopoverContent
@@ -399,10 +399,12 @@ export function EditorHeader() {
                 {isExporting ? (
                   <div className="p-5">
                     <p className="text-sm font-medium text-foreground mb-1">
-                      Exporting...
+                      正在导出...
+                    
                     </p>
                     <p className="text-xs text-muted-foreground mb-4">
-                      Rendering your creation
+                      正在渲染你的作品
+                    
                     </p>
                     <ImageExportProgressView
                       progress={progress}
@@ -437,7 +439,7 @@ export function EditorHeader() {
                       className="w-full h-10 text-sm font-semibold rounded-md transition-all"
                     >
                       <Download01Icon size={16} className="mr-2" />
-                      Export as {formatLabel}
+                      导出为  {formatLabel}
                     </Button>
 
                     {slides.length > 1 && (
@@ -448,7 +450,7 @@ export function EditorHeader() {
                         className="w-full h-10 text-sm font-semibold rounded-md transition-all"
                       >
                         <FileZipIcon size={16} className="mr-2" />
-                        Export All ({slides.length})
+                        全部导出（{slides.length})
                       </Button>
                     )}
                   </div>
@@ -463,7 +465,7 @@ export function EditorHeader() {
                 className="h-8 gap-1.5 rounded-md text-xs font-medium leading-none px-3 shrink-0"
               >
                 <Video01Icon size={14} />
-                <span>Export Video</span>
+                <span>导出视频</span>
               </Button>
             ) : null}
           </div>
@@ -480,7 +482,7 @@ export function EditorHeader() {
                       "text-muted-foreground transition-all duration-150",
                       "hover:text-foreground active:scale-95",
                     )}
-                    title="Reset to defaults"
+                    title="重置为默认值"
                   >
                     <RefreshIcon size={16} />
                   </button>
@@ -493,7 +495,7 @@ export function EditorHeader() {
                     className="h-8 gap-1.5 px-2.5 text-xs leading-none text-muted-foreground hover:text-destructive hover:bg-transparent dark:hover:bg-transparent shrink-0"
                   >
                     <Delete02Icon size={14} />
-                    <span>Remove</span>
+                    <span>移除</span>
                   </Button>
                 ) : null}
               </div>

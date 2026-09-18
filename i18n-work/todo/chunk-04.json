@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s0560",
+    "en": "Bottom Up",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0561",
+    "en": "Breadcrumb",
+    "count": 1,
+    "where": "components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s0562",
+    "en": "Breathe 3D",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0563",
+    "en": "Breeze",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s0564",
+    "en": "Brightness",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s0565",
+    "en": "Bring screenshots to life with zoom, pan, and fade animations. Export as video or GIF.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0566",
+    "en": "Bring to front",
+    "count": 1,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx"
+  },
+  {
+    "id": "s0567",
+    "en": "Bring your screenshots to life with keyframe animations and export as MP4, WebM, or GIF.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0568",
+    "en": "Bring your screenshots to life with stunning animations. Create zoom effects, smooth pans, and animated slideshows. Export to video or GIF.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0569",
+    "en": "Browser frames are shared components. Identical rendering in both 2D and 3D perspective views",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0570",
+    "en": "Browser mockups add context and professionalism to any screenshot.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0571",
+    "en": "Browser not supported",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0572",
+    "en": "Browser storage is full. Export your work — recent changes may not survive a reload.",
+    "count": 1,
+    "where": "hooks/useAutosaveDraft.ts"
+  },
+  {
+    "id": "s0573",
+    "en": "Browser style previews in the editor now match the style section card layout",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0574",
+    "en": "Build ad images that stop the scroll. Beautified product screenshots with eye-catching backgrounds and angles outperform generic stock photos.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0575",
+    "en": "Build step-by-step tutorials by combining screenshots into animated slideshows with clear transitions.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0576",
+    "en": "Building an agent",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0577",
+    "en": "Built By",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s0578",
+    "en": "Built for Designers",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0579",
+    "en": "Built for Developers",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0580",
+    "en": "Built for Every Use Case",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0581",
+    "en": "Built for Marketers",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0582",
+    "en": "Built-in Presets",
+    "count": 1,
+    "where": "components/presets/PresetGallery.tsx"
+  },
+  {
+    "id": "s0583",
+    "en": "Buy Me Coffee",
+    "count": 1,
+    "where": "components/SponsorButton.tsx"
+  },
+  {
+    "id": "s0584",
+    "en": "By accessing and using Screenshot Studio (&quot;the Service&quot;), you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the Service.",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0585",
+    "en": "by Screenshot Studio",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0586",
+    "en": "Can I create animations and videos?",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s0587",
+    "en": "Can I create tweet screenshots or code snippet images?",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s0588",
+    "en": "Can I crop several images at once?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0589",
+    "en": "Can I crop to a specific aspect ratio?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0590",
+    "en": "Can I process several images at once?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0591",
+    "en": "Can I resize images to the same size in bulk?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0592",
+    "en": "Candy",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s0593",
+    "en": "Canvas",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s0594",
+    "en": "Canvas Settings",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0595",
+    "en": "Canvas Size",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0596",
+    "en": "Caption",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s0597",
+    "en": "Capture a page and write the PNG to disk in one command.",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0598",
+    "en": "Capturing a screenshot from a URL:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0599",
+    "en": "Capturing screenshot...",
+    "count": 1,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s0600",
+    "en": "Capturing...",
+    "count": 1,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s0601",
+    "en": "Carbon",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s0602",
+    "en": "Carbon alternative",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0603",
+    "en": "carry the same human-readable text, and",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0604",
+    "en": "Center Stage",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0605",
+    "en": "change",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0606",
+    "en": "Change",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0607",
+    "en": "Change aspect ratio to fit different platforms",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0608",
+    "en": "changelog",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0609",
+    "en": "Changelog - Latest Updates & Features",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0610",
+    "en": "Changelog - Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0611",
+    "en": "Changelog page redesigned with a cleaner, minimal layout grouped by change type",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0612",
+    "en": "Changes",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0613",
+    "en": "Charcoal",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0614",
+    "en": "Children",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0615",
+    "en": "Chinmay Kabi",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0616",
+    "en": "Choose a background template for your showcase",
+    "count": 1,
+    "where": "components/templates/TemplateSelector.tsx"
+  },
+  {
+    "id": "s0617",
+    "en": "Choose a background, add shadows, apply 3D transforms, or pick a one-click preset.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0618",
+    "en": "Choose a Browser Frame",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0619",
+    "en": "Choose a frame",
+    "count": 1,
+    "where": "components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s0620",
+    "en": "Choose a new frame",
+    "count": 1,
+    "where": "components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s0621",
+    "en": "Choose a syntax theme, a gradient, padding, and whether to show line numbers or a window frame.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0622",
+    "en": "Choose Animation Preset",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0623",
+    "en": "Choose another image",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s0624",
+    "en": "Choose background",
+    "count": 1,
+    "where": "components/code-image/BackgroundPicker.tsx"
+  },
+  {
+    "id": "s0625",
+    "en": "Choose from our library of professional animation presets or customize your own with the timeline editor.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0626",
+    "en": "Choose from stunning gradients, solid colors, or upload your own custom backgrounds.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0627",
+    "en": "Choose Your Style",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0628",
+    "en": "Chrome",
+    "count": 1,
+    "where": "components/editor/sections/BrowserMockupSection.tsx"
+  },
+  {
+    "id": "s0629",
+    "en": "Chrome Browser Frame",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0630",
+    "en": "Chrome browser frame (light & dark) with tab bar, active tab, and omnibox address bar",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0631",
+    "en": "Chrome Dark",
+    "count": 1,
+    "where": "components/editor/sections/BrowserMockupSection.tsx"
+  },
+  {
+    "id": "s0632",
+    "en": "Circle",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0633",
+    "en": "Circles",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s0634",
+    "en": "Classic documentary-style slow zoom and pan combo",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0635",
+    "en": "clean",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0636",
+    "en": "Clean Angle",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0637",
+    "en": "Clean Apple-style product reveal with tilt and scale",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0638",
+    "en": "Clean magazine-style presentation",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s0639",
+    "en": "Clean white background",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s0640",
+    "en": "Clear Draft",
+    "count": 1,
+    "where": "components/editor/DraftIndicator.tsx"
+  },
+  {
+    "id": "s0641",
+    "en": "Clear site data in your browser to remove every draft, image, and preference stored locally.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0642",
+    "en": "Clear tweet URL",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0643",
+    "en": "CLI and MCP server",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0644",
+    "en": "Click an empty device screen to upload. Double-click a filled screen to replace its image.",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0645",
+    "en": "Click any preset to add it to the timeline. You can add multiple animations and arrange them.",
+    "count": 1,
+    "where": "components/timeline/AnimationPresetGallery.tsx"
+  },
+  {
+    "id": "s0646",
+    "en": "Click presets to add more, or drag clips in timeline",
+    "count": 1,
+    "where": "components/timeline/AnimationPresetGallery.tsx"
+  },
+  {
+    "id": "s0647",
+    "en": "Click to add",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0648",
+    "en": "clip",
+    "count": 1,
+    "where": "components/editor/RightSettingsPanel.tsx"
+  },
+  {
+    "id": "s0649",
+    "en": "Close timeline",
+    "count": 1,
+    "where": "components/timeline/TimelineControls.tsx"
+  },
+  {
+    "id": "s0650",
+    "en": "Cloud Storage",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0651",
+    "en": "Cmd/Ctrl+S",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0652",
+    "en": "Cmd/Ctrl+Shift+C",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0653",
+    "en": "code",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0654",
+    "en": "Code",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0655",
+    "en": "Code editor",
+    "count": 1,
+    "where": "components/code-image/CodeFrame.tsx"
+  },
+  {
+    "id": "s0656",
+    "en": "Code Images are now a standalone tool.",
+    "count": 1,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s0657",
+    "en": "Code snippet generator moved out of the main screenshot editor sidebar into its own page, linked from a Code Images card",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0658",
+    "en": "Code Snippet Sharing",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0659",
+    "en": "Code themed",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s0660",
+    "en": "Code to image",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0661",
+    "en": "Code to Image Generator",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s0662",
+    "en": "Code to Image Generator - Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0663",
+    "en": "Code to Image Generator: Free Code Screenshots",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0664",
+    "en": "Color Filters",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s0665",
+    "en": "Color Palettes",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0666",
+    "en": "Combine multiple screenshots into animated slideshows with transitions.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0667",
+    "en": "Coming from another tool? See how it compares to",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s0668",
+    "en": "Coming Soon",
+    "count": 1,
+    "where": "components/ui/coming-soon-dialog.tsx"
+  },
+  {
+    "id": "s0669",
+    "en": "Common",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s0670",
+    "en": "Compare",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s0671",
+    "en": "Comparison",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s0672",
+    "en": "Complete list of Screenshot Studio features and tools",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0673",
+    "en": "Complete Revamp",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0674",
+    "en": "Completely Free",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0675",
+    "en": "Complex Tilt",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s0676",
+    "en": "Complex Tilt Reverse",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s0677",
+    "en": "Compress Image",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0678",
+    "en": "Compress Image Online: Free, Private, No Upload",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0679",
+    "en": "Compress, convert, resize, crop, and rotate images in your browser. Batch processing, no signup, no watermark, and nothing is ever uploaded.",
+    "count": 1,
+    "where": "app/[locale]/tools/page.tsx"
+  },
+  {
+    "id": "s0680",
+    "en": "Compress, convert, resize, crop, and rotate images in your browser. Free, no signup, nothing uploaded.",
+    "count": 1,
+    "where": "lib/seo/tool-metadata.ts"
+  },
+  {
+    "id": "s0681",
+    "en": "Compress, convert, resize, crop, and rotate images without uploading them anywhere. Every tool below runs entirely inside your browser, works on a whole folder at once, and costs nothing.",
+    "count": 1,
+    "where": "app/[locale]/tools/page.tsx"
+  },
+  {
+    "id": "s0682",
+    "en": "Compression level",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0683",
+    "en": "Configure your video export settings",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0684",
+    "en": "Consistent Brand Assets",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0685",
+    "en": "Consistent Branding",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0686",
+    "en": "Content",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s0687",
+    "en": "Content-Type: text/markdown; charset=utf-8",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0688",
+    "en": "Contrast",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s0689",
+    "en": "Contributing",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0690",
+    "en": "Convert between PNG, JPG, and WebP in your browser. Batch conversion, quality control, no upload. Free, no signup, no watermark.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0691",
+    "en": "Convert Image",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0692",
+    "en": "Convert Image Format Online: PNG, JPG, WebP",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0693",
+    "en": "Convert to",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0694",
+    "en": "cookieless product analytics. Records page views, web vitals, JavaScript errors, and clicks on outgoing links.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0695",
+    "en": "Cookies",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0696",
+    "en": "copy",
+    "count": 1,
+    "where": "components/mockups/DeviceShell.tsx"
+  },
+  {
+    "id": "s0697",
+    "en": "Copy image",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0698",
+    "en": "Copy Image",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0699",
+    "en": "Copy UPI ID",
+    "count": 1,
+    "where": "components/SponsorButton.tsx"
+  }
+]

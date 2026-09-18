@@ -10,7 +10,7 @@ export function ExportProgressOverlay() {
   return (
     <div className="fixed inset-0 z-9999 bg-black/70 flex items-center justify-center">
       <div className="w-[320px] bg-background rounded-lg p-6 space-y-4">
-        <p className="text-sm font-medium text-center">Rendering video…</p>
+        <p className="text-sm font-medium text-center">正在渲染视频…</p>
         <div className="h-2 bg-muted rounded overflow-hidden">
           <div
             className="h-full bg-primary transition-all"

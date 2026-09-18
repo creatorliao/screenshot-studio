@@ -10,9 +10,9 @@ type BrowserStyle = 'safari' | 'safari-dark' | 'chrome' | 'chrome-dark';
 
 const browserStyles: { value: BrowserStyle; label: string; frameType: 'macos-light' | 'macos-dark' | 'windows-light' | 'windows-dark' }[] = [
   { value: 'safari', label: 'Safari', frameType: 'macos-light' },
-  { value: 'safari-dark', label: 'Safari Dark', frameType: 'macos-dark' },
+  { value: 'safari-dark', label: 'Safari 深色', frameType: 'macos-dark' },
   { value: 'chrome', label: 'Chrome', frameType: 'windows-light' },
-  { value: 'chrome-dark', label: 'Chrome Dark', frameType: 'windows-dark' },
+  { value: 'chrome-dark', label: 'Chrome 深色', frameType: 'windows-dark' },
 ];
 
 const frameToStyle: Record<string, BrowserStyle> = {
@@ -113,7 +113,7 @@ export function BrowserMockupSection() {
 
   return (
     <>
-      <SectionWrapper title="Style" defaultOpen={true}>
+      <SectionWrapper title="样式" defaultOpen={true}>
         <div className="space-y-3">
           <div className="grid grid-cols-2 gap-2 p-1">
             {browserStyles.map(({ value, label }) => {
@@ -167,7 +167,7 @@ export function BrowserMockupSection() {
         min={50}
         max={200}
         step={5}
-        label="Header size"
+        label="标题栏尺寸"
         valueDisplay={`${browserHeaderSize}%`}
       />
     </>

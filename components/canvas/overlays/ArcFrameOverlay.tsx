@@ -200,7 +200,7 @@ export function ArcFrameOverlay({
           {/* Image inside container */}
           <img
             src={image.src}
-            alt="Arc framed"
+            alt="Arc 边框"
             draggable={false}
             style={{
               width: '100%',

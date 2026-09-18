@@ -39,23 +39,23 @@ export function WebsiteScreenshotInput() {
       
       // Ensure URL has http or https protocol
       if (!['http:', 'https:'].includes(urlObj.protocol)) {
-        return { valid: false, error: 'URL must use http or https protocol' }
+        return { valid: false, error: 'URL 必须使用 http 或 https 协议' }
       }
       
       // Basic validation - must have a hostname
       if (!urlObj.hostname || urlObj.hostname.length === 0) {
-        return { valid: false, error: 'Please enter a valid URL with a domain name' }
+        return { valid: false, error: '请输入带域名的有效 URL' }
       }
       
       return { valid: true, normalized }
     } catch (error) {
-      return { valid: false, error: 'Please enter a valid URL (e.g., example.com or https://example.com)' }
+      return { valid: false, error: '请输入有效的 URL（例如 example.com 或 https://example.com）' }
     }
   }
 
   const handleCapture = async () => {
     if (!url.trim()) {
-      setError('Please enter a URL')
+      setError('请输入网址')
       return
     }
 
@@ -153,7 +153,8 @@ export function WebsiteScreenshotInput() {
     <div className="w-full space-y-4">
       <div className="space-y-2">
         <Label htmlFor="website-url" className="text-sm font-medium">
-          Website URL
+          网站 URL
+        
         </Label>
         <div className="flex gap-2">
           <div className="relative flex-1">
@@ -189,16 +190,18 @@ export function WebsiteScreenshotInput() {
             {isLoading ? (
               <>
                 <Loading03Icon className="h-4 w-4 mr-2 animate-spin" />
-                Capturing...
+                正在抓取...
+              
               </>
             ) : (
-              'Capture'
+              '截取'
             )}
           </Button>
         </div>
         <div className="flex items-center gap-3">
           <Label htmlFor="device-type" className="text-sm font-medium whitespace-nowrap">
-            Device Type:
+            设备类型：
+          
           </Label>
           <Select value={deviceType} onValueChange={(value) => setDeviceType(value as DeviceType)} disabled={isLoading}>
             <SelectTrigger id="device-type" className="w-[140px]">
@@ -206,12 +209,14 @@ export function WebsiteScreenshotInput() {
                 {deviceType === 'desktop' ? (
                   <span className="flex items-center gap-2">
                     <ComputerIcon className="h-4 w-4" />
-                    Desktop
+                    桌面端
+                  
                   </span>
                 ) : (
                   <span className="flex items-center gap-2">
                     <SmartPhone01Icon className="h-4 w-4" />
-                    Mobile
+                    移动端
+                  
                   </span>
                 )}
               </SelectValue>
@@ -220,20 +225,23 @@ export function WebsiteScreenshotInput() {
               <SelectItem value="desktop">
                 <span className="flex items-center gap-2">
                   <ComputerIcon className="h-4 w-4" />
-                  Desktop
+                  桌面端
+                
                 </span>
               </SelectItem>
               <SelectItem value="mobile">
                 <span className="flex items-center gap-2">
                   <SmartPhone01Icon className="h-4 w-4" />
-                  Mobile
+                  移动端
+                
                 </span>
               </SelectItem>
             </SelectContent>
           </Select>
         </div>
         <p className="text-xs text-muted-foreground">
-          Enter a website URL to capture a viewport screenshot. Choose desktop (1920x1080) or mobile (375x667) viewport size.
+          输入网站 URL 以截取视口截图。选择桌面端（1920x1080）或移动端（375x667）视口尺寸。
+        
         </p>
       </div>
 
@@ -247,10 +255,12 @@ export function WebsiteScreenshotInput() {
         <div className="rounded-lg border border-border bg-muted p-8 flex flex-col items-center justify-center min-h-[200px]">
           <Loading03Icon className="h-8 w-8 animate-spin text-primary mb-4" />
           <p className="text-sm text-muted-foreground">
-            Capturing screenshot...
+            正在抓取截图...
+          
           </p>
           <p className="text-xs text-muted-foreground mt-1">
-            This may take a few seconds
+            这可能需要几秒钟
+          
           </p>
         </div>
       )}

@@ -29,10 +29,10 @@ const ASPECTS: { id: AspectId; label: string; w: number; h: number }[] = [
 ];
 
 const BG_KINDS: { id: BgKind; label: string }[] = [
-  { id: "mesh", label: "Mesh" },
-  { id: "glow", label: "Glow" },
-  { id: "gradient", label: "Grad" },
-  { id: "solid", label: "Solid" },
+  { id: "mesh", label: "网格" },
+  { id: "glow", label: "辉光" },
+  { id: "gradient", label: "渐变" },
+  { id: "solid", label: "纯色" },
 ];
 
 const BACKGROUNDS: {
@@ -43,217 +43,217 @@ const BACKGROUNDS: {
 }[] = [
   {
     id: "mesh-warm",
-    label: "Warm",
+    label: "暖色",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_warm" },
   },
   {
     id: "mesh-ocean",
-    label: "Ocean",
+    label: "海洋",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_ocean" },
   },
   {
     id: "mesh-forest",
-    label: "Forest",
+    label: "森林",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_forest" },
   },
   {
     id: "mesh-peach",
-    label: "Peach",
+    label: "蜜桃",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_peach" },
   },
   {
     id: "mesh-mint",
-    label: "Mint",
+    label: "薄荷",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_mint" },
   },
   {
     id: "mesh-rose",
-    label: "Rose",
+    label: "玫瑰",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_rose" },
   },
   {
     id: "mesh-sunset",
-    label: "Sunset",
+    label: "日落",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_sunset" },
   },
   {
     id: "mesh-aurora",
-    label: "Aurora",
+    label: "极光",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_aurora" },
   },
   {
     id: "mesh-cosmic",
-    label: "Cosmic",
+    label: "宇宙",
     kind: "mesh",
     config: { type: "gradient", value: "mesh:mesh_cosmic" },
   },
   {
     id: "glow-gold",
-    label: "Gold",
+    label: "金色",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_gold_center" },
   },
   {
     id: "glow-cyan",
-    label: "Cyan",
+    label: "青色",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_cyan_center" },
   },
   {
     id: "glow-mint",
-    label: "Mint",
+    label: "薄荷",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_mint_center" },
   },
   {
     id: "glow-orange",
-    label: "Orange",
+    label: "橙色",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_orange_glow" },
   },
   {
     id: "glow-silver",
-    label: "Silver",
+    label: "银色",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_silver_center" },
   },
   {
     id: "glow-teal",
-    label: "Teal",
+    label: "青色",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_teal_center" },
   },
   {
     id: "glow-amber",
-    label: "Amber",
+    label: "琥珀色",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_amber_center" },
   },
   {
     id: "glow-ring",
-    label: "Ring",
+    label: "圆环",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_gold_ring" },
   },
   {
     id: "glow-corner",
-    label: "Corner",
+    label: "角落",
     kind: "glow",
     config: { type: "gradient", value: "magic:magic_silver_topleft" },
   },
   {
     id: "grad-warm",
-    label: "Warm",
+    label: "暖色",
     kind: "gradient",
     config: { type: "gradient", value: "vibrant_orange_pink" },
   },
   {
     id: "grad-teal",
-    label: "Teal",
+    label: "青色",
     kind: "gradient",
     config: { type: "gradient", value: "green_teal_navy" },
   },
   {
     id: "grad-ocean",
-    label: "Ocean",
+    label: "海洋",
     kind: "gradient",
     config: { type: "gradient", value: "teal_navy" },
   },
   {
     id: "grad-peach",
-    label: "Peach",
+    label: "蜜桃",
     kind: "gradient",
     config: { type: "gradient", value: "peach_coral" },
   },
   {
     id: "grad-lime",
-    label: "Lime",
+    label: "青柠",
     kind: "gradient",
     config: { type: "gradient", value: "cyan_lime" },
   },
   {
     id: "grad-sky",
-    label: "Sky",
+    label: "天空",
     kind: "gradient",
     config: { type: "gradient", value: "sky_blue" },
   },
   {
     id: "grad-mint",
-    label: "Mint",
+    label: "薄荷",
     kind: "gradient",
     config: { type: "gradient", value: "mint_sky" },
   },
   {
     id: "grad-night",
-    label: "Night",
+    label: "夜间",
     kind: "gradient",
     config: { type: "gradient", value: "navy_blue" },
   },
   {
     id: "grad-flare",
-    label: "Flare",
+    label: "光晕",
     kind: "gradient",
     config: { type: "gradient", value: "pink_orange" },
   },
   {
     id: "solid-ink",
-    label: "Ink",
+    label: "墨色",
     kind: "solid",
     config: { type: "solid", value: "#0a0a0a" },
   },
   {
     id: "solid-charcoal",
-    label: "Charcoal",
+    label: "炭黑",
     kind: "solid",
     config: { type: "solid", value: "#171717" },
   },
   {
     id: "solid-slate",
-    label: "Slate",
+    label: "石板灰",
     kind: "solid",
     config: { type: "solid", value: "#2a2a2a" },
   },
   {
     id: "solid-paper",
-    label: "Paper",
+    label: "纸张",
     kind: "solid",
     config: { type: "solid", value: "#e8e4df" },
   },
   {
     id: "solid-white",
-    label: "White",
+    label: "白色",
     kind: "solid",
     config: { type: "solid", value: "#ffffff" },
   },
   {
     id: "solid-sand",
-    label: "Sand",
+    label: "沙色",
     kind: "solid",
     config: { type: "solid", value: "#fff5e6" },
   },
   {
     id: "solid-blue",
-    label: "Blue",
+    label: "蓝色",
     kind: "solid",
     config: { type: "solid", value: "medium_blue" },
   },
   {
     id: "solid-coral",
-    label: "Coral",
+    label: "珊瑚",
     kind: "solid",
     config: { type: "solid", value: "coral_red" },
   },
   {
     id: "solid-mint",
-    label: "Mint",
+    label: "薄荷",
     kind: "solid",
     config: { type: "solid", value: "light_mint_green" },
   },
@@ -266,22 +266,22 @@ const LAYOUTS: {
 }[] = [
   {
     id: "flat",
-    label: "Flat",
+    label: "扁平",
     transform: "none",
   },
   {
     id: "tilt-left",
-    label: "Left",
+    label: "左",
     transform: "perspective(900px) rotateY(12deg) rotateX(3deg)",
   },
   {
     id: "tilt-right",
-    label: "Right",
+    label: "右",
     transform: "perspective(900px) rotateY(-12deg) rotateX(3deg)",
   },
   {
     id: "float",
-    label: "Float",
+    label: "悬浮",
     transform: "perspective(900px) rotateX(6deg) translateY(-2%)",
   },
 ];
@@ -541,7 +541,8 @@ export function EditorPreview(): React.JSX.Element {
                   }
                   className="inline-flex h-7 shrink-0 cursor-pointer items-center rounded-md bg-[var(--nav-cta-bg)] px-2.5 text-[11px] font-medium text-[var(--nav-cta-fg)] transition-[transform,box-shadow] duration-150 hover:shadow-[var(--nav-cta-hover-shadow)] active:scale-[0.98]"
                 >
-                  Open editor
+                  打开编辑器
+                
                 </Link>
               </div>
             </div>
@@ -550,7 +551,8 @@ export function EditorPreview(): React.JSX.Element {
               <aside className="flex flex-col gap-3.5 overflow-y-auto border-r border-border p-3">
                 <div>
                   <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                    Background
+                    背景
+                  
                   </p>
                   <div className="mb-2 grid grid-cols-4 gap-1">
                     {BG_KINDS.map((kind) => (
@@ -600,26 +602,27 @@ export function EditorPreview(): React.JSX.Element {
 
                 <div>
                   <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                    Frame
+                    边框
+                  
                   </p>
                   <div className="flex gap-1.5">
                     <FrameChip
                       active={!showFrame}
                       onClick={() => setShowFrame(false)}
                       icon={<Image01Icon size={13} />}
-                      label="None"
+                      label="无"
                     />
                     <FrameChip
                       active={showFrame}
                       onClick={() => setShowFrame(true)}
                       icon={<Globe02Icon size={13} />}
-                      label="Browser"
+                      label="浏览器"
                     />
                   </div>
                 </div>
 
                 <SliderRow
-                  label="Radius"
+                  label="圆角"
                   value={`${radius}px`}
                   min={0}
                   max={36}
@@ -628,7 +631,7 @@ export function EditorPreview(): React.JSX.Element {
                   disabled={showFrame}
                 />
                 <SliderRow
-                  label="Padding"
+                  label="内边距"
                   value={`${padding}px`}
                   min={16}
                   max={72}
@@ -636,7 +639,7 @@ export function EditorPreview(): React.JSX.Element {
                   onChange={setPadding}
                 />
                 <SliderRow
-                  label="Border"
+                  label="边框"
                   value={`${border}px`}
                   min={0}
                   max={12}
@@ -644,7 +647,7 @@ export function EditorPreview(): React.JSX.Element {
                   onChange={setBorder}
                 />
                 <SliderRow
-                  label="Noise"
+                  label="噪点"
                   value={`${noise}%`}
                   min={0}
                   max={40}
@@ -738,7 +741,7 @@ export function EditorPreview(): React.JSX.Element {
                         <Image
                           key={demo.src}
                           src={demo.src}
-                          alt="Sample screenshot in the editor preview"
+                          alt="编辑器预览中的示例截图"
                           fill
                           className={demoImageClass}
                           sizes="(max-width: 768px) 90vw, 640px"
@@ -761,7 +764,8 @@ export function EditorPreview(): React.JSX.Element {
               <aside className="flex flex-col gap-3.5 overflow-y-auto border-l border-border p-3">
                 <div>
                   <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                    Layout
+                    布局
+                  
                   </p>
                   <div className="grid grid-cols-2 gap-1.5">
                     {LAYOUTS.map((item) => {
@@ -808,7 +812,7 @@ export function EditorPreview(): React.JSX.Element {
                 </div>
 
                 <SliderRow
-                  label="Shadow"
+                  label="阴影"
                   value={`${shadow}%`}
                   min={0}
                   max={80}
@@ -816,7 +820,7 @@ export function EditorPreview(): React.JSX.Element {
                   onChange={setShadow}
                 />
                 <SliderRow
-                  label="Scale"
+                  label="缩放"
                   value={`${shotScale}%`}
                   min={70}
                   max={110}
@@ -826,7 +830,8 @@ export function EditorPreview(): React.JSX.Element {
 
                 <div>
                   <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                    Export
+                    导出
+                  
                   </p>
                   <div className="grid grid-cols-3 gap-1">
                     {(["PNG", "JPG", "WebP"] as const).map((fmt) => (
@@ -842,14 +847,15 @@ export function EditorPreview(): React.JSX.Element {
 
                 <div>
                   <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                    Quick look
+                    快速预览
+                  
                   </p>
                   <div className="flex flex-col gap-1.5">
                     {(
                       [
                         {
                           id: "clean",
-                          label: "Clean flat",
+                          label: "简洁扁平",
                           apply: () => {
                             setLayout("flat");
                             setShowFrame(false);
@@ -865,7 +871,7 @@ export function EditorPreview(): React.JSX.Element {
                         },
                         {
                           id: "browser",
-                          label: "Browser shot",
+                          label: "浏览器截图",
                           apply: () => {
                             setLayout("flat");
                             setShowFrame(true);
@@ -880,7 +886,7 @@ export function EditorPreview(): React.JSX.Element {
                         },
                         {
                           id: "glow",
-                          label: "Dark glow",
+                          label: "暗色辉光",
                           apply: () => {
                             setLayout("flat");
                             setShowFrame(false);

@@ -9,9 +9,9 @@ interface ValuePropositionProps {
 
 const features = [
   {
-    title: "Beautiful Backgrounds",
+    title: "精美背景",
     description:
-      "100+ gradients, solid colors, images, blur, and noise effects. Make any screenshot look stunning.",
+      "100+ 渐变、纯色、图片、模糊和噪点效果。让任何截图都出彩。",
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="2" y="2" width="16" height="16" rx="3" />
@@ -21,9 +21,9 @@ const features = [
     ),
   },
   {
-    title: "Device Frames",
+    title: "设备边框",
     description:
-      "macOS, Windows, Arc browser frames and Polaroid borders with customizable width and opacity.",
+      "macOS、Windows、Arc 浏览器边框和 Polaroid 边框，宽度和不透明度均可自定义。",
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="2" y="3" width="16" height="13" rx="2" />
@@ -35,9 +35,9 @@ const features = [
     ),
   },
   {
-    title: "3D Transforms",
+    title: "3D 变换",
     description:
-      "30+ perspective presets. Add depth and dimension with realistic rotation and tilt.",
+      "30+ 透视预设。用逼真的旋转和倾斜增添层次与立体感。",
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M3 14l7 4 7-4" />
@@ -47,9 +47,9 @@ const features = [
     ),
   },
   {
-    title: "Draw & Markup",
+    title: "绘制与标注",
     description:
-      "Arrows, shapes, blur regions, and text overlays. Annotate and highlight what matters.",
+      "箭头、形状、模糊区域和文字叠加。标注并突出关键内容。",
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M13.586 3.586a2 2 0 112.828 2.828l-8.793 8.793-3.535.707.707-3.536 8.793-8.792z" />
@@ -57,9 +57,9 @@ const features = [
     ),
   },
   {
-    title: "Animations & Video",
+    title: "动画与视频",
     description:
-      "20+ animation presets with timeline editor. Export as MP4, WebM, or GIF.",
+      "20+ 动画预设，配时间轴编辑器。可导出为 MP4、WebM 或 GIF。",
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
         <polygon points="6,3 18,10 6,17" />
@@ -67,9 +67,9 @@ const features = [
     ),
   },
   {
-    title: "Tweet & Code Snippets",
+    title: "推文与代码片段",
     description:
-      "Import tweets by URL. Generate beautiful code snippet images with 20+ themes.",
+      "通过 URL 导入推文。用 20+ 主题生成美观的代码片段图片。",
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M7 7l-4 3 4 3" />
@@ -79,9 +79,9 @@ const features = [
     ),
   },
   {
-    title: "High-Res Export",
+    title: "高分辨率导出",
     description:
-      "PNG or JPG up to 5x resolution. Fully in-browser, no server processing.",
+      "支持最高 5x 分辨率的 PNG 或 JPG。完全在浏览器内完成，不经服务器处理。",
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M10 3v10m0 0l-3-3m3 3l3-3" />
@@ -90,9 +90,9 @@ const features = [
     ),
   },
   {
-    title: "Custom Presets",
+    title: "自定义预设",
     description:
-      "Save and reuse your own canvas configurations. One-click to apply any saved style.",
+      "保存并复用你自己的画布配置。一键应用任何已保存的样式。",
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="3" y="3" width="6" height="6" rx="1" />
@@ -116,9 +116,10 @@ export function ValueProposition({
             {eyebrow}
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">
-            Everything you need.
+            你需要的，全都有。
+            
             <br />
-            <span className="text-muted-foreground">Nothing you don&apos;t.</span>
+            <span className="text-muted-foreground">没有多余的。</span>
           </h2>
         </div>
 

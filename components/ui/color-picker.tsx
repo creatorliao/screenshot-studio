@@ -344,7 +344,7 @@ export function ColorPicker({ color, onChange, className }: ColorPickerProps) {
                 min={0}
                 max={255}
                 step={1}
-                aria-label="Red"
+                aria-label="红色"
                 value={currentRgb[0]}
                 onChange={(e) => {
                   const r = Math.max(0, Math.min(255, Math.trunc(Number(e.target.value) || 0)));
@@ -361,7 +361,7 @@ export function ColorPicker({ color, onChange, className }: ColorPickerProps) {
                 min={0}
                 max={255}
                 step={1}
-                aria-label="Green"
+                aria-label="绿色"
                 value={currentRgb[1]}
                 onChange={(e) => {
                   const g = Math.max(0, Math.min(255, Math.trunc(Number(e.target.value) || 0)));
@@ -378,7 +378,7 @@ export function ColorPicker({ color, onChange, className }: ColorPickerProps) {
                 min={0}
                 max={255}
                 step={1}
-                aria-label="Blue"
+                aria-label="蓝色"
                 value={currentRgb[2]}
                 onChange={(e) => {
                   const b = Math.max(0, Math.min(255, Math.trunc(Number(e.target.value) || 0)));
@@ -395,7 +395,7 @@ export function ColorPicker({ color, onChange, className }: ColorPickerProps) {
                 min={0}
                 max={1}
                 step={0.01}
-                aria-label="Alpha"
+                aria-label="透明度"
                 value={alphaInput}
                 onChange={(e) => {
                   setAlphaInput(e.target.value);

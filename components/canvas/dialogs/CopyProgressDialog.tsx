@@ -18,10 +18,12 @@ export function CopyProgressDialog({ open, progress }: CopyProgressDialogProps) 
         <div className="p-6 pb-4">
           <DialogHeader className="pb-1">
             <DialogTitle className="text-xl font-semibold text-foreground">
-              Copying Image
+              正在复制图片
+            
             </DialogTitle>
             <p className="text-sm text-muted-foreground pt-1">
-              Preparing your image for the clipboard
+              正在准备图片以复制到剪贴板
+            
             </p>
           </DialogHeader>
         </div>

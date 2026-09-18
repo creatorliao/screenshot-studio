@@ -164,7 +164,7 @@ export function BackgroundSection() {
 
   return (
     <>
-      <SectionWrapper title="Light & Shadow" defaultOpen={true}>
+      <SectionWrapper title="光与影" defaultOpen={true}>
         <div className="space-y-3">
           <div className="grid grid-cols-3 gap-2 p-1">
             <button
@@ -176,7 +176,8 @@ export function BackgroundSection() {
                   : 'border-dashed border-foreground/15 text-muted-foreground hover:border-foreground/25 hover:bg-foreground/[0.04]'
               )}
             >
-              None
+              无
+            
             </button>
             {OVERLAY_SHADOW_URLS.slice(0, 11).map((shadowUrl, index) => (
               <button
@@ -201,7 +202,7 @@ export function BackgroundSection() {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper title="Custom Background" defaultOpen={true}>
+      <SectionWrapper title="自定义背景" defaultOpen={true}>
         <div className="grid grid-cols-3 gap-2 p-1">
           <div
             {...getBgRootProps()}
@@ -219,7 +220,7 @@ export function BackgroundSection() {
             )}>
               <Image01Icon size={14} className={customBgType === 'image' ? "text-foreground" : "text-muted-foreground"} />
             </div>
-            <span className={cn("text-[10px] font-medium", customBgType === 'image' ? "text-foreground" : "text-muted-foreground")}>Image</span>
+            <span className={cn("text-[10px] font-medium", customBgType === 'image' ? "text-foreground" : "text-muted-foreground")}>图片</span>
           </div>
 
           <ColorPicker
@@ -260,7 +261,7 @@ export function BackgroundSection() {
                 }}
               />
             </div>
-            <span className={cn("text-[10px] font-medium", customBgType === 'transparent' ? "text-foreground" : "text-muted-foreground")}>Transparent</span>
+            <span className={cn("text-[10px] font-medium", customBgType === 'transparent' ? "text-foreground" : "text-muted-foreground")}>透明</span>
           </button>
         </div>
         {bgUploadError && <p className="text-xs text-destructive mt-2">{bgUploadError}</p>}
@@ -269,7 +270,7 @@ export function BackgroundSection() {
           <div className="relative rounded-md overflow-hidden border border-foreground/10 aspect-video bg-foreground/[0.04] mt-3">
             <img
               src={backgroundConfig.value}
-              alt="Background"
+              alt="背景"
               className="w-full h-full object-cover"
             />
             <button
@@ -319,7 +320,7 @@ export function BackgroundSection() {
       ))}
 
       <SectionWrapper
-        title="Magic Gradients"
+        title="魔法渐变"
         defaultOpen={true}
         action={
           <button
@@ -362,7 +363,7 @@ export function BackgroundSection() {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper title="Gradients" defaultOpen={true}>
+      <SectionWrapper title="渐变" defaultOpen={true}>
         <div className="overflow-x-auto scrollbar-hide">
           <div
             className="grid grid-flow-col auto-cols-min gap-2 w-max"

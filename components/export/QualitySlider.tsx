@@ -28,7 +28,7 @@ export function QualitySlider({
         min={min}
         max={max}
         step={step}
-        label="JPEG Quality"
+        label="JPEG 质量"
         valueDisplay={`${Math.round(quality * 100)}%`}
       />
     </div>

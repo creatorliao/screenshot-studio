@@ -325,7 +325,7 @@ export function TweetImportSection() {
     async (input: string) => {
       const id = parseTweetId(input);
       if (!id) {
-        setError('Enter a valid tweet URL or ID');
+        setError('请输入有效的推文网址或 ID');
         return;
       }
 
@@ -432,7 +432,7 @@ export function TweetImportSection() {
       }
     } catch (e) {
       console.error('Tweet capture failed:', e);
-      setError('Failed to capture tweet');
+      setError('推文抓取失败');
       setStatus('loaded');
     }
   }, [setUploadedImageUrl, setImageOpacity, setImageScale, setBorderRadius, tweetTheme, selectedAspectRatio]);
@@ -452,8 +452,8 @@ export function TweetImportSection() {
               <NewTwitterIcon size={18} />
             </span>
             <span className="min-w-0 flex-1">
-              <span className="block text-sm font-medium text-foreground">Add a Tweet</span>
-              <span className="block truncate text-xs text-muted-foreground">Turn any X post into an image</span>
+              <span className="block text-sm font-medium text-foreground">添加推文</span>
+              <span className="block truncate text-xs text-muted-foreground">把任意 X 推文变成图片</span>
             </span>
             <ArrowDown01Icon
               size={16}
@@ -469,7 +469,8 @@ export function TweetImportSection() {
             <div>
               <div className="space-y-3 border-t border-foreground/10 px-3 pb-3 pt-3">
           <p className="whitespace-nowrap text-[10px] leading-4 text-muted-foreground">
-            Fetch, preview, then add to canvas.
+            获取、预览，然后添加到画布。
+          
           </p>
 
           <div className="space-y-2">
@@ -477,7 +478,8 @@ export function TweetImportSection() {
               htmlFor="tweet-url"
               className="block text-[10px] font-medium leading-4 text-foreground"
             >
-              Tweet URL
+              推文 URL
+            
             </label>
 
             <div className="relative">
@@ -513,7 +515,7 @@ export function TweetImportSection() {
                     setTweetData(null);
                     setStatus('idle');
                   }}
-                  aria-label="Clear tweet URL"
+                  aria-label="清除推文链接"
                   className="absolute right-1.5 top-1/2 flex size-7 -translate-y-1/2 cursor-pointer items-center justify-center rounded-md text-muted-foreground after:absolute after:-inset-2 after:content-[''] hover:bg-foreground/6 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                 >
                   <Cancel01Icon size={13} aria-hidden="true" />
@@ -539,10 +541,12 @@ export function TweetImportSection() {
                   onClick={() => fetchTweet(urlInput)}
                   className="h-9 w-full text-[11px] max-[768px]:h-11"
                 >
-                  Fetch tweet
+                  获取推文
+                
                 </Button>
                 <p className="mt-2 text-[9px] leading-4 text-muted-foreground">
-                  You will review the screenshot before it reaches the canvas.
+                  截图在进入画布之前会先让你确认。
+                
                 </p>
               </div>
             ) : null}
@@ -564,10 +568,12 @@ export function TweetImportSection() {
                 </div>
                 <div className="min-w-0">
                   <p className="text-[11px] font-semibold leading-4 text-foreground">
-                    Fetching tweet
+                    正在获取推文
+                  
                   </p>
                   <p className="text-[9px] leading-4 text-muted-foreground">
-                    Fetching post details and media
+                    正在获取帖子详情和媒体
+                  
                   </p>
                 </div>
                 <button
@@ -575,7 +581,8 @@ export function TweetImportSection() {
                   onClick={handleCancelFetch}
                   className="ml-auto min-h-6 cursor-pointer rounded-md px-2 py-1 text-[9px] font-medium text-muted-foreground max-[768px]:min-h-11 hover:bg-foreground/6 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                 >
-                  Cancel
+                  取消
+                
                 </button>
               </div>
             </div>
@@ -588,8 +595,8 @@ export function TweetImportSection() {
                 value={tweetTheme}
                 onChange={(id) => setTweetTheme(id as 'light' | 'dark')}
                 options={[
-                  { id: 'light', label: 'Light' },
-                  { id: 'dark', label: 'Dark' },
+                  { id: 'light', label: '浅色' },
+                  { id: 'dark', label: '深色' },
                 ]}
                 className="w-full"
               />
@@ -599,7 +606,7 @@ export function TweetImportSection() {
                   type="button"
                   onClick={handleDismissPreview}
                   disabled={status === 'capturing'}
-                  aria-label="Dismiss preview"
+                  aria-label="关闭预览"
                   className="absolute right-2 top-2 z-10 flex size-6 cursor-pointer items-center justify-center rounded-md bg-foreground/10 text-muted-foreground backdrop-blur-sm after:absolute after:-inset-2.5 after:content-[''] transition-colors hover:bg-foreground/20 hover:text-foreground disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                 >
                   <Cancel01Icon size={12} aria-hidden="true" />
@@ -640,10 +647,10 @@ export function TweetImportSection() {
                       aria-hidden="true"
                       className="motion-safe:animate-spin"
                     />
-                    Adding{'\u2026'}
+                    添加中{'\u2026'}
                   </>
                 ) : (
-                  'Add to canvas'
+                  '添加到画布'
                 )}
               </Button>
             </div>

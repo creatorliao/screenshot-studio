@@ -90,12 +90,12 @@ export function getAspectRatioPreset(aspectRatioId: string): AspectRatioPreset |
     if (customDimensions) {
       return {
         id: 'custom',
-        name: 'Custom',
+        name: '自定义',
         category: 'Custom',
         width: customDimensions.width,
         height: customDimensions.height,
         ratio: `${customDimensions.width}:${customDimensions.height}`,
-        description: 'Custom dimensions',
+        description: '自定义尺寸',
       };
     }
   }

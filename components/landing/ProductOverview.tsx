@@ -30,19 +30,18 @@ export function ProductOverview(): React.JSX.Element {
               }}
             >
               <span className="landing-heading block md:whitespace-nowrap">
-                Screenshot Studio?
+                Screenshot Studio？
+              
               </span>
             </h2>
             <div className="mt-6 max-w-2xl space-y-2 text-[15px] leading-normal text-muted-foreground md:text-base">
               <p>
-                Screenshot Studio is a free, open-source screenshot editor that
-                runs entirely in your browser. It turns raw captures into images
-                you can publish. No signup, no watermarks, nothing to install.
+                Screenshot Studio 是一款免费、开源的截图编辑器，完全在你的浏览器中运行。它把原始截图变成可以直接发布的图片。无需注册、无水印、无需安装。
+              
               </p>
               <p>
-                Drop in a screenshot, tweet, or code snippet. Add a Safari or
-                Chrome frame, a gradient background, 3D perspective, and
-                animation. Export PNG, JPG, or video for social, docs, and decks.
+                拖入一张截图、推文或代码片段。添加 Safari 或 Chrome 边框、渐变背景、3D 透视和动画。导出 PNG、JPG 或视频，用于社交、文档和演示。
+              
               </p>
             </div>
           </div>

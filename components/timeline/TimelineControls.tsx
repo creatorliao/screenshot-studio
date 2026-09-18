@@ -59,7 +59,7 @@ export function TimelineControls({ onAddAnimation, onClose }: TimelineControlsPr
           )}
         >
           <Add01Icon size={14} className="text-foreground" />
-          <span>Add Animation</span>
+          <span>添加动画</span>
         </button>
 
         <button
@@ -71,7 +71,7 @@ export function TimelineControls({ onAddAnimation, onClose }: TimelineControlsPr
               : 'text-muted-foreground border border-transparent hover:bg-foreground/[0.06] hover:text-foreground'
           )}
           onClick={handleToggleLoop}
-          title={isLooping ? 'Loop enabled' : 'Loop disabled'}
+          title={isLooping ? '循环已开启' : '循环已关闭'}
         >
           {isLooping ? <RepeatIcon size={15} /> : <RepeatOffIcon size={15} />}
         </button>
@@ -111,7 +111,7 @@ export function TimelineControls({ onAddAnimation, onClose }: TimelineControlsPr
             value={[durationSeconds]}
             onValueChange={(v) => setTimelineDuration((v[0] ?? 1) * 1000)}
             className="w-[100px] space-y-0"
-            aria-label="Timeline duration"
+            aria-label="时间轴时长"
           />
           <ZoomInAreaIcon size={14} className="text-muted-foreground shrink-0" />
         </div>
@@ -121,7 +121,7 @@ export function TimelineControls({ onAddAnimation, onClose }: TimelineControlsPr
             type="button"
             onClick={clearAnimationClips}
             className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-md text-muted-foreground transition-colors duration-150 hover:bg-foreground/[0.06] hover:text-foreground"
-            title="Turn off all Animations"
+            title="关闭所有动画"
           >
             <Delete02Icon size={15} />
           </button>
@@ -133,7 +133,7 @@ export function TimelineControls({ onAddAnimation, onClose }: TimelineControlsPr
           type="button"
           onClick={onClose}
           className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-md text-muted-foreground transition-colors duration-150 hover:bg-foreground/[0.06] hover:text-foreground"
-          title="Close timeline"
+          title="关闭时间轴"
         >
           <Cancel01Icon size={15} />
         </button>

@@ -5,9 +5,9 @@ import { Footer } from "@/components/landing/Footer";
 import { GithubIcon, NewTwitterIcon, Mail01Icon } from "hugeicons-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "联系我们",
   description:
-    "Get in touch with the Screenshot Studio team. Report bugs, suggest features, or just say hi.",
+    "联系 Screenshot Studio 团队。反馈问题、提出功能建议，或者只是打个招呼。",
   alternates: {
     canonical: "/contact",
   },
@@ -30,17 +30,17 @@ const contacts = [
     href: "https://github.com/opennookorg/screenshot-studio/issues",
     external: true,
     icon: GithubIcon,
-    title: "Report a Bug",
+    title: "报告问题",
     description:
-      "Found something broken? Open an issue on GitHub and we'll look into it.",
+      "发现问题？在 GitHub 上提交 issue，我们会跟进处理。",
   },
   {
     href: "https://github.com/opennookorg/screenshot-studio/issues/new?labels=enhancement",
     external: true,
     icon: GithubIcon,
-    title: "Request a Feature",
+    title: "提交功能建议",
     description:
-      "Have an idea to make Screenshot Studio better? We'd love to hear it.",
+      "有让 Screenshot Studio 变得更好的想法？我们很乐意听听。",
   },
   {
     href: "https://x.com/screenshotstdio",
@@ -48,15 +48,15 @@ const contacts = [
     icon: NewTwitterIcon,
     title: "Twitter / X",
     description:
-      "Follow @screenshotstdio for release notes, tips, and product updates.",
+      "关注 @screenshotstdio 获取发布说明、技巧和产品更新。",
   },
   {
     href: "mailto:kartik.labhshetwar@gmail.com",
     external: false,
     icon: Mail01Icon,
-    title: "Email",
+    title: "电子邮件",
     description:
-      "For anything else, drop us an email and we'll get back to you.",
+      "其他任何问题，给我们发邮件，我们会尽快回复。",
   },
 ] as const;
 
@@ -70,11 +70,12 @@ export default function ContactPage() {
           className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground sm:text-4xl"
           style={{ fontFamily: INTER }}
         >
-          Contact Us
+          联系我们
+        
         </h1>
         <p className="mb-12 text-lg text-muted-foreground">
-          Have a question, found a bug, or want to suggest a feature? Here are
-          the best ways to reach us.
+          有疑问、发现了 bug，还是想提功能建议？以下是与我们联系的最佳方式。
+        
         </p>
 
         <div className="mb-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -110,30 +111,31 @@ export default function ContactPage() {
             className="mb-2 text-lg font-semibold tracking-[-0.02em] text-foreground"
             style={{ fontFamily: INTER }}
           >
-            Before You Reach Out
+            联系前须知
+          
           </h2>
           <p className="mb-3 leading-relaxed text-muted-foreground">
-            Many questions are already answered on the{" "}
+            许多问题已经在这里得到解答：{" "}
             <Link href="/features" className={linkClassName}>
-              features
+              功能
+            
             </Link>{" "}
-            page, in the{" "}
+            页面，在{" "}
             <Link href="/docs" className={linkClassName}>
-              API docs
+              API 文档
+            
             </Link>
-            , or in the{" "}
+            ，或在{" "}
             <Link href="/changelog" className={linkClassName}>
-              changelog
+              更新日志
+            
             </Link>
-            . Screenshot Studio is free, needs no account, and processes your
-            images in the browser, so there is nothing to cancel and no
-            subscription to manage.
+            。Screenshot Studio 免费、无需账号，并在浏览器中处理你的图片，因此没有需要取消的项目，也无需管理订阅。
+          
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            When reporting a bug, include your browser and operating system,
-            the steps you took, and a screenshot or exported file if you can.
-            GitHub issues are usually answered within a few days; email may
-            take a little longer.
+            报告 bug 时，请附上你的浏览器和操作系统、你执行的操作步骤，如果方便的话再附上截图或导出的文件。GitHub issue 通常会在几天内回复；邮件可能会稍慢一些。
+          
           </p>
         </section>
 
@@ -142,21 +144,22 @@ export default function ContactPage() {
             className="mb-2 text-lg font-semibold tracking-[-0.02em] text-foreground"
             style={{ fontFamily: INTER }}
           >
-            Contributing
+            参与贡献
+          
           </h2>
           <p className="leading-relaxed text-muted-foreground">
-            Screenshot Studio is open source. If you&apos;re a developer and
-            want to contribute, check out the{" "}
+            Screenshot Studio 是开源的。如果你是开发者并想参与贡献，请查看{" "}
             <Link
               href="https://github.com/opennookorg/screenshot-studio"
               target="_blank"
               rel="noopener noreferrer"
               className={linkClassName}
             >
-              GitHub repository
+              GitHub 仓库
+            
             </Link>
-            . Pull requests, bug reports, and feature suggestions are all
-            welcome.
+            。欢迎提交 PR、报告 bug 和提出功能建议。
+          
           </p>
         </section>
       </main>

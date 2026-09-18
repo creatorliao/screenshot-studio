@@ -23,7 +23,7 @@ const RESOLUTION_PRESETS = [
 export function ScaleSlider({ scale, onScaleChange }: ScaleSliderProps) {
   return (
     <div className="space-y-3">
-      <label className="text-sm font-medium text-foreground">Resolution</label>
+      <label className="text-sm font-medium text-foreground">分辨率</label>
       <div className="flex gap-0.5 p-0.5 border border-foreground/10 bg-foreground/[0.04] rounded-md">
         {RESOLUTION_PRESETS.map((preset) => {
           const isSelected = preset.scale === scale;

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s0000",
+    "en": "Screenshot Studio",
+    "count": 19,
+    "where": "app/layout.tsx, app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s0001",
+    "en": "3D Effects",
+    "count": 17,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0002",
+    "en": "Home",
+    "count": 15,
+    "where": "app/[locale]/changelog/page.tsx, app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s0003",
+    "en": "Device Frames",
+    "count": 11,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx, components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s0004",
+    "en": "Open Source",
+    "count": 11,
+    "where": "app/[locale]/about/page.tsx, app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0005",
+    "en": "Animations",
+    "count": 10,
+    "where": "components/landing/Footer.tsx, components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s0006",
+    "en": "Blur",
+    "count": 10,
+    "where": "components/controls/BackgroundEffects.tsx, components/controls/ShadowControls.tsx"
+  },
+  {
+    "id": "s0007",
+    "en": "Screenshot Beautifier",
+    "count": 10,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0008",
+    "en": "Social Media Graphics",
+    "count": 10,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0009",
+    "en": "Code Images",
+    "count": 9,
+    "where": "app/[locale]/changelog/page.tsx, app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0010",
+    "en": "Features",
+    "count": 9,
+    "where": "app/not-found.tsx, app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0011",
+    "en": "gradient",
+    "count": 9,
+    "where": "components/code-image/BackgroundPicker.tsx, components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0012",
+    "en": "Image",
+    "count": 9,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/LeftEditPanel.tsx"
+  },
+  {
+    "id": "s0013",
+    "en": "None",
+    "count": 9,
+    "where": "components/code-image/CodeImageEditor.tsx, components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s0014",
+    "en": "Opacity",
+    "count": 9,
+    "where": "components/controls/BorderControls.tsx, components/controls/ShadowControls.tsx"
+  },
+  {
+    "id": "s0015",
+    "en": "Video Export",
+    "count": 9,
+    "where": "app/[locale]/features/animation-maker/page.tsx, lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0016",
+    "en": "Animation Maker",
+    "count": 8,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0017",
+    "en": "Background",
+    "count": 8,
+    "where": "components/code-image/CodeImageEditor.tsx, components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0018",
+    "en": "Price",
+    "count": 8,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0019",
+    "en": "back",
+    "count": 7,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0020",
+    "en": "Backgrounds",
+    "count": 7,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0021",
+    "en": "Explore More Features",
+    "count": 7,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0022",
+    "en": "image",
+    "count": 7,
+    "where": "components/code-image/BackgroundPicker.tsx, components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0023",
+    "en": "Open Editor",
+    "count": 7,
+    "where": "app/global-error.tsx, app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0024",
+    "en": "auto",
+    "count": 6,
+    "where": "components/code-image/CodeFrame.tsx, components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0025",
+    "en": "Browser Mockups",
+    "count": 6,
+    "where": "app/[locale]/about/page.tsx, app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0026",
+    "en": "Enter",
+    "count": 6,
+    "where": "components/code-image/CodeFrame.tsx, components/controls/CleanUploadState.tsx"
+  },
+  {
+    "id": "s0027",
+    "en": "initial",
+    "count": 6,
+    "where": "components/landing/Hero.tsx"
+  },
+  {
+    "id": "s0028",
+    "en": "100% Free",
+    "count": 5,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0029",
+    "en": "browser",
+    "count": 5,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0030",
+    "en": "Browser",
+    "count": 5,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0031",
+    "en": "Contact",
+    "count": 5,
+    "where": "app/[locale]/privacy-policy/page.tsx, components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0032",
+    "en": "device",
+    "count": 5,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0033",
+    "en": "Device",
+    "count": 5,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0034",
+    "en": "Export",
+    "count": 5,
+    "where": "app/[locale]/features/browser-mockups/page.tsx, app/[locale]/landing/page.tsx"
+  },
+  {
+    "id": "s0035",
+    "en": "Mac",
+    "count": 5,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx, components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0036",
+    "en": "Radius",
+    "count": 5,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/sections/BorderSection.tsx"
+  },
+  {
+    "id": "s0037",
+    "en": "Rotation",
+    "count": 5,
+    "where": "components/editor/RightSettingsPanel.tsx, components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0038",
+    "en": "Shadow",
+    "count": 5,
+    "where": "components/controls/ShadowControls.tsx, components/editor/sections/ShadowSection.tsx"
+  },
+  {
+    "id": "s0039",
+    "en": "Signup Required",
+    "count": 5,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0040",
+    "en": "solid",
+    "count": 5,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/sections/BackgroundSection.tsx"
+  },
+  {
+    "id": "s0041",
+    "en": "string",
+    "count": 5,
+    "where": "components/editor/editor-right-panel.tsx, components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s0042",
+    "en": "Style",
+    "count": 5,
+    "where": "components/controls/BorderControls.tsx, components/editor/sections/BrowserMockupSection.tsx"
+  },
+  {
+    "id": "s0043",
+    "en": "Templates",
+    "count": 5,
+    "where": "components/editor/EditorHeader.tsx, components/editor/LeftEditPanel.tsx"
+  },
+  {
+    "id": "s0044",
+    "en": "_blank",
+    "count": 4,
+    "where": "app/[locale]/contact/page.tsx, components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0045",
+    "en": "background",
+    "count": 4,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s0046",
+    "en": "br",
+    "count": 4,
+    "where": "components/canvas/html/HTMLBlurRegionLayer.tsx, components/canvas/html/HTMLMainImageLayer.tsx"
+  },
+  {
+    "id": "s0047",
+    "en": "Default",
+    "count": 4,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/StyleSection.tsx"
+  },
+  {
+    "id": "s0048",
+    "en": "Drop the image here...",
+    "count": 4,
+    "where": "components/controls/CleanUploadState.tsx, components/controls/UploadDropzone.tsx"
+  },
+  {
+    "id": "s0049",
+    "en": "Export Resolution",
+    "count": 4,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0050",
+    "en": "High-Res Export",
+    "count": 4,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx, app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0051",
+    "en": "Light",
+    "count": 4,
+    "where": "components/controls/CleanUploadState.tsx, components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0052",
+    "en": "llms.txt",
+    "count": 4,
+    "where": "app/not-found.tsx, app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0053",
+    "en": "Mint",
+    "count": 4,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0054",
+    "en": "No Signup Required",
+    "count": 4,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0055",
+    "en": "Noise",
+    "count": 4,
+    "where": "components/controls/BackgroundEffects.tsx, components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s0056",
+    "en": "Padding",
+    "count": 4,
+    "where": "components/code-image/CodeImageEditor.tsx, components/editor/sections/StyleSection.tsx"
+  },
+  {
+    "id": "s0057",
+    "en": "Position",
+    "count": 4,
+    "where": "components/editor/sections/DepthSection.tsx, components/editor/sections/ImagePositionSection.tsx"
+  },
+  {
+    "id": "s0058",
+    "en": "Remove",
+    "count": 4,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0059",
+    "en": "Reset",
+    "count": 4,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0060",
+    "en": "Rotate X",
+    "count": 4,
+    "where": "app/[locale]/features/3d-effects/page.tsx, components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s0061",
+    "en": "Rotate Y",
+    "count": 4,
+    "where": "app/[locale]/features/3d-effects/page.tsx, components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s0062",
+    "en": "Rotate Z",
+    "count": 4,
+    "where": "app/[locale]/features/3d-effects/page.tsx, components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s0063",
+    "en": "Scale",
+    "count": 4,
+    "where": "components/editor/RightSettingsPanel.tsx, components/editor/sections/BorderSection.tsx"
+  },
+  {
+    "id": "s0064",
+    "en": "Screenshot Studio API Documentation",
+    "count": 4,
+    "where": "app/[locale]/docs/page.tsx, lib/seo/json-ld.ts"
+  },
+  {
+    "id": "s0065",
+    "en": "See All Features",
+    "count": 4,
+    "where": "app/[locale]/for/designers/page.tsx, app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0066",
+    "en": "Size",
+    "count": 4,
+    "where": "components/editor/sections/DepthSection.tsx, components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0067",
+    "en": "Social Media Posts",
+    "count": 4,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0068",
+    "en": "spring",
+    "count": 4,
+    "where": "components/GlobalDropZone.tsx, components/landing/ExportDropVisual.tsx"
+  },
+  {
+    "id": "s0069",
+    "en": "tl",
+    "count": 4,
+    "where": "components/canvas/html/HTMLBlurRegionLayer.tsx, components/canvas/html/HTMLMainImageLayer.tsx"
+  },
+  {
+    "id": "s0070",
+    "en": "Upload Image",
+    "count": 4,
+    "where": "components/controls/UploadDropzone.tsx, components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0071",
+    "en": "Zoom",
+    "count": 4,
+    "where": "components/editor/RightSettingsPanel.tsx, components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0072",
+    "en": "3D Perspective",
+    "count": 3,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0073",
+    "en": "About Screenshot Studio",
+    "count": 3,
+    "where": "app/[locale]/about/page.tsx, components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0074",
+    "en": "and",
+    "count": 3,
+    "where": "app/[locale]/code/page.tsx, app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0075",
+    "en": "animation",
+    "count": 3,
+    "where": "components/timeline/AnimationPresetGallery.tsx, lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0076",
+    "en": "API docs",
+    "count": 3,
+    "where": "app/not-found.tsx, app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0077",
+    "en": "API documentation",
+    "count": 3,
+    "where": "app/[locale]/developers/page.tsx, app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0078",
+    "en": "Auto",
+    "count": 3,
+    "where": "components/code-image/code-themes.ts, components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0079",
+    "en": "bl",
+    "count": 3,
+    "where": "components/canvas/html/HTMLBlurRegionLayer.tsx, components/canvas/html/HTMLMainImageLayer.tsx"
+  },
+  {
+    "id": "s0080",
+    "en": "Blue",
+    "count": 3,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0081",
+    "en": "Border",
+    "count": 3,
+    "where": "components/editor/sections/BorderSection.tsx, components/editor/sections/StyleSection.tsx"
+  },
+  {
+    "id": "s0082",
+    "en": "Cancel",
+    "count": 3,
+    "where": "components/editor/DraftIndicator.tsx, components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0083",
+    "en": "capturing",
+    "count": 3,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0084",
+    "en": "Changelog",
+    "count": 3,
+    "where": "app/[locale]/changelog/page.tsx, components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0085",
+    "en": "Close",
+    "count": 3,
+    "where": "components/editor/unified-right-panel.tsx, components/ui/dialog.tsx"
+  },
+  {
+    "id": "s0086",
+    "en": "Color",
+    "count": 3,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0087",
+    "en": "dark",
+    "count": 3,
+    "where": "components/controls/CleanUploadState.tsx, components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0088",
+    "en": "Dark",
+    "count": 3,
+    "where": "components/controls/CleanUploadState.tsx, components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0089",
+    "en": "Dark mode",
+    "count": 3,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0090",
+    "en": "depth",
+    "count": 3,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/sections/ImageOverlaySection.tsx"
+  },
+  {
+    "id": "s0091",
+    "en": "Drag & drop an image here",
+    "count": 3,
+    "where": "components/controls/UploadDropzone.tsx, components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0092",
+    "en": "Dramatic Left",
+    "count": 3,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0093",
+    "en": "Dramatic Right",
+    "count": 3,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0094",
+    "en": "enter",
+    "count": 3,
+    "where": "components/landing/Hero.tsx"
+  },
+  {
+    "id": "s0095",
+    "en": "Escape",
+    "count": 3,
+    "where": "components/code-image/CodeFrame.tsx, components/presets/PresetGallery.tsx"
+  },
+  {
+    "id": "s0096",
+    "en": "Export as",
+    "count": 3,
+    "where": "components/canvas/dialogs/ExportDialog.tsx, components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0097",
+    "en": "flat",
+    "count": 3,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0098",
+    "en": "Flip X",
+    "count": 3,
+    "where": "components/editor/sections/DepthSection.tsx, components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s0099",
+    "en": "Flip Y",
+    "count": 3,
+    "where": "components/editor/sections/DepthSection.tsx, components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s0100",
+    "en": "Frequently Asked Questions",
+    "count": 3,
+    "where": "app/[locale]/compare/[slug]/page.tsx, app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0101",
+    "en": "front",
+    "count": 3,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0102",
+    "en": "GitHub repository",
+    "count": 3,
+    "where": "app/[locale]/contact/page.tsx, app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0103",
+    "en": "Image Tools",
+    "count": 3,
+    "where": "components/landing/Navigation.tsx, components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s0104",
+    "en": "Layers",
+    "count": 3,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0105",
+    "en": "light",
+    "count": 3,
+    "where": "components/controls/CleanUploadState.tsx, components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0106",
+    "en": "Line numbers",
+    "count": 3,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0107",
+    "en": "mac",
+    "count": 3,
+    "where": "components/code-image/CodeFrame.tsx, components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0108",
+    "en": "Medium",
+    "count": 3,
+    "where": "components/controls/ShadowControls.tsx, lib/export/types.ts"
+  },
+  {
+    "id": "s0109",
+    "en": "Mesh",
+    "count": 3,
+    "where": "components/code-image/code-backgrounds.ts, components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s0110",
+    "en": "Mobile",
+    "count": 3,
+    "where": "components/controls/WebsiteScreenshotInput.tsx, components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s0111",
+    "en": "Motion",
+    "count": 3,
+    "where": "components/editor/RightSettingsPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0112",
+    "en": "No Signup",
+    "count": 3,
+    "where": "app/[locale]/features/animation-maker/page.tsx, app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0113",
+    "en": "No Watermarks",
+    "count": 3,
+    "where": "app/[locale]/features/animation-maker/page.tsx, app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0114",
+    "en": "noopener,noreferrer",
+    "count": 3,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0115",
+    "en": "Open editor",
+    "count": 3,
+    "where": "app/error.tsx, app/not-found.tsx"
+  },
+  {
+    "id": "s0116",
+    "en": "OpenAPI 3.1 specification",
+    "count": 3,
+    "where": "app/[locale]/developers/page.tsx, app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0117",
+    "en": "Platform",
+    "count": 3,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0118",
+    "en": "Quality",
+    "count": 3,
+    "where": "components/export/QualityPresetSelector.tsx, components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0119",
+    "en": "Rounded",
+    "count": 3,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/style-tabs.tsx"
+  },
+  {
+    "id": "s0120",
+    "en": "Save",
+    "count": 3,
+    "where": "components/editor/EditorHeader.tsx, components/presets/PresetGallery.tsx"
+  },
+  {
+    "id": "s0121",
+    "en": "Screen Capture",
+    "count": 3,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0122",
+    "en": "Screenshot Editor for Developers",
+    "count": 3,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0123",
+    "en": "Screenshot Editor for Marketers",
+    "count": 3,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0124",
+    "en": "Screenshot Studio - Free Screenshot Editor Online",
+    "count": 3,
+    "where": "app/layout.tsx, app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0125",
+    "en": "Screenshot Studio API Authentication",
+    "count": 3,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0126",
+    "en": "Screenshot Studio Developer Portal",
+    "count": 3,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0127",
+    "en": "Solid",
+    "count": 3,
+    "where": "components/editor/editor-right-panel.tsx, components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s0128",
+    "en": "Something went wrong",
+    "count": 3,
+    "where": "app/error.tsx, app/global-error.tsx"
+  },
+  {
+    "id": "s0129",
+    "en": "Square",
+    "count": 3,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx, components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s0130",
+    "en": "Text Overlays",
+    "count": 3,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0131",
+    "en": "Theme",
+    "count": 3,
+    "where": "components/code-image/BackgroundPicker.tsx, components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0132",
+    "en": "Tilt",
+    "count": 3,
+    "where": "components/editor/RightSettingsPanel.tsx, components/ui/tilt-joystick.tsx"
+  },
+  {
+    "id": "s0133",
+    "en": "Toggle Sidebar",
+    "count": 3,
+    "where": "components/ui/sidebar.tsx"
+  },
+  {
+    "id": "s0134",
+    "en": "Top Left",
+    "count": 3,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/ImagePositionSection.tsx"
+  },
+  {
+    "id": "s0135",
+    "en": "Top Right",
+    "count": 3,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/ImagePositionSection.tsx"
+  },
+  {
+    "id": "s0136",
+    "en": "tr",
+    "count": 3,
+    "where": "components/canvas/html/HTMLBlurRegionLayer.tsx, components/canvas/html/HTMLMainImageLayer.tsx"
+  },
+  {
+    "id": "s0137",
+    "en": "true",
+    "count": 3,
+    "where": "components/canvas/html/HTMLMainImageLayer.tsx, components/canvas/html/HTMLTextOverlayLayer.tsx"
+  },
+  {
+    "id": "s0138",
+    "en": "Upload Your Screenshot",
+    "count": 3,
+    "where": "app/[locale]/features/browser-mockups/page.tsx, app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0139",
+    "en": "vibrant_orange_pink",
+    "count": 3,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/sections/BackgroundSection.tsx"
+  }
+]

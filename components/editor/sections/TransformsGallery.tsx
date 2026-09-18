@@ -21,83 +21,96 @@ interface TransformPreset {
 }
 
 interface PresetCategory {
+  /**
+   * 稳定标识。**不要**用 `name` 做 key / 比较 / defaultOpen 判据 ——
+   * `name` 是展示文案（会被汉化或改词），一旦按它做逻辑匹配，改文案就会静默失效。
+   * 参见 `docs/01-Projects/R20260915-01-编辑器工作流与信息架构改善/03-分析报告_现状诊断.md` §5.2。
+   */
+  id: string;
   name: string;
   presets: TransformPreset[];
 }
 
 const PRESET_CATEGORIES: PresetCategory[] = [
   {
-    name: 'Popular',
+    id: 'popular',
+    name: '热门',
     presets: [
-      { name: 'Default', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 0, scale: 1 } },
-      { name: 'SaaS Hero', values: { perspective: 2400, rotateX: 8, rotateY: -6, rotateZ: 0, translateX: 0, translateY: -2, scale: 0.98 } },
-      { name: 'Product Shot', values: { perspective: 2000, rotateX: 5, rotateY: 12, rotateZ: 0, translateX: 3, translateY: -1, scale: 0.97 } },
-      { name: 'App Preview', values: { perspective: 2400, rotateX: 12, rotateY: -10, rotateZ: 0, translateX: -2, translateY: -3, scale: 0.96 } },
-      { name: 'Clean Angle', values: { perspective: 2400, rotateX: 6, rotateY: 8, rotateZ: -2, translateX: 2, translateY: -1, scale: 0.98 } },
-      { name: 'Landing Page', values: { perspective: 1800, rotateX: 15, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -5, scale: 0.95 } },
+      { name: '默认', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 0, scale: 1 } },
+      { name: 'SaaS 首屏', values: { perspective: 2400, rotateX: 8, rotateY: -6, rotateZ: 0, translateX: 0, translateY: -2, scale: 0.98 } },
+      { name: '产品图', values: { perspective: 2000, rotateX: 5, rotateY: 12, rotateZ: 0, translateX: 3, translateY: -1, scale: 0.97 } },
+      { name: '应用预览', values: { perspective: 2400, rotateX: 12, rotateY: -10, rotateZ: 0, translateX: -2, translateY: -3, scale: 0.96 } },
+      { name: '简洁角度', values: { perspective: 2400, rotateX: 6, rotateY: 8, rotateZ: -2, translateX: 2, translateY: -1, scale: 0.98 } },
+      { name: '落地页', values: { perspective: 1800, rotateX: 15, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -5, scale: 0.95 } },
     ],
   },
   {
-    name: 'Basic',
+    id: 'basic',
+    name: '基础',
     presets: [
-      { name: 'Tilt Left', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: -8, translateX: 0, translateY: 0, scale: 0.95 } },
-      { name: 'Tilt Right', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: 8, translateX: 0, translateY: 0, scale: 0.95 } },
-      { name: 'Subtle Left', values: { perspective: 2400, rotateX: 3, rotateY: -8, rotateZ: 0, translateX: -2, translateY: 0, scale: 1 } },
-      { name: 'Subtle Right', values: { perspective: 2400, rotateX: 3, rotateY: 8, rotateZ: 0, translateX: 2, translateY: 0, scale: 1 } },
-      { name: 'Lean Back', values: { perspective: 2400, rotateX: -15, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 5, scale: 0.98 } },
-      { name: 'Lean Forward', values: { perspective: 2400, rotateX: 18, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -4, scale: 0.97 } },
+      { name: '左倾', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: -8, translateX: 0, translateY: 0, scale: 0.95 } },
+      { name: '右倾', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: 8, translateX: 0, translateY: 0, scale: 0.95 } },
+      { name: '轻微左倾', values: { perspective: 2400, rotateX: 3, rotateY: -8, rotateZ: 0, translateX: -2, translateY: 0, scale: 1 } },
+      { name: '轻微右倾', values: { perspective: 2400, rotateX: 3, rotateY: 8, rotateZ: 0, translateX: 2, translateY: 0, scale: 1 } },
+      { name: '后仰', values: { perspective: 2400, rotateX: -15, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 5, scale: 0.98 } },
+      { name: '前倾', values: { perspective: 2400, rotateX: 18, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -4, scale: 0.97 } },
     ],
   },
   {
-    name: 'Dramatic',
+    id: 'dramatic',
+    name: '戏剧感',
     presets: [
-      { name: 'Dramatic Left', values: { perspective: 2400, rotateX: 10, rotateY: -20, rotateZ: 8, translateX: -4, translateY: -2, scale: 0.95 } },
-      { name: 'Dramatic Right', values: { perspective: 2400, rotateX: 10, rotateY: 20, rotateZ: -8, translateX: 4, translateY: -2, scale: 0.95 } },
-      { name: 'Hero Left', values: { perspective: 1800, rotateX: 8, rotateY: -25, rotateZ: 5, translateX: -6, translateY: 0, scale: 0.92 } },
-      { name: 'Hero Right', values: { perspective: 1800, rotateX: 8, rotateY: 25, rotateZ: -5, translateX: 6, translateY: 0, scale: 0.92 } },
-      { name: 'Showcase L', values: { perspective: 1500, rotateX: 15, rotateY: -30, rotateZ: 5, translateX: -10, translateY: -3, scale: 0.88 } },
-      { name: 'Showcase R', values: { perspective: 1500, rotateX: 15, rotateY: 30, rotateZ: -5, translateX: 10, translateY: -3, scale: 0.88 } },
+      { name: '左侧强透视', values: { perspective: 2400, rotateX: 10, rotateY: -20, rotateZ: 8, translateX: -4, translateY: -2, scale: 0.95 } },
+      { name: '右侧强透视', values: { perspective: 2400, rotateX: 10, rotateY: 20, rotateZ: -8, translateX: 4, translateY: -2, scale: 0.95 } },
+      { name: '主视觉居左', values: { perspective: 1800, rotateX: 8, rotateY: -25, rotateZ: 5, translateX: -6, translateY: 0, scale: 0.92 } },
+      { name: '主视觉居右', values: { perspective: 1800, rotateX: 8, rotateY: 25, rotateZ: -5, translateX: 6, translateY: 0, scale: 0.92 } },
+      { name: '展示左', values: { perspective: 1500, rotateX: 15, rotateY: -30, rotateZ: 5, translateX: -10, translateY: -3, scale: 0.88 } },
+      { name: '展示右', values: { perspective: 1500, rotateX: 15, rotateY: 30, rotateZ: -5, translateX: 10, translateY: -3, scale: 0.88 } },
     ],
   },
   {
-    name: 'Perspective',
+    id: 'perspective',
+    name: '透视',
     presets: [
-      { name: 'Top Down', values: { perspective: 2400, rotateX: 40, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -5, scale: 0.95 } },
-      { name: 'Bottom Up', values: { perspective: 2400, rotateX: -35, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 8, scale: 0.95 } },
-      { name: 'Lay Flat', values: { perspective: 2400, rotateX: 55, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -12, scale: 0.8 } },
-      { name: 'Magazine', values: { perspective: 2400, rotateX: 58, rotateY: 8, rotateZ: 38, translateX: 0, translateY: -8, scale: 0.82 } },
-      { name: 'Isometric L', values: { perspective: 2400, rotateX: 45, rotateY: 0, rotateZ: -45, translateX: 0, translateY: -5, scale: 0.9 } },
-      { name: 'Isometric R', values: { perspective: 2400, rotateX: 38.4, rotateY: -6.4, rotateZ: 25, translateX: 0, translateY: -5.8, scale: 0.9 } },
-      { name: 'Isometric Top', values: { perspective: 2400, rotateX: 50, rotateY: 0, rotateZ: 45, translateX: 0, translateY: -8, scale: 0.85 } },
-      { name: 'Table Left', values: { perspective: 2400, rotateX: 55, rotateY: 10, rotateZ: -35, translateX: 0, translateY: -10, scale: 0.8 } },
+      { name: '俯视', values: { perspective: 2400, rotateX: 40, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -5, scale: 0.95 } },
+      { name: '自下而上', values: { perspective: 2400, rotateX: -35, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 8, scale: 0.95 } },
+      { name: '平放', values: { perspective: 2400, rotateX: 55, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -12, scale: 0.8 } },
+      { name: '杂志', values: { perspective: 2400, rotateX: 58, rotateY: 8, rotateZ: 38, translateX: 0, translateY: -8, scale: 0.82 } },
+      { name: '等距左', values: { perspective: 2400, rotateX: 45, rotateY: 0, rotateZ: -45, translateX: 0, translateY: -5, scale: 0.9 } },
+      { name: '等距右', values: { perspective: 2400, rotateX: 38.4, rotateY: -6.4, rotateZ: 25, translateX: 0, translateY: -5.8, scale: 0.9 } },
+      { name: '等距顶部', values: { perspective: 2400, rotateX: 50, rotateY: 0, rotateZ: 45, translateX: 0, translateY: -8, scale: 0.85 } },
+      { name: '台面左倾', values: { perspective: 2400, rotateX: 55, rotateY: 10, rotateZ: -35, translateX: 0, translateY: -10, scale: 0.8 } },
     ],
   },
   {
-    name: 'Zoom',
+    id: 'scale',
+    name: '缩放',
     presets: [
-      { name: 'Zoom Center', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 0, scale: 1.2 } },
-      { name: 'Zoom Left', values: { perspective: 2400, rotateX: 0, rotateY: 8, rotateZ: 0, translateX: 15, translateY: 0, scale: 1.15 } },
-      { name: 'Zoom Right', values: { perspective: 2400, rotateX: 0, rotateY: -8, rotateZ: 0, translateX: -15, translateY: 0, scale: 1.15 } },
-      { name: 'Zoom Top', values: { perspective: 2400, rotateX: 5, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 12, scale: 1.15 } },
-      { name: 'Zoom Bottom', values: { perspective: 2400, rotateX: -5, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -12, scale: 1.15 } },
+      { name: '中心缩放', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 0, scale: 1.2 } },
+      { name: '左侧缩放', values: { perspective: 2400, rotateX: 0, rotateY: 8, rotateZ: 0, translateX: 15, translateY: 0, scale: 1.15 } },
+      { name: '右侧缩放', values: { perspective: 2400, rotateX: 0, rotateY: -8, rotateZ: 0, translateX: -15, translateY: 0, scale: 1.15 } },
+      { name: '顶部缩放', values: { perspective: 2400, rotateX: 5, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 12, scale: 1.15 } },
+      { name: '底部缩放', values: { perspective: 2400, rotateX: -5, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -12, scale: 1.15 } },
     ],
   },
   {
-    name: 'Half Section',
+    id: 'half-section',
+    name: '半区',
     presets: [
-      { name: 'Half Left', values: { perspective: 2400, rotateX: 0, rotateY: 12, rotateZ: -2, translateX: 20, translateY: 0, scale: 1.25 } },
-      { name: 'Half Right', values: { perspective: 2400, rotateX: 0, rotateY: -12, rotateZ: 2, translateX: -20, translateY: 0, scale: 1.25 } },
-      { name: 'Half Top', values: { perspective: 2400, rotateX: 10, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 18, scale: 1.25 } },
-      { name: 'Half Bottom', values: { perspective: 2400, rotateX: -10, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -18, scale: 1.25 } },
+      { name: '左半部', values: { perspective: 2400, rotateX: 0, rotateY: 12, rotateZ: -2, translateX: 20, translateY: 0, scale: 1.25 } },
+      { name: '右半部', values: { perspective: 2400, rotateX: 0, rotateY: -12, rotateZ: 2, translateX: -20, translateY: 0, scale: 1.25 } },
+      { name: '上半部', values: { perspective: 2400, rotateX: 10, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 18, scale: 1.25 } },
+      { name: '下半部', values: { perspective: 2400, rotateX: -10, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -18, scale: 1.25 } },
     ],
   },
   {
-    name: 'Float',
+    id: 'float',
+    name: '悬浮',
     presets: [
-      { name: 'Float Up', values: { perspective: 2400, rotateX: 12, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -10, scale: 1.05 } },
-      { name: 'Float Down', values: { perspective: 2400, rotateX: -8, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 10, scale: 1.05 } },
-      { name: 'Hover Left', values: { perspective: 2000, rotateX: 5, rotateY: -15, rotateZ: 3, translateX: -8, translateY: -5, scale: 1.02 } },
-      { name: 'Hover Right', values: { perspective: 2000, rotateX: 5, rotateY: 15, rotateZ: -3, translateX: 8, translateY: -5, scale: 1.02 } },
+      { name: '向上浮动', values: { perspective: 2400, rotateX: 12, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -10, scale: 1.05 } },
+      { name: '向下浮动', values: { perspective: 2400, rotateX: -8, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 10, scale: 1.05 } },
+      { name: '悬停左移', values: { perspective: 2000, rotateX: 5, rotateY: -15, rotateZ: 3, translateX: -8, translateY: -5, scale: 1.02 } },
+      { name: '悬停右移', values: { perspective: 2000, rotateX: 5, rotateY: 15, rotateZ: -3, translateX: 8, translateY: -5, scale: 1.02 } },
     ],
   },
 ];
@@ -159,9 +172,9 @@ export function TransformsGallery() {
     <div className="space-y-1">
       {PRESET_CATEGORIES.map((category, categoryIndex) => (
         <SectionWrapper
-          key={category.name}
+          key={category.id}
           title={category.name}
-          defaultOpen={category.name === 'Popular'}
+          defaultOpen={category.id === 'popular'}
         >
           <div className="space-y-2">
             {category.presets.map((preset, presetIndex) => {
@@ -248,7 +261,8 @@ export function TransformsGallery() {
       {!previewImageUrl && (
         <div className="p-3 rounded-md bg-foreground/[0.04] border border-foreground/10 text-center">
           <p className="text-xs text-muted-foreground">
-            Upload an image to see transform previews
+            上传图片以查看变换预览
+          
           </p>
         </div>
       )}

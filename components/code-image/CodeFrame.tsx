@@ -268,7 +268,7 @@ export const CodeFrame = React.forwardRef<HTMLDivElement, CodeFrameProps>(
                       if (e.key === 'Enter' || e.key === 'Escape') e.currentTarget.blur();
                     }}
                     maxLength={60}
-                    placeholder="untitled"
+                    placeholder="未命名"
                     className="absolute left-1/2 w-48 -translate-x-1/2 border-none bg-transparent text-center text-xs outline-none"
                     style={{ fontFamily: INTER, color: titleColor }}
                   />
@@ -279,7 +279,7 @@ export const CodeFrame = React.forwardRef<HTMLDivElement, CodeFrameProps>(
                     className="absolute left-1/2 -translate-x-1/2 truncate text-xs"
                     style={{ fontFamily: INTER, color: titleColor, cursor: onTitleChange ? 'text' : 'default' }}
                   >
-                    {title || 'untitled'}
+                    {title || '未命名'}
                   </button>
                 )}
               </div>
@@ -339,7 +339,7 @@ export const CodeFrame = React.forwardRef<HTMLDivElement, CodeFrameProps>(
                     spellCheck={false}
                     autoCapitalize="off"
                     autoCorrect="off"
-                    aria-label="Code editor"
+                    aria-label="代码编辑器"
                     className="absolute inset-0 resize-none bg-transparent outline-none"
                     style={{
                       color: 'transparent',

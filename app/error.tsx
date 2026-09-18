@@ -37,29 +37,33 @@ export default function Error({
           className="mt-5 text-[22px] font-semibold tracking-[-0.03em] text-foreground sm:text-[28px]"
           style={{ fontFamily: INTER }}
         >
-          Something went wrong
+          出错了
+        
         </h1>
 
         <p className="mt-3 max-w-sm text-[15px] leading-relaxed text-muted-foreground md:text-base">
-          An unexpected error occurred while rendering this page. Try again, or
-          open the editor to keep creating.
+          渲染此页面时发生意外错误。请重试，或打开编辑器继续创作。
+        
         </p>
 
         {error.digest ? (
           <p className="mt-3 font-mono text-xs text-muted-foreground">
-            Error ID: {error.digest}
+            错误 ID：  {error.digest}
           </p>
         ) : null}
 
         <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
           <button type="button" onClick={() => reset()} className={primaryCtaClassName}>
-            Try again
+            重试
+          
           </button>
           <Link href="/" className={secondaryCtaClassName}>
-            Open editor
+            打开编辑器
+          
           </Link>
           <Link href="/landing" className={secondaryCtaClassName}>
-            Homepage
+            首页
+          
           </Link>
         </div>
       </main>

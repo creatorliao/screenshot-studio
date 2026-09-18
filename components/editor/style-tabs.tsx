@@ -27,16 +27,18 @@ export function StyleTabs() {
       <Tabs defaultValue="style" className="w-full">
         <TabsList className="w-full grid grid-cols-2 rounded-none bg-transparent h-12 p-1.5 gap-1.5">
           <TabsTrigger value="style" className="data-[state=active]:bg-background rounded-md border-0 data-[state=active]:border-0 transition-all duration-200">
-            Style
+            样式
+          
           </TabsTrigger>
           <TabsTrigger value="Transforms" className="data-[state=active]:bg-background rounded-md border-0 data-[state=active]:border-0 transition-all duration-200">
-            Transforms
+            变换
+          
           </TabsTrigger>
         </TabsList>
 
         <TabsContent value="style" className="mt-4 space-y-6">
         <div className="space-y-4">
-          <Label className="text-sm font-semibold text-foreground">Border Radius</Label>
+          <Label className="text-sm font-semibold text-foreground">圆角</Label>
           <div className="flex gap-2 mb-3">
             <Button
               variant={borderRadius === 0 ? 'default' : 'outline'}
@@ -48,7 +50,8 @@ export function StyleTabs() {
                   : 'border-border/50 hover:border-border hover:bg-accent text-foreground bg-background'
               }`}
             >
-              Sharp Edge
+              直角
+            
             </Button>
             <Button
               variant={borderRadius > 0 ? 'default' : 'outline'}
@@ -60,7 +63,8 @@ export function StyleTabs() {
                   : 'border-border/50 hover:border-border hover:bg-accent text-foreground bg-background'
               }`}
             >
-              Rounded
+              圆角
+            
             </Button>
           </div>
           <Slider
@@ -69,7 +73,7 @@ export function StyleTabs() {
             min={0}
             max={100}
             step={1}
-            label="Radius"
+            label="圆角"
             valueDisplay={`${borderRadius}px`}
           />
         </div>
@@ -81,11 +85,12 @@ export function StyleTabs() {
             min={10}
             max={200}
             step={1}
-            label="Image Size"
+            label="图片尺寸"
             valueDisplay={`${imageScale}%`}
           />
           <p className="text-xs text-muted-foreground">
-            Adjust the size of the image (10% - 200%)
+            调整图片尺寸（10% - 200%）
+          
           </p>
         </div>
 
@@ -95,7 +100,7 @@ export function StyleTabs() {
           min={0}
           max={1}
           step={0.01}
-          label="Opacity"
+          label="不透明度"
           valueDisplay={`${Math.round(imageOpacity * 100)}%`}
         />
 

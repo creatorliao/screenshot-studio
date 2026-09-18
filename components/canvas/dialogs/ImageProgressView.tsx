@@ -79,7 +79,7 @@ export function ImageExportProgressView({
 
       <div className="px-3 py-1 rounded-md bg-foreground/[0.04] border border-foreground/10">
         <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-medium">
-          Exporting as {formatLabel}
+          导出为  {formatLabel}
         </span>
       </div>
     </div>

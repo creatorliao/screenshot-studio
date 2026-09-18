@@ -13,9 +13,9 @@ import {
 } from "@/lib/seo/tools";
 
 export const metadata: Metadata = {
-  title: "Free Online Image Tools: Compress, Convert, Resize, Crop",
+  title: "免费在线图片工具：压缩、转换、调整尺寸、裁剪",
   description:
-    "Compress, convert, resize, crop, and rotate images in your browser. Batch processing, no signup, no watermark, and nothing is ever uploaded.",
+    "在浏览器中压缩、转换、调整尺寸、裁剪和旋转图片。支持批量处理，无需注册、无水印，任何文件都不会被上传。",
   keywords: [
     "image tools",
     "online image tools",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Free Online Image Tools: Compress, Convert, Resize, Crop",
+    title: "免费在线图片工具：压缩、转换、调整尺寸、裁剪",
     description:
-      "A suite of free image tools that run entirely in your browser. Batch processing, no signup, no watermark, no upload.",
+      "一套完全在浏览器中运行的免费图片工具。支持批量处理，无需注册，无水印，无需上传。",
     url: TOOLS_HUB_PATH,
   },
   alternates: {
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
 };
 
 const PROMISES = [
-  "Nothing is uploaded. Every tool runs in your browser",
-  "Batch processing with a single zip download",
-  "Free forever, no signup and no watermark",
-  "Open source under the Apache 2.0 licence",
+  "不上传任何内容，所有工具都在你的浏览器中运行",
+  "批量处理，一次打包下载 zip",
+  "永久免费，无需注册、无水印",
+  "基于 Apache 2.0 许可开源",
 ];
 
 export default function ToolsHubPage() {
@@ -64,12 +64,12 @@ export default function ToolsHubPage() {
         <section className="px-6 pt-28 pb-12">
           <div className="mx-auto max-w-5xl">
             <h1 className="mb-3 text-3xl font-semibold tracking-[-0.02em] text-foreground sm:text-4xl">
-              Free Online Image Tools
+              免费在线图片工具
+            
             </h1>
             <p className="max-w-2xl text-base text-muted-foreground">
-              Compress, convert, resize, crop, and rotate images without
-              uploading them anywhere. Every tool below runs entirely inside your
-              browser, works on a whole folder at once, and costs nothing.
+              无需上传到任何地方，即可压缩、转换、调整尺寸、裁剪和旋转图片。下面每个工具都完全在浏览器内运行，可一次处理整个文件夹，而且完全免费。
+            
             </p>
 
             <ul className="mt-8 grid gap-2.5 sm:grid-cols-2">
@@ -90,7 +90,8 @@ export default function ToolsHubPage() {
         <section className="px-6 pb-16">
           <div className="mx-auto max-w-5xl">
             <h2 className="mb-4 text-xl font-semibold tracking-[-0.01em] text-foreground">
-              Tools
+              工具
+            
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {PRIMARY_TOOLS.map((tool) => (
@@ -115,7 +116,8 @@ export default function ToolsHubPage() {
             </div>
 
             <h2 className="mt-12 mb-4 text-xl font-semibold tracking-[-0.01em] text-foreground">
-              Format converters
+              格式转换器
+            
             </h2>
             <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
               {CONVERTER_TOOLS.map((tool) => (
@@ -130,17 +132,18 @@ export default function ToolsHubPage() {
             </div>
 
             <p className="mt-12 max-w-2xl text-sm text-muted-foreground">
-              Looking for something more than a quick fix? The{" "}
+              想要的不只是快速修图？{" "}
               <Link href="/" className="underline">
-                Screenshot Studio editor
+                Screenshot Studio 编辑器
+              
               </Link>{" "}
-              turns a plain screenshot into a finished graphic with gradient
-              backgrounds, browser mockups, shadows, 3D perspective, annotations,
-              and video export, and{" "}
+              把普通截图变成完整的成品图，包含渐变背景、浏览器模型、阴影、3D 透视、标注和视频导出，并且{" "}
               <Link href="/code" className="underline">
-                Code Images
+                代码图片
+              
               </Link>{" "}
-              does the same for code snippets.
+              对代码片段也是如此。
+            
             </p>
           </div>
         </section>

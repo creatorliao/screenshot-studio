@@ -388,9 +388,9 @@ export function useAutosaveDraft() {
             console.warn("[draft] autosave failed:", result.reason, result.error);
             if (result.reason === "quota" && !hasWarnedQuotaRef.current) {
               hasWarnedQuotaRef.current = true;
-              toast.error("Couldn't save your draft", {
+              toast.error("无法保存草稿", {
                 description:
-                  "Browser storage is full. Export your work — recent changes may not survive a reload.",
+                  "浏览器存储已满。请导出你的作品——最近的改动可能无法在刷新后保留。",
                 duration: 10000,
               });
             }

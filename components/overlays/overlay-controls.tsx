@@ -88,7 +88,7 @@ export function OverlayControls() {
   return (
     <div className="space-y-5">
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold text-sm text-foreground">Image Overlays</h3>
+        <h3 className="font-semibold text-sm text-foreground">图片叠加层</h3>
         <Button
           variant="outline"
           size="sm"
@@ -96,13 +96,14 @@ export function OverlayControls() {
           disabled={imageOverlays.length === 0}
           className="h-8 px-3 text-xs font-medium rounded-lg"
         >
-          Clear All
+          全部清除
+        
         </Button>
       </div>
 
       {imageOverlays.length > 0 && (
         <div className="space-y-4">
-          <p className="text-sm font-semibold text-foreground">Manage Overlays</p>
+          <p className="text-sm font-semibold text-foreground">管理叠加层</p>
           <div className="space-y-2 max-h-32 overflow-y-auto">
             {imageOverlays.map((overlay) => (
               <div
@@ -144,7 +145,7 @@ export function OverlayControls() {
                     return (
                       <img
                         src={imageUrl}
-                        alt="Overlay preview"
+                        alt="叠加层预览"
                         className="object-contain w-full h-full"
                         style={{ display: 'block' }}
                       />
@@ -175,7 +176,8 @@ export function OverlayControls() {
         <div className="space-y-5 border-t pt-5">
           <div className="space-y-5">
             <p className="text-sm font-semibold text-foreground">
-              Edit Overlay
+              编辑叠加层
+            
             </p>
 
             {/* Size */}
@@ -186,7 +188,7 @@ export function OverlayControls() {
                 max={400}
                 min={20}
                 step={1}
-                label="Size"
+                label="大小"
                 valueDisplay={`${selectedOverlay.size}px`}
               />
             </div>
@@ -199,7 +201,7 @@ export function OverlayControls() {
                 max={180}
                 min={-180}
                 step={1}
-                label="Rotation"
+                label="旋转"
                 valueDisplay={`${selectedOverlay.rotation}°`}
               />
               <div className="flex gap-2">
@@ -208,7 +210,7 @@ export function OverlayControls() {
                   size="sm"
                   onClick={() => handleRotateBy(-90)}
                   className="flex-1 h-8 rounded-lg"
-                  title="Rotate -90°"
+                  title="旋转 -90°"
                 >
                   <RotateLeft01Icon className="h-4 w-4" />
                 </Button>
@@ -217,7 +219,7 @@ export function OverlayControls() {
                   size="sm"
                   onClick={() => updateImageOverlay(selectedOverlay.id, { rotation: 0 })}
                   className="flex-1 h-8 rounded-lg"
-                  title="Reset rotation"
+                  title="重置旋转"
                 >
                   <RefreshIcon className="h-4 w-4" />
                 </Button>
@@ -226,7 +228,7 @@ export function OverlayControls() {
                   size="sm"
                   onClick={() => handleRotateBy(90)}
                   className="flex-1 h-8 rounded-lg"
-                  title="Rotate +90°"
+                  title="旋转 +90°"
                 >
                   <RotateRight01Icon className="h-4 w-4" />
                 </Button>
@@ -241,7 +243,7 @@ export function OverlayControls() {
                 max={1}
                 min={0}
                 step={0.01}
-                label="Opacity"
+                label="不透明度"
                 valueDisplay={`${Math.round(selectedOverlay.opacity * 100)}%`}
               />
             </div>
@@ -254,7 +256,7 @@ export function OverlayControls() {
                 max={20}
                 min={0}
                 step={0.5}
-                label="Blur"
+                label="模糊"
                 valueDisplay={`${selectedOverlay.blur ?? 0}px`}
               />
             </div>
@@ -267,7 +269,8 @@ export function OverlayControls() {
                 onClick={handleToggleFlipX}
                 className="flex-1 h-10 rounded-xl"
               >
-                Flip X
+                水平翻转
+              
               </Button>
               <Button
                 variant={selectedOverlay.flipY ? 'default' : 'outline'}
@@ -275,13 +278,14 @@ export function OverlayControls() {
                 onClick={handleToggleFlipY}
                 className="flex-1 h-10 rounded-xl"
               >
-                Flip Y
+                垂直翻转
+              
               </Button>
             </div>
 
             {/* Position */}
             <div className="space-y-4">
-              <p className="text-sm font-semibold text-foreground">Position</p>
+              <p className="text-sm font-semibold text-foreground">位置</p>
               {/* X position */}
               <div className="p-3 rounded-lg bg-muted/50 border border-border/50">
                 <Slider
@@ -290,7 +294,7 @@ export function OverlayControls() {
                   max={800}
                   min={0}
                   step={1}
-                  label="X Position"
+                  label="X 位置"
                   valueDisplay={`${Math.round(selectedOverlay.position.x)}px`}
                 />
               </div>
@@ -303,7 +307,7 @@ export function OverlayControls() {
                   max={600}
                   min={0}
                   step={1}
-                  label="Y Position"
+                  label="Y 位置"
                   valueDisplay={`${Math.round(selectedOverlay.position.y)}px`}
                 />
               </div>
@@ -320,7 +324,8 @@ export function OverlayControls() {
               className="w-full h-10 rounded-xl"
             >
               <Delete02Icon className="h-4 w-4 mr-2" />
-              Remove Overlay
+              删除叠加层
+            
             </Button>
           </div>
         </div>

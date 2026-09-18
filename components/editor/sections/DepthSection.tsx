@@ -249,7 +249,7 @@ export function DepthSection() {
   return (
     <div className="space-y-2">
       <SectionWrapper
-        title="Layers"
+        title="图层"
         defaultOpen={true}
         action={
           layers.length > 0 ? (
@@ -263,7 +263,8 @@ export function DepthSection() {
           <div className="flex flex-col items-center gap-2 py-6 text-center">
             <LayersLogoIcon size={28} className="text-muted-foreground/50" />
             <p className="text-xs text-muted-foreground">
-              No layers yet. Add assets below or use the Edit tab.
+              还没有图层。在下方添加素材，或使用“编辑”标签页。
+            
             </p>
           </div>
         ) : (
@@ -320,11 +321,12 @@ export function DepthSection() {
                       </p>
                       <div className="flex items-center gap-1.5 mt-0.5">
                         <p className="text-[10px] text-muted-foreground capitalize">
-                          {layer.type === 'image-overlay' ? 'Image' : layer.type === 'text-overlay' ? 'Text' : layer.type === 'annotation' ? 'Drawing' : layer.type.replace('-', ' ')}
+                          {layer.type === 'image-overlay' ? '图片' : layer.type === 'text-overlay' ? '文字' : layer.type === 'annotation' ? '绘制' : layer.type.replace('-', ' ')}
                         </p>
                         {isImageOverlay && layer.layerPosition === 'back' && (
                           <span className="text-[9px] px-1 py-px rounded bg-foreground/[0.06] text-muted-foreground leading-none border border-foreground/10">
-                            behind
+                            后方
+                          
                           </span>
                         )}
                       </div>
@@ -342,7 +344,7 @@ export function DepthSection() {
                             ? 'text-muted-foreground hover:text-foreground hover:bg-foreground/[0.06]'
                             : 'text-muted-foreground/30 hover:text-foreground hover:bg-foreground/[0.06]'
                         )}
-                        title={layer.isVisible ? 'Hide layer' : 'Show layer'}
+                        title={layer.isVisible ? '隐藏图层' : '显示图层'}
                       >
                         {layer.isVisible ? <ViewIcon size={14} /> : <ViewOffSlashIcon size={14} />}
                       </button>
@@ -353,7 +355,7 @@ export function DepthSection() {
                           handleRemoveLayer(layer);
                         }}
                         className="p-1.5 rounded-md text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors opacity-0 group-hover:opacity-100"
-                        title="Remove layer"
+                        title="删除图层"
                       >
                         <Delete02Icon size={13} />
                       </button>
@@ -368,7 +370,7 @@ export function DepthSection() {
                           reorderImageOverlay(layer.id, 'up');
                         }}
                         className="flex items-center gap-1 px-2 py-1 rounded-md text-[10px] font-medium text-muted-foreground hover:text-foreground hover:bg-foreground/[0.06] transition-colors border border-foreground/10"
-                        title="Move forward"
+                        title="前移"
                       >
                         <ArrowUp01Icon size={12} />
                       </button>
@@ -378,7 +380,7 @@ export function DepthSection() {
                           reorderImageOverlay(layer.id, 'down');
                         }}
                         className="flex items-center gap-1 px-2 py-1 rounded-md text-[10px] font-medium text-muted-foreground hover:text-foreground hover:bg-foreground/[0.06] transition-colors border border-foreground/10"
-                        title="Move backward"
+                        title="后移"
                       >
                         <ArrowDown01Icon size={12} />
                       </button>
@@ -394,11 +396,11 @@ export function DepthSection() {
                             ? 'text-foreground border-foreground/20 bg-foreground/[0.08] hover:bg-foreground/[0.1]'
                             : 'text-muted-foreground border-foreground/10 hover:text-foreground hover:bg-foreground/[0.06]'
                         )}
-                        title={layer.layerPosition === 'back' ? 'Move to front' : 'Move behind image'}
+                        title={layer.layerPosition === 'back' ? '移到最前' : '移到图片后面'}
                       >
                         {layer.layerPosition === 'back'
-                          ? <><LayerBringForwardIcon size={12} /> Front</>
-                          : <><LayerSendBackwardIcon size={12} /> Back</>}
+                          ? <><LayerBringForwardIcon size={12} /> 前部</>
+                          : <><LayerSendBackwardIcon size={12} /> 返回</>}
                       </button>
                     </div>
                   )}
@@ -410,7 +412,7 @@ export function DepthSection() {
       </SectionWrapper>
 
       {selectedOverlay && (
-        <SectionWrapper title="Properties" defaultOpen={true}>
+        <SectionWrapper title="属性" defaultOpen={true}>
           <OverlayProperties
             overlay={selectedOverlay}
             onUpdate={(updates) => updateImageOverlay(selectedOverlay.id, updates)}
@@ -422,14 +424,14 @@ export function DepthSection() {
         </SectionWrapper>
       )}
 
-      <SectionWrapper title="3D Objects" defaultOpen={layers.length === 0}>
+      <SectionWrapper title="3D 对象" defaultOpen={layers.length === 0}>
         <div className="space-y-3">
           <button
             onClick={() => fileInputRef.current?.click()}
             className="w-full flex items-center justify-center gap-2 py-2.5 rounded-md border border-dashed border-foreground/15 hover:border-foreground/30 hover:bg-foreground/[0.04] text-muted-foreground hover:text-foreground transition-all duration-150"
           >
             <Upload04Icon size={16} />
-            <span className="text-xs font-medium">Upload Image</span>
+            <span className="text-xs font-medium">上传图片</span>
           </button>
           <input
             ref={fileInputRef}
@@ -449,7 +451,7 @@ export function DepthSection() {
                   key={assetPath}
                   onClick={() => handleAddAsset(assetPath)}
                   className="aspect-square rounded-md border border-foreground/10 bg-foreground/[0.04] hover:bg-foreground/[0.06] hover:border-foreground/20 transition-all duration-150 overflow-hidden p-2.5 group"
-                  title="Click to add"
+                  title="点击添加"
                 >
                   <img
                     src={url}
@@ -497,7 +499,7 @@ function OverlayProperties({
           min={20}
           max={600}
           step={1}
-          label="Size"
+          label="大小"
           valueDisplay={`${overlay.size}px`}
         />
         <Slider
@@ -506,7 +508,7 @@ function OverlayProperties({
           min={-180}
           max={180}
           step={1}
-          label="Rotation"
+          label="旋转"
           valueDisplay={`${overlay.rotation}°`}
         />
         <div className="flex gap-1.5">
@@ -520,7 +522,8 @@ function OverlayProperties({
             onClick={() => onUpdate({ rotation: 0 })}
             className="flex-1 flex items-center justify-center gap-1 py-1.5 rounded-md bg-foreground/[0.04] border border-foreground/10 text-xs text-muted-foreground hover:text-foreground hover:bg-foreground/[0.06] transition-colors"
           >
-            <RefreshIcon size={13} /> Reset
+            <RefreshIcon size={13} /> 重置
+          
           </button>
           <button
             onClick={() => onUpdate({ rotation: normalizeRotation(overlay.rotation + 90) })}
@@ -535,7 +538,7 @@ function OverlayProperties({
           min={0}
           max={1}
           step={0.01}
-          label="Opacity"
+          label="不透明度"
           valueDisplay={`${Math.round(overlay.opacity * 100)}%`}
         />
         <Slider
@@ -544,7 +547,7 @@ function OverlayProperties({
           min={0}
           max={20}
           step={0.5}
-          label="Blur"
+          label="模糊"
           valueDisplay={`${overlay.blur ?? 0}px`}
         />
       </div>
@@ -559,7 +562,8 @@ function OverlayProperties({
               : 'bg-foreground/[0.04] text-muted-foreground border-foreground/10 hover:text-foreground hover:bg-foreground/[0.06]'
           )}
         >
-          Flip X
+          水平翻转
+        
         </button>
         <button
           onClick={() => onUpdate({ flipY: !overlay.flipY })}
@@ -570,12 +574,13 @@ function OverlayProperties({
               : 'bg-foreground/[0.04] text-muted-foreground border-foreground/10 hover:text-foreground hover:bg-foreground/[0.06]'
           )}
         >
-          Flip Y
+          垂直翻转
+        
         </button>
       </div>
 
       <div className="space-y-1.5">
-        <span className="text-xs font-medium text-muted-foreground">Position</span>
+        <span className="text-xs font-medium text-muted-foreground">位置</span>
         <div className="flex gap-1.5">
           <button
             onClick={() => onUpdate({ layer: 'front' })}
@@ -586,7 +591,8 @@ function OverlayProperties({
                 : 'bg-foreground/[0.04] text-muted-foreground border-foreground/10 hover:text-foreground hover:bg-foreground/[0.06]'
             )}
           >
-            In Front
+            在前
+          
           </button>
           <button
             onClick={() => onUpdate({ layer: 'back' })}
@@ -597,7 +603,8 @@ function OverlayProperties({
                 : 'bg-foreground/[0.04] text-muted-foreground border-foreground/10 hover:text-foreground hover:bg-foreground/[0.06]'
             )}
           >
-            Behind Image
+            图片后方
+          
           </button>
         </div>
       </div>
@@ -607,7 +614,8 @@ function OverlayProperties({
         className="w-full flex items-center justify-center gap-1.5 py-2 rounded-md bg-destructive/10 text-destructive hover:bg-destructive/20 text-xs font-medium transition-colors"
       >
         <Delete02Icon size={14} />
-        Remove
+        移除
+      
       </button>
     </div>
   );

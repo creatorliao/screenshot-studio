@@ -12,9 +12,9 @@ import { Footer } from "@/components/landing/Footer";
 import { OG_DEFAULTS } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = {
-  title: "Code to Image Generator: Free Code Screenshots",
+  title: "代码转图片生成器：免费代码截图",
   description:
-    "Free code to image tool: pick a syntax theme, gradient background, line numbers, and window frame, then export a crisp PNG. A free ray.so and carbon.now.sh alternative. No signup.",
+    "免费代码转图片工具：选择语法主题、渐变背景、行号和窗口边框，然后导出清晰的 PNG。ray.so 和 carbon.now.sh 的免费替代品。无需注册。",
   keywords: [
     "code to image",
     "code snippet screenshot",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Code to Image Generator - Screenshot Studio",
+    title: "代码转图片生成器 - Screenshot Studio",
     description:
-      "Turn code into beautiful, shareable images. Themes, gradients, line numbers, and window frames. Free, no signup.",
+      "把代码变成精美、可分享的图片。主题、渐变、行号和窗口边框。免费，无需注册。",
     url: "/features/code-snippets",
   },
   alternates: {
@@ -56,85 +56,85 @@ const chipLinkClassName =
 const features = [
   {
     icon: SourceCodeIcon,
-    title: "14 Syntax Themes",
+    title: "14 种语法主题",
     description:
-      "Midnight, Sunset, Candy, and more. Auto-detects your language or pick from 20+ manually.",
+      "Midnight、Sunset、Candy 等。可自动检测你的语言，也可从 20+ 种中手动选择。",
   },
   {
     icon: ColorsIcon,
-    title: "Gradients, Images & Patterns",
+    title: "渐变、图片与图案",
     description:
-      "Every theme ships its own gradient, or pick from dozens of gradients, image backgrounds, and patterns, or turn the background off for a transparent PNG.",
+      "每个主题都自带渐变，你也可以从数十种渐变、图片背景和图案中挑选，或者关闭背景以获得透明 PNG。",
   },
   {
     icon: Download04Icon,
-    title: "Line Numbers & Window Frame",
+    title: "行号与窗口边框",
     description:
-      "Toggle line numbers, a macOS-style title bar or none at all, and resize the frame to fit your code.",
+      "可切换行号、macOS 风格标题栏或不显示标题栏，并调整边框尺寸以适配你的代码。",
   },
   {
     icon: Link01Icon,
-    title: "Shareable Links & 2x/4x Export",
+    title: "可分享链接与 2x/4x 导出",
     description:
-      "Every setting is saved to the URL, so you can share a link or export a 2x or 4x PNG.",
+      "所有设置都保存在 URL 中，因此你可以分享链接，或导出 2x 或 4x 的 PNG。",
   },
 ] as const;
 
 const howToSteps = [
   {
     step: "1",
-    title: "Paste or Type Your Code",
+    title: "粘贴或输入你的代码",
     description:
-      "Drop in a snippet or start typing directly in the code card. Formatting and indentation are preserved.",
+      "拖入一段代码片段，或直接在代码卡片中输入。格式和缩进都会保留。",
   },
   {
     step: "2",
-    title: "Pick a Theme and Background",
+    title: "选择主题和背景",
     description:
-      "Choose a syntax theme, a gradient, padding, and whether to show line numbers or a window frame.",
+      "选择语法主题、渐变、内边距，以及是否显示行号或窗口边框。",
   },
   {
     step: "3",
-    title: "Export or Share",
+    title: "导出或分享",
     description:
-      "Download a 2x PNG, copy the image to your clipboard, or copy a link that reopens your exact design.",
+      "下载 2x PNG、把图片复制到剪贴板，或复制一个能重新打开你这份设计的链接。",
   },
 ];
 
 const faqs = [
   {
-    question: "Is the code to image generator free?",
+    question: "代码转图片生成器免费吗？",
     answer:
-      "Yes. It is completely free, with no signup, no watermark, and no paid tier.",
+      "是的。完全免费，无需注册、没有水印，也没有付费档位。",
   },
   {
-    question: "How is this different from ray.so or carbon.now.sh?",
+    question: "这与 ray.so 或 carbon.now.sh 有何不同？",
     answer:
-      "It covers the same core workflow, themes, gradients, line numbers, and a window frame, built into Screenshot Studio's own editor, with shareable links and no account required.",
+      "它覆盖了相同的核心工作流、主题、渐变、行号和窗口边框，并内置于 Screenshot Studio 自己的编辑器中，支持可分享链接，且无需注册账号。",
   },
   {
-    question: "Can I export a transparent background?",
+    question: "可以导出透明背景吗？",
     answer:
-      'Yes. Set the background to "Transparent" before exporting and the PNG will have no backdrop.',
+      '可以。导出前把背景设为“透明”，PNG 就不会有背景底色。',
   },
   {
-    question: "Which languages are supported?",
+    question: "支持哪些语言？",
     answer:
-      "Auto-detect picks up most popular languages automatically, or you can choose from 20+ languages manually, including TypeScript, Python, Rust, Go, and SQL.",
+      "自动检测会自动识别最常用的语言，你也可以从 20+ 种语言中手动选择，包括 TypeScript、Python、Rust、Go 和 SQL。",
   },
   {
-    question: "Is my code uploaded anywhere?",
+    question: "我的代码会被上传到什么地方吗？",
     answer:
-      "The code card is rendered and exported entirely in your browser, so your code is not sent to a server to create the image.",
+      "代码卡片完全在浏览器中渲染和导出，因此你的代码不会被发送到服务器来生成图片。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/code", label: "Open the Code Image Editor" },
-  { href: "/features/screenshot-beautifier", label: "Screenshot Beautifier" },
-  { href: "/features/browser-mockups", label: "Browser Mockups" },
-  { href: "/features/social-media-graphics", label: "Social Media Graphics" },
-  { href: "/features", label: "All Features" },
+  { href: "/code", label: "打开代码图片编辑器" },
+  { href: "/features/screenshot-beautifier", label: "截图美化" },
+  { href: "/features/browser-mockups", label: "浏览器模型" },
+  { href: "/features/social-media-graphics", label: "社交媒体图片" },
+  { href: "/features", label: "全部功能" },
 ] as const;
 
 export default function CodeSnippetsFeaturePage() {
@@ -226,21 +226,22 @@ export default function CodeSnippetsFeaturePage() {
               className="mb-6 text-4xl font-semibold tracking-[-0.03em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Turn Code Into Beautiful Images
+              把代码变成精美图片
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Pick a theme, a gradient background, line numbers, and a window
-              frame, then export a crisp PNG or share a link. A free ray.so
-              and carbon.now.sh alternative.
+              选择主题、渐变背景、行号和窗口边框，然后导出清晰的 PNG 或分享链接。ray.so 和 carbon.now.sh 的免费替代品。
+            
             </p>
             <div className="flex flex-col items-center">
               <Link href="/code" className={ctaClassName}>
-                Create a Code Image
+                创建代码图片
+              
               </Link>
               <p className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground/70">
-                <span>100% Free</span>
+                <span>100% 免费</span>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>No Signup Required</span>
+                <span>无需注册</span>
               </p>
             </div>
           </div>
@@ -252,7 +253,8 @@ export default function CodeSnippetsFeaturePage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Everything You Need for a Great Code Screenshot
+              制作出色代码截图所需的一切
+            
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {features.map((feature) => (
@@ -282,7 +284,8 @@ export default function CodeSnippetsFeaturePage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              How It Works
+              工作原理
+            
             </h2>
             <div className="space-y-8">
               {howToSteps.map((item) => (
@@ -308,7 +311,8 @@ export default function CodeSnippetsFeaturePage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Frequently Asked Questions
+              常见问题
+            
             </h2>
             <div className="space-y-4">
               {faqs.map((faq) => (
@@ -329,7 +333,8 @@ export default function CodeSnippetsFeaturePage() {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Explore More Features
+              探索更多功能
+            
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
               {relatedLinks.map((link) => (
@@ -355,13 +360,16 @@ export default function CodeSnippetsFeaturePage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Ready to Turn Your Code Into an Image?
+              准备好把代码变成图片了吗？
+            
             </h2>
             <p className="mb-8 text-muted-foreground">
-              Free, fast, and no account needed.
+              免费、快速，无需账户。
+            
             </p>
             <Link href="/code" className={ctaClassName}>
-              Open Code Images
+              打开代码图片
+            
             </Link>
           </div>
         </section>

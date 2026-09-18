@@ -23,7 +23,7 @@ interface TransformPreset {
 
 const PRESETS: TransformPreset[] = [
   {
-    name: 'Default',
+    name: '默认',
     values: {
       perspective: 200,
       rotateX: 0,
@@ -35,7 +35,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Subtle Left',
+    name: '轻微左倾',
     values: {
       perspective: 1000,
       rotateX: 3,
@@ -47,7 +47,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Subtle Right',
+    name: '轻微右倾',
     values: {
       perspective: 1000,
       rotateX: -3,
@@ -59,7 +59,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Dramatic Left',
+    name: '左侧强透视',
     values: {
       perspective: 800,
       rotateX: 10,
@@ -71,7 +71,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Dramatic Right',
+    name: '右侧强透视',
     values: {
       perspective: 800,
       rotateX: -10,
@@ -83,7 +83,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Top Left',
+    name: '左上',
     values: {
       perspective: 1200,
       rotateX: 45,
@@ -95,7 +95,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Top Right',
+    name: '右上',
     values: {
       perspective: 1200,
       rotateX: 45,
@@ -107,7 +107,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Front Depth',
+    name: '前部深度',
     values: {
       perspective: 1000,
       rotateX: 10,
@@ -119,7 +119,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Side Depth',
+    name: '侧面深度',
     values: {
       perspective: 1000,
       rotateX: 0,
@@ -131,7 +131,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Complex Tilt',
+    name: '复杂倾斜',
     values: {
       perspective: 900,
       rotateX: 10,
@@ -143,7 +143,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Complex Tilt Reverse',
+    name: '复杂倾斜反向',
     values: {
       perspective: 900,
       rotateX: -10,
@@ -155,7 +155,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Skew Left',
+    name: '左倾斜',
     values: {
       perspective: 800,
       rotateX: 3,
@@ -167,7 +167,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Skew Right',
+    name: '右倾斜',
     values: {
       perspective: 800,
       rotateX: -3,
@@ -179,7 +179,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Scale Down',
+    name: '缩小',
     values: {
       perspective: 900,
       rotateX: 5,
@@ -191,7 +191,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Scale Up',
+    name: '放大',
     values: {
       perspective: 900,
       rotateX: -5,
@@ -203,7 +203,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Extreme Angle',
+    name: '极致角度',
     values: {
       perspective: 1000,
       rotateX: 10,
@@ -215,7 +215,7 @@ const PRESETS: TransformPreset[] = [
     },
   },
   {
-    name: 'Extreme Reverse',
+    name: '极致反向',
     values: {
       perspective: 1000,
       rotateX: -10,
@@ -283,7 +283,7 @@ export function Perspective3DControls() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Label className="text-sm font-semibold text-foreground">3D Perspective</Label>
+          <Label className="text-sm font-semibold text-foreground">3D 透视</Label>
         </div>
         <Button
           variant="ghost"
@@ -291,7 +291,8 @@ export function Perspective3DControls() {
           onClick={reset}
           className="h-7 px-2 text-xs border border-border/50 hover:border-border"
         >
-          Reset
+          重置
+        
         </Button>
       </div>
 
@@ -326,7 +327,7 @@ export function Perspective3DControls() {
           min={50}
           max={1000}
           step={10}
-          label="Perspective"
+          label="透视"
           valueDisplay={`${perspective3D.perspective}px`}
         />
         <Slider
@@ -335,7 +336,7 @@ export function Perspective3DControls() {
           min={-45}
           max={45}
           step={1}
-          label="Rotate X"
+          label="X 轴旋转"
           valueDisplay={`${perspective3D.rotateX}°`}
         />
         <Slider
@@ -344,7 +345,7 @@ export function Perspective3DControls() {
           min={-45}
           max={45}
           step={1}
-          label="Rotate Y"
+          label="Y 轴旋转"
           valueDisplay={`${perspective3D.rotateY}°`}
         />
         <Slider
@@ -353,7 +354,7 @@ export function Perspective3DControls() {
           min={-45}
           max={45}
           step={1}
-          label="Rotate Z"
+          label="Z 轴旋转"
           valueDisplay={`${perspective3D.rotateZ}°`}
         />
         <Slider
@@ -362,7 +363,7 @@ export function Perspective3DControls() {
           min={-10}
           max={10}
           step={0.5}
-          label="Translate X"
+          label="X 位移"
           valueDisplay={`${perspective3D.translateX}%`}
         />
         <Slider
@@ -371,7 +372,7 @@ export function Perspective3DControls() {
           min={-10}
           max={10}
           step={0.5}
-          label="Translate Y"
+          label="Y 位移"
           valueDisplay={`${perspective3D.translateY}%`}
         />
       </div>

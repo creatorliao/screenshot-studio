@@ -94,7 +94,7 @@ export function Hero({
                 : { opacity: 0, y: 6 }
             }
           >
-            <span className="text-muted-foreground">Backed by</span>
+            <span className="text-muted-foreground">支持方</span>
             <Image
               src="/vercel-icon.png"
               alt=""
@@ -104,7 +104,8 @@ export function Hero({
               aria-hidden="true"
             />
             <span className="font-medium text-foreground">
-              Vercel OSS Program
+              Vercel 开源计划
+            
             </span>
           </motion.a>
 
@@ -122,8 +123,8 @@ export function Hero({
                   className="block md:whitespace-nowrap"
                   custom={index}
                   variants={headingMaskAnimation}
-                  initial={prefersReducedMotion ? false : "initial"}
-                  animate={showMotion ? "enter" : "initial"}
+                  initial={prefersReducedMotion ? false : "初始"}
+                  animate={showMotion ? "进入" : "初始"}
                 >
                   {line}
                 </motion.span>
@@ -135,8 +136,8 @@ export function Hero({
             <motion.p
               className="text-[15px] md:text-base leading-normal text-muted-foreground"
               variants={descriptionMaskAnimation}
-              initial={prefersReducedMotion ? false : "initial"}
-              animate={showMotion ? "enter" : "initial"}
+              initial={prefersReducedMotion ? false : "初始"}
+              animate={showMotion ? "进入" : "初始"}
             >
               {description}
             </motion.p>
@@ -145,8 +146,8 @@ export function Hero({
           <motion.div
             className="mt-8"
             variants={buttonAnimation}
-            initial={prefersReducedMotion ? false : "initial"}
-            animate={showMotion ? "enter" : "initial"}
+            initial={prefersReducedMotion ? false : "初始"}
+            animate={showMotion ? "进入" : "初始"}
           >
             <Link
               href={ctaHref}

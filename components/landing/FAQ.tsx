@@ -17,29 +17,29 @@ interface FAQProps {
 
 const defaultFAQs: FAQItem[] = [
   {
-    question: "Is Screenshot Studio really free?",
+    question: "Screenshot Studio 真的免费吗？",
     answer:
-      "Yes. Screenshot Studio is 100% free with no hidden costs. Unlimited exports, all features, no watermarks. No signup required.",
+      "是的。Screenshot Studio 100% 免费，没有隐藏费用。无限次导出、全部功能、无水印，无需注册。",
   },
   {
-    question: "Do I need to create an account?",
+    question: "需要注册账号吗？",
     answer:
-      "No. Just open the editor and start creating. Your work saves automatically in your browser with unlimited undo/redo.",
+      "不需要。打开编辑器即可开始创作。你的作品会自动保存在浏览器中，并支持无限次撤销/重做。",
   },
   {
-    question: "What frames and styles are available?",
+    question: "有哪些边框和样式可用？",
     answer:
-      "macOS and Windows browser frames, Arc-style rounded frames, Polaroid borders, 3D perspective transforms, and customizable shadows with blur, spread, and color controls.",
+      "macOS 与 Windows 浏览器边框、Arc 风格圆角边框、Polaroid 边框、3D 透视变换，以及可自定义的阴影（模糊、扩散、颜色均可调）。",
   },
   {
-    question: "What export formats are supported?",
+    question: "支持哪些导出格式？",
     answer:
-      "PNG with transparency or JPG. Export up to 5x resolution for crisp output on any platform.",
+      "带透明通道的 PNG 或 JPG。最高可导出 5x 分辨率，在任何平台上都清晰锐利。",
   },
   {
-    question: "Is my data stored on your servers?",
+    question: "我的数据会存储在你们的服务器上吗？",
     answer:
-      "No. Editing runs in your browser and imported images are not uploaded to edit them. Only export compression sends the finished image to the server, which recompresses it in memory and returns it without storing it.",
+      "不会。编辑在浏览器中运行，导入的图片不会为了编辑而上传。只有导出压缩会把成品图片发送到服务器，服务器在内存中重新压缩后返回，并不存储。",
   },
 ];
 
@@ -139,7 +139,7 @@ export function FAQ({
   return (
     <section
       id="faq"
-      aria-label="Frequently asked questions"
+      aria-label="常见问题"
       className="w-full bg-background px-6 py-16 sm:py-20 md:py-24"
     >
       <script
@@ -156,13 +156,14 @@ export function FAQ({
                 'Inter, "Inter Fallback", Arial, Helvetica, sans-serif',
             }}
           >
-            Common
+            常见
+            
             <br />
             {title}.
           </h2>
           <p className="mt-5 max-w-[300px] text-pretty text-[15px] leading-relaxed text-muted-foreground md:text-base">
-            Quick answers about Screenshot Studio, exports, and how it works in
-            your browser.
+            关于 Screenshot Studio、导出以及它如何在浏览器中运行的快速解答。
+          
           </p>
         </div>
 
@@ -182,10 +183,12 @@ export function FAQ({
           <div className="mt-8 flex flex-col items-start justify-between gap-5 rounded-2xl bg-card p-6 ring-1 ring-border shadow-[var(--card-edge-shadow)] sm:flex-row sm:items-center sm:p-7">
             <div>
               <h3 className="text-[17px] font-semibold tracking-tight text-foreground">
-                Ready to create?
+                准备好开始创作了吗？
+              
               </h3>
               <p className="mt-1.5 text-sm text-muted-foreground">
-                Join thousands of creators making beautiful images.
+                加入成千上万创作者的行列，一起制作精美的图片。
+              
               </p>
             </div>
             <Link

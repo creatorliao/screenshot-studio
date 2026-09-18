@@ -48,7 +48,7 @@ export function ImageOverlaySection() {
   const previewOverlays = imageOverlays.slice(-4);
 
   return (
-    <SectionWrapper title="Stickers" defaultOpen={true}>
+    <SectionWrapper title="贴纸" defaultOpen={true}>
       <div className="space-y-2">
         <input
           ref={fileInputRef}
@@ -66,7 +66,8 @@ export function ImageOverlaySection() {
             <Image01Icon size={16} />
           </div>
           <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
-            Add Image to Canvas
+            添加图片到画布
+          
           </span>
         </button>
 
@@ -103,10 +104,10 @@ export function ImageOverlaySection() {
 
         <div className="flex-1 text-left min-w-0">
           <p className="text-xs font-medium text-foreground">
-            {totalLayers > 0 ? `${totalLayers} layer${totalLayers !== 1 ? 's' : ''}` : 'No layers'}
+            {totalLayers > 0 ? `${totalLayers} layer${totalLayers !== 1 ? 's' : ''}` : '暂无图层'}
           </p>
           <p className="text-[10px] text-muted-foreground">
-            {totalLayers > 0 ? 'Manage depth & assets' : 'Add stickers, overlays & more'}
+            {totalLayers > 0 ? '管理深度与素材' : '添加贴纸、叠加层等'}
           </p>
         </div>
 

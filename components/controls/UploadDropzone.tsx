@@ -96,7 +96,7 @@ export function UploadDropzone() {
             )}`
           );
         } else {
-          setError("Failed to upload file. Please try again.");
+          setError("文件上传失败，请重试。");
         }
       }
     },
@@ -148,10 +148,12 @@ export function UploadDropzone() {
       <div className="space-y-6 sm:space-y-8">
         <div className="text-center space-y-3">
           <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
-            Upload Image
+            上传图片
+          
           </h2>
           <p className="text-xs sm:text-sm text-muted-foreground px-2">
-            Drag and drop, paste, or click to upload an image
+            拖放、粘贴或点击上传图片
+          
           </p>
         </div>
 
@@ -161,13 +163,15 @@ export function UploadDropzone() {
               value="upload"
               className="data-[state=active]:bg-background rounded-md border-0 data-[state=active]:border-2 data-[state=active]:border-border transition-all duration-200"
             >
-              Upload Image
+              上传图片
+            
             </TabsTrigger>
             <TabsTrigger
               value="screenshot"
               className="data-[state=active]:bg-background rounded-md border-0 data-[state=active]:border-2 data-[state=active]:border-border transition-all duration-200"
             >
-              Website Screenshot
+              网站截图
+            
             </TabsTrigger>
           </TabsList>
 
@@ -199,16 +203,19 @@ export function UploadDropzone() {
 
               {active ? (
                 <p className="text-sm sm:text-base font-medium text-primary">
-                  Drop the image here...
+                  将图片拖到此处…
+                
                 </p>
               ) : (
                 <div className="space-y-2 text-center px-2">
                   <p className="text-sm sm:text-base font-medium">
-                    Drag & drop an image here
+                    将图片拖放到此处
+                  
                   </p>
                   <p className="text-xs sm:text-sm text-muted-foreground">
-                    or tap to browse • PNG, JPG, WEBP up to{" "}
-                    {MAX_IMAGE_SIZE / 1024 / 1024}MB • or paste an image
+                    或点击浏览 • PNG、JPG、WEBP，最大{" "}
+                    {MAX_IMAGE_SIZE / 1024 / 1024}MB • 或粘贴图片
+                  
                   </p>
                 </div>
               )}

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s0280",
+    "en": "Resources",
+    "count": 2,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s0281",
+    "en": "Retry-After",
+    "count": 2,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0282",
+    "en": "Right",
+    "count": 2,
+    "where": "components/editor/sections/ImagePositionSection.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0283",
+    "en": "Rose",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0284",
+    "en": "Sand",
+    "count": 2,
+    "where": "components/code-image/code-themes-data.ts, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0285",
+    "en": "screenshot",
+    "count": 2,
+    "where": "components/editor/LeftEditPanel.tsx"
+  },
+  {
+    "id": "s0286",
+    "en": "Screenshot",
+    "count": 2,
+    "where": "components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s0287",
+    "en": "Screenshot Editing",
+    "count": 2,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0288",
+    "en": "Screenshot Studio - Code to Image",
+    "count": 2,
+    "where": "app/[locale]/code/page.tsx, app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0289",
+    "en": "Screenshot Studio editor",
+    "count": 2,
+    "where": "app/[locale]/tools/page.tsx, components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s0290",
+    "en": "se",
+    "count": 2,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/mockups/MockupRenderer.tsx"
+  },
+  {
+    "id": "s0291",
+    "en": "settings",
+    "count": 2,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0292",
+    "en": "Settings",
+    "count": 2,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/EditorLayout.tsx"
+  },
+  {
+    "id": "s0293",
+    "en": "Sharp Edge",
+    "count": 2,
+    "where": "components/editor/editor-right-panel.tsx, components/editor/style-tabs.tsx"
+  },
+  {
+    "id": "s0294",
+    "en": "Sit back while we render your creation",
+    "count": 2,
+    "where": "components/canvas/dialogs/ExportDialog.tsx, lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0295",
+    "en": "Sitemap",
+    "count": 2,
+    "where": "app/not-found.tsx, components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0296",
+    "en": "Slide Up",
+    "count": 2,
+    "where": "components/landing/BentoCardVisuals.tsx, lib/animation/presets.ts"
+  },
+  {
+    "id": "s0297",
+    "en": "slideshow",
+    "count": 2,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0298",
+    "en": "Spin for creative diagonal compositions",
+    "count": 2,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0299",
+    "en": "Sponsor",
+    "count": 2,
+    "where": "components/SponsorButton.tsx"
+  },
+  {
+    "id": "s0300",
+    "en": "Start Free",
+    "count": 2,
+    "where": "app/[locale]/features/browser-mockups/page.tsx, app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0301",
+    "en": "Story",
+    "count": 2,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx, components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s0302",
+    "en": "Strong",
+    "count": 2,
+    "where": "components/editor/sections/ShadowSection.tsx, components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0303",
+    "en": "Style It",
+    "count": 2,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx, app/[locale]/landing/page.tsx"
+  },
+  {
+    "id": "s0304",
+    "en": "Subtle Left",
+    "count": 2,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0305",
+    "en": "Subtle Right",
+    "count": 2,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0306",
+    "en": "Sunset",
+    "count": 2,
+    "where": "components/code-image/code-themes-data.ts, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0307",
+    "en": "sw",
+    "count": 2,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/mockups/MockupRenderer.tsx"
+  },
+  {
+    "id": "s0308",
+    "en": "Syntax Themes",
+    "count": 2,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0309",
+    "en": "Teal",
+    "count": 2,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0310",
+    "en": "Terms & Conditions",
+    "count": 2,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0311",
+    "en": "Text",
+    "count": 2,
+    "where": "components/editor/sections/DepthSection.tsx, components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s0312",
+    "en": "theme",
+    "count": 2,
+    "where": "components/code-image/BackgroundPicker.tsx"
+  },
+  {
+    "id": "s0313",
+    "en": "Tilt forward or backward for dramatic perspective",
+    "count": 2,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0314",
+    "en": "Top Down",
+    "count": 2,
+    "where": "components/editor/sections/TransformsGallery.tsx, components/editor/sections/TransformsSection.tsx"
+  },
+  {
+    "id": "s0315",
+    "en": "transforms",
+    "count": 2,
+    "where": "components/editor/RightSettingsPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0316",
+    "en": "Transforms",
+    "count": 2,
+    "where": "components/editor/sections/TransformsSection.tsx, components/editor/style-tabs.tsx"
+  },
+  {
+    "id": "s0317",
+    "en": "transparent",
+    "count": 2,
+    "where": "components/code-image/CodeFrame.tsx, components/editor/sections/BackgroundSection.tsx"
+  },
+  {
+    "id": "s0318",
+    "en": "Try Screenshot Studio Free",
+    "count": 2,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s0319",
+    "en": "Turn left or right to show different angles",
+    "count": 2,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0320",
+    "en": "Tweet & Code Snippets",
+    "count": 2,
+    "where": "components/landing/FeaturesBento.tsx, components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0321",
+    "en": "Twitter / X",
+    "count": 2,
+    "where": "app/[locale]/contact/page.tsx, app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0322",
+    "en": "untitled",
+    "count": 2,
+    "where": "components/code-image/CodeFrame.tsx"
+  },
+  {
+    "id": "s0323",
+    "en": "up",
+    "count": 2,
+    "where": "components/editor/sections/DepthSection.tsx, components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0324",
+    "en": "Upload an image to see animation previews",
+    "count": 2,
+    "where": "components/editor/RightSettingsPanel.tsx, components/timeline/AnimationPresetGallery.tsx"
+  },
+  {
+    "id": "s0325",
+    "en": "vertical",
+    "count": 2,
+    "where": "components/image-render/text-overlay-renderer.tsx, components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s0326",
+    "en": "Warm",
+    "count": 2,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0327",
+    "en": "WebP",
+    "count": 2,
+    "where": "components/export/FormatSelector.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0328",
+    "en": "width",
+    "count": 2,
+    "where": "components/tools/CropWorkspace.tsx, components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0329",
+    "en": "Window",
+    "count": 2,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0330",
+    "en": "Zoom In",
+    "count": 2,
+    "where": "app/[locale]/features/animation-maker/page.tsx, lib/animation/presets.ts"
+  },
+  {
+    "id": "s0331",
+    "en": "Zoom Out",
+    "count": 2,
+    "where": "app/[locale]/features/animation-maker/page.tsx, lib/animation/presets.ts"
+  },
+  {
+    "id": "s0332",
+    "en": "--glow-color",
+    "count": 1,
+    "where": "components/landing/MagicBento.tsx"
+  },
+  {
+    "id": "s0333",
+    "en": "-40px",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0334",
+    "en": ", a description, typed parameters, and a response schema. Any page on this site also serves Markdown when asked:",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0335",
+    "en": ", and",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0336",
+    "en": ", and an unknown path returns",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0337",
+    "en": ", browse the",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0338",
+    "en": ", or explore the",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s0339",
+    "en": ", or fetch the",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0340",
+    "en": ", or in the",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0341",
+    "en": ", or reach the maintainers through the",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0342",
+    "en": ", to remember your language choice. Additional cookies and identifiers may be set by PostHog and Google AdSense as described above.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0343",
+    "en": ", which is stable;",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0344",
+    "en": ", which loads that page and captures it. The resulting image is cached in Cloudflare R2, and our database stores the normalized URL, a hash of it, the device and color-scheme options, and the storage key so repeat captures are fast. Only public web pages you explicitly submit are captured.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0345",
+    "en": ". A request that accepts neither",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0346",
+    "en": ". All rights reserved.",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0347",
+    "en": ". Click canvas to deselect",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0348",
+    "en": ". If you find Screenshot Studio useful, consider starring the repo or sharing it with others.",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s0349",
+    "en": ". Pull requests, bug reports, and feature suggestions are all welcome.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0350",
+    "en": ". Screenshot Studio is free, needs no account, and processes your images in the browser, so there is nothing to cancel and no subscription to manage.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0351",
+    "en": ". Wait for",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0352",
+    "en": ". We believe the best tools are built in the open.",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s0353",
+    "en": ".svg",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0354",
+    "en": ".timeline-track-area",
+    "count": 1,
+    "where": "components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s0355",
+    "en": "% smaller)",
+    "count": 1,
+    "where": "components/tools/ToolWorkspace.tsx"
+  },
+  {
+    "id": "s0356",
+    "en": "+ Save Current as Preset",
+    "count": 1,
+    "where": "components/presets/PresetGallery.tsx"
+  },
+  {
+    "id": "s0357",
+    "en": "1. Acceptance of Terms",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0358",
+    "en": "1. Capture a live page",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0359",
+    "en": "100+ Gradient Backgrounds",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0360",
+    "en": "100+ gradients, solid colors, images, blur, and noise effects. Make any screenshot look stunning.",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0361",
+    "en": "100+ gradients, solids, images, blur, and noise. One click polish.",
+    "count": 1,
+    "where": "components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s0362",
+    "en": "100px",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0363",
+    "en": "14 color themes (Midnight, Candy, Sunset, and more), each pairable with its own gradient, one of Screenshot Studio's gradient and image backgrounds, or a simple pattern.",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s0364",
+    "en": "14 Syntax Themes",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0365",
+    "en": "2. Description of Service",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0366",
+    "en": "2. Optimize the export",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0367",
+    "en": "20+ Animation Presets",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0368",
+    "en": "20+ animation presets across 5 categories: Reveal, Flip, Perspective, Orbit, and Depth",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0369",
+    "en": "20+ animation presets with timeline editor. Export as MP4, WebM, or GIF.",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0370",
+    "en": "20+ presets plus a timeline editor. Export MP4, WebM, or GIF.",
+    "count": 1,
+    "where": "components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s0371",
+    "en": "200px",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0372",
+    "en": "25px",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0373",
+    "en": "3 Steps to Professional Screenshots",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0374",
+    "en": "3. Handle failures",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0375",
+    "en": "3. Use of Service",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0376",
+    "en": "30+ perspective presets with realistic tilt.",
+    "count": 1,
+    "where": "components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s0377",
+    "en": "30+ perspective presets. Add depth and dimension with realistic rotation and tilt.",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0378",
+    "en": "3D effects",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0379",
+    "en": "3D Effects & Animations",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s0380",
+    "en": "3D Effects & Transforms",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0381",
+    "en": "3D images get 30% more clicks than flat screenshots in social media posts.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0382",
+    "en": "3D Objects",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0383",
+    "en": "3D perspective transforms with real-time preview",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0384",
+    "en": "3D Screenshot Effects & Mockups",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0385",
+    "en": "3D transformed",
+    "count": 1,
+    "where": "components/canvas/overlays/Perspective3DOverlay.tsx"
+  },
+  {
+    "id": "s0386",
+    "en": "4. Intellectual Property",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0387",
+    "en": "404. Page not found | Screenshot Studio",
+    "count": 1,
+    "where": "app/not-found.tsx"
+  },
+  {
+    "id": "s0388",
+    "en": "5. Disclaimer of Warranties",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0389",
+    "en": "50+ gradient and solid color backgrounds with blur and noise effects",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0390",
+    "en": "50px",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0391",
+    "en": "6. Limitation of Liability",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0392",
+    "en": "7. Changes to Terms",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0393",
+    "en": "8. Contact",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0394",
+    "en": "A complete screenshot editor that runs in your browser. No bloated software, no learning curve. Just powerful tools that work.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0395",
+    "en": "A critical error occurred. Please try again or refresh the page.",
+    "count": 1,
+    "where": "app/global-error.tsx"
+  },
+  {
+    "id": "s0396",
+    "en": "A free, browser-based alternative to Snagit for screenshot beautification and sharing.",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0397",
+    "en": "A free, cross-platform alternative to CleanShot X that runs in your browser.",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0398",
+    "en": "A ground-up rebuild of Screenshot Studio with a modern stack, new UI, and powerful new features.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0399",
+    "en": "A layered pair with visual depth.",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0400",
+    "en": "A Mockup Tool Built for UI and UX Work",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0401",
+    "en": "A single device with balanced focus.",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0402",
+    "en": "A small number of cache-maintenance endpoints require a shared secret held by the maintainers. They are not part of the public API surface and are deliberately absent from the",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0403",
+    "en": "A suite of free image tools that run entirely in your browser. Batch processing, no signup, no watermark, no upload.",
+    "count": 1,
+    "where": "app/[locale]/tools/page.tsx"
+  },
+  {
+    "id": "s0404",
+    "en": "Aayushman Singh",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0405",
+    "en": "About Screenshot Studio, the free, open-source browser tool that transforms plain screenshots into professional graphics.",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s0406",
+    "en": "About Us",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s0407",
+    "en": "Abstract",
+    "count": 1,
+    "where": "components/code-image/code-backgrounds.ts"
+  },
+  {
+    "id": "s0408",
+    "en": "Abstract circular shapes",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s0409",
+    "en": "Accept: text/markdown",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0410",
+    "en": "Ad Creatives",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0411",
+    "en": "Add",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0412",
+    "en": "Add 3D Effects Free",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0413",
+    "en": "Add 3D Effects to Your Screenshots",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0414",
+    "en": "Add a realistic Safari or Chrome browser frame to any screenshot in 3 steps using Screenshot Studio.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0415",
+    "en": "Add a Tweet",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0416",
+    "en": "Add Animation",
+    "count": 1,
+    "where": "components/timeline/TimelineControls.tsx"
+  },
+  {
+    "id": "s0417",
+    "en": "Add backgrounds, shadows, frames, and text in a few clicks.",
+    "count": 1,
+    "where": "app/[locale]/landing/page.tsx"
+  },
+  {
+    "id": "s0418",
+    "en": "Add browser context to screenshots in tutorials, guides, and technical articles.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0419",
+    "en": "Add Browser Frame",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  }
+]

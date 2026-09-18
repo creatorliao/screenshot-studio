@@ -125,7 +125,7 @@ export function useToolQueue(toolSlug: string) {
     if (rejectedType > 0) {
       toast.error(
         `${rejectedType} file${rejectedType === 1 ? "" : "s"} skipped`,
-        { description: "Supported formats: PNG, JPG, WebP, GIF, BMP, AVIF." }
+        { description: "支持的格式：PNG、JPG、WebP、GIF、BMP、AVIF。" }
       );
     }
     if (rejectedSize > 0) {
@@ -152,7 +152,7 @@ export function useToolQueue(toolSlug: string) {
           setItems((previous) =>
             previous.map((row) =>
               row.id === item.id
-                ? { ...row, status: "error", error: "Could not read this image" }
+                ? { ...row, status: "error", error: "无法读取这张图片" }
                 : row
             )
           );
@@ -285,14 +285,14 @@ export function useToolQueue(toolSlug: string) {
       setIsRunning(false);
 
       if (cancelRef.current) {
-        toast.info("Stopped", {
+        toast.info("已停止", {
           description: `${succeeded} image${succeeded === 1 ? "" : "s"} finished before you stopped.`,
         });
       } else if (failed > 0 && succeeded > 0) {
         toast.warning(`${succeeded} done, ${failed} failed`);
       } else if (failed > 0) {
-        toast.error("Processing failed", {
-          description: "None of the images could be processed.",
+        toast.error("处理失败", {
+          description: "所有图片都未能处理。",
         });
       }
     },
@@ -308,15 +308,15 @@ export function useToolQueue(toolSlug: string) {
       }));
 
     if (files.length === 0) {
-      toast.error("Nothing to download yet");
+      toast.error("暂无可下载的内容");
       return;
     }
 
     try {
       await downloadResults(files, toolSlug);
     } catch {
-      toast.error("Download failed", {
-        description: "Your browser blocked the download. Try again.",
+      toast.error("下载失败", {
+        description: "你的浏览器阻止了下载。请重试。",
       });
     }
   }, [toolSlug]);

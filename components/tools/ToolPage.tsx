@@ -38,17 +38,19 @@ export function ToolPage({ tool }: ToolPageProps) {
       <main className="bg-background">
         <section className="px-6 pt-28 pb-12">
           <div className="mx-auto max-w-5xl">
-            <nav aria-label="Breadcrumb" className="mb-4">
+            <nav aria-label="面包屑" className="mb-4">
               <ol className="flex items-center gap-1.5 text-xs text-muted-foreground">
                 <li>
                   <Link href="/" className="hover:text-foreground">
-                    Home
+                    首页
+                  
                   </Link>
                 </li>
                 <li aria-hidden="true">/</li>
                 <li>
                   <Link href={TOOLS_HUB_PATH} className="hover:text-foreground">
-                    Image Tools
+                    图片工具
+                  
                   </Link>
                 </li>
                 <li aria-hidden="true">/</li>
@@ -76,7 +78,8 @@ export function ToolPage({ tool }: ToolPageProps) {
         <section className="border-t border-border px-6 py-16">
           <div className="mx-auto max-w-3xl">
             <h2 className="mb-6 text-xl font-semibold tracking-[-0.01em] text-foreground">
-              What this tool does
+              这个工具能做什么
+            
             </h2>
             <ul className="mb-12 grid gap-3 sm:grid-cols-2">
               {tool.features.map((feature) => (
@@ -92,7 +95,8 @@ export function ToolPage({ tool }: ToolPageProps) {
             </ul>
 
             <h2 className="mb-4 text-xl font-semibold tracking-[-0.01em] text-foreground">
-              Frequently asked questions
+              常见问题
+            
             </h2>
             <Accordion type="single" collapsible>
               {tool.faqs.map((faq) => (
@@ -106,7 +110,8 @@ export function ToolPage({ tool }: ToolPageProps) {
             {related.length > 0 ? (
               <>
                 <h2 className="mt-12 mb-4 text-xl font-semibold tracking-[-0.01em] text-foreground">
-                  Related tools
+                  相关工具
+                
                 </h2>
                 <div className="grid gap-3 sm:grid-cols-3">
                   {related.map((item) => (
@@ -130,14 +135,15 @@ export function ToolPage({ tool }: ToolPageProps) {
             ) : null}
 
             <p className="mt-12 text-sm text-muted-foreground">
-              Need more than a quick fix? The{" "}
+              需要的不只是快速修复？{" "}
               <Link href="/" className="underline">
-                Screenshot Studio editor
+                Screenshot Studio 编辑器
+              
               </Link>{" "}
-              adds gradient backgrounds, browser mockups, shadows, 3D perspective,
-              and annotations. You can also browse{" "}
+              添加渐变背景、浏览器模型、阴影、3D 透视和标注。你还可以浏览{" "}
               <Link href={TOOLS_HUB_PATH} className="underline">
-                every image tool
+                各个图片工具
+              
               </Link>
               .
             </p>

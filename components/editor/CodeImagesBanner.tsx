@@ -27,26 +27,29 @@ export function CodeImagesBanner() {
       <div className="mx-auto flex max-w-7xl items-center justify-center">
         <div className="flex max-w-full min-w-0 items-center justify-center gap-2.5 text-center">
           <span className="inline-flex h-6 shrink-0 items-center rounded-md bg-foreground px-2 text-[10px] font-semibold uppercase tracking-wide text-background">
-            New
+            新
+          
           </span>
           <SourceCodeIcon size={16} aria-hidden="true" className="shrink-0 text-foreground" />
           <p className="truncate text-sm text-foreground">
-            <span className="font-medium">Code Images</span>
+            <span className="font-medium">代码图片</span>
             <span className="text-muted-foreground">
-              {" "}turns any snippet into a beautiful shareable image with 14 themes and 150+ backgrounds.
+              {" "}把任意代码片段变成精美的可分享图片，包含 14 款主题和 150+ 背景。
+            
             </span>
           </p>
           <Link
             href="/code"
             className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-foreground underline-offset-4 hover:underline"
           >
-            Try it
+            试一试
+            
             <ArrowRight01Icon size={14} aria-hidden="true" />
           </Link>
           <button
             type="button"
             onClick={handleDismiss}
-            aria-label="Dismiss code images announcement"
+            aria-label="关闭代码图片公告"
             className="ml-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-foreground/[0.06] hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
           >
             <Cancel01Icon size={14} aria-hidden="true" />

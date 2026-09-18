@@ -3,17 +3,17 @@ import { Metadata } from "next";
 import { GoBackButton } from "@/components/landing/GoBackButton";
 
 const RECOVERY_LINKS = [
-  { href: "/features", label: "Features" },
-  { href: "/docs", label: "API docs" },
-  { href: "/developers", label: "Developers" },
-  { href: "/sitemap.xml", label: "Sitemap" },
+  { href: "/features", label: "功能" },
+  { href: "/docs", label: "API 文档" },
+  { href: "/developers", label: "开发者" },
+  { href: "/sitemap.xml", label: "站点地图" },
   { href: "/llms.txt", label: "llms.txt" },
 ];
 
 export const metadata: Metadata = {
-  title: "404. Page not found | Screenshot Studio",
+  title: "404. 页面未找到 | Screenshot Studio",
   description:
-    "This page does not exist. Go back, or open the Screenshot Studio editor.",
+    "此页面不存在。返回上一页，或打开 Screenshot Studio 编辑器。",
   robots: { index: false, follow: true },
 };
 
@@ -38,12 +38,13 @@ export default function NotFound() {
               'Inter, "Inter Fallback", Arial, Helvetica, sans-serif',
           }}
         >
-          Page not found
+          页面未找到
+        
         </h1>
 
         <p className="mt-3 max-w-sm text-[15px] leading-relaxed text-muted-foreground md:text-base">
-          This page does not exist or was moved. Go back, or open the editor to
-          keep creating.
+          此页面不存在或已被移动。返回上一页，或打开编辑器继续创作。
+        
         </p>
 
         <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
@@ -52,12 +53,13 @@ export default function NotFound() {
             href="/"
             className="inline-flex h-10 items-center justify-center rounded-md bg-[var(--nav-cta-bg)] px-5 text-sm font-medium text-[var(--nav-cta-fg)] shadow-sm transition-[transform,box-shadow] duration-150 ease-out [text-shadow:var(--nav-cta-text-shadow)] hover:shadow-[var(--nav-cta-hover-shadow)] active:scale-[0.98]"
           >
-            Open editor
+            打开编辑器
+          
           </Link>
         </div>
 
         <nav
-          aria-label="Other pages"
+          aria-label="其他页面"
           className="mt-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-muted-foreground"
         >
           {RECOVERY_LINKS.map((link) => (

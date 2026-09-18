@@ -60,7 +60,7 @@ export function SidebarLeft({
                 size="sm"
               >
                 <Download04Icon className="size-4 shrink-0" />
-                <span className="truncate">Download</span>
+                <span className="truncate">下载</span>
               </Button>
             </div>
           </div>
@@ -80,7 +80,7 @@ export function SidebarLeft({
               className="w-full h-10 justify-center gap-2.5 rounded-lg bg-background hover:bg-accent text-foreground border border-border hover:border-border/80  transition-all duration-200 font-medium text-sm px-4 overflow-hidden"
             >
               <GithubIcon className="size-4 shrink-0" />
-              <span className="truncate">Proudly Open Source</span>
+              <span className="truncate">自豪地开源</span>
             </Button>
           </a>
         </SidebarFooter>

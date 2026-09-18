@@ -25,42 +25,42 @@ const socialSections = [
     name: 'Instagram',
     icon: InstagramIcon,
     presets: [
-      { label: 'Post', ratio: '1:1', id: '1_1' },
-      { label: 'Portrait', ratio: '4:5', id: '4_5' },
-      { label: 'Story', ratio: '9:16', id: '9_16' },
+      { label: '帖子', ratio: '1:1', id: '1_1' },
+      { label: '竖版', ratio: '4:5', id: '4_5' },
+      { label: '故事', ratio: '9:16', id: '9_16' },
     ],
   },
   {
     name: 'Twitter',
     icon: NewTwitterIcon,
     presets: [
-      { label: 'Tweet', ratio: '16:9', id: '16_9' },
-      { label: 'Cover', ratio: '3:1', id: 'twitter_banner' },
+      { label: '推文', ratio: '16:9', id: '16_9' },
+      { label: '覆盖', ratio: '3:1', id: 'twitter_banner' },
     ],
   },
   {
     name: 'YouTube',
     icon: YoutubeIcon,
     presets: [
-      { label: 'Banner', ratio: '16:9', id: 'youtube_banner' },
-      { label: 'Thumbnail', ratio: '16:9', id: 'youtube_thumbnail' },
-      { label: 'Video', ratio: '16:9', id: 'youtube_video' },
+      { label: '横幅', ratio: '16:9', id: 'youtube_banner' },
+      { label: '缩略图', ratio: '16:9', id: 'youtube_thumbnail' },
+      { label: '视频', ratio: '16:9', id: 'youtube_video' },
     ],
   },
   {
     name: 'Pinterest',
     icon: PinterestIcon,
     presets: [
-      { label: 'Long', ratio: '10:21', id: 'pinterest_long' },
-      { label: 'Optimal', ratio: '2:3', id: '2_3' },
-      { label: 'Square', ratio: '1:1', id: '1_1' },
+      { label: '长图', ratio: '10:21', id: 'pinterest_long' },
+      { label: '最佳', ratio: '2:3', id: '2_3' },
+      { label: '正方形', ratio: '1:1', id: '1_1' },
     ],
   },
   {
     name: 'Dribbble',
     icon: DribbbleIcon,
     presets: [
-      { label: 'Shot', ratio: '4:3', id: '4_3' },
+      { label: '作品', ratio: '4:3', id: '4_3' },
     ],
   },
   {
@@ -169,12 +169,13 @@ export const AspectRatioPicker = ({ onSelect }: AspectRatioPickerProps = {} as A
               : 'bg-foreground/[0.04] text-muted-foreground border border-foreground/10 cursor-not-allowed'
           )}
         >
-          Set
+          设置
+        
         </button>
       </div>
 
       <div className="mb-3">
-        <h4 className="text-xs font-medium text-muted-foreground mb-2">Standard</h4>
+        <h4 className="text-xs font-medium text-muted-foreground mb-2">标准</h4>
         <div className="grid grid-cols-3 gap-2">
           {standardRatioIds.map((id) => {
             const ar = aspectRatios.find((a) => a.id === id);

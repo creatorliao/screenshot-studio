@@ -56,8 +56,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   // ============ REVEAL — 3D Entrance Animations ============
   {
     id: 'hero-landing',
-    name: 'Hero Landing',
-    description: 'Starts tilted back, lands flat — classic SaaS hero entrance',
+    name: '主视觉落地',
+    description: '起始向后倾斜，最终放平——经典的 SaaS 首屏入场',
     category: 'reveal',
     duration: 1200,
     tracks: [
@@ -73,8 +73,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'slide-in-3d',
-    name: 'Slide In 3D',
-    description: 'Enters from the right with a 3D rotation',
+    name: '3D 滑入',
+    description: '从右侧进入，带 3D 旋转',
     category: 'reveal',
     duration: 1000,
     tracks: [
@@ -90,8 +90,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'rise-and-settle',
-    name: 'Rise & Settle',
-    description: 'Rises from below and settles into place',
+    name: '升起落定',
+    description: '从下方升起并落定到位',
     category: 'reveal',
     duration: 1000,
     tracks: [
@@ -107,8 +107,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'drop-in',
-    name: 'Drop In',
-    description: 'Falls from above with a tilt and fades in',
+    name: '落入',
+    description: '从上方倾斜落下并淡入',
     category: 'reveal',
     duration: 1000,
     tracks: [
@@ -126,8 +126,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   // ============ SLIDE — Clean Slide Entrances ============
   {
     id: 'slide-up',
-    name: 'Slide Up',
-    description: 'Smooth upward entrance with fade',
+    name: '上滑',
+    description: '平滑向上淡入',
     category: 'slide',
     duration: 800,
     tracks: [
@@ -143,8 +143,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'slide-down',
-    name: 'Slide Down',
-    description: 'Smooth downward entrance with fade',
+    name: '下滑',
+    description: '平滑向下淡入',
     category: 'slide',
     duration: 800,
     tracks: [
@@ -160,8 +160,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'slide-left',
-    name: 'Slide Left',
-    description: 'Enters from the right, slides left',
+    name: '左滑',
+    description: '从右侧进入，向左滑动',
     category: 'slide',
     duration: 800,
     tracks: [
@@ -177,8 +177,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'slide-right',
-    name: 'Slide Right',
-    description: 'Enters from the left, slides right',
+    name: '右滑',
+    description: '从左侧进入，向右滑动',
     category: 'slide',
     duration: 800,
     tracks: [
@@ -196,8 +196,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   // ============ FADE — Opacity-focused Entrances ============
   {
     id: 'fade-in',
-    name: 'Fade In',
-    description: 'Simple clean fade in',
+    name: '淡入',
+    description: '简洁干净的淡入',
     category: 'fade',
     duration: 800,
     tracks: [
@@ -209,7 +209,7 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'fade-scale',
-    name: 'Fade Scale',
+    name: '淡入缩放',
     description: 'Fades in with a subtle scale-up — popular app entrance',
     category: 'fade',
     duration: 800,
@@ -226,8 +226,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'fade-rise',
-    name: 'Fade Rise',
-    description: 'Fades in while rising slightly — minimal and elegant',
+    name: '淡入上升',
+    description: '轻微上升的同时淡入——简约而优雅',
     category: 'fade',
     duration: 800,
     tracks: [
@@ -243,8 +243,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'fade-zoom-out',
-    name: 'Fade Zoom Out',
-    description: 'Fades in while zooming out from close-up',
+    name: '淡入缩小',
+    description: '从特写开始缩小并淡入',
     category: 'fade',
     duration: 1000,
     tracks: [
@@ -262,8 +262,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   // ============ FLIP — Card-Flip Rotations ============
   {
     id: 'flip-x',
-    name: 'Flip X',
-    description: 'Full 180° flip on the X axis with scale dip',
+    name: '水平翻转',
+    description: '沿 X 轴完整 180° 翻转，并带缩放下沉',
     category: 'flip',
     duration: 1500,
     tracks: [
@@ -276,8 +276,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'flip-y',
-    name: 'Flip Y',
-    description: 'Full 180° flip on the Y axis with scale dip',
+    name: '垂直翻转',
+    description: '沿 Y 轴完整 180° 翻转，并带缩放下沉',
     category: 'flip',
     duration: 1500,
     tracks: [
@@ -290,8 +290,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'peek',
-    name: 'Peek',
-    description: 'Rotates to peek behind the card and returns',
+    name: '探出',
+    description: '旋转以窥视卡片背后，然后回到原位',
     category: 'flip',
     duration: 2000,
     tracks: [
@@ -305,8 +305,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'flip-reveal',
-    name: 'Flip Reveal',
-    description: 'Starts flipped, rotates to reveal with a bounce',
+    name: '翻转揭示',
+    description: '起始为翻转状态，弹跳旋转展开',
     category: 'flip',
     duration: 1200,
     tracks: [
@@ -325,8 +325,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   // ============ PERSPECTIVE — Perspective Shifts & Tilts ============
   {
     id: 'showcase-tilt',
-    name: 'Showcase Tilt',
-    description: 'Slow pan to a product-showcase angle',
+    name: '展示倾斜',
+    description: '缓慢平移到产品展示角度',
     category: 'perspective',
     duration: 2500,
     tracks: [
@@ -338,8 +338,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'isometric',
-    name: 'Isometric',
-    description: 'Shifts to an isometric viewing angle',
+    name: '等距',
+    description: '切换到等距视角',
     category: 'perspective',
     duration: 2000,
     tracks: [
@@ -351,8 +351,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'hover-float',
-    name: 'Hover Float',
-    description: 'Subtle floating motion — great for looping ambient effects',
+    name: '悬停浮动',
+    description: '轻微的浮动效果——非常适合循环的氛围动画',
     category: 'perspective',
     duration: 3000,
     tracks: [
@@ -367,8 +367,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'parallax-drift',
-    name: 'Parallax Drift',
-    description: 'Slow drift with perspective tightening for depth',
+    name: '视差漂移',
+    description: '缓慢漂移，透视收紧以增强纵深感',
     category: 'perspective',
     duration: 3000,
     tracks: [
@@ -380,8 +380,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'apple-showcase',
-    name: 'Apple Showcase',
-    description: 'Clean Apple-style product reveal with tilt and scale',
+    name: 'Apple 展示',
+    description: '干净的 Apple 风格产品展示，带倾斜和缩放',
     category: 'perspective',
     duration: 1500,
     tracks: [
@@ -399,8 +399,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   // ============ ORBIT — 3D Rotational Movements ============
   {
     id: 'orbit-left',
-    name: 'Orbit Left',
-    description: 'Smooth orbital arc to the left and back',
+    name: '向左环绕',
+    description: '平滑的环绕弧线左移并返回',
     category: 'orbit',
     duration: 2500,
     tracks: [
@@ -413,8 +413,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'orbit-right',
-    name: 'Orbit Right',
-    description: 'Smooth orbital arc to the right and back',
+    name: '向右环绕',
+    description: '平滑的环绕弧线右移并返回',
     category: 'orbit',
     duration: 2500,
     tracks: [
@@ -427,8 +427,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'turntable',
-    name: 'Turntable',
-    description: 'Full 360° rotation like a turntable display',
+    name: '转盘',
+    description: '如转盘展示般完整 360° 旋转',
     category: 'orbit',
     duration: 3000,
     tracks: [
@@ -440,8 +440,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'swing',
-    name: 'Swing',
-    description: 'Pendulum swing with slight rotation',
+    name: '摇摆',
+    description: '钟摆式摆动，带轻微旋转',
     category: 'orbit',
     duration: 2000,
     tracks: [
@@ -458,8 +458,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   // ============ DEPTH — Z-Depth & Scale Effects ============
   {
     id: 'push-away',
-    name: 'Push Away',
-    description: 'Pushes the image away with tightening perspective',
+    name: '推远',
+    description: '透视逐渐收紧，将图像推远',
     category: 'depth',
     duration: 2000,
     tracks: [
@@ -471,8 +471,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'pull-close',
-    name: 'Pull Close',
-    description: 'Pulls the image closer with loosening perspective',
+    name: '拉近',
+    description: '透视逐渐放松，将图像拉近',
     category: 'depth',
     duration: 1200,
     tracks: [
@@ -484,8 +484,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'dramatic-zoom',
-    name: 'Dramatic Zoom',
-    description: 'Dramatic zoom with deep perspective shift',
+    name: '戏剧化缩放',
+    description: '带深度透视变化的戏剧化缩放',
     category: 'depth',
     duration: 1200,
     tracks: [
@@ -501,8 +501,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'breathe-3d',
-    name: 'Breathe 3D',
-    description: 'Gentle breathing motion with 3D rotation — great for loops',
+    name: '呼吸 3D',
+    description: '轻柔的呼吸感运动配合 3D 旋转 —— 非常适合循环播放',
     category: 'depth',
     duration: 3000,
     tracks: [
@@ -517,8 +517,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   // ============ KEN BURNS — Cinematic Pan & Zoom ============
   {
     id: 'kenburns-zoom-in',
-    name: 'Zoom In',
-    description: 'Slow cinematic zoom in — classic Ken Burns effect',
+    name: '放大',
+    description: '缓慢的电影感推近 —— 经典的 Ken Burns 效果',
     category: 'kenburns',
     duration: 4000,
     tracks: [
@@ -530,8 +530,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'kenburns-zoom-out',
-    name: 'Zoom Out',
-    description: 'Slow zoom out to reveal the full image',
+    name: '缩小',
+    description: '缓慢拉远，展现完整图片',
     category: 'kenburns',
     duration: 4000,
     tracks: [
@@ -543,8 +543,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'kenburns-pan-left',
-    name: 'Pan Left',
-    description: 'Slow cinematic pan to the left with subtle zoom',
+    name: '向左平移',
+    description: '缓慢的电影感左移，带轻微缩放',
     category: 'kenburns',
     duration: 4000,
     tracks: [
@@ -556,8 +556,8 @@ export const ANIMATION_PRESETS: AnimationPreset[] = [
   },
   {
     id: 'kenburns-pan-right',
-    name: 'Pan Right',
-    description: 'Slow cinematic pan to the right with subtle zoom',
+    name: '向右平移',
+    description: '缓慢的电影感右移，带轻微缩放',
     category: 'kenburns',
     duration: 4000,
     tracks: [

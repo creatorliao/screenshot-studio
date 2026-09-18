@@ -42,7 +42,7 @@ export function useCustomPresets() {
       ...config,
       id,
       name,
-      description: 'Custom preset',
+      description: '自定义预设',
       createdAt: Date.now(),
     };
     setCustomPresets((prev) => {

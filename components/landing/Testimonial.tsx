@@ -58,7 +58,7 @@ export function Testimonial({
                 <StarIcon key={i} className="w-4 h-4 text-primary fill-primary" />
               ))}
             </div>
-            <span className="text-sm text-muted-foreground">Loved by creators</span>
+            <span className="text-sm text-muted-foreground">深受创作者喜爱</span>
           </div>
         </motion.div>
 
@@ -144,7 +144,7 @@ export function Testimonial({
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-xs text-muted-foreground uppercase tracking-wider">Images created</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wider">已创建图片</p>
                       <p className="text-2xl font-bold text-foreground">2,847</p>
                     </div>
                     <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
@@ -164,7 +164,8 @@ export function Testimonial({
                 transition={{ delay: 0.6, type: "spring" }}
                 className="absolute -top-3 -right-3 px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-semibold shadow-lg shadow-primary/25"
               >
-                Pro User
+                专业版用户
+              
               </motion.div>
             </div>
           </motion.div>

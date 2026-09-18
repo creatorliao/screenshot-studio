@@ -11,9 +11,9 @@ import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Free Screenshot Beautifier Online",
+  title: "免费在线截图美化工具",
   description:
-    "Free screenshot beautifier: add gradient backgrounds, browser frames, shadows, rounded corners, and padding to turn plain screenshots into mockups. No signup.",
+    "免费截图美化工具：添加渐变背景、浏览器边框、阴影、圆角与内边距，把普通截图变成精美模型。无需注册。",
   keywords: [
     "screenshot beautifier",
     "screenshot editor online free",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     "screenshot padding tool",
   ],
   openGraph: {
-    title: "Free Screenshot Beautifier - Make Screenshots Look Professional",
+    title: "免费截图美化工具 - 让截图更专业",
     description:
-      "Transform plain screenshots into stunning visuals. Add backgrounds, shadows, and export in high resolution.",
+      "把普通截图变成惊艳的视觉效果。添加背景、阴影，并以高分辨率导出。",
     url: "/features/screenshot-beautifier",
   },
   alternates: {
@@ -60,79 +60,79 @@ const chipLinkClassName =
 const features = [
   {
     icon: ColorsIcon,
-    title: "100+ Gradient Backgrounds",
+    title: "100+ 渐变背景",
     description:
-      "Choose from stunning gradients, solid colors, or upload your own custom backgrounds.",
+      "从精美的渐变、纯色中挑选，或上传你自己的自定义背景。",
   },
   {
     icon: MagicWand01Icon,
-    title: "Professional Shadows",
+    title: "专业阴影",
     description:
-      "Add realistic shadows with customizable blur, spread, and opacity for depth.",
+      "添加逼真的阴影，可自定义模糊、扩散和不透明度，营造层次感。",
   },
   {
     icon: Layers01Icon,
-    title: "Rounded Corners & Padding",
+    title: "圆角与内边距",
     description:
-      "Adjust corner radius and padding to match any style or platform requirements.",
+      "调整圆角和内边距，适配任何风格或平台要求。",
   },
   {
     icon: Download04Icon,
-    title: "High-Res Export",
+    title: "高分辨率导出",
     description:
-      "Export at up to 5x resolution. Perfect for retina displays and print.",
+      "最高可导出 5x 分辨率。非常适合视网膜屏和印刷。",
   },
 ] as const;
 
 const useCases = [
   {
-    title: "Product Screenshots",
+    title: "产品截图",
     description:
-      "Make your SaaS product screenshots stand out on landing pages and marketing materials.",
+      "让你的 SaaS 产品截图在落地页和营销物料中脱颖而出。",
   },
   {
-    title: "Social Media Posts",
+    title: "社交媒体帖子",
     description:
-      "Create eye-catching Twitter, LinkedIn, and Instagram posts from your screenshots.",
+      "用你的截图制作抢眼的 Twitter、LinkedIn 和 Instagram 帖子。",
   },
   {
-    title: "Documentation",
+    title: "文档",
     description:
-      "Professional screenshots for tutorials, guides, and help documentation.",
+      "用于教程、指南和帮助文档的专业截图。",
   },
   {
-    title: "App Store Assets",
+    title: "App Store 素材",
     description:
-      "Beautiful app preview images that increase downloads and conversions.",
+      "精美的应用预览图，提升下载量和转化率。",
   },
 ];
 
 const howToSteps = [
   {
     step: "1",
-    title: "Upload Your Screenshot",
+    title: "上传你的截图",
     description:
-      "Drag and drop any image or paste from clipboard. Supports PNG, JPG, and WebP.",
+      "拖放任意图片，或从剪贴板粘贴。支持 PNG、JPG 和 WebP。",
   },
   {
     step: "2",
-    title: "Choose Your Style",
+    title: "选择你的风格",
     description:
-      "Pick from 100+ backgrounds, adjust shadows, corners, and padding to match your brand.",
+      "从 100+ 种背景中挑选，调整阴影、圆角和内边距，以匹配你的品牌。",
   },
   {
     step: "3",
-    title: "Export & Share",
+    title: "导出与分享",
     description:
-      "Download in PNG or JPG. Scale up to 5x for crisp, high-res output.",
+      "以 PNG 或 JPG 下载。可放大至 5x，获得清晰的高分辨率输出。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/features/browser-mockups", label: "Browser Mockups" },
-  { href: "/features/social-media-graphics", label: "Social Media Graphics" },
-  { href: "/features/animation-maker", label: "Animation Maker" },
-  { href: "/features/3d-effects", label: "3D Effects" },
+  { href: "/features/browser-mockups", label: "浏览器模型" },
+  { href: "/features/social-media-graphics", label: "社交媒体图片" },
+  { href: "/features/animation-maker", label: "动画制作" },
+  { href: "/features/3d-effects", label: "3D 效果" },
 ] as const;
 
 export default function ScreenshotBeautifierPage() {
@@ -224,21 +224,22 @@ export default function ScreenshotBeautifierPage() {
               className="mb-6 text-4xl font-semibold tracking-[-0.03em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Free Screenshot Beautifier
+              免费截图美化工具
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Transform plain screenshots into professional-looking visuals in
-              seconds. Add stunning backgrounds, shadows, and export in high
-              resolution.
+              几秒钟内把普通截图变成专业感十足的视觉效果。添加出色背景、阴影，并以高分辨率导出。
+            
             </p>
             <div className="flex flex-col items-center">
               <Link href="/" className={ctaClassName}>
-                Beautify Your Screenshot
+                美化你的截图
+              
               </Link>
               <p className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground/70">
-                <span>100% Free</span>
+                <span>100% 免费</span>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>No Signup Required</span>
+                <span>无需注册</span>
               </p>
             </div>
           </div>
@@ -250,7 +251,8 @@ export default function ScreenshotBeautifierPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Everything You Need to Beautify Screenshots
+              美化截图所需的一切
+            
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {features.map((feature) => (
@@ -280,11 +282,12 @@ export default function ScreenshotBeautifierPage() {
               className="mb-4 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Perfect For Every Use Case
+              适用于各种场景
+            
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-              Whether you&apos;re a developer, marketer, or content creator, our
-              screenshot beautifier helps you create stunning visuals.
+              无论你是开发者、营销人员还是内容创作者，我们的截图美化工具都能帮你做出惊艳的视觉效果。
+            
             </p>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               {useCases.map((useCase) => (
@@ -307,7 +310,8 @@ export default function ScreenshotBeautifierPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              How to Beautify Screenshots
+              如何美化截图
+            
             </h2>
             <div className="space-y-8">
               {howToSteps.map((item) => (
@@ -333,7 +337,8 @@ export default function ScreenshotBeautifierPage() {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Explore More Features
+              探索更多功能
+            
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {relatedLinks.map((link) => (
@@ -359,13 +364,16 @@ export default function ScreenshotBeautifierPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Ready to Beautify Your Screenshots?
+              准备好美化你的截图了吗？
+            
             </h2>
             <p className="mb-8 text-muted-foreground">
-              Join thousands of creators making professional graphics.
+              加入成千上万创作者的行列，一起制作专业的图形。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Start Free
+              免费开始
+            
             </Link>
           </div>
         </section>

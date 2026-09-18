@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s1260",
+    "en": "Move backward",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1261",
+    "en": "Move behind image",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1262",
+    "en": "Move forward",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1263",
+    "en": "Move layer down",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s1264",
+    "en": "Move layer up",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s1265",
+    "en": "Move to front",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1266",
+    "en": "mp4",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s1267",
+    "en": "MP4 (H.264)",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s1268",
+    "en": "MP4 export requires a browser with WebCodecs support (Chrome 94+, Edge 94+)",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s1269",
+    "en": "Multi-clip support with overlap handling on the timeline",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1270",
+    "en": "Multi-threaded FFmpeg encoding using SharedArrayBuffer for faster exports",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1271",
+    "en": "My Ad Center",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1272",
+    "en": "My Presets",
+    "count": 1,
+    "where": "components/presets/PresetGallery.tsx"
+  },
+  {
+    "id": "s1273",
+    "en": "nature",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s1274",
+    "en": "Need more than a quick fix? The",
+    "count": 1,
+    "where": "components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s1275",
+    "en": "Neon Dreams",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1276",
+    "en": "Neutral gray background",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s1277",
+    "en": "New",
+    "count": 1,
+    "where": "components/editor/CodeImagesBanner.tsx"
+  },
+  {
+    "id": "s1278",
+    "en": "New editor layout with unified right panel (Settings, Edit, BG, 3D, Animate, Presets tabs)",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1279",
+    "en": "New features, improvements, and fixes.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1280",
+    "en": "New Tab",
+    "count": 1,
+    "where": "components/canvas/frames/BrowserToolbar.tsx"
+  },
+  {
+    "id": "s1281",
+    "en": "Next steps",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1282",
+    "en": "Night",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1283",
+    "en": "No 3D software required. Create stunning visuals in your browser.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1284",
+    "en": "No account required. Screenshot Studio works entirely in your browser with zero signup. Simply open the editor and start designing immediately.",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1285",
+    "en": "No accounts, no installs, no bloat. Just a fast editor in your browser.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1286",
+    "en": "No API key required. Anonymous access with per-IP rate limits and standard 429 semantics.",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1287",
+    "en": "No credentials required",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1288",
+    "en": "No design experience required. Start creating in 30 seconds.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1289",
+    "en": "No Design Skills Needed",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1290",
+    "en": "No Design Skills Required",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1291",
+    "en": "No heavy downloads or Electron apps. Just open a browser tab and start editing.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1292",
+    "en": "No key, no signup. Post a URL and read back a base64 PNG.",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1293",
+    "en": "No layers",
+    "count": 1,
+    "where": "components/editor/sections/ImageOverlaySection.tsx"
+  },
+  {
+    "id": "s1294",
+    "en": "No layers yet. Add assets below or use the Edit tab.",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1295",
+    "en": "No learning curve. No tutorials needed.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1296",
+    "en": "No official CLI tool and no MCP server are published yet. The curl examples above are the supported command-line path. If you want either one,",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1297",
+    "en": "No signup. No downloads. No watermarks. Just open the editor and create.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1298",
+    "en": "No signup. No downloads. No watermarks. Open the editor and see the difference.",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s1299",
+    "en": "No video editing experience required. Create professional animations in minutes.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1300",
+    "en": "No. Because the conversion happens on your own machine there is no server quota to hit. The practical limit is your device's memory, and files are processed one at a time to keep that manageable.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1301",
+    "en": "No. Editing runs in your browser and imported images are not uploaded to edit them. Only export compression sends the finished image to the server, which recompresses it in memory and returns it without storing it.",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1302",
+    "en": "No. Every tool on this page runs entirely in your browser using the Canvas and Web Worker APIs. Your files are read from disk, processed in the tab, and written straight back to your downloads folder. Nothing is uploaded, stored, or logged, which also means the tool keeps working if you go offline after the page loads.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1303",
+    "en": "No. Just open the editor and start creating. Your work saves automatically in your browser with unlimited undo/redo.",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1304",
+    "en": "Noir",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s1305",
+    "en": "None of the images could be processed.",
+    "count": 1,
+    "where": "components/tools/useToolQueue.ts"
+  },
+  {
+    "id": "s1306",
+    "en": "None of this reaches our servers. Clearing site data in your browser removes all of it.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1307",
+    "en": "nor",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1308",
+    "en": "normal",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s1309",
+    "en": "Notes",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1310",
+    "en": "Noticeably smaller, slight softening",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1311",
+    "en": "Ocean Breeze",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s1312",
+    "en": "On-canvas resize handles for arrow and sticker overlays. Drag any corner to resize (20–800px)",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1313",
+    "en": "One-click animations including zoom, pan, tilt, rotate, and Ken Burns effects.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1314",
+    "en": "One-Click Presets",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1315",
+    "en": "One-click presets handle the design work. Just upload a screenshot, pick a style, and export. Your whole team can create on-brand visuals.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1316",
+    "en": "One-time payment",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1317",
+    "en": "Online Screenshot Editor & Mockup Maker",
+    "count": 1,
+    "where": "app/[locale]/page.tsx"
+  },
+  {
+    "id": "s1318",
+    "en": "Online screenshot editor and mockup maker that runs in your browser. Add gradient backgrounds, Safari and Chrome browser mockups, shadows, 3D effects, and animations. No signup.",
+    "count": 1,
+    "where": "app/[locale]/page.tsx"
+  },
+  {
+    "id": "s1319",
+    "en": "Only by the amount you crop away. The selection is mapped back onto the original pixels, so cropping the middle 50% of a 4000px-wide image gives you a 2000px-wide result at full quality, not a scaled-down preview.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1320",
+    "en": "Open Code Images",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1321",
+    "en": "Open format, web-optimized",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s1322",
+    "en": "Open Free Screenshot Editor",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1323",
+    "en": "Open in editor",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1324",
+    "en": "Open menu",
+    "count": 1,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s1325",
+    "en": "Open Screenshot Studio editor",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s1326",
+    "en": "Open the Code Image Editor",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1327",
+    "en": "operationId:",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1328",
+    "en": "Optimal",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1329",
+    "en": "or",
+    "count": 1,
+    "where": "components/controls/CleanUploadState.tsx"
+  },
+  {
+    "id": "s1330",
+    "en": "or click to browse • PNG, JPG, WEBP up to",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s1331",
+    "en": "or click to browse,",
+    "count": 1,
+    "where": "components/tools/ToolDropzone.tsx"
+  },
+  {
+    "id": "s1332",
+    "en": "Orbit Left",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1333",
+    "en": "Orbit Right",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1334",
+    "en": "Orientation",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s1335",
+    "en": "Other Comparisons",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s1336",
+    "en": "Other pages",
+    "count": 1,
+    "where": "app/not-found.tsx"
+  },
+  {
+    "id": "s1337",
+    "en": "Our intuitive editor makes it easy to create professional graphics in minutes.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1338",
+    "en": "Outline",
+    "count": 1,
+    "where": "components/editor/sections/StyleSection.tsx"
+  },
+  {
+    "id": "s1339",
+    "en": "Output format",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1340",
+    "en": "Output quality",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1341",
+    "en": "Overlay context toolbar replaced with a cleaner, universal design (layer toggle, duplicate, delete)",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1342",
+    "en": "Overlay preview",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s1343",
+    "en": "Overlay Resize, Custom Presets & Arc Controls",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1344",
+    "en": "Overlay Shadows",
+    "count": 1,
+    "where": "components/overlays/overlay-shadows-gallery.tsx"
+  },
+  {
+    "id": "s1345",
+    "en": "Overview",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1346",
+    "en": "Page not found",
+    "count": 1,
+    "where": "app/not-found.tsx"
+  },
+  {
+    "id": "s1347",
+    "en": "page, in the",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s1348",
+    "en": "Pan Left",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1349",
+    "en": "Pan Left/Right",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1350",
+    "en": "Pan Right",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1351",
+    "en": "Paper",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1352",
+    "en": "Parallax Drift",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1353",
+    "en": "Paste a snippet, pick a theme and background, and export a crisp PNG in seconds. No signup, no watermark, everything runs in your browser.",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1354",
+    "en": "Paste a tweet URL or drop code.",
+    "count": 1,
+    "where": "components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s1355",
+    "en": "Paste from Clipboard",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1356",
+    "en": "Paste or Type Your Code",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1357",
+    "en": "Patterns",
+    "count": 1,
+    "where": "components/code-image/BackgroundPicker.tsx"
+  },
+  {
+    "id": "s1358",
+    "en": "PayPal",
+    "count": 1,
+    "where": "components/SponsorButton.tsx"
+  },
+  {
+    "id": "s1359",
+    "en": "Peek",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1360",
+    "en": "Peerlist Project Spotlight. Rank 1",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s1361",
+    "en": "Pendulum swing with slight rotation",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1362",
+    "en": "Per-annotation editing. Click any shape on canvas to change its color and stroke width",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1363",
+    "en": "percentage",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1364",
+    "en": "Perfect Dimensions for Every Platform",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1365",
+    "en": "Perfect for Every Design Workflow",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1366",
+    "en": "Perfect for getting started",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1367",
+    "en": "Perfect for Instagram feed posts",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1368",
+    "en": "Perspective transforms, shadows, and animation timelines with video export.",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s1369",
+    "en": "Phone",
+    "count": 1,
+    "where": "components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s1370",
+    "en": "Phone cameras usually store the picture in one orientation and record the intended rotation in an EXIF tag. Software that ignores the tag shows it sideways. This tool reads the EXIF orientation on load, so what you see is already upright, and any rotation you add is baked into the output pixels.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1371",
+    "en": "Photograph",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s1372",
+    "en": "Pick a preset that matches your style. Dark mode gradients, minimal whites, or vibrant colors. Done in seconds.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1373",
+    "en": "Pick a Theme and Background",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1374",
+    "en": "Pick a theme, a gradient background, line numbers, and a window frame, then export a crisp PNG or share a link. A free ray.so and carbon.now.sh alternative.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1375",
+    "en": "Pick from 100+ backgrounds, adjust shadows, corners, and padding to match your brand.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1376",
+    "en": "Pika alternative",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s1377",
+    "en": "Pink",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s1378",
+    "en": "Pinterest",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1379",
+    "en": "Pitch Decks & Proposals",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1380",
+    "en": "Pixel-perfect adjustments for professional results",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1381",
+    "en": "Play video",
+    "count": 1,
+    "where": "components/ui/hero-video-dialog.tsx"
+  },
+  {
+    "id": "s1382",
+    "en": "PNG or JPG up to 5×.",
+    "count": 1,
+    "where": "components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s1383",
+    "en": "PNG or JPG up to 5x resolution. Fully in-browser, no server processing.",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s1384",
+    "en": "PNG with transparency or JPG. Export up to 5x resolution for crisp output on any platform.",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1385",
+    "en": "PNG, JPG, or WEBP",
+    "count": 1,
+    "where": "components/GlobalDropZone.tsx"
+  },
+  {
+    "id": "s1386",
+    "en": "PNG, JPG, WebP, GIF, BMP, AVIF · processed in your browser, never uploaded",
+    "count": 1,
+    "where": "components/tools/ToolDropzone.tsx"
+  },
+  {
+    "id": "s1387",
+    "en": "Polaroid",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s1388",
+    "en": "Portfolio Presentations",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1389",
+    "en": "Portfolio Showcases",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1390",
+    "en": "Portrait 4:3",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1391",
+    "en": "Portrait format 3:4",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1392",
+    "en": "Portrait format for Instagram feed",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1393",
+    "en": "Post",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1394",
+    "en": "PostHog:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1395",
+    "en": "Powerful Animation Tools",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1396",
+    "en": "Pranav Patil",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s1397",
+    "en": "pre",
+    "count": 1,
+    "where": "components/code-image/CodeFrame.tsx"
+  },
+  {
+    "id": "s1398",
+    "en": "Precise Controls",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1399",
+    "en": "Preferences:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  }
+]

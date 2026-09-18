@@ -26,17 +26,17 @@ interface NavigationProps {
 }
 
 const resourceLinks = [
-  { label: "Features", href: "/features" },
-  { label: "Image Tools", href: "/tools" },
-  { label: "Code Images", href: "/code" },
-  { label: "For Designers", href: "/for/designers" },
-  { label: "For Developers", href: "/for/developers" },
-  { label: "Screenshot Editor", href: "/free-screenshot-editor" },
+  { label: "功能", href: "/features" },
+  { label: "图片工具", href: "/tools" },
+  { label: "代码图片", href: "/code" },
+  { label: "面向设计师", href: "/for/designers" },
+  { label: "面向开发者", href: "/for/developers" },
+  { label: "截图编辑器", href: "/free-screenshot-editor" },
 ] as const;
 
 const featuredResource = {
-  headline: "Code Images are now a standalone tool.",
-  ctaLabel: "Try Code Images",
+  headline: "代码图片现在已是独立工具。",
+  ctaLabel: "试用代码图片",
   ctaHref: "/code",
 };
 
@@ -196,7 +196,8 @@ export function Navigation({
             href="/features"
             className="text-[15px] text-muted-foreground hover:text-foreground transition-colors"
           >
-            Product
+            产品
+          
           </Link>
 
           <div
@@ -216,7 +217,8 @@ export function Navigation({
                   : "text-muted-foreground hover:text-foreground",
               )}
             >
-              Resources
+              资源
+              
               <ArrowDown01Icon
                 aria-hidden="true"
                 className={cn(
@@ -307,7 +309,8 @@ export function Navigation({
             href="/contact"
             className="text-[15px] text-muted-foreground hover:text-foreground transition-colors"
           >
-            Contact
+            联系我们
+          
           </Link>
         </div>
 
@@ -318,7 +321,7 @@ export function Navigation({
           <button
             type="button"
             className="md:hidden flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground hover:bg-muted/50"
-            aria-label="Open menu"
+            aria-label="打开菜单"
             aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen(true)}
           >
@@ -334,19 +337,22 @@ export function Navigation({
         >
           <SheetHeader className="border-b border-border px-5 py-4">
             <SheetTitle className="text-base font-semibold text-foreground">
-              Menu
+              菜单
+            
             </SheetTitle>
           </SheetHeader>
-          <nav className="flex flex-col gap-1 p-3" aria-label="Mobile">
+          <nav className="flex flex-col gap-1 p-3" aria-label="移动端">
             <Link
               href="/features"
               onClick={() => setMobileMenuOpen(false)}
               className="rounded-md px-3 py-2.5 text-[15px] font-medium text-muted-foreground transition-colors hover:bg-foreground/[0.06] hover:text-foreground"
             >
-              Product
+              产品
+            
             </Link>
             <div className="px-3 pb-1 pt-3 text-xs font-medium uppercase tracking-wide text-muted-foreground/70">
-              Resources
+              资源
+            
             </div>
             {resourceLinks.map((link) => (
               <Link
@@ -371,7 +377,8 @@ export function Navigation({
               onClick={() => setMobileMenuOpen(false)}
               className="rounded-md px-3 py-2.5 text-[15px] font-medium text-muted-foreground transition-colors hover:bg-foreground/[0.06] hover:text-foreground"
             >
-              Contact
+              联系我们
+            
             </Link>
           </nav>
         </SheetContent>

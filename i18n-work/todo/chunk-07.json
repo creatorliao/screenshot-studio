@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s0980",
+    "en": "Free online tool to create animated screenshots and slideshows with zoom, pan, and fade effects.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0981",
+    "en": "Free online tool to create professional social media graphics for Twitter, LinkedIn, and Instagram.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0982",
+    "en": "Free Screenshot Beautifier",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0983",
+    "en": "Free Screenshot Beautifier - Make Screenshots Look Professional",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0984",
+    "en": "Free Screenshot Beautifier Online",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0985",
+    "en": "Free screenshot editor",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0986",
+    "en": "Free Screenshot Editor",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0987",
+    "en": "Free screenshot editor and mockup maker. Add gradient backgrounds, browser frames, shadows, 3D effects, and animations to screenshots in seconds. No signup.",
+    "count": 1,
+    "where": "app/layout.tsx"
+  },
+  {
+    "id": "s0988",
+    "en": "Free screenshot editor built for developers. Beautify code screenshots, terminal output, and project UIs for READMEs, blogs, and portfolios.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0989",
+    "en": "Free screenshot editor for marketers. Create professional product screenshots for landing pages, social media, and ad creatives without design skills.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0990",
+    "en": "Free Screenshot Editor Online - Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0991",
+    "en": "Free screenshot editor online — transform plain screenshots into professional graphics with 100+ backgrounds, animations, 3D effects, and video export. No signup required.",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s0992",
+    "en": "Free screenshot editor online: add backgrounds, shadows, 3D effects, and animations. Export as PNG, JPG, or video.",
+    "count": 1,
+    "where": "app/[locale]/page.tsx"
+  },
+  {
+    "id": "s0993",
+    "en": "Free screenshot editor online: beautify screenshots with gradient backgrounds, browser mockups, shadows, 3D effects, and animations. No signup, no watermarks.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0994",
+    "en": "Free screenshot editor online: create stunning social media graphics in seconds. 100+ backgrounds, animations, 3D effects, video export. No signup required.",
+    "count": 1,
+    "where": "app/layout.tsx"
+  },
+  {
+    "id": "s0995",
+    "en": "Free screenshot editor online: transform screenshots into stunning graphics. Animations, 3D effects, video export. No signup.",
+    "count": 1,
+    "where": "app/layout.tsx"
+  },
+  {
+    "id": "s0996",
+    "en": "Free screenshot editor online. Beautify screenshots with backgrounds, shadows, 3D effects, animations, and video export. No signup required.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0997",
+    "en": "Free Social Media Graphics Maker",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0998",
+    "en": "Free Social Media Graphics Maker - Create Stunning Posts",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0999",
+    "en": "Free tool that turns code into a beautiful, shareable image with syntax themes, gradient backgrounds, and window styles.",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1000",
+    "en": "Free, fast, and no account needed.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1001",
+    "en": "Free, open-source screenshot editor with backgrounds, browser mockups, 3D effects, animations, and video export.",
+    "count": 1,
+    "where": "lib/seo/json-ld.ts"
+  },
+  {
+    "id": "s1002",
+    "en": "From client presentations to portfolio pieces, we&apos;ve got you covered",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1003",
+    "en": "From landing page heroes to social campaigns, create visuals that convert.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1004",
+    "en": "From README files to conference talks, make every screenshot count.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1005",
+    "en": "Front",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1006",
+    "en": "Front Depth",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s1007",
+    "en": "Full 180° flip on the X axis with scale dip",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1008",
+    "en": "Full 180° flip on the Y axis with scale dip",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1009",
+    "en": "Full 360° rotation like a turntable display",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1010",
+    "en": "Full control over layers, shadows, and visual hierarchy",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1011",
+    "en": "Full-screen vertical stories and reels",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1012",
+    "en": "Fully open source on GitHub. Inspect the code, contribute, or self-host.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1013",
+    "en": "gallery",
+    "count": 1,
+    "where": "components/editor/sections/DeviceFramesSection.tsx"
+  },
+  {
+    "id": "s1014",
+    "en": "Generate beautiful preview images that increase downloads and conversion rates.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1015",
+    "en": "Generate stunning screenshots for App Store and Play Store listings",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1016",
+    "en": "Gentle breathing motion with 3D rotation — great for loops",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1017",
+    "en": "Geometric square patterns",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s1018",
+    "en": "Get everything Shots.so offers plus animations, 3D effects, and video export, all for free.",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s1019",
+    "en": "Get in touch with the Screenshot Studio team. Report bugs, suggest features, or just say hi.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s1020",
+    "en": "Get Started",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1021",
+    "en": "GitHub issues",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1022",
+    "en": "GitHub README Images",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1023",
+    "en": "github.com/",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s1024",
+    "en": "Glass Card",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1025",
+    "en": "Glass Dark",
+    "count": 1,
+    "where": "components/editor/sections/StyleSection.tsx"
+  },
+  {
+    "id": "s1026",
+    "en": "Glass Light",
+    "count": 1,
+    "where": "components/editor/sections/StyleSection.tsx"
+  },
+  {
+    "id": "s1027",
+    "en": "Glow",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1028",
+    "en": "Go",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1029",
+    "en": "Go back",
+    "count": 1,
+    "where": "components/landing/GoBackButton.tsx"
+  },
+  {
+    "id": "s1030",
+    "en": "Gold",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1031",
+    "en": "Google AdSense:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1032",
+    "en": "Got it",
+    "count": 1,
+    "where": "components/ui/coming-soon-dialog.tsx"
+  },
+  {
+    "id": "s1033",
+    "en": "Grad",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1034",
+    "en": "Gradient backgrounds, solid colors, and patterns to make your screenshots pop.",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s1035",
+    "en": "Gradients, Images & Patterns",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1036",
+    "en": "Gradients, solid colors, mesh backgrounds, and custom uploads. Make any screenshot pop with a professional backdrop.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1037",
+    "en": "Grayscale",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s1038",
+    "en": "Grid",
+    "count": 1,
+    "where": "components/code-image/code-backgrounds.ts"
+  },
+  {
+    "id": "s1039",
+    "en": "H Offset",
+    "count": 1,
+    "where": "components/controls/ShadowControls.tsx"
+  },
+  {
+    "id": "s1040",
+    "en": "Half Bottom",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1041",
+    "en": "Half Left",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1042",
+    "en": "Half Right",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1043",
+    "en": "Half Section",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1044",
+    "en": "Half Top",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1045",
+    "en": "Handling 429",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1046",
+    "en": "Hardware-accelerated encoding via WebCodecs API with FFmpeg WASM fallback",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1047",
+    "en": "Have a question, found a bug, or want to suggest a feature? Here are the best ways to reach us.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s1048",
+    "en": "Have an idea to make Screenshot Studio better? We'd love to hear it.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s1049",
+    "en": "Header size",
+    "count": 1,
+    "where": "components/editor/sections/BrowserMockupSection.tsx"
+  },
+  {
+    "id": "s1050",
+    "en": "header. It is ignored. A complete request looks like this:",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1051",
+    "en": "Height",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s1052",
+    "en": "Height (px)",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1053",
+    "en": "hero",
+    "count": 1,
+    "where": "components/landing/Hero.tsx"
+  },
+  {
+    "id": "s1054",
+    "en": "Hero Landing",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1055",
+    "en": "Hero Left",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1056",
+    "en": "Hero Right",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1057",
+    "en": "Hero Video player",
+    "count": 1,
+    "where": "components/ui/hero-video-dialog.tsx"
+  },
+  {
+    "id": "s1058",
+    "en": "Hide device",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s1059",
+    "en": "Hide layer",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1060",
+    "en": "High Resolution Output",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1061",
+    "en": "High-res export up to 5x scale in PNG and JPG formats",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1062",
+    "en": "High-resolution downloads",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1063",
+    "en": "High-resolution exports in multiple formats",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1064",
+    "en": "Higher Engagement",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1065",
+    "en": "hint",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1066",
+    "en": "horizontal",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s1067",
+    "en": "Horizontal",
+    "count": 1,
+    "where": "components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s1068",
+    "en": "Hosting and network:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1069",
+    "en": "Hover Float",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1070",
+    "en": "Hover Left",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1071",
+    "en": "Hover Right",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1072",
+    "en": "How Developers Use Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1073",
+    "en": "How do I keep the aspect ratio?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1074",
+    "en": "How is this different from ray.so or carbon.now.sh?",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1075",
+    "en": "How it works",
+    "count": 1,
+    "where": "components/landing/HowItWorks.tsx"
+  },
+  {
+    "id": "s1076",
+    "en": "How It Works",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1077",
+    "en": "How many syntax themes are included?",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1078",
+    "en": "How Marketers Use Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1079",
+    "en": "How much smaller will my images get?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1080",
+    "en": "How to Add a Browser Frame",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1081",
+    "en": "How to Add a Browser Frame to a Screenshot",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1082",
+    "en": "How to Create Animations",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1083",
+    "en": "How to Create Screenshot Animations",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1084",
+    "en": "How to Edit Screenshots Online for Free",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1085",
+    "en": "How to Turn Code Into an Image",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1086",
+    "en": "hsl(var(--primary))",
+    "count": 1,
+    "where": "components/GlobalDropZone.tsx"
+  },
+  {
+    "id": "s1087",
+    "en": "Hue",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s1088",
+    "en": "Hug",
+    "count": 1,
+    "where": "components/editor/sections/ShadowSection.tsx"
+  },
+  {
+    "id": "s1089",
+    "en": "IBM Plex Mono",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1090",
+    "en": "Ice",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s1091",
+    "en": "If you have questions about this policy, reach out via our",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1092",
+    "en": "Image overlay resize and rotate handles now work reliably. Fixed pointer-events and deselection issues with Moveable controls",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1093",
+    "en": "Image overlays with rotation, flip, opacity, and drag positioning",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1094",
+    "en": "Image Size",
+    "count": 1,
+    "where": "components/editor/style-tabs.tsx"
+  },
+  {
+    "id": "s1095",
+    "en": "Image uploads",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1096",
+    "en": "Images",
+    "count": 1,
+    "where": "components/code-image/BackgroundPicker.tsx"
+  },
+  {
+    "id": "s1097",
+    "en": "Images created",
+    "count": 1,
+    "where": "components/landing/Testimonial.tsx"
+  },
+  {
+    "id": "s1098",
+    "en": "images referenced by URL are fetched through our image proxy, which is restricted to an allowlist of hosts.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1099",
+    "en": "Images to process",
+    "count": 1,
+    "where": "components/tools/FileQueue.tsx"
+  },
+  {
+    "id": "s1100",
+    "en": "Images you import from your device are read in the browser and are never uploaded to us for editing. The editor also stores your work in your own browser:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1101",
+    "en": "Images:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1102",
+    "en": "Import tweets as screenshots, generate beautiful code snippets, and enjoy improved overlay resize and depth controls.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1103",
+    "en": "Import tweets by URL. Generate beautiful code snippet images with 20+ themes.",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s1104",
+    "en": "imported images under 500KB are kept in local storage so a reload does not lose them. Larger images are held in memory only.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1105",
+    "en": "Importing a tweet:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1106",
+    "en": "Impress clients with polished mockups instead of raw screenshots in proposals and reports.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1107",
+    "en": "Impress investors and clients with professional product mockups. 3D perspective and device frames add credibility to any presentation.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1108",
+    "en": "improved",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1109",
+    "en": "In Front",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1110",
+    "en": "In no event shall Screenshot Studio or its creator be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Service.",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1111",
+    "en": "Inconsolata",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1112",
+    "en": "Increase size",
+    "count": 1,
+    "where": "components/canvas/OverlayToolbar.tsx"
+  },
+  {
+    "id": "s1113",
+    "en": "Indent / dedent line",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s1114",
+    "en": "Ink",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1115",
+    "en": "Input and dropdown padding no longer inflated by global font-size rule. Scoped to mobile only for iOS zoom prevention",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1116",
+    "en": "Instagram Landscape",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1117",
+    "en": "Instagram Portrait",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1118",
+    "en": "Instagram Reel",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1119",
+    "en": "Instagram Square",
+    "count": 1,
+    "where": "lib/constants.ts"
+  }
+]

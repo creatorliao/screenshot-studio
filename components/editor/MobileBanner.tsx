@@ -35,8 +35,8 @@ export function MobileBanner() {
         <div className="flex items-center gap-3 flex-1 min-w-0">
           <ComputerIcon className="h-5 w-5 text-foreground shrink-0" />
           <p className="text-sm text-foreground font-medium">
-            For the best experience, please use Screenshot Studio on a desktop
-            device.
+            为获得最佳体验，请在桌面设备上使用 Screenshot Studio。
+          
           </p>
         </div>
         <Button
@@ -44,7 +44,7 @@ export function MobileBanner() {
           size="icon"
           onClick={handleDismiss}
           className="h-8 w-8 text-muted-foreground hover:text-foreground hover:bg-muted shrink-0"
-          aria-label="Dismiss banner"
+          aria-label="关闭横幅"
         >
           <Cancel01Icon className="h-4 w-4" />
         </Button>

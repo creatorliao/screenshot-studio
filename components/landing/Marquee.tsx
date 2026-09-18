@@ -41,7 +41,7 @@ export function Marquee({
   return (
     <section
       className={`py-12 sm:py-16 md:py-20 overflow-hidden bg-background ${className}`}
-      aria-label="Marquee banner"
+      aria-label="跑马灯横幅"
     >
       <div className="animate-marquee flex items-center">
         <div

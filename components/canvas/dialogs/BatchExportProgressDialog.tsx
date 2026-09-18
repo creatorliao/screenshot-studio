@@ -25,10 +25,12 @@ export function BatchExportProgressDialog({ open, batchProgress, format }: Batch
         <div className="p-6 pb-4">
           <DialogHeader className="pb-1">
             <DialogTitle className="text-xl font-semibold text-foreground">
-              Exporting All Slides
+              正在导出全部幻灯片
+            
             </DialogTitle>
             <p className="text-sm text-muted-foreground pt-1">
-              Rendering each slide with your current style
+              正在用当前样式渲染每一张幻灯片
+            
             </p>
           </DialogHeader>
         </div>

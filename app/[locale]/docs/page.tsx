@@ -11,9 +11,9 @@ import {
 } from "@/lib/seo/docs-shared";
 
 export const metadata: Metadata = {
-  title: "Screenshot Studio API Documentation",
+  title: "Screenshot Studio API 文档",
   description:
-    "Screenshot Studio API docs: endpoints, request and response schemas, rate limits, JSON error codes, and the OpenAPI 3.1 spec. No API key required.",
+    "Screenshot Studio API 文档：端点、请求与响应结构、速率限制、JSON 错误码，以及 OpenAPI 3.1 规范。无需 API key。",
   keywords: [
     "Screenshot Studio API",
     "Screenshot Studio API docs",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Screenshot Studio API Documentation",
+    title: "Screenshot Studio API 文档",
     description:
-      "Endpoints, schemas, rate limits, and error codes for the public Screenshot Studio API.",
+      "公开的 Screenshot Studio API 的端点、数据结构、速率限制和错误码。",
     url: "/docs",
   },
   alternates: {
@@ -48,7 +48,7 @@ const ENDPOINTS: Endpoint[] = [
     method: "POST",
     path: "/api/screenshot",
     description:
-      "Renders the page at the given URL and returns the screenshot as a base64-encoded PNG. Results are cached per URL, device type, and color scheme.",
+      "渲染指定 URL 的页面，并以 base64 编码的 PNG 返回截图。结果按 URL、设备类型和配色方案缓存。",
     request: `curl -X POST https://www.screenshot-studio.com/api/screenshot \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -71,7 +71,7 @@ const ENDPOINTS: Endpoint[] = [
     method: "POST",
     path: "/api/export",
     description:
-      "Recompresses an image with Sharp and returns the optimized bytes. JPEG uses MozJPEG, WebP uses libwebp, PNG uses adaptive filtering. The response body is the image itself, not JSON.",
+      "使用 Sharp 重新压缩图像并返回优化后的字节。JPEG 使用 MozJPEG，WebP 使用 libwebp，PNG 使用自适应滤波。响应体是图像本身，而不是 JSON。",
     request: `curl -X POST https://www.screenshot-studio.com/api/export \\
   -F "image=@shot.png" \\
   -F "format=webp" \\
@@ -87,7 +87,7 @@ content-type: image/webp
     method: "GET",
     path: "/api/tweet/{id}",
     description:
-      "Returns the public tweet payload used to render a tweet as an image. The id is the numeric status ID from the tweet URL.",
+      "返回用于将推文渲染为图片的公开推文数据。id 是推文 URL 中的数字状态 ID。",
     request: `curl https://www.screenshot-studio.com/api/tweet/1234567890123456789`,
     response: `{
   "data": {
@@ -102,7 +102,7 @@ content-type: image/webp
     method: "GET",
     path: "/api/image-proxy",
     description:
-      "Streams a Twitter-hosted image through this origin so it can be drawn onto a canvas without tainting it. Only pbs.twimg.com, abs.twimg.com, ton.twitter.com, and video.twimg.com are allowed.",
+      "通过该源代理传输 Twitter 托管的图片，使其可以绘制到画布上而不污染画布。仅允许 pbs.twimg.com、abs.twimg.com、ton.twitter.com 和 video.twimg.com。",
     request: `curl "https://www.screenshot-studio.com/api/image-proxy?url=https://pbs.twimg.com/media/EXAMPLE.jpg" \\
   -o media.jpg`,
     response: `HTTP/2 200
@@ -116,80 +116,80 @@ const ERROR_CODES = [
   {
     code: "invalid_request",
     status: "400",
-    meaning: "A required field is missing or malformed.",
+    meaning: "必填字段缺失或格式有误。",
   },
   {
     code: "invalid_url",
     status: "400",
-    meaning: "The url is not a valid absolute http or https URL.",
+    meaning: "该 url 不是有效的绝对 http 或 https URL。",
   },
   {
     code: "unsupported_value",
     status: "400",
-    meaning: "A field was set to a value outside its allowed enum.",
+    meaning: "字段被设置为超出其允许枚举范围的值。",
   },
   {
     code: "forbidden_domain",
     status: "403",
-    meaning: "The requested host is not on the proxy allowlist.",
+    meaning: "请求的主机不在代理允许列表中。",
   },
   {
     code: "not_found",
     status: "404",
-    meaning: "No endpoint or resource matches the request.",
+    meaning: "没有与请求匹配的接口或资源。",
   },
   {
     code: "method_not_allowed",
     status: "405",
-    meaning: "The endpoint does not accept this HTTP method.",
+    meaning: "该端点不接受此 HTTP 方法。",
   },
   {
     code: "rate_limited",
     status: "429",
-    meaning: "The per-IP rate limit was exceeded. Honour Retry-After.",
+    meaning: "已超出单 IP 速率限制，请遵循 Retry-After。",
   },
   {
     code: "upstream_timeout",
     status: "408",
-    meaning: "The target page took too long to load.",
+    meaning: "目标页面加载超时。",
   },
   {
     code: "upstream_unavailable",
     status: "503",
-    meaning: "The upstream capture service is unreachable.",
+    meaning: "无法连接上游截图服务。",
   },
   {
     code: "upstream_failed",
     status: "502",
-    meaning: "The upstream host refused or failed the request.",
+    meaning: "上游主机拒绝或未能完成该请求。",
   },
   {
     code: "internal_error",
     status: "500",
-    meaning: "Unexpected server-side failure.",
+    meaning: "服务器端出现意外故障。",
   },
 ];
 
 const RESOURCES = [
   {
     href: "/openapi.json",
-    label: "OpenAPI 3.1 specification",
-    detail: "Machine-readable contract for every operation on this page.",
+    label: "OpenAPI 3.1 规范",
+    detail: "本页每个操作的机器可读契约。",
   },
   {
     href: "/docs/authentication",
-    label: "Authentication and rate limits",
-    detail: "No API key is required. Read the per-IP limits here.",
+    label: "身份验证与速率限制",
+    detail: "无需 API 密钥。在此查看按 IP 的限流规则。",
   },
   {
     href: "/developers",
-    label: "Developer portal",
-    detail: "Quickstart, agent files, and the open-source repository.",
+    label: "开发者门户",
+    detail: "快速开始、智能体文件与开源仓库。",
   },
   {
     href: "/llms.txt",
     label: "llms.txt",
-    detail: "Markdown overview of the whole site for AI agents.",
+    detail: "面向 AI 智能体的整站 Markdown 概览。",
   },
 ];
 
@@ -203,14 +203,11 @@ export default function DocsPage() {
           className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground sm:text-4xl"
           style={{ fontFamily: INTER }}
         >
-          Screenshot Studio API Documentation
+          Screenshot Studio API 文档
+        
         </h1>
         <p className="mb-12 text-lg leading-relaxed text-muted-foreground">
-          Screenshot Studio exposes a small public HTTP API: capture a live web
-          page as an image, recompress an exported image, resolve a tweet, and
-          proxy Twitter media. There is no API key, no token, and no account.
-          Every failing request returns the same JSON error envelope. The
-          machine-readable contract lives at{" "}
+          Screenshot Studio 提供一个小型公开 HTTP API：把在线网页截取为图片、重新压缩已导出的图片、解析推文，以及代理 Twitter 媒体。无需 API key、无需 token、无需账号。每个失败的请求都返回相同的 JSON 错误结构。机器可读的协议见{" "}
           <Link href="/openapi.json" className={linkClassName}>
             /openapi.json
           </Link>
@@ -223,10 +220,12 @@ export default function DocsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Quickstart
+              快速开始
+            
             </h2>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              Capture a page and write the PNG to disk in one command.
+              用一条命令抓取页面并把 PNG 写入磁盘。
+            
             </p>
             <pre className={codeBlockClassName}>
               <code>{`curl -s -X POST https://www.screenshot-studio.com/api/screenshot \\
@@ -241,7 +240,8 @@ export default function DocsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Base URL
+              基础 URL
+            
             </h2>
             <pre className={codeBlockClassName}>
               <code>https://www.screenshot-studio.com</code>
@@ -253,7 +253,8 @@ export default function DocsPage() {
               className="mb-4 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Endpoints
+              端点
+            
             </h2>
             <div className="space-y-8">
               {ENDPOINTS.map((endpoint) => (
@@ -273,13 +274,15 @@ export default function DocsPage() {
                     {endpoint.description}
                   </p>
                   <p className="mb-2 text-sm font-medium text-foreground">
-                    Request
+                    请求
+                  
                   </p>
                   <pre className={`${codeBlockClassName} mb-4`}>
                     <code>{endpoint.request}</code>
                   </pre>
                   <p className="mb-2 text-sm font-medium text-foreground">
-                    Response
+                    响应
+                  
                   </p>
                   <pre className={codeBlockClassName}>
                     <code>{endpoint.response}</code>
@@ -294,13 +297,15 @@ export default function DocsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Errors
+              错误
+            
             </h2>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              Every failing request returns JSON with the same shape. Branch on{" "}
-              <code>code</code>, which is stable; <code>error</code> and{" "}
-              <code>message</code> carry the same human-readable text, and{" "}
-              <code>hint</code> explains how to recover.
+              每个失败的请求都返回相同结构的 JSON。根据{" "}
+              <code>代码</code>，这是稳定版；  <code>错误</code> 和{" "}
+              <code>message</code> 携带相同的可读文本，并且{" "}
+              <code>提示</code> 并说明了如何恢复。
+            
             </p>
             <pre className={`${codeBlockClassName} mb-6`}>
               <code>{`{
@@ -317,13 +322,16 @@ export default function DocsPage() {
                 <thead>
                   <tr className="border-b border-border">
                     <th className="py-2 pr-4 font-medium text-foreground">
-                      Code
+                      代码
+                    
                     </th>
                     <th className="py-2 pr-4 font-medium text-foreground">
-                      Status
+                      状态
+                    
                     </th>
                     <th className="py-2 font-medium text-foreground">
-                      Meaning
+                      含义
+                    
                     </th>
                   </tr>
                 </thead>
@@ -351,16 +359,15 @@ export default function DocsPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Markdown content negotiation
+              Markdown 内容协商
+            
             </h2>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              Every page on this site serves Markdown to clients that ask for
-              it. Responses set{" "}
-              <code>Content-Type: text/markdown; charset=utf-8</code> and{" "}
-              <code>Vary: Accept, Accept-Encoding</code>. A request that accepts
-              neither <code>text/html</code> nor <code>text/markdown</code> is
-              answered with <code>406</code>, and an unknown path returns{" "}
-              <code>404</code> with a Markdown body listing where to look next.
+              本站每个页面都会向请求 Markdown 的客户端返回 Markdown。响应会设置{" "}
+              <code>Content-Type: text/markdown; charset=utf-8</code> 和{" "}
+              <code>Vary: Accept, Accept-Encoding</code>。如果请求既不接受  <code>text/html</code> 也不  <code>text/markdown</code> 的答案是  <code>406</code>，未知路径会返回{" "}
+              <code>404</code> 并带有 Markdown 正文，列出接下来该看哪里。
+            
             </p>
             <pre className={codeBlockClassName}>
               <code>{`curl -H "Accept: text/markdown" https://www.screenshot-studio.com/`}</code>
@@ -372,7 +379,8 @@ export default function DocsPage() {
               className="mb-4 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Related resources
+              相关资源
+            
             </h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {RESOURCES.map((resource) => (

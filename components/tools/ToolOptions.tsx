@@ -62,7 +62,7 @@ function FormatPicker({
   includeAuto: boolean;
 }) {
   const options = [
-    ...(includeAuto ? [{ id: "auto", label: "Same" }] : []),
+    ...(includeAuto ? [{ id: "auto", label: "相同" }] : []),
     ...encodable.map((format) => ({ id: format, label: FORMAT_LABELS[format] })),
   ];
 
@@ -71,7 +71,7 @@ function FormatPicker({
       options={options}
       value={value}
       onChange={(next) => onChange(next as OutputFormatChoice)}
-      ariaLabel="Output format"
+      ariaLabel="输出格式"
       size="sm"
     />
   );
@@ -92,7 +92,7 @@ function BackgroundPicker({
 
   return (
     <OptionGroup
-      label="Background behind transparency"
+      label="透明区域背后的背景"
       hint={`${FORMAT_LABELS[format]} has no transparency, so transparent pixels are filled with this colour.`}
     >
       <div className="flex items-center gap-2">
@@ -101,13 +101,13 @@ function BackgroundPicker({
           type="color"
           value={value}
           onChange={(event) => onChange(event.target.value)}
-          aria-label="Background colour"
+          aria-label="背景色"
           className="h-9 w-12 cursor-pointer rounded-md border border-input bg-transparent p-1"
         />
         <Input
           value={value}
           onChange={(event) => onChange(event.target.value)}
-          aria-label="Background colour hex value"
+          aria-label="背景色十六进制值"
           className="font-mono"
         />
       </div>
@@ -116,10 +116,10 @@ function BackgroundPicker({
 }
 
 const COMPRESSION_LEVELS: { id: CompressionLevel; label: string; hint: string }[] = [
-  { id: "low", label: "Light", hint: "Visually lossless, modest saving" },
-  { id: "medium", label: "Balanced", hint: "The best trade-off for most images" },
-  { id: "high", label: "Strong", hint: "Noticeably smaller, slight softening" },
-  { id: "extreme", label: "Extreme", hint: "Smallest file, visible artefacts" },
+  { id: "low", label: "浅色", hint: "视觉无损，压缩幅度有限" },
+  { id: "medium", label: "均衡", hint: "大多数图片的最佳平衡点" },
+  { id: "high", label: "强", hint: "体积明显变小，画质略微变软" },
+  { id: "extreme", label: "极致", hint: "文件最小，但会有可见压缩痕迹" },
 ];
 
 export function CompressOptions({
@@ -131,7 +131,7 @@ export function CompressOptions({
 
   return (
     <div className="flex flex-col gap-5">
-      <OptionGroup label="Compression level" hint={active?.hint}>
+      <OptionGroup label="压缩级别" hint={active?.hint}>
         <SegmentedControl
           options={COMPRESSION_LEVELS.map((level) => ({
             id: level.id,
@@ -139,16 +139,16 @@ export function CompressOptions({
           }))}
           value={settings.level}
           onChange={(next) => onChange({ level: next as CompressionLevel })}
-          ariaLabel="Compression level"
+          ariaLabel="压缩级别"
           size="sm"
         />
       </OptionGroup>
 
       <OptionGroup
-        label="Output format"
+        label="输出格式"
         hint={
           settings.format === "auto"
-            ? "Keeping the original format. PNG is already lossless. To make a PNG meaningfully smaller, switch the output to WebP."
+            ? "保持原格式。PNG 本身已是无损格式。要让 PNG 明显变小，请将输出格式切换为 WebP。"
             : undefined
         }
       >
@@ -181,7 +181,7 @@ export function ConvertOptions({
 
   return (
     <div className="flex flex-col gap-5">
-      <OptionGroup label="Convert to">
+      <OptionGroup label="转换为">
         <FormatPicker
           value={settings.format}
           onChange={(format) => onChange({ format })}
@@ -191,14 +191,14 @@ export function ConvertOptions({
       </OptionGroup>
 
       {lossyTarget ? (
-        <OptionGroup label="Quality">
+        <OptionGroup label="质量">
           <Slider
             value={[Math.round(settings.quality * 100)]}
             min={10}
             max={100}
             step={1}
             onValueChange={([next]) => onChange({ quality: next / 100 })}
-            aria-label="Output quality"
+            aria-label="输出质量"
             valueDisplay={`${Math.round(settings.quality * 100)}%`}
           />
         </OptionGroup>
@@ -245,17 +245,17 @@ export function ResizeOptions({ settings, onChange, reference }: PanelProps) {
 
   return (
     <div className="flex flex-col gap-5">
-      <OptionGroup label="Resize by">
+      <OptionGroup label="调整尺寸方式">
         <SegmentedControl
           options={[
-            { id: "pixels", label: "Pixels" },
-            { id: "percentage", label: "Percentage" },
+            { id: "pixels", label: "像素" },
+            { id: "percentage", label: "百分比" },
           ]}
           value={resize.mode}
           onChange={(next) =>
             setResize({ mode: next as ToolSettings["resize"]["mode"] })
           }
-          ariaLabel="Resize mode"
+          ariaLabel="调整尺寸模式"
           size="sm"
         />
       </OptionGroup>
@@ -265,7 +265,8 @@ export function ResizeOptions({ settings, onChange, reference }: PanelProps) {
           <div className="grid grid-cols-2 gap-3">
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="resize-width" className="text-xs text-muted-foreground">
-                Width (px)
+                宽度（px）
+              
               </Label>
               <Input
                 id="resize-width"
@@ -273,13 +274,14 @@ export function ResizeOptions({ settings, onChange, reference }: PanelProps) {
                 inputMode="numeric"
                 min={1}
                 value={resize.width ?? ""}
-                placeholder={reference ? String(reference.width) : "auto"}
+                placeholder={reference ? String(reference.width) : "自动"}
                 onChange={(event) => handleAxis("width", event.target.value)}
               />
             </div>
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="resize-height" className="text-xs text-muted-foreground">
-                Height (px)
+                高度 (px)
+              
               </Label>
               <Input
                 id="resize-height"
@@ -287,28 +289,28 @@ export function ResizeOptions({ settings, onChange, reference }: PanelProps) {
                 inputMode="numeric"
                 min={1}
                 value={resize.height ?? ""}
-                placeholder={reference ? String(reference.height) : "auto"}
+                placeholder={reference ? String(reference.height) : "自动"}
                 onChange={(event) => handleAxis("height", event.target.value)}
               />
             </div>
           </div>
           <ToggleRow
             id="resize-lock"
-            label="Lock aspect ratio"
+            label="锁定宽高比"
             hint="Fill one box and the other follows"
             checked={resize.lockAspectRatio}
             onCheckedChange={(lockAspectRatio) => setResize({ lockAspectRatio })}
           />
         </div>
       ) : (
-        <OptionGroup label="Scale">
+        <OptionGroup label="缩放">
           <Slider
             value={[resize.percentage]}
             min={5}
             max={resize.allowUpscale ? 400 : 100}
             step={1}
             onValueChange={([percentage]) => setResize({ percentage })}
-            aria-label="Scale percentage"
+            aria-label="缩放百分比"
             valueDisplay={`${resize.percentage}%`}
           />
         </OptionGroup>
@@ -316,7 +318,7 @@ export function ResizeOptions({ settings, onChange, reference }: PanelProps) {
 
       <ToggleRow
         id="resize-upscale"
-        label="Allow upscaling"
+        label="允许放大"
         hint="Enlarging cannot add detail, so this is off by default"
         checked={resize.allowUpscale}
         onCheckedChange={(allowUpscale) =>
@@ -348,7 +350,7 @@ export function RotateOptions({ settings, onChange }: PanelProps) {
 
   return (
     <div className="flex flex-col gap-5">
-      <OptionGroup label="Rotate" hint="Clockwise, in quarter turns">
+      <OptionGroup label="旋转" hint="Clockwise, in quarter turns">
         <SegmentedControl
           options={ROTATIONS}
           value={String(transform.rotate)}
@@ -357,21 +359,21 @@ export function RotateOptions({ settings, onChange }: PanelProps) {
               rotate: Number(next) as ToolSettings["transform"]["rotate"],
             })
           }
-          ariaLabel="Rotation"
+          ariaLabel="旋转"
           size="sm"
         />
       </OptionGroup>
 
       <ToggleRow
         id="flip-horizontal"
-        label="Flip horizontally"
+        label="水平翻转"
         hint="Mirror left to right"
         checked={transform.flipHorizontal}
         onCheckedChange={(flipHorizontal) => setTransform({ flipHorizontal })}
       />
       <ToggleRow
         id="flip-vertical"
-        label="Flip vertically"
+        label="垂直翻转"
         hint="Mirror top to bottom"
         checked={transform.flipVertical}
         onCheckedChange={(flipVertical) => setTransform({ flipVertical })}

@@ -34,9 +34,9 @@ import { SegmentedControl } from "@/components/ui/segmented-control";
 type LeftTabType = "edit" | "background" | "depth";
 
 const leftTabs: { id: LeftTabType; icon: React.ReactNode; label: string }[] = [
-  { id: "edit", icon: <SlidersHorizontalIcon size={14} />, label: "Design" },
+  { id: "edit", icon: <SlidersHorizontalIcon size={14} />, label: "设计" },
   { id: "background", icon: <ColorsIcon size={14} />, label: "BG" },
-  { id: "depth", icon: <LayersLogoIcon size={14} />, label: "Layers" },
+  { id: "depth", icon: <LayersLogoIcon size={14} />, label: "图层" },
 ];
 
 function ModeSegmentedControl(): React.JSX.Element {
@@ -50,21 +50,21 @@ function ModeSegmentedControl(): React.JSX.Element {
       options={[
         {
           id: "screenshot",
-          label: "Image",
+          label: "图片",
           icon: <Image01Icon size={14} />,
-          ariaLabel: "Image",
+          ariaLabel: "图片",
         },
         {
           id: "browser",
-          label: "Browser",
+          label: "浏览器",
           icon: <Globe02Icon size={14} />,
-          ariaLabel: "Browser",
+          ariaLabel: "浏览器",
         },
         {
           id: "device",
-          label: "Device",
+          label: "设备",
           icon: <SmartPhone01Icon size={14} />,
-          ariaLabel: "Device",
+          ariaLabel: "设备",
         },
       ]}
     />
@@ -174,7 +174,7 @@ export function LeftEditPanel() {
         <div className="flex items-center justify-between px-3 py-3 border-b border-foreground/10 shrink-0">
           <div className="flex items-center gap-2">
             <MagicWand01Icon size={16} className="text-foreground" />
-            <h2 className="text-sm font-semibold text-foreground">Templates</h2>
+            <h2 className="text-sm font-semibold text-foreground">模板</h2>
           </div>
           <button
             onClick={() => setTemplatesOpen(false)}

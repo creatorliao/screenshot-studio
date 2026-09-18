@@ -25,7 +25,7 @@ export interface CodeThemeSource {
 export const CODE_THEME_SOURCES: CodeThemeSource[] = [
   {
     id: "sand",
-    name: "Sand",
+    name: "沙色",
     from: "#EED5B6",
     to: "#AF8856",
     light: { foreground: "#262217", constant: "#A28C4E", string: "#A28C4E", comment: "#C4B39C", keyword: "#906937", parameter: "#DA8744", function: "#DA8744", stringExpression: "#C57416", punctuation: "#DA8744", link: "#DA8744", number: "#A28C4E", property: "#A28C4E" },
@@ -33,7 +33,7 @@ export const CODE_THEME_SOURCES: CodeThemeSource[] = [
   },
   {
     id: "forest",
-    name: "Forest",
+    name: "森林",
     from: "#506853",
     to: "#213223",
     light: { foreground: "#262217", constant: "#55725A", string: "#828069", comment: "#869288", keyword: "#6A8458", parameter: "#6B8F71", function: "#4B8042", stringExpression: "#9D891C", punctuation: "#78876E", link: "#78876E", number: "#78876E", property: "#2E382F" },
@@ -81,7 +81,7 @@ export const CODE_THEME_SOURCES: CodeThemeSource[] = [
   },
   {
     id: "meadow",
-    name: "Meadow",
+    name: "草甸",
     from: "#59D499",
     to: "#A0872D",
     light: { foreground: "#54594D", constant: "#B6781B", string: "#837E50", comment: "#72806E", keyword: "#049649", parameter: "#798B52", function: "#798B52", stringExpression: "#837E50", punctuation: "#049649", link: "#049649", number: "#2C8801", property: "#B6781B" },
@@ -89,7 +89,7 @@ export const CODE_THEME_SOURCES: CodeThemeSource[] = [
   },
   {
     id: "midnight",
-    name: "Midnight",
+    name: "午夜",
     from: "#4CC8C8",
     to: "#202033",
     light: { foreground: "#434447", constant: "#766599", string: "#5F758F", comment: "#78808C", keyword: "#587678", parameter: "#2F788F", function: "#2F788F", stringExpression: "#5F758F", punctuation: "#587678", link: "#5A797A", number: "#2D8264", property: "#766599" },
@@ -97,7 +97,7 @@ export const CODE_THEME_SOURCES: CodeThemeSource[] = [
   },
   {
     id: "raindrop",
-    name: "Raindrop",
+    name: "雨滴",
     from: "#8EC7FB",
     to: "#1C55AA",
     light: { foreground: "#687077", constant: "#007BA1", string: "#507683", comment: "#6E7780", keyword: "#008DAC", parameter: "#4F9488", function: "#4F9488", stringExpression: "#507683", punctuation: "#008DAC", link: "#008DAC", number: "#7459E1", property: "#007BA1" },
@@ -105,7 +105,7 @@ export const CODE_THEME_SOURCES: CodeThemeSource[] = [
   },
   {
     id: "sunset",
-    name: "Sunset",
+    name: "日落",
     from: "#FFCF73",
     to: "#FF7A2F",
     light: { foreground: "#737568", constant: "#AD5A78", string: "#8C703C", comment: "#7A7055", keyword: "#A1642C", parameter: "#807410", function: "#807410", stringExpression: "#8C703C", punctuation: "#A1642C", link: "#A1642C", number: "#856F00", property: "#AD5A78" },
@@ -121,7 +121,7 @@ export const CODE_THEME_SOURCES: CodeThemeSource[] = [
   },
   {
     id: "ice",
-    name: "Ice",
+    name: "冰",
     from: "#fff",
     to: "#80deea",
     light: { foreground: "#1C1B29", constant: "#00B0E9", string: "#6ABAD8", comment: "#BDC0C1", keyword: "#81909D", parameter: "#1E3C78", function: "#1E3C78", stringExpression: "#7BBCD8", punctuation: "#1E3C78", link: "#1E3C78", number: "#00B0E9", property: "#00B0E9" },
@@ -129,7 +129,7 @@ export const CODE_THEME_SOURCES: CodeThemeSource[] = [
   },
   {
     id: "noir",
-    name: "Noir",
+    name: "暗夜",
     from: "#B1B1B1",
     to: "#181818",
     light: { foreground: "#111111", constant: "#666666", string: "#666666", comment: "#999999", keyword: "#666666", parameter: "#666666", function: "#111111", stringExpression: "#666666", punctuation: "#666666", link: "#666666", number: "#111111", property: "#666666" },

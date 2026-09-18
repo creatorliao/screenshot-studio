@@ -15,27 +15,27 @@ const PEERLIST_BADGE =
   "https://dqy38fnwh4fqs.cloudfront.net/website/project-spotlight/project-week-rank-one-dark.svg";
 
 const navCol1 = [
-  { href: "/", label: "Editor" },
-  { href: "/features", label: "Features" },
-  { href: "/changelog", label: "Changelog" },
-  { href: "/free-screenshot-editor", label: "Free editor" },
-  { href: "/docs", label: "API docs" },
+  { href: "/", label: "编辑器" },
+  { href: "/features", label: "功能" },
+  { href: "/changelog", label: "更新日志" },
+  { href: "/free-screenshot-editor", label: "免费编辑器" },
+  { href: "/docs", label: "API 文档" },
 ] as const;
 
 const navCol2 = [
-  { href: "/features/3d-effects", label: "3D effects" },
-  { href: "/features/animation-maker", label: "Animations" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-  { href: "/developers", label: "Developers" },
+  { href: "/features/3d-effects", label: "3D 效果" },
+  { href: "/features/animation-maker", label: "动画" },
+  { href: "/about", label: "关于" },
+  { href: "/contact", label: "联系我们" },
+  { href: "/developers", label: "开发者" },
 ] as const;
 
 const navCol3 = [
-  { href: "/code", label: "Code to image" },
-  { href: "/for/developers", label: "For developers" },
-  { href: "/for/marketers", label: "For marketers" },
-  { href: "/compare/pika-style", label: "Pika alternative" },
-  { href: "/compare/carbon", label: "Carbon alternative" },
+  { href: "/code", label: "代码转图片" },
+  { href: "/for/developers", label: "面向开发者" },
+  { href: "/for/marketers", label: "面向营销人员" },
+  { href: "/compare/pika-style", label: "Pika 替代品" },
+  { href: "/compare/carbon", label: "Carbon 替代品" },
 ] as const;
 
 function FooterNavLink({
@@ -85,11 +85,14 @@ export function Footer({ brandName = "Screenshot Studio" }: FooterProps) {
                   'Inter, "Inter Fallback", Arial, Helvetica, sans-serif',
               }}
             >
-              Free and open source.
+              免费且开源。
+              
               <br />
-              Screenshot mockups
+              截图模型
+              
               <br />
-              you can ship.
+              即可发布。
+            
             </p>
             <a
               href={PEERLIST_URL}
@@ -99,7 +102,7 @@ export function Footer({ brandName = "Screenshot Studio" }: FooterProps) {
             >
               <img
                 src={PEERLIST_BADGE}
-                alt="Peerlist Project Spotlight. Rank 1"
+                alt="Peerlist 项目聚焦 · 排名第 1"
                 className="h-10 w-auto"
               />
             </a>
@@ -148,18 +151,21 @@ export function Footer({ brandName = "Screenshot Studio" }: FooterProps) {
               href="/privacy-policy"
               className="inline-flex h-10 items-center rounded-md bg-foreground/[0.04] px-3 text-sm text-foreground/90 ring-1 ring-border transition-colors duration-150 hover:bg-foreground/[0.08] hover:text-foreground"
             >
-              Privacy policy
+              隐私政策
+            
             </Link>
             <Link
               href="/terms"
               className="inline-flex h-10 items-center rounded-md bg-foreground/[0.04] px-3 text-sm text-foreground/90 ring-1 ring-border transition-colors duration-150 hover:bg-foreground/[0.08] hover:text-foreground"
             >
-              Terms of service
+              服务条款
+            
             </Link>
           </div>
 
           <p className="text-xs text-muted-foreground/70">
-            © {currentYear} {brandName}. All rights reserved.
+            © {currentYear} {brandName}。保留所有权利。
+          
           </p>
         </div>
       </div>

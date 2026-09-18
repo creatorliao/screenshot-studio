@@ -99,7 +99,7 @@ export function OverlayToolbar({
           handleRotate(-45);
         }}
         className={toolBtn}
-        title="Rotate -45°"
+        title="旋转 -45°"
       >
         <RotateLeft01Icon size={14} />
       </button>
@@ -110,7 +110,7 @@ export function OverlayToolbar({
           handleRotate(45);
         }}
         className={toolBtn}
-        title="Rotate +45°"
+        title="旋转 +45°"
       >
         <RotateRight01Icon size={14} />
       </button>
@@ -124,7 +124,7 @@ export function OverlayToolbar({
           handleResize(-20);
         }}
         className={toolBtn}
-        title="Decrease size"
+        title="减小尺寸"
       >
         <MinusSignIcon size={14} />
       </button>
@@ -135,7 +135,7 @@ export function OverlayToolbar({
           handleResize(20);
         }}
         className={toolBtn}
-        title="Increase size"
+        title="增大尺寸"
       >
         <PlusSignIcon size={14} />
       </button>
@@ -149,7 +149,7 @@ export function OverlayToolbar({
           onDuplicate();
         }}
         className={toolBtn}
-        title="Duplicate"
+        title="复制"
       >
         <Copy01Icon size={14} />
       </button>
@@ -163,7 +163,7 @@ export function OverlayToolbar({
           onDelete();
         }}
         className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-md text-muted-foreground transition-colors duration-150 hover:bg-destructive/15 hover:text-destructive"
-        title="Delete"
+        title="删除"
       >
         <Delete02Icon size={14} />
       </button>

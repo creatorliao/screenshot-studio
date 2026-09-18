@@ -95,7 +95,7 @@ export function HeroVideoDialog({
       {showThumbnail && (
         <button
           type="button"
-          aria-label="Play video"
+          aria-label="播放视频"
           className="group relative cursor-pointer border-0 bg-transparent p-0"
           onClick={() => setIsVideoOpen(true)}
         >
@@ -150,7 +150,7 @@ export function HeroVideoDialog({
               <div className="relative isolate z-[1] size-full overflow-hidden rounded-2xl border-2 border-border">
                 <iframe
                   src={videoSrc}
-                  title="Hero Video player"
+                  title="主视觉视频播放器"
                   className="size-full rounded-2xl"
                   allowFullScreen
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

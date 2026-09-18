@@ -6,9 +6,9 @@ import { OG_DEFAULTS } from "@/lib/seo/metadata";
 import { INTER, codeBlockClassName, linkClassName } from "@/lib/seo/docs-shared";
 
 export const metadata: Metadata = {
-  title: "Screenshot Studio API Authentication",
+  title: "Screenshot Studio API 身份验证",
   description:
-    "The Screenshot Studio API requires no API key, token, or account. Read how anonymous access, per-IP rate limits, 429 responses, and Retry-After headers work.",
+    "Screenshot Studio API 无需 API 密钥、令牌或账号。了解匿名访问、按 IP 的速率限制、429 响应以及 Retry-After 响应头的工作方式。",
   keywords: [
     "Screenshot Studio API authentication",
     "Screenshot Studio API key",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Screenshot Studio API Authentication",
+    title: "Screenshot Studio API 身份验证",
     description:
-      "No API key required. Anonymous access with per-IP rate limits and standard 429 semantics.",
+      "无需 API 密钥。支持匿名访问，按 IP 限流，遵循标准 429 语义。",
     url: "/docs/authentication",
   },
   alternates: {
@@ -31,22 +31,22 @@ const LIMITS = [
   {
     endpoint: "POST /api/screenshot",
     limit: "20 requests per minute per IP",
-    notes: "Returns 429 with Retry-After and X-RateLimit-* headers.",
+    notes: "返回 429，并带有 Retry-After 与 X-RateLimit-* 响应头。",
   },
   {
     endpoint: "POST /api/export",
     limit: "Unmetered",
-    notes: "Bounded by request body size and server processing time.",
+    notes: "受请求体大小和服务器处理时间限制。",
   },
   {
     endpoint: "GET /api/tweet/{id}",
     limit: "Unmetered",
-    notes: "Bounded by the upstream syndication API.",
+    notes: "受上游聚合 API 限制。",
   },
   {
     endpoint: "GET /api/image-proxy",
     limit: "Unmetered",
-    notes: "Restricted to an allowlist of Twitter media hosts.",
+    notes: "仅限 Twitter 媒体主机的允许列表。",
   },
 ];
 
@@ -60,13 +60,12 @@ export default function AuthenticationPage() {
           className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground sm:text-4xl"
           style={{ fontFamily: INTER }}
         >
-          Screenshot Studio API Authentication
+          Screenshot Studio API 身份验证
+        
         </h1>
         <p className="mb-12 text-lg leading-relaxed text-muted-foreground">
-          The public Screenshot Studio API is unauthenticated. There is no API
-          key to request, no token to rotate, and no account to create. Send the
-          request and it is served. Access is shaped by per-IP rate limits
-          rather than credentials.
+          Screenshot Studio 的公开 API 无需身份验证。无需申请 API 密钥，无需轮换令牌，也无需创建账号。直接发送请求即可获得响应。访问权限由按 IP 的速率限制而非凭据控制。
+        
         </p>
 
         <div className="space-y-10">
@@ -75,11 +74,12 @@ export default function AuthenticationPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              No credentials required
+              无需凭据
+            
             </h2>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              Do not send an <code>Authorization</code> header. It is ignored.
-              A complete request looks like this:
+              不要发送  <code>授权</code> 请求头。它会被忽略。完整的请求如下：
+            
             </p>
             <pre className={codeBlockClassName}>
               <code>{`curl -X POST https://www.screenshot-studio.com/api/screenshot \\
@@ -93,19 +93,22 @@ export default function AuthenticationPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Rate limits
+              速率限制
+            
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full text-left text-sm">
                 <thead>
                   <tr className="border-b border-border">
                     <th className="py-2 pr-4 font-medium text-foreground">
-                      Endpoint
+                      端点
+                    
                     </th>
                     <th className="py-2 pr-4 font-medium text-foreground">
-                      Limit
+                      限制
+                    
                     </th>
-                    <th className="py-2 font-medium text-foreground">Notes</th>
+                    <th className="py-2 font-medium text-foreground">说明</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -132,15 +135,17 @@ export default function AuthenticationPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Handling 429
+              处理 429
+            
             </h2>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              When the limit is exceeded the response carries{" "}
-              <code>Retry-After</code> in seconds alongside{" "}
+              超出限制时，响应会带有{" "}
+              <code>Retry-After</code> 几秒内即可完成，还能搭配{" "}
               <code>X-RateLimit-Limit</code>,{" "}
-              <code>X-RateLimit-Remaining</code>, and{" "}
-              <code>X-RateLimit-Reset</code>. Wait for{" "}
-              <code>Retry-After</code> before retrying.
+              <code>X-RateLimit-Remaining</code>，以及{" "}
+              <code>X-RateLimit-Reset</code>。等待{" "}
+              <code>Retry-After</code> 后重试。
+            
             </p>
             <pre className={codeBlockClassName}>
               <code>{`{
@@ -160,14 +165,14 @@ export default function AuthenticationPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Credentialed maintenance endpoints
+              需凭据的维护端点
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              A small number of cache-maintenance endpoints require a shared
-              secret held by the maintainers. They are not part of the public
-              API surface and are deliberately absent from the{" "}
+              少数缓存维护端点需要维护者持有的共享密钥。它们不属于公共 API 范围，并有意未出现在{" "}
               <Link href="/openapi.json" className={linkClassName}>
-                OpenAPI specification
+                OpenAPI 规范
+              
               </Link>
               .
             </p>
@@ -178,20 +183,24 @@ export default function AuthenticationPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Next steps
+              后续步骤
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Read the full{" "}
+              阅读完整{" "}
               <Link href="/docs" className={linkClassName}>
-                API documentation
+                API 文档
+              
               </Link>
-              , browse the{" "}
+              ，请浏览{" "}
               <Link href="/developers" className={linkClassName}>
-                developer portal
+                开发者门户
+              
               </Link>
-              , or fetch the{" "}
+              ，或获取{" "}
               <Link href="/openapi.json" className={linkClassName}>
-                OpenAPI 3.1 specification
+                OpenAPI 3.1 规范
+              
               </Link>
               .
             </p>

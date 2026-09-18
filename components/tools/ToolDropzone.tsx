@@ -76,10 +76,11 @@ export function ToolDropzone({
         {isDragActive ? `Drop your ${plural} here` : `Drop ${plural} here`}
       </p>
       <p className="mt-1 text-sm text-muted-foreground">
-        or click to browse, {multiple ? "select as many as you like" : "one image at a time"}
+        或点击浏览，  {multiple ? "可任意多选" : "一次处理一张图片"}
       </p>
       <p className="mt-4 text-xs text-muted-foreground">
-        PNG, JPG, WebP, GIF, BMP, AVIF · processed in your browser, never uploaded
+        PNG、JPG、WebP、GIF、BMP、AVIF · 在浏览器中处理，绝不上传
+      
       </p>
     </div>
   );

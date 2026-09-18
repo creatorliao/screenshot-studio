@@ -115,7 +115,8 @@ export default function GlobalError({
                 margin: "0 0 0.75rem",
               }}
             >
-              Something went wrong
+              出错了
+            
             </h1>
 
             <p
@@ -127,7 +128,8 @@ export default function GlobalError({
                 lineHeight: 1.6,
               }}
             >
-              A critical error occurred. Please try again or refresh the page.
+              发生了严重错误。请重试或刷新页面。
+            
             </p>
 
             {error.digest && (
@@ -139,7 +141,7 @@ export default function GlobalError({
                   marginBottom: "1.5rem",
                 }}
               >
-                Error ID: {error.digest}
+                错误 ID：  {error.digest}
               </p>
             )}
 
@@ -164,7 +166,8 @@ export default function GlobalError({
                   cursor: "pointer",
                 }}
               >
-                Try Again
+                重试
+              
               </button>
               <a
                 href="/"
@@ -177,7 +180,8 @@ export default function GlobalError({
                   textDecoration: "none",
                 }}
               >
-                Open Editor
+                打开编辑器
+              
               </a>
               <a
                 href="/landing"
@@ -190,7 +194,8 @@ export default function GlobalError({
                   textDecoration: "none",
                 }}
               >
-                Homepage
+                首页
+              
               </a>
             </div>
           </div>

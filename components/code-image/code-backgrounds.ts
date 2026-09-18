@@ -17,16 +17,16 @@ export const GRADIENT_PRESETS: Record<string, string> = {
 };
 
 export const IMAGE_CATEGORIES = [
-  { id: 'assets', label: 'Abstract' },
+  { id: 'assets', label: '抽象' },
   { id: 'mac', label: 'macOS' },
-  { id: 'radiant', label: 'Radiant' },
-  { id: 'mesh', label: 'Mesh' },
+  { id: 'radiant', label: '光辉' },
+  { id: 'mesh', label: '网格' },
 ] as const;
 
 export const PATTERN_PRESETS = [
-  { id: 'grid', label: 'Grid' },
-  { id: 'dots', label: 'Dots' },
-  { id: 'lines', label: 'Lines' },
+  { id: 'grid', label: '网格' },
+  { id: 'dots', label: '圆点' },
+  { id: 'lines', label: '线条' },
 ] as const;
 
 export function getImageBackgroundUrl(path: string): string {

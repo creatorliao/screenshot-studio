@@ -170,9 +170,9 @@ export function CleanUploadState() {
         if (rejection.errors.some((e) => e.code === 'file-too-large')) {
           setError(`File size too large. Maximum size is ${MAX_IMAGE_SIZE / 1024 / 1024}MB`);
         } else if (rejection.errors.some((e) => e.code === 'file-invalid-type')) {
-          setError('File type not supported. Please use: PNG, JPG, WEBP');
+          setError('不支持该文件类型，请使用：PNG, JPG, WEBP');
         } else {
-          setError('Failed to upload file. Please try again.');
+          setError('文件上传失败，请重试。');
         }
       }
     },
@@ -215,7 +215,7 @@ export function CleanUploadState() {
 
   const handleCaptureScreenshot = async () => {
     if (!screenshotUrl.trim()) {
-      setError('Please enter a URL');
+      setError('请输入网址');
       return;
     }
     let finalUrl = screenshotUrl.trim();
@@ -315,7 +315,7 @@ export function CleanUploadState() {
               '0 1px 4px color-mix(in srgb, var(--shadow-color) 45%, transparent)',
           }}
         >
-          {active ? 'Drop the image here...' : 'Drag & drop, click to browse, or paste'}
+          {active ? '将图片拖到此处…' : '拖放、点击浏览或粘贴'}
         </p>
 
         {!active && (
@@ -324,7 +324,7 @@ export function CleanUploadState() {
               <CommandIcon size={10} />
               V
             </kbd>
-            <span>to paste</span>
+            <span>粘贴</span>
           </div>
         )}
 
@@ -335,7 +335,7 @@ export function CleanUploadState() {
           >
             <div className="flex items-center gap-2.5 w-full max-w-[120px]">
               <div className="flex-1 h-px bg-foreground/20" />
-              <span className="text-[10px] text-foreground/40">or</span>
+              <span className="text-[10px] text-foreground/40">或</span>
               <div className="flex-1 h-px bg-foreground/20" />
             </div>
 
@@ -344,7 +344,7 @@ export function CleanUploadState() {
                 <Globe02Icon size={14} className="shrink-0 ml-3 text-foreground/45" />
                 <Input
                   type="url"
-                  placeholder="Enter website URL..."
+                  placeholder="输入网站 URL..."
                   value={screenshotUrl}
                   onChange={(e) => setScreenshotUrl(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleCaptureScreenshot()}
@@ -362,8 +362,8 @@ export function CleanUploadState() {
                   )}
                   indicatorClassName="bg-foreground/20 shadow-none"
                   options={[
-                    { id: 'light', icon: <Sun className="h-3 w-3" />, ariaLabel: 'Light' },
-                    { id: 'dark', icon: <Moon className="h-3 w-3" />, ariaLabel: 'Dark' },
+                    { id: 'light', icon: <Sun className="h-3 w-3" />, ariaLabel: '浅色' },
+                    { id: 'dark', icon: <Moon className="h-3 w-3" />, ariaLabel: '深色' },
                   ]}
                 />
               </div>

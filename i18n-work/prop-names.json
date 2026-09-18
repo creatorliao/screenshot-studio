@@ -1,0 +1,287 @@
+[
+  {
+    "key": "description",
+    "textual": 302,
+    "total": 311
+  },
+  {
+    "key": "name",
+    "textual": 218,
+    "total": 392
+  },
+  {
+    "key": "title",
+    "textual": 207,
+    "total": 261
+  },
+  {
+    "key": "label",
+    "textual": 91,
+    "total": 401
+  },
+  {
+    "key": "text",
+    "textual": 75,
+    "total": 81
+  },
+  {
+    "key": "studio",
+    "textual": 62,
+    "total": 89
+  },
+  {
+    "key": "competitor",
+    "textual": 57,
+    "total": 89
+  },
+  {
+    "key": "d",
+    "textual": 49,
+    "total": 52
+  },
+  {
+    "key": "aria-label",
+    "textual": 32,
+    "total": 48
+  },
+  {
+    "key": "question",
+    "textual": 31,
+    "total": 31
+  },
+  {
+    "key": "answer",
+    "textual": 30,
+    "total": 32
+  },
+  {
+    "key": "q",
+    "textual": 26,
+    "total": 26
+  },
+  {
+    "key": "a",
+    "textual": 26,
+    "total": 26
+  },
+  {
+    "key": "brandName",
+    "textual": 25,
+    "total": 25
+  },
+  {
+    "key": "operatingSystem",
+    "textual": 14,
+    "total": 14
+  },
+  {
+    "key": "alt",
+    "textual": 13,
+    "total": 33
+  },
+  {
+    "key": "meaning",
+    "textual": 11,
+    "total": 11
+  },
+  {
+    "key": "detail",
+    "textual": 10,
+    "total": 10
+  },
+  {
+    "key": "fontFamily",
+    "textual": 9,
+    "total": 12
+  },
+  {
+    "key": "hint",
+    "textual": 9,
+    "total": 9
+  },
+  {
+    "key": "date",
+    "textual": 8,
+    "total": 8
+  },
+  {
+    "key": "tagline",
+    "textual": 8,
+    "total": 8
+  },
+  {
+    "key": "metaTitle",
+    "textual": 8,
+    "total": 8
+  },
+  {
+    "key": "metaDescription",
+    "textual": 8,
+    "total": 8
+  },
+  {
+    "key": "verdict",
+    "textual": 8,
+    "total": 8
+  },
+  {
+    "key": "ariaLabel",
+    "textual": 7,
+    "total": 13
+  },
+  {
+    "key": "why",
+    "textual": 6,
+    "total": 6
+  },
+  {
+    "key": "h1",
+    "textual": 5,
+    "total": 5
+  },
+  {
+    "key": "intro",
+    "textual": 5,
+    "total": 5
+  },
+  {
+    "key": "sizes",
+    "textual": 4,
+    "total": 10
+  },
+  {
+    "key": "endpoint",
+    "textual": 4,
+    "total": 4
+  },
+  {
+    "key": "notes",
+    "textual": 4,
+    "total": 4
+  },
+  {
+    "key": "applicationSubCategory",
+    "textual": 4,
+    "total": 4
+  },
+  {
+    "key": "error",
+    "textual": 4,
+    "total": 4
+  },
+  {
+    "key": "competitorPricing",
+    "textual": 4,
+    "total": 8
+  },
+  {
+    "key": "body",
+    "textual": 3,
+    "total": 3
+  },
+  {
+    "key": "desc",
+    "textual": 3,
+    "total": 3
+  },
+  {
+    "key": "placeholder",
+    "textual": 3,
+    "total": 8
+  },
+  {
+    "key": "png",
+    "textual": 3,
+    "total": 3
+  },
+  {
+    "key": "ctaLabel",
+    "textual": 2,
+    "total": 2
+  },
+  {
+    "key": "competitorName",
+    "textual": 2,
+    "total": 8
+  },
+  {
+    "key": "default",
+    "textual": 1,
+    "total": 3
+  },
+  {
+    "key": "creator",
+    "textual": 1,
+    "total": 2
+  },
+  {
+    "key": "publisher",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "siteName",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "category",
+    "textual": 1,
+    "total": 48
+  },
+  {
+    "key": "dimensions",
+    "textual": 1,
+    "total": 4
+  },
+  {
+    "key": "heroTitle",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "heroSubtitle",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "heroDescription",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "videoTestimonialsTitle",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "headline",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "alternateName",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "browserRequirements",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "aria-keyshortcuts",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "200",
+    "textual": 1,
+    "total": 1
+  },
+  {
+    "key": "800",
+    "textual": 1,
+    "total": 1
+  }
+]

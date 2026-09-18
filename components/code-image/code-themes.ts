@@ -25,7 +25,7 @@ export const WINDOW_SURFACE_DARK = 'rgba(0, 0, 0, 0.88)';
 export const WINDOW_SURFACE_LIGHT = 'rgba(255, 255, 255, 0.95)';
 
 export const LANGUAGES = [
-  { id: 'auto', label: 'Auto' },
+  { id: 'auto', label: '自动' },
   { id: 'javascript', label: 'JavaScript' },
   { id: 'typescript', label: 'TypeScript' },
   { id: 'python', label: 'Python' },
@@ -44,7 +44,7 @@ export const LANGUAGES = [
   { id: 'yaml', label: 'YAML' },
   { id: 'swift', label: 'Swift' },
   { id: 'kotlin', label: 'Kotlin' },
-  { id: 'ruby', label: 'Ruby' },
+  { id: 'ruby', label: '红宝石' },
   { id: 'bash', label: 'Bash' },
 ] as const;
 

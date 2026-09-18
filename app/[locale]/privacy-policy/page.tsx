@@ -4,9 +4,9 @@ import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "隐私政策",
   description:
-    "Privacy Policy for Screenshot Studio. What stays on your device, what is sent to our server, and which third parties are involved.",
+    "Screenshot Studio 隐私政策。哪些数据留在你的设备上，哪些会发送到我们的服务器，以及涉及哪些第三方。",
   alternates: {
     canonical: "/privacy-policy",
   },
@@ -28,10 +28,12 @@ export default function PrivacyPolicyPage() {
           className="mb-2 text-3xl font-semibold tracking-[-0.03em] text-foreground sm:text-4xl"
           style={{ fontFamily: INTER }}
         >
-          Privacy Policy
+          隐私政策
+        
         </h1>
         <p className="mb-12 text-sm text-muted-foreground">
-          Last updated: August 23, 2026
+          最后更新：2026 年 8 月 23 日
+        
         </p>
 
         <div className="max-w-none space-y-8">
@@ -40,19 +42,16 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Overview
+              概述
+            
             </h2>
             <p className="mb-3 leading-relaxed text-muted-foreground">
-              Screenshot Studio is a browser-based image editor. There is no
-              account, no signup, and no login, so we never ask you for a name,
-              an email address, or payment details to use the editor.
+              Screenshot Studio 是一款基于浏览器的图像编辑器。无需账号、无需注册、无需登录，因此我们绝不要求你提供姓名、邮箱或支付信息即可使用编辑器。
+            
             </p>
             <p className="leading-relaxed text-muted-foreground">
-              Editing, compositing, and preview rendering happen on your device
-              in the browser canvas. Three features do send data off your
-              device: export compression, capturing a screenshot from a URL, and
-              importing a tweet. Each one is described below. We do not sell
-              your data.
+              编辑、合成和预览渲染都在你的设备上、在浏览器画布中完成。有三项功能会把数据发送到你的设备之外：导出压缩、从 URL 截取截图，以及导入推文。下面会逐一说明。我们不会出售你的数据。
+            
             </p>
           </section>
 
@@ -61,33 +60,30 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              What Stays On Your Device
+              哪些数据保留在你的设备上
+            
             </h2>
             <p className="mb-3 leading-relaxed text-muted-foreground">
-              Images you import from your device are read in the browser and are
-              never uploaded to us for editing. The editor also stores your work
-              in your own browser:
+              你从设备导入的图片在浏览器中读取，绝不会上传到我们这里进行编辑。编辑器还会把作品保存在你自己的浏览器中：
+            
             </p>
             <ul className="list-inside list-disc space-y-2 text-muted-foreground">
               <li>
-                <strong className="text-foreground">Drafts:</strong> your
-                in-progress canvas is autosaved to IndexedDB and deleted
-                automatically after 7 days.
+                <strong className="text-foreground">草稿：</strong> 你正在编辑的画布会自动保存到 IndexedDB，并在 7 天后自动删除。
+              
               </li>
               <li>
-                <strong className="text-foreground">Images:</strong> imported
-                images under 500KB are kept in local storage so a reload does
-                not lose them. Larger images are held in memory only.
+                <strong className="text-foreground">图片：</strong> 导入的图片小于 500KB 时会保存在本地存储中，刷新页面不会丢失。更大的图片仅保存在内存中。
+              
               </li>
               <li>
-                <strong className="text-foreground">Preferences:</strong> aspect
-                ratio, export settings, custom presets, theme, and recent
-                exports.
+                <strong className="text-foreground">偏好设置：</strong> 宽高比、导出设置、自定义预设、主题和最近的导出记录。
+              
               </li>
             </ul>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              None of this reaches our servers. Clearing site data in your
-              browser removes all of it.
+              这些内容都不会传到我们的服务器。清除浏览器中的站点数据即可将其全部删除。
+            
             </p>
           </section>
 
@@ -96,25 +92,25 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              What Leaves Your Device
+              哪些数据会离开你的设备
+            
             </h2>
             <ul className="list-inside list-disc space-y-3 text-muted-foreground">
               <li>
-                <strong className="text-foreground">Export compression:</strong>{" "}
-                when you export, the rendered image is sent to our{" "}
+                <strong className="text-foreground">导出压缩：</strong>{" "}
+                当你导出时，渲染后的图片会被发送到我们的{" "}
                 <code className="rounded bg-muted px-1.5 py-0.5 text-[13px]">
                   /api/export
                 </code>{" "}
-                endpoint, recompressed in memory with Sharp, and returned to
-                you. It is not written to disk, not stored, and not logged.
-                Images above 4MB, and any failure or timeout, fall back to
-                compression inside your browser.
+                端点，使用 Sharp 在内存中重新压缩后返回给你。它不会被写入磁盘、不会被存储，也不会被记录日志。超过 4MB 的图片，以及任何失败或超时，都会回退到在浏览器内压缩。
+              
               </li>
               <li>
                 <strong className="text-foreground">
-                  Capturing a screenshot from a URL:
+                  从 URL 抓取截图：
+                
                 </strong>{" "}
-                the address you enter is sent to{" "}
+                你输入的地址会发送到{" "}
                 <Link
                   href="https://microlink.io"
                   target="_blank"
@@ -123,21 +119,18 @@ export default function PrivacyPolicyPage() {
                 >
                   Microlink
                 </Link>
-                , which loads that page and captures it. The resulting image is
-                cached in Cloudflare R2, and our database stores the normalized
-                URL, a hash of it, the device and color-scheme options, and the
-                storage key so repeat captures are fast. Only public web pages
-                you explicitly submit are captured.
+                ，它会加载该页面并截图。生成的图片会缓存在 Cloudflare R2 中，我们的数据库会存储规范化后的 URL、其哈希值、设备与配色方案选项以及存储键，以便重复截图时更快。只有你明确提交的公开网页才会被截图。
+              
               </li>
               <li>
-                <strong className="text-foreground">Importing a tweet:</strong>{" "}
-                the numeric post id is sent to X&apos;s public syndication API to
-                fetch the post content that gets rendered on your canvas.
+                <strong className="text-foreground">导入推文：</strong>{" "}
+                数字推文 ID 会发送到 X 的公开 syndication API，以获取在你的画布上渲染的推文内容。
+              
               </li>
               <li>
-                <strong className="text-foreground">Remote images:</strong>{" "}
-                images referenced by URL are fetched through our image proxy,
-                which is restricted to an allowlist of hosts.
+                <strong className="text-foreground">远程图片：</strong>{" "}
+                通过 URL 引用的图片会经由我们的图片代理获取，该代理仅限白名单内的主机。
+              
               </li>
             </ul>
           </section>
@@ -147,52 +140,48 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Analytics, Ads, and Third Parties
+              分析、广告与第三方
+            
             </h2>
             <ul className="list-inside list-disc space-y-3 text-muted-foreground">
               <li>
                 <strong className="text-foreground">Databuddy:</strong>{" "}
-                cookieless product analytics. Records page views, web vitals,
-                JavaScript errors, and clicks on outgoing links.
+                不使用 Cookie 的产品分析。记录页面浏览量、Web 指标、JavaScript 错误和外链点击。
+              
               </li>
               <li>
-                <strong className="text-foreground">PostHog:</strong> product
-                analytics for feature usage. It sets a first-party identifier so
-                repeat visits are recognized.
+                <strong className="text-foreground">PostHog：</strong> 用于功能使用情况的产品分析。它会设置第一方标识符，以便识别再次访问。
+              
               </li>
               <li>
-                <strong className="text-foreground">Google AdSense:</strong> ads
-                are served on this site. Google may set cookies and use them for
-                ad delivery, measurement, and personalization under its own
-                policies. You can control this at{" "}
+                <strong className="text-foreground">Google AdSense：</strong> 广告在本站投放。Google 可能依据其自身政策设置 Cookie，并将其用于广告投放、衡量和个性化。你可以在以下位置控制{" "}
                 <Link
                   href="https://myadcenter.google.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={linkClassName}
                 >
-                  My Ad Center
+                  我的广告中心
+                
                 </Link>
                 .
               </li>
               <li>
                 <strong className="text-foreground">
-                  Hosting and network:
+                  托管与网络：
+                
                 </strong>{" "}
-                the site runs on Vercel behind Cloudflare. Both keep standard
-                request logs, which include IP addresses, for security and
-                reliability.
+                网站运行在 Cloudflare 之后的 Vercel 上。出于安全和可靠性考虑，两者都会保留包含 IP 地址的标准请求日志。
+              
               </li>
               <li>
-                <strong className="text-foreground">Rate limiting:</strong> the
-                screenshot API keeps your IP address in server memory for up to
-                60 seconds to enforce its per-minute limit. It is not written to
-                a database.
+                <strong className="text-foreground">速率限制：</strong> 截图 API 会在服务器内存中保留你的 IP 地址最多 60 秒，以执行每分钟的限制。该地址不会写入数据库。
+              
               </li>
             </ul>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              We do not run cross-site advertising pixels of our own, and we do
-              not sell or share your data with data brokers.
+              我们不会投放自己的跨站广告像素，也不会将你的数据出售或分享给数据经纪商。
+            
             </p>
           </section>
 
@@ -201,16 +190,16 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Cookies
+              Cookie
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              We set one cookie ourselves,{" "}
+              我们自己设置了一个 Cookie，{" "}
               <code className="rounded bg-muted px-1.5 py-0.5 text-[13px]">
                 NEXT_LOCALE
               </code>
-              , to remember your language choice. Additional cookies and
-              identifiers may be set by PostHog and Google AdSense as described
-              above.
+              ，用于记住你的语言选择。如上所述，PostHog 和 Google AdSense 可能会设置额外的 Cookie 和标识符。
+            
             </p>
           </section>
 
@@ -219,25 +208,25 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Your Choices
+              你的选择
+            
             </h2>
             <ul className="list-inside list-disc space-y-2 text-muted-foreground">
               <li>
-                Clear site data in your browser to remove every draft, image,
-                and preference stored locally.
+                清除浏览器中的站点数据，即可删除本地存储的所有草稿、图片和偏好设置。
+              
               </li>
               <li>
-                Block cookies or use an ad or tracker blocker. The editor works
-                without analytics and without ads.
+                屏蔽 Cookie 或使用广告或追踪拦截器。编辑器在没有分析和广告的情况下也能正常使用。
+              
               </li>
               <li>
-                Skip URL capture and tweet import if you do not want those
-                requests made. Importing images from your device never leaves
-                the browser.
+                如果你不想发起这些请求，可以跳过 URL 截图和推文导入。从设备导入图片永远不会离开浏览器。
+              
               </li>
               <li>
-                Email us to have a cached screenshot of a page you control
-                removed.
+                给我们发邮件，即可移除你所拥有页面的缓存截图。
+              
               </li>
             </ul>
           </section>
@@ -247,11 +236,12 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Children
+              儿童
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Screenshot Studio is not directed at children under 13, and we do
-              not knowingly collect information from them.
+              Screenshot Studio 不面向 13 岁以下儿童，我们也不会在知情的情况下收集他们的信息。
+            
             </p>
           </section>
 
@@ -260,18 +250,19 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Open Source
+              开源
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Screenshot Studio is open source. Every claim on this page can be
-              checked against the{" "}
+              Screenshot Studio 是开源的。本页的每一项声明都可以对照{" "}
               <Link
                 href="https://github.com/opennookorg/screenshot-studio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={linkClassName}
               >
-                source code on GitHub
+                GitHub 上的源代码
+              
               </Link>
               .
             </p>
@@ -282,11 +273,12 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Changes
+              变更
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              We may update this policy from time to time. Changes will be
-              reflected on this page with an updated date.
+              我们可能会不时更新本政策。变更会连同更新日期一并反映在本页面上。
+            
             </p>
           </section>
 
@@ -295,12 +287,14 @@ export default function PrivacyPolicyPage() {
               className="mb-3 text-xl font-semibold tracking-[-0.02em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Contact
+              联系我们
+            
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              If you have questions about this policy, reach out via our{" "}
+              如果对本政策有疑问，请通过我们的{" "}
               <Link href="/contact" className={linkClassName}>
-                contact page
+                联系页面
+              
               </Link>
               .
             </p>

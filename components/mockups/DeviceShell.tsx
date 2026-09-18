@@ -96,7 +96,7 @@ function Screen({
       onPointerDown={onPointerDown}
       role={onClick ? "button" : undefined}
       tabIndex={onClick ? 0 : undefined}
-      aria-label={onClick ? "Upload image to device screen" : undefined}
+      aria-label={onClick ? "上传图片到设备屏幕" : undefined}
       data-device-screen-dropzone={onFile ? "" : undefined}
       data-export-clean-device-screen={editing ? "true" : undefined}
       style={{ ...style, touchAction: editing ? "none" : undefined }}
@@ -104,7 +104,7 @@ function Screen({
       {screen.src ? (
         <img
           src={screen.src}
-          alt="Device screen"
+          alt="设备屏幕"
           draggable={false}
           className="block h-full w-full select-none"
           style={{
@@ -143,7 +143,8 @@ function Screen({
                   <line x1="8" y1="24" x2="40" y2="24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                 </svg>
                 <span className="max-w-full text-balance text-[clamp(6px,2.4cqw,18px)] font-medium leading-tight tracking-[-0.015em]">
-                  Drag &amp; drop, click to browse, or paste
+                  拖放、点击浏览或粘贴
+                
                 </span>
               </div>
             </div>

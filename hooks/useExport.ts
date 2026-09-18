@@ -250,7 +250,7 @@ export function useExport(selectedAspectRatio: string) {
         origin: { y: 0.6 }
       });
 
-      toast.success('Image downloaded successfully!', {
+      toast.success('图片下载成功！', {
         description: `Saved as ${fileName}`,
       });
 
@@ -264,7 +264,7 @@ export function useExport(selectedAspectRatio: string) {
 
       trackExportError(settings.format, errorMessage);
 
-      toast.error('Export failed', {
+      toast.error('导出失败', {
         description: errorMessage,
       });
 
@@ -363,8 +363,8 @@ export function useExport(selectedAspectRatio: string) {
           origin: { y: 0.6 }
         });
 
-        toast.success('Image copied to clipboard!', {
-          description: 'You can now paste it anywhere',
+        toast.success('图片已复制到剪贴板！', {
+          description: '现在你可以把它粘贴到任何地方',
         });
 
         setTimeout(() => anim.reset(), 600);
@@ -380,7 +380,7 @@ export function useExport(selectedAspectRatio: string) {
 
       trackCopyToClipboard(false);
 
-      toast.error('Copy failed', {
+      toast.error('复制失败', {
         description: errorMessage,
       });
 

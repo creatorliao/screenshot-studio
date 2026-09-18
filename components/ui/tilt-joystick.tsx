@@ -92,7 +92,8 @@ export function TiltJoystick({
             : 'bg-border dark:bg-secondary text-foreground/80 hover:bg-muted-foreground/40 dark:hover:bg-accent'
         )}
       >
-        Tilt
+        倾斜
+      
       </button>
 
       {/* Joystick Base - Thick white ring with dark center */}

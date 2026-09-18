@@ -14,9 +14,9 @@ import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "Free Screenshot Editor Online",
+  title: "免费在线截图编辑器",
   description:
-    "Free screenshot editor online: beautify screenshots with gradient backgrounds, browser mockups, shadows, 3D effects, and animations. No signup, no watermarks.",
+    "免费在线截图编辑器：用渐变背景、浏览器模型、阴影、3D 效果和动画美化截图。无需注册，无水印。",
   keywords: [
     "screenshot editor online free",
     "free screenshot editor",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     "screenshot shadow and border editor",
   ],
   openGraph: {
-    title: "Free Screenshot Editor Online - Screenshot Studio",
+    title: "免费在线截图编辑器 - Screenshot Studio",
     description:
-      "Beautify screenshots instantly with 100+ backgrounds, 3D effects, and animations. Free, no signup required.",
+      "用 100+ 种背景、3D 效果和动画即刻美化截图。免费，无需注册。",
     url: "/free-screenshot-editor",
   },
   alternates: {
@@ -68,142 +68,142 @@ const cardSurface =
 const capabilities = [
   {
     icon: ColorsIcon,
-    title: "100+ Backgrounds",
+    title: "100+ 背景",
     description:
-      "Gradients, solid colors, mesh backgrounds, and custom uploads. Make any screenshot pop with a professional backdrop.",
+      "渐变、纯色、网格背景和自定义上传。用专业的背景让任何截图都出彩。",
   },
   {
     icon: MagicWand01Icon,
-    title: "Shadows & Effects",
+    title: "阴影与效果",
     description:
-      "Realistic drop shadows with customizable blur, spread, offset, and color. Add depth in one click.",
+      "逼真的投影，模糊、扩散、偏移和颜色均可自定义。一键添加层次感。",
   },
   {
     icon: Layers01Icon,
-    title: "Device Frames",
+    title: "设备边框",
     description:
-      "Wrap screenshots in macOS, Windows, Arc, or Polaroid frames. Perfect for product marketing.",
+      "把截图包进 macOS、Windows、Arc 或 Polaroid 边框。非常适合产品营销。",
   },
   {
     icon: CubeIcon,
-    title: "3D Perspective",
+    title: "3D 透视",
     description:
-      "Tilt, rotate, and scale with real-time 3D transforms. Create eye-catching angles for presentations.",
+      "用实时 3D 变换进行倾斜、旋转和缩放。为演示文稿打造吸引眼球的角度。",
   },
   {
     icon: Video01Icon,
-    title: "Animation & Video Export",
+    title: "动画与视频导出",
     description:
-      "Add keyframe animations with 20+ presets and export as MP4, WebM, or GIF. Bring static screenshots to life.",
+      "用 20+ 个预设添加关键帧动画，并导出为 MP4、WebM 或 GIF。让静态截图动起来。",
   },
   {
     icon: TextFontIcon,
-    title: "Text & Overlays",
+    title: "文字与叠加层",
     description:
-      "Add captions, labels, and annotations with 25+ fonts. Layer stickers and arrows for tutorials.",
+      "用 25+ 种字体添加字幕、标签和标注。为教程叠加贴纸和箭头。",
   },
   {
     icon: Download04Icon,
-    title: "High-Res Export",
+    title: "高分辨率导出",
     description:
-      "Export PNG or JPG at up to 5x resolution. Retina-ready images for any platform.",
+      "最高可导出 5x 分辨率的 PNG 或 JPG。为任何平台提供适配视网膜屏的图片。",
   },
 ] as const;
 
 const howItWorks = [
   {
     step: "1",
-    title: "Upload Your Screenshot",
-    desc: "Drag and drop any image or paste from clipboard. Supports PNG, JPG, WebP, and more.",
+    title: "上传你的截图",
+    desc: "拖放任意图片或从剪贴板粘贴。支持 PNG、JPG、WebP 等格式。",
   },
   {
     step: "2",
-    title: "Style It",
-    desc: "Choose a background, add shadows, apply 3D transforms, or pick a one-click preset.",
+    title: "美化",
+    desc: "选择背景、添加阴影、应用 3D 变换，或直接选用一键预设。",
   },
   {
     step: "3",
-    title: "Export & Share",
-    desc: "Download as high-res PNG/JPG or export animations as MP4, WebM, or GIF.",
+    title: "导出与分享",
+    desc: "以高分辨率 PNG/JPG 下载，或将动画导出为 MP4、WebM 或 GIF。",
   },
 ];
 
 const useCases = [
   {
-    title: "SaaS Product Marketing",
+    title: "SaaS 产品营销",
     description:
-      "Turn raw product screenshots into polished hero images for landing pages, pitch decks, and ad creatives.",
+      "把原始的产品截图变成精致的首屏图，用于落地页、提案演示和广告素材。",
   },
   {
-    title: "Social Media Posts",
+    title: "社交媒体帖子",
     description:
-      "Create scroll-stopping Twitter, LinkedIn, and Instagram posts from app screenshots in seconds.",
+      "几秒钟用应用截图制作令人停下滑动的 Twitter、LinkedIn 和 Instagram 帖子。",
   },
   {
-    title: "Developer Portfolios",
+    title: "开发者作品集",
     description:
-      "Showcase your projects with professional screenshots that highlight your best work.",
+      "用突出你最佳作品的专业截图展示你的项目。",
   },
   {
-    title: "Documentation & Tutorials",
+    title: "文档与教程",
     description:
-      "Annotate and beautify screenshots for help docs, blog posts, and step-by-step guides.",
+      "为帮助文档、博客文章和分步指南标注并美化截图。",
   },
   {
-    title: "App Store Listings",
+    title: "App Store 列表",
     description:
-      "Generate beautiful preview images that increase downloads and conversion rates.",
+      "生成美观的预览图，提升下载量和转化率。",
   },
   {
-    title: "Client Presentations",
+    title: "客户演示",
     description:
-      "Impress clients with polished mockups instead of raw screenshots in proposals and reports.",
+      "在提案和报告中使用精致的模型代替原始截图，让客户印象深刻。",
   },
 ];
 
 const faqs = [
   {
-    q: "Is this screenshot editor really free?",
-    a: "Yes, Screenshot Studio is 100% free with no hidden costs, premium tiers, or watermarks. Every feature is available to everyone. Unlimited exports, full resolution, no restrictions.",
+    q: "这款截图编辑器真的免费吗？",
+    a: "是的，Screenshot Studio 100% 免费，没有隐藏费用、付费档位或水印。所有功能对所有人开放。导出不限次数、完整分辨率、没有任何限制。",
   },
   {
-    q: "Do I need to install anything?",
-    a: "No. Screenshot Studio runs entirely in your browser. There is nothing to download or install. Just open the editor and start editing your screenshots immediately.",
+    q: "我需要安装任何东西吗？",
+    a: "不用。Screenshot Studio 完全在浏览器中运行，无需下载或安装任何东西。打开编辑器就能立刻开始编辑截图。",
   },
   {
-    q: "Do I need to create an account?",
-    a: "No signup required. Your privacy matters. We don't collect personal data or require registration. Just open the editor and start creating.",
+    q: "需要注册账号吗？",
+    a: "无需注册。我们重视你的隐私：不收集个人数据，也不要求注册。打开编辑器即可开始创作。",
   },
   {
-    q: "What image formats are supported?",
-    a: "You can upload PNG, JPG, WebP, and most common image formats. Export as high-resolution PNG (with transparency) or JPG. For animations, export as MP4, WebM, or GIF.",
+    q: "支持哪些图片格式？",
+    a: "你可以上传 PNG、JPG、WebP 以及大多数常见图片格式。可导出为高分辨率 PNG（保留透明度）或 JPG。若需要动画，可导出为 MP4、WebM 或 GIF。",
   },
   {
-    q: "Can I use this for commercial projects?",
-    a: "Absolutely. There are no usage restrictions on images you create. Use them for SaaS marketing, social media, client work, app stores, or any other purpose.",
+    q: "我能将它用于商业项目吗？",
+    a: "当然可以。你创建的图片没有使用限制。可用于 SaaS 营销、社交媒体、客户项目、应用商店或任何其他用途。",
   },
   {
-    q: "How does it compare to Canva or Figma?",
-    a: "Screenshot Studio is purpose-built for screenshot beautification. Unlike general-purpose editors, it offers one-click presets, 3D perspective transforms, animation timelines, and video export, all optimized for the screenshot-to-social-media workflow.",
+    q: "它与 Canva 或 Figma 相比如何？",
+    a: "Screenshot Studio 专为截图美化而生。与通用编辑器不同，它提供一键预设、3D 透视变换、动画时间轴和视频导出，全部针对截图到社交媒体的工作流做了优化。",
   },
 ];
 
 const featureLinks = [
   {
     href: "/features/screenshot-beautifier",
-    label: "Screenshot Beautifier",
+    label: "截图美化",
   },
   {
     href: "/features/animation-maker",
-    label: "Animation Maker",
+    label: "动画制作",
   },
   {
     href: "/features/3d-effects",
-    label: "3D Effects",
+    label: "3D 效果",
   },
   {
     href: "/features/social-media-graphics",
-    label: "Social Media Graphics",
+    label: "社交媒体图片",
   },
 ] as const;
 
@@ -304,29 +304,31 @@ export default function FreeScreenshotEditorPage() {
         <section className="px-6 pb-20 pt-32">
           <div className="mx-auto max-w-4xl text-center">
             <span className="mb-6 inline-flex items-center gap-2 text-xs font-medium text-muted-foreground">
-              <span>100% Free</span>
+              <span>100% 免费</span>
               <span className="h-3 w-px bg-border" aria-hidden />
-              <span>No Signup</span>
+              <span>无需注册</span>
               <span className="h-3 w-px bg-border" aria-hidden />
-              <span>No Watermarks</span>
+              <span>无水印</span>
             </span>
             <h1
               className="mb-6 text-4xl font-semibold tracking-[-0.03em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Free Screenshot Editor Online
+              免费在线截图编辑器
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Beautify any screenshot in seconds. Add backgrounds, shadows, 3D
-              effects, and animations, then export as image or video. No signup,
-              no downloads.
+              几秒内美化任何截图。添加背景、阴影、3D 效果和动画，然后导出为图片或视频。无需注册，无需下载。
+            
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/" className={ctaClassName}>
-                Open Free Editor
+                打开免费编辑器
+              
               </Link>
               <Link href="/features" className={secondaryCtaClassName}>
-                See All Features
+                查看全部功能
+              
               </Link>
             </div>
           </div>
@@ -339,12 +341,12 @@ export default function FreeScreenshotEditorPage() {
                 className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
                 style={{ fontFamily: INTER }}
               >
-                Everything You Need to Edit Screenshots
+                编辑截图所需的一切
+              
               </h2>
               <p className="mx-auto max-w-2xl text-muted-foreground">
-                A complete screenshot editor that runs in your browser. No
-                bloated software, no learning curve. Just powerful tools that
-                work.
+                一款完全在浏览器中运行的截图编辑器。没有臃肿的软件，没有学习成本。只有真正好用的强大工具。
+              
               </p>
             </div>
 
@@ -381,10 +383,12 @@ export default function FreeScreenshotEditorPage() {
                 className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
                 style={{ fontFamily: INTER }}
               >
-                3 Steps to Professional Screenshots
+                3 步做出专业截图
+              
               </h2>
               <p className="text-muted-foreground">
-                No learning curve. No tutorials needed.
+                没有学习成本。无需教程。
+              
               </p>
             </div>
 
@@ -411,11 +415,12 @@ export default function FreeScreenshotEditorPage() {
                 className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
                 style={{ fontFamily: INTER }}
               >
-                Built for Every Use Case
+                适用于各种场景
+              
               </h2>
               <p className="mx-auto max-w-2xl text-muted-foreground">
-                Whether you are a developer, marketer, designer, or content
-                creator, Screenshot Studio has you covered.
+                无论你是开发者、营销人员、设计师还是内容创作者，Screenshot Studio 都能满足你的需求。
+              
               </p>
             </div>
 
@@ -437,10 +442,12 @@ export default function FreeScreenshotEditorPage() {
                 className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
                 style={{ fontFamily: INTER }}
               >
-                Frequently Asked Questions
+                常见问题
+              
               </h2>
               <p className="text-muted-foreground">
-                Everything you need to know about our free screenshot editor.
+                关于我们的免费截图编辑器，你需要了解的一切。
+              
               </p>
             </div>
 
@@ -466,7 +473,8 @@ export default function FreeScreenshotEditorPage() {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Explore More Features
+              探索更多功能
+            
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {featureLinks.map((link) => (
@@ -492,14 +500,16 @@ export default function FreeScreenshotEditorPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
               style={{ fontFamily: INTER }}
             >
-              Start Editing Screenshots for Free
+              免费开始编辑截图
+            
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              No signup. No downloads. No watermarks. Just open the editor and
-              create.
+              无需注册。无需下载。没有水印。打开编辑器即可创作。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Open Free Screenshot Editor
+              打开免费截图编辑器
+            
             </Link>
           </div>
         </section>

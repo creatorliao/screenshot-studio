@@ -5,8 +5,8 @@ export const templates: Template[] = [
   // Solid color templates
   {
     id: "solid-white",
-    name: "White",
-    description: "Clean white background",
+    name: "白色",
+    description: "干净的白色背景",
     background: {
       type: "solid",
       color: "#ffffff",
@@ -18,8 +18,8 @@ export const templates: Template[] = [
   },
   {
     id: "solid-black",
-    name: "Black",
-    description: "Dark black background",
+    name: "黑色",
+    description: "深黑色背景",
     background: {
       type: "solid",
       color: "#000000",
@@ -31,8 +31,8 @@ export const templates: Template[] = [
   },
   {
     id: "solid-gray",
-    name: "Gray",
-    description: "Neutral gray background",
+    name: "灰色",
+    description: "中性灰背景",
     background: {
       type: "solid",
       color: "#f5f5f5",
@@ -45,8 +45,8 @@ export const templates: Template[] = [
   // Gradient templates
   {
     id: "gradient-blue",
-    name: "Ocean Breeze",
-    description: "Smooth blue gradient",
+    name: "海风",
+    description: "平滑蓝色渐变",
     background: {
       type: "gradient",
       gradient: {
@@ -62,8 +62,8 @@ export const templates: Template[] = [
   },
   {
     id: "gradient-purple",
-    name: "Royal Purple",
-    description: "Vibrant purple gradient",
+    name: "皇家紫",
+    description: "鲜亮紫色渐变",
     background: {
       type: "gradient",
       gradient: {
@@ -79,8 +79,8 @@ export const templates: Template[] = [
   },
   {
     id: "gradient-orange",
-    name: "Sunset Glow",
-    description: "Warm orange gradient",
+    name: "日落辉光",
+    description: "暖橙色渐变",
     background: {
       type: "gradient",
       gradient: {
@@ -97,8 +97,8 @@ export const templates: Template[] = [
   // Abstract shapes templates
   {
     id: "shapes-circles",
-    name: "Circles",
-    description: "Abstract circular shapes",
+    name: "圆形",
+    description: "抽象圆形图案",
     background: {
       type: "shapes",
       color: "#ffffff",
@@ -130,8 +130,8 @@ export const templates: Template[] = [
   },
   {
     id: "shapes-squares",
-    name: "Squares",
-    description: "Geometric square patterns",
+    name: "方形",
+    description: "几何方形图案",
     background: {
       type: "shapes",
       color: "#f8f9fa",

@@ -250,7 +250,7 @@ export function Perspective3DOverlay({
 
           <img
             src={image.src}
-            alt="3D transformed"
+            alt="已应用 3D 变换"
             style={{
               position: 'absolute',
               left: `${frameOffset + windowPadding}px`,

@@ -43,13 +43,15 @@ export function FinalCTA({
               size="lg"
               className="text-base px-8 py-5 font-medium rounded-lg"
             >
-              View on GitHub
+              在 GitHub 上查看
+            
             </Button>
           </Link>
         </div>
 
         <p className="mt-8 text-sm text-muted-foreground/60">
-          Free forever · No signup required
+          永久免费 · 无需注册
+        
         </p>
       </div>
     </section>

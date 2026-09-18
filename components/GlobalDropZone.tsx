@@ -230,7 +230,7 @@ export function GlobalDropZone({ children }: GlobalDropZoneProps) {
                       transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
                       className="w-10 h-10 rounded-full border-2 border-primary border-t-transparent"
                     />
-                    <p className="text-sm font-medium text-foreground">Loading image...</p>
+                    <p className="text-sm font-medium text-foreground">正在加载图片...</p>
                   </>
                 ) : (
                   <>
@@ -264,10 +264,12 @@ export function GlobalDropZone({ children }: GlobalDropZoneProps) {
 
                     <div className="text-center">
                       <p className="text-lg font-semibold text-foreground">
-                        Drop your image here
+                        把图片拖到这里
+                      
                       </p>
                       <p className="text-sm text-muted-foreground mt-1">
-                        PNG, JPG, or WEBP
+                        PNG、JPG 或 WEBP
+                      
                       </p>
                     </div>
                   </>

@@ -5,7 +5,8 @@ export function BackedBy() {
     <section className="py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
         <p className="text-sm text-muted-foreground">
-          Backed by the Vercel Open Source Program
+          由 Vercel 开源计划支持
+        
         </p>
         <div className="flex items-center justify-center gap-8">
           <Link
@@ -18,7 +19,7 @@ export function BackedBy() {
               viewBox="0 0 256 222"
               className="h-5 w-auto text-foreground"
               fill="currentColor"
-              aria-label="Vercel logo"
+              aria-label="Vercel 标志"
             >
               <path d="M128 0L256 221.705H0L128 0Z" />
             </svg>

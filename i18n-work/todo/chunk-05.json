@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s0700",
+    "en": "Copy URL",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0701",
+    "en": "Copying Image",
+    "count": 1,
+    "where": "components/canvas/dialogs/CopyProgressDialog.tsx"
+  },
+  {
+    "id": "s0702",
+    "en": "Copying…",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0703",
+    "en": "Coral",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0704",
+    "en": "Corner",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0705",
+    "en": "Cosmic",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0706",
+    "en": "Cousine",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s0707",
+    "en": "Cover",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s0708",
+    "en": "Create a Code Image",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0709",
+    "en": "Create a shareable code screenshot in three steps using Screenshot Studio.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0710",
+    "en": "Create animated product demos with zoom and pan effects. Export as video or GIF for social media posts that outperform static images.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0711",
+    "en": "Create animated walkthroughs of your apps with zoom, pan, and transition effects. Export as MP4 or GIF for issue trackers and pull requests.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0712",
+    "en": "Create Animation Free",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0713",
+    "en": "Create app mockups, UI mockups, and portfolio screenshots with backgrounds, browser frames, and 3D effects. Free, no signup.",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0714",
+    "en": "Create clean product images for newsletters and drip campaigns. High-res exports that look sharp on any device.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0715",
+    "en": "Create consistent, branded graphics for Twitter, LinkedIn, and Instagram. Perfect dimensions for every platform, optimized for engagement.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0716",
+    "en": "Create engaging product walkthroughs that highlight key features with smooth zoom and pan animations.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0717",
+    "en": "Create eye-catching hero images and inline screenshots for dev.to, Hashnode, or your personal blog. Consistent styling across all your content.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0718",
+    "en": "Create eye-catching Twitter cards and post images that drive engagement.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0719",
+    "en": "Create eye-catching Twitter, LinkedIn, and Instagram posts from your screenshots.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0720",
+    "en": "Create Graphics Free",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0721",
+    "en": "Create graphics optimized for each social platform with the right aspect ratios and resolutions.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0722",
+    "en": "Create Marketing Images",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0723",
+    "en": "Create Marketing Visuals in Seconds",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0724",
+    "en": "Create perfectly sized graphics for Twitter, LinkedIn, and Instagram. No design skills needed.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0725",
+    "en": "Create polished mockups for client reviews and design presentations",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0726",
+    "en": "Create portfolio-worthy screenshots and mockups with the precision and control that designers demand. No compromises on quality.",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0727",
+    "en": "Create professional app preview images with 3D perspective that increase downloads.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0728",
+    "en": "Create professional how-to content that builds authority.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0729",
+    "en": "Create professional product screenshots for campaigns, landing pages, and social media. Free, no signup.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0730",
+    "en": "Create professional social media graphics. Perfect dimensions for every platform.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0731",
+    "en": "Create scroll-stopping product screenshots and mockups for landing pages, social media, and ads. Backgrounds, 3D effects, animations. Free, no design skills.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0732",
+    "en": "Create scroll-stopping product visuals for landing pages, social media, and ad creatives. No design skills needed, no Figma required.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0733",
+    "en": "Create scroll-stopping Twitter, LinkedIn, and Instagram posts from app screenshots in seconds.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0734",
+    "en": "Create social media graphics for Twitter, LinkedIn, and Instagram. Turn screenshots into shareable posts with perfect dimensions. Free, no signup.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0735",
+    "en": "Create stunning animations from screenshots in 3 steps using Screenshot Studio's free animation maker.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0736",
+    "en": "Create stunning animations from screenshots. Build slideshows with zoom, pan, and fade effects. Export to video or GIF. Free browser-based animation tool.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0737",
+    "en": "Create stunning animations from screenshots. Zoom, pan, and fade effects with video export.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0738",
+    "en": "Create stunning graphics for Twitter, LinkedIn, and Instagram in seconds. Transform screenshots into shareable content that drives engagement.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0739",
+    "en": "Create unlimited graphics without watermarks. 100% free forever.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0740",
+    "en": "Created and maintained by",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s0741",
+    "en": "Creator testimonials",
+    "count": 1,
+    "where": "components/landing/VideoTestimonials.tsx"
+  },
+  {
+    "id": "s0742",
+    "en": "Credentialed maintenance endpoints",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0743",
+    "en": "Crimson",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s0744",
+    "en": "crop",
+    "count": 1,
+    "where": "components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s0745",
+    "en": "Crop",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0746",
+    "en": "Crop an image by dragging a selection or typing exact pixels. Social media ratio presets included. Free, in your browser, no upload.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0747",
+    "en": "Crop Image",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0748",
+    "en": "Crop Image Online: Free Cropper With Ratio Presets",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0749",
+    "en": "Crop selection",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s0750",
+    "en": "Crop to",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s0751",
+    "en": "Cropped at full resolution from the original file. The preview above is only scaled for display. Nothing is uploaded.",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s0752",
+    "en": "Cropping is per-image, because the right selection depends on what is in each picture. To apply identical dimensions across a batch, use the resize tool instead.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0753",
+    "en": "Current background",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0754",
+    "en": "Current Background",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0755",
+    "en": "Curve",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0756",
+    "en": "Curved",
+    "count": 1,
+    "where": "components/editor/sections/BorderSection.tsx"
+  },
+  {
+    "id": "s0757",
+    "en": "Custom Background",
+    "count": 1,
+    "where": "components/editor/sections/BackgroundSection.tsx"
+  },
+  {
+    "id": "s0758",
+    "en": "Custom preset",
+    "count": 1,
+    "where": "hooks/useCustomPresets.ts"
+  },
+  {
+    "id": "s0759",
+    "en": "Custom Presets",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0760",
+    "en": "Custom presets. Save your current canvas configuration and reuse it later, persisted in local storage",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0761",
+    "en": "Custom URL & Header Size",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0762",
+    "en": "Custom URL display in the browser address bar",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0763",
+    "en": "Dark black background",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s0764",
+    "en": "Databuddy:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0765",
+    "en": "David Haz",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0766",
+    "en": "Decrease size",
+    "count": 1,
+    "where": "components/canvas/OverlayToolbar.tsx"
+  },
+  {
+    "id": "s0767",
+    "en": "default",
+    "count": 1,
+    "where": "components/canvas/html/HTMLBlurRegionLayer.tsx"
+  },
+  {
+    "id": "s0768",
+    "en": "Delete device",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0769",
+    "en": "Delete Draft",
+    "count": 1,
+    "where": "components/editor/DraftIndicator.tsx"
+  },
+  {
+    "id": "s0770",
+    "en": "Delete draft?",
+    "count": 1,
+    "where": "components/editor/DraftIndicator.tsx"
+  },
+  {
+    "id": "s0771",
+    "en": "Delete slide",
+    "count": 1,
+    "where": "components/canvas/EditorCanvas.tsx"
+  },
+  {
+    "id": "s0772",
+    "en": "demo",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0773",
+    "en": "Demo Videos & GIFs",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0774",
+    "en": "Depth section simplified. Removed shadow overlays for a cleaner asset picker focused on 3D objects",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0775",
+    "en": "Depth Shadows",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0776",
+    "en": "Design presets for one-click styling",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0777",
+    "en": "Design Systems",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0778",
+    "en": "Design Tools That Match Your Standards",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0779",
+    "en": "desktop",
+    "count": 1,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s0780",
+    "en": "Desktop View",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s0781",
+    "en": "Developer portal for Screenshot Studio: API docs, OpenAPI 3.1 spec, authentication, rate limits, quickstart requests, and the open-source repository.",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0782",
+    "en": "Developer Portfolios",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0783",
+    "en": "Developers polishing README, changelog, and documentation images; marketers building launch graphics and social posts; and designers presenting work without leaving the browser. Screenshot Studio is available in English, Spanish, French, German, Japanese, Portuguese, Korean, and Chinese.",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0784",
+    "en": "Device frames: macOS, Windows, Arc-style, and Polaroid borders",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0785",
+    "en": "Device screen",
+    "count": 1,
+    "where": "components/mockups/DeviceShell.tsx"
+  },
+  {
+    "id": "s0786",
+    "en": "Device Type:",
+    "count": 1,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s0787",
+    "en": "devices",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0788",
+    "en": "Devices",
+    "count": 1,
+    "where": "components/editor/sections/DeviceFramesSection.tsx"
+  },
+  {
+    "id": "s0789",
+    "en": "Differentiate your content in crowded feeds where everyone uses flat images.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0790",
+    "en": "directly as a function-calling tool definition. Every operation carries a unique",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0791",
+    "en": "Dismiss banner",
+    "count": 1,
+    "where": "components/editor/MobileBanner.tsx"
+  },
+  {
+    "id": "s0792",
+    "en": "Dismiss code images announcement",
+    "count": 1,
+    "where": "components/editor/CodeImagesBanner.tsx"
+  },
+  {
+    "id": "s0793",
+    "en": "Dismiss preview",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0794",
+    "en": "Displays the mobile sidebar.",
+    "count": 1,
+    "where": "components/ui/sidebar.tsx"
+  },
+  {
+    "id": "s0795",
+    "en": "Do not send an",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0796",
+    "en": "Document your design systems with clear, consistent visual examples",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0797",
+    "en": "Documentation",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0798",
+    "en": "Documentation & Tutorials",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0799",
+    "en": "Documentation and machine-readable resources",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0800",
+    "en": "Does compressing lose quality?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0801",
+    "en": "Does cropping reduce the resolution?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0802",
+    "en": "Done",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0803",
+    "en": "Dots",
+    "count": 1,
+    "where": "components/code-image/code-backgrounds.ts"
+  },
+  {
+    "id": "s0804",
+    "en": "Double-click to add keyframe",
+    "count": 1,
+    "where": "components/timeline/TimelineTrack.tsx"
+  },
+  {
+    "id": "s0805",
+    "en": "Download (",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s0806",
+    "en": "Download a 2x PNG, copy the image to your clipboard, or copy a link that reopens your exact design.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0807",
+    "en": "Download a polished image ready to share in seconds.",
+    "count": 1,
+    "where": "app/[locale]/landing/page.tsx"
+  },
+  {
+    "id": "s0808",
+    "en": "Download all as zip",
+    "count": 1,
+    "where": "components/tools/ToolWorkspace.tsx"
+  },
+  {
+    "id": "s0809",
+    "en": "Download as high-res PNG/JPG or export animations as MP4, WebM, or GIF.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0810",
+    "en": "Download as MP4 video or GIF. Share directly to social media or embed anywhere.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0811",
+    "en": "Download as PNG or JPG at up to 5x resolution. Add 3D perspective for even more depth.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0812",
+    "en": "Download in PNG or JPG. Scale up to 5x for crisp, high-res output.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0813",
+    "en": "Downscaling is done in successive halving steps rather than one large jump, which preserves far more detail than a single resize. The difference is obvious on screenshots containing small text. Upscaling cannot invent detail, so it is switched off by default; enable it only when you need to hit a specific pixel size.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0814",
+    "en": "Drafts:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0815",
+    "en": "Drag & Drop",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0816",
+    "en": "Drag & drop, click to browse, or paste",
+    "count": 1,
+    "where": "components/controls/CleanUploadState.tsx"
+  },
+  {
+    "id": "s0817",
+    "en": "Drag &amp; drop, click to browse, or paste",
+    "count": 1,
+    "where": "components/mockups/DeviceShell.tsx"
+  },
+  {
+    "id": "s0818",
+    "en": "Drag and drop any image or paste from clipboard. Supports PNG, JPG, WebP, and more.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0819",
+    "en": "Drag any image file from your file manager straight onto the canvas. Supports PNG, JPG, WebP.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0820",
+    "en": "Drag any screenshot or photo into the editor to get started.",
+    "count": 1,
+    "where": "app/[locale]/landing/page.tsx"
+  },
+  {
+    "id": "s0821",
+    "en": "Drag to adjust duration",
+    "count": 1,
+    "where": "components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s0822",
+    "en": "Draggable curve control point for curved arrows with guide lines",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0823",
+    "en": "Dramatic",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0824",
+    "en": "Dramatic dark with focused attention",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s0825",
+    "en": "Dramatic Zoom",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0826",
+    "en": "Dramatic zoom effect that draws attention to key details",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0827",
+    "en": "Dramatic zoom with deep perspective shift",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0828",
+    "en": "Draw a region on the canvas to blur",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0829",
+    "en": "Draw arrows, curves, rectangles, circles, and blur regions directly on the canvas. Text overlay controls redesigned. Changelog and landing page refreshed.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0830",
+    "en": "Drawing",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0831",
+    "en": "Dribbble",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s0832",
+    "en": "Drop In",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0833",
+    "en": "Drop in a screenshot, tweet, or code snippet. Add a Safari or Chrome frame, a gradient background, 3D perspective, and animation. Export PNG, JPG, or video for social, docs, and decks.",
+    "count": 1,
+    "where": "components/landing/ProductOverview.tsx"
+  },
+  {
+    "id": "s0834",
+    "en": "Drop in a snippet or start typing directly in the code card. Formatting and indentation are preserved.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0835",
+    "en": "Drop to export",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s0836",
+    "en": "Drop Your Image",
+    "count": 1,
+    "where": "app/[locale]/landing/page.tsx"
+  },
+  {
+    "id": "s0837",
+    "en": "Drop your image here",
+    "count": 1,
+    "where": "components/GlobalDropZone.tsx"
+  },
+  {
+    "id": "s0838",
+    "en": "Duo Depth",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0839",
+    "en": "Duo Split",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  }
+]

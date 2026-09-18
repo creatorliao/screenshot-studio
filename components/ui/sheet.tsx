@@ -77,7 +77,7 @@ function SheetContent({
         {showCloseButton ? (
           <SheetPrimitive.Close className="absolute top-3 right-3 z-10 flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-foreground/[0.06] hover:text-foreground focus:outline-hidden disabled:pointer-events-none">
             <Cancel01Icon className="size-4" />
-            <span className="sr-only">Close</span>
+            <span className="sr-only">关闭</span>
           </SheetPrimitive.Close>
         ) : null}
       </SheetPrimitive.Content>

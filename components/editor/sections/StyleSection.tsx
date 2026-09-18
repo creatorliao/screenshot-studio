@@ -7,12 +7,12 @@ import { SectionWrapper } from './SectionWrapper';
 import { cn } from '@/lib/utils';
 
 const stylePresets: { value: ImageStylePreset; label: string }[] = [
-  { value: 'default', label: 'Default' },
-  { value: 'glass-light', label: 'Glass Light' },
-  { value: 'glass-dark', label: 'Glass Dark' },
-  { value: 'outline', label: 'Outline' },
-  { value: 'border-light', label: 'Border' },
-  { value: 'border-dark', label: 'Border Dark' },
+  { value: 'default', label: '默认' },
+  { value: 'glass-light', label: '亮色玻璃' },
+  { value: 'glass-dark', label: '暗色玻璃' },
+  { value: 'outline', label: '描边' },
+  { value: 'border-light', label: '边框' },
+  { value: 'border-dark', label: '深色边框' },
 ];
 
 function StylePreview({ preset }: { preset: ImageStylePreset }) {
@@ -87,7 +87,7 @@ export function StyleSection() {
   const currentPadding = imageBorder.padding ?? 2;
 
   return (
-    <SectionWrapper title="Style" defaultOpen={true}>
+    <SectionWrapper title="样式" defaultOpen={true}>
       <div className="space-y-3">
         <div className="grid grid-cols-3 gap-2 p-1">
           {stylePresets.map(({ value, label }) => {
@@ -130,7 +130,7 @@ export function StyleSection() {
               min={0}
               max={8}
               step={0.5}
-              label="Padding"
+              label="内边距"
               valueDisplay={currentPadding.toFixed(1)}
             />
             <Slider
@@ -139,7 +139,7 @@ export function StyleSection() {
               min={5}
               max={100}
               step={1}
-              label="Opacity"
+              label="不透明度"
               valueDisplay={`${Math.round(currentOpacity * 100)}%`}
             />
           </>

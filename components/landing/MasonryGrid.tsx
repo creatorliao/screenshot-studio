@@ -102,7 +102,7 @@ export function MasonryGrid(): React.JSX.Element {
   return (
     <section
       className="hidden bg-background md:block md:pt-24"
-      aria-label="Example designs"
+      aria-label="示例设计"
     >
       <div ref={container} className="zoom-parallax">
         <div className="zoom-parallax__sticky">

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s0140",
+    "en": "White",
+    "count": 3,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0141",
+    "en": "zoom",
+    "count": 3,
+    "where": "components/editor/RightSettingsPanel.tsx"
+  },
+  {
+    "id": "s0142",
+    "en": "100+ Backgrounds",
+    "count": 2,
+    "where": "app/[locale]/about/page.tsx, app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0143",
+    "en": "3D Transforms",
+    "count": 2,
+    "where": "components/landing/FeaturesBento.tsx, components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0144",
+    "en": "About",
+    "count": 2,
+    "where": "components/code-image/CodeImageEditor.tsx, components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0145",
+    "en": "add",
+    "count": 2,
+    "where": "components/mockups/MockupControls.tsx, components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s0146",
+    "en": "Add animation",
+    "count": 2,
+    "where": "components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s0147",
+    "en": "Add Text",
+    "count": 2,
+    "where": "components/editor/sections/TextSection.tsx, components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s0148",
+    "en": "added",
+    "count": 2,
+    "where": "app/[locale]/changelog/page.tsx, components/timeline/AnimationPresetGallery.tsx"
+  },
+  {
+    "id": "s0149",
+    "en": "All Features",
+    "count": 2,
+    "where": "app/[locale]/features/code-snippets/page.tsx, app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0150",
+    "en": "animate",
+    "count": 2,
+    "where": "components/editor/RightSettingsPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0151",
+    "en": "Animation & Video Export",
+    "count": 2,
+    "where": "app/[locale]/changelog/page.tsx, app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0152",
+    "en": "Animations & Video",
+    "count": 2,
+    "where": "components/landing/FeaturesBento.tsx, components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0153",
+    "en": "Annotations",
+    "count": 2,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0154",
+    "en": "App Store Assets",
+    "count": 2,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx, app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0155",
+    "en": "ArrowRight",
+    "count": 2,
+    "where": "components/ui/segmented-control.tsx"
+  },
+  {
+    "id": "s0156",
+    "en": "Authentication and rate limits",
+    "count": 2,
+    "where": "app/[locale]/developers/page.tsx, app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0157",
+    "en": "Back",
+    "count": 2,
+    "where": "components/editor/sections/DepthSection.tsx, components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s0158",
+    "en": "Beautiful Backgrounds",
+    "count": 2,
+    "where": "components/landing/FeaturesBento.tsx, components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0159",
+    "en": "Black",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, lib/canvas/templates.ts"
+  },
+  {
+    "id": "s0160",
+    "en": "blur",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0161",
+    "en": "Bottom Left",
+    "count": 2,
+    "where": "components/editor/sections/ImagePositionSection.tsx, components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s0162",
+    "en": "Bottom Right",
+    "count": 2,
+    "where": "components/editor/sections/ImagePositionSection.tsx, components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s0163",
+    "en": "Browser shot",
+    "count": 2,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0164",
+    "en": "Can I export a transparent background?",
+    "count": 2,
+    "where": "app/[locale]/code/page.tsx, app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0165",
+    "en": "Capture",
+    "count": 2,
+    "where": "components/controls/WebsiteScreenshotInput.tsx, components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s0166",
+    "en": "Center",
+    "count": 2,
+    "where": "components/editor/sections/ImagePositionSection.tsx, components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s0167",
+    "en": "Clean flat",
+    "count": 2,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0168",
+    "en": "Clear",
+    "count": 2,
+    "where": "components/editor/RightSettingsPanel.tsx, components/tools/ToolWorkspace.tsx"
+  },
+  {
+    "id": "s0169",
+    "en": "Clear all",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s0170",
+    "en": "Clear All",
+    "count": 2,
+    "where": "components/overlays/overlay-controls.tsx, components/timeline/AnimationPresetGallery.tsx"
+  },
+  {
+    "id": "s0171",
+    "en": "Client Presentations",
+    "count": 2,
+    "where": "app/[locale]/for/designers/page.tsx, app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0172",
+    "en": "Code Snippets",
+    "count": 2,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx, lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0173",
+    "en": "Code to Image: Create Beautiful Code Screenshots",
+    "count": 2,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s0174",
+    "en": "collapsed",
+    "count": 2,
+    "where": "components/ui/sidebar.tsx"
+  },
+  {
+    "id": "s0175",
+    "en": "Contact Us",
+    "count": 2,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0176",
+    "en": "contain",
+    "count": 2,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0177",
+    "en": "Copy",
+    "count": 2,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0178",
+    "en": "cover",
+    "count": 2,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0179",
+    "en": "Custom",
+    "count": 2,
+    "where": "lib/aspect-ratio-utils.ts, lib/constants.ts"
+  },
+  {
+    "id": "s0180",
+    "en": "Custom dimensions",
+    "count": 2,
+    "where": "lib/aspect-ratio-utils.ts, lib/constants.ts"
+  },
+  {
+    "id": "s0181",
+    "en": "Customize",
+    "count": 2,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0182",
+    "en": "Cyan",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0183",
+    "en": "Dark glow",
+    "count": 2,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0184",
+    "en": "Delete",
+    "count": 2,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/canvas/OverlayToolbar.tsx"
+  },
+  {
+    "id": "s0185",
+    "en": "Depth",
+    "count": 2,
+    "where": "components/editor/RightSettingsPanel.tsx, components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s0186",
+    "en": "Design",
+    "count": 2,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0187",
+    "en": "Desktop",
+    "count": 2,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s0188",
+    "en": "Developer portal",
+    "count": 2,
+    "where": "app/[locale]/docs/page.tsx, components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0189",
+    "en": "Developers",
+    "count": 2,
+    "where": "app/not-found.tsx, components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0190",
+    "en": "Do I need to create an account?",
+    "count": 2,
+    "where": "components/landing/FAQ.tsx, components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s0191",
+    "en": "down",
+    "count": 2,
+    "where": "components/editor/sections/DepthSection.tsx, components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0192",
+    "en": "Download",
+    "count": 2,
+    "where": "components/editor/sidebar-left.tsx, components/tools/ToolWorkspace.tsx"
+  },
+  {
+    "id": "s0193",
+    "en": "Drag and drop any image or paste from clipboard. Supports PNG, JPG, and WebP.",
+    "count": 2,
+    "where": "app/[locale]/features/browser-mockups/page.tsx, app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0194",
+    "en": "Drag and drop, paste, or click to upload an image",
+    "count": 2,
+    "where": "components/controls/UploadDropzone.tsx, components/editor/UploadArea.tsx"
+  },
+  {
+    "id": "s0195",
+    "en": "Draw & Markup",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0196",
+    "en": "Duplicate",
+    "count": 2,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/canvas/OverlayToolbar.tsx"
+  },
+  {
+    "id": "s0197",
+    "en": "edit",
+    "count": 2,
+    "where": "components/editor/LeftEditPanel.tsx, components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0198",
+    "en": "End",
+    "count": 2,
+    "where": "components/ui/segmented-control.tsx"
+  },
+  {
+    "id": "s0199",
+    "en": "Error ID:",
+    "count": 2,
+    "where": "app/error.tsx, app/global-error.tsx"
+  },
+  {
+    "id": "s0200",
+    "en": "Everything you need.",
+    "count": 2,
+    "where": "components/landing/FeaturesBento.tsx, components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0201",
+    "en": "Explore Features",
+    "count": 2,
+    "where": "app/[locale]/for/developers/page.tsx, app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0202",
+    "en": "Export & Share",
+    "count": 2,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx, app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0203",
+    "en": "Export Video",
+    "count": 2,
+    "where": "components/editor/EditorHeader.tsx, lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0204",
+    "en": "Exported",
+    "count": 2,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0205",
+    "en": "Exporting as",
+    "count": 2,
+    "where": "components/canvas/dialogs/ImageProgressView.tsx, lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0206",
+    "en": "Exporting…",
+    "count": 2,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0207",
+    "en": "Fade In",
+    "count": 2,
+    "where": "components/landing/BentoCardVisuals.tsx, lib/animation/presets.ts"
+  },
+  {
+    "id": "s0208",
+    "en": "Failed",
+    "count": 2,
+    "where": "components/tools/FileQueue.tsx, components/ui/cached-image.tsx"
+  },
+  {
+    "id": "s0209",
+    "en": "Fill",
+    "count": 2,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0210",
+    "en": "Fit",
+    "count": 2,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s0211",
+    "en": "Float",
+    "count": 2,
+    "where": "components/editor/sections/TransformsGallery.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0212",
+    "en": "For Developers",
+    "count": 2,
+    "where": "app/[locale]/for/developers/page.tsx, components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s0213",
+    "en": "foreground",
+    "count": 2,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s0214",
+    "en": "Forest",
+    "count": 2,
+    "where": "components/code-image/code-themes-data.ts, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0215",
+    "en": "Format",
+    "count": 2,
+    "where": "components/export/FormatSelector.tsx, lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0216",
+    "en": "Frame",
+    "count": 2,
+    "where": "components/controls/BorderControls.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0217",
+    "en": "Free",
+    "count": 2,
+    "where": "components/landing/Pricing.tsx, components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s0218",
+    "en": "Free Browser Mockup Generator",
+    "count": 2,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0219",
+    "en": "Free forever. No signup. No watermarks.",
+    "count": 2,
+    "where": "app/[locale]/for/developers/page.tsx, app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0220",
+    "en": "Free Online Image Tools",
+    "count": 2,
+    "where": "app/[locale]/tools/page.tsx, lib/seo/tool-metadata.ts"
+  },
+  {
+    "id": "s0221",
+    "en": "Free Online Image Tools: Compress, Convert, Resize, Crop",
+    "count": 2,
+    "where": "app/[locale]/tools/page.tsx"
+  },
+  {
+    "id": "s0222",
+    "en": "Free Screenshot Animation Maker",
+    "count": 2,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0223",
+    "en": "Free Screenshot Editor Online",
+    "count": 2,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0224",
+    "en": "Frequently asked questions",
+    "count": 2,
+    "where": "components/landing/FAQ.tsx, components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s0225",
+    "en": "GitHub",
+    "count": 2,
+    "where": "app/[locale]/about/page.tsx, components/landing/Footer.tsx"
+  },
+  {
+    "id": "s0226",
+    "en": "glow",
+    "count": 2,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0227",
+    "en": "Gradient",
+    "count": 2,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0228",
+    "en": "Gradients",
+    "count": 2,
+    "where": "components/code-image/BackgroundPicker.tsx, components/editor/sections/BackgroundSection.tsx"
+  },
+  {
+    "id": "s0229",
+    "en": "Grain",
+    "count": 2,
+    "where": "components/landing/BentoCardVisuals.tsx, components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s0230",
+    "en": "Gray",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, lib/canvas/templates.ts"
+  },
+  {
+    "id": "s0231",
+    "en": "Green",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/ui/color-picker.tsx"
+  },
+  {
+    "id": "s0232",
+    "en": "height",
+    "count": 2,
+    "where": "components/tools/CropWorkspace.tsx, components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0233",
+    "en": "High",
+    "count": 2,
+    "where": "lib/export/types.ts, lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0234",
+    "en": "Homepage",
+    "count": 2,
+    "where": "app/error.tsx, app/global-error.tsx"
+  },
+  {
+    "id": "s0235",
+    "en": "How to Beautify Screenshots",
+    "count": 2,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0236",
+    "en": "http",
+    "count": 2,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0237",
+    "en": "idle",
+    "count": 2,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0238",
+    "en": "Image Export",
+    "count": 2,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0239",
+    "en": "Image Overlays",
+    "count": 2,
+    "where": "components/overlays/overlay-controls.tsx, lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0240",
+    "en": "Instagram",
+    "count": 2,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx, components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s0241",
+    "en": "Language",
+    "count": 2,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0242",
+    "en": "Left",
+    "count": 2,
+    "where": "components/editor/sections/ImagePositionSection.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0243",
+    "en": "loading",
+    "count": 2,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0244",
+    "en": "Low",
+    "count": 2,
+    "where": "lib/export/types.ts, lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0245",
+    "en": "main",
+    "count": 2,
+    "where": "components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s0246",
+    "en": "MB • or paste an image",
+    "count": 2,
+    "where": "components/controls/UploadDropzone.tsx, components/editor/UploadArea.tsx"
+  },
+  {
+    "id": "s0247",
+    "en": "Mockup & Screenshot Tool for Designers",
+    "count": 2,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0248",
+    "en": "move",
+    "count": 2,
+    "where": "components/timeline/TimelineEditor.tsx, components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s0249",
+    "en": "ne",
+    "count": 2,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/mockups/MockupRenderer.tsx"
+  },
+  {
+    "id": "s0250",
+    "en": "none",
+    "count": 2,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s0251",
+    "en": "Nothing you don&apos;t.",
+    "count": 2,
+    "where": "components/landing/FeaturesBento.tsx, components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0252",
+    "en": "nw",
+    "count": 2,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/mockups/MockupRenderer.tsx"
+  },
+  {
+    "id": "s0253",
+    "en": "Ocean",
+    "count": 2,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0254",
+    "en": "of",
+    "count": 2,
+    "where": "components/mockups/MockupControls.tsx, components/tools/ToolWorkspace.tsx"
+  },
+  {
+    "id": "s0255",
+    "en": "Open Free Editor",
+    "count": 2,
+    "where": "app/[locale]/compare/[slug]/page.tsx, app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0256",
+    "en": "OpenAPI specification",
+    "count": 2,
+    "where": "app/[locale]/docs/authentication/page.tsx, components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0257",
+    "en": "or tap to browse • PNG, JPG, WEBP up to",
+    "count": 2,
+    "where": "components/controls/UploadDropzone.tsx, components/editor/UploadArea.tsx"
+  },
+  {
+    "id": "s0258",
+    "en": "Orange",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0259",
+    "en": "Overlay",
+    "count": 2,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx, components/overlays/overlay-renderer.tsx"
+  },
+  {
+    "id": "s0260",
+    "en": "overlays/",
+    "count": 2,
+    "where": "components/overlays/overlay-controls.tsx, components/overlays/overlay-renderer.tsx"
+  },
+  {
+    "id": "s0261",
+    "en": "pattern",
+    "count": 2,
+    "where": "components/code-image/BackgroundPicker.tsx"
+  },
+  {
+    "id": "s0262",
+    "en": "Peach",
+    "count": 2,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0263",
+    "en": "Percentage",
+    "count": 2,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0264",
+    "en": "Perfect For",
+    "count": 2,
+    "where": "app/[locale]/features/3d-effects/page.tsx, app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0265",
+    "en": "Perfect For Every Use Case",
+    "count": 2,
+    "where": "app/[locale]/features/browser-mockups/page.tsx, app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0266",
+    "en": "Perspective",
+    "count": 2,
+    "where": "components/controls/Perspective3DControls.tsx, components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0267",
+    "en": "Pick any color",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0268",
+    "en": "pixels",
+    "count": 2,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0269",
+    "en": "Pixels",
+    "count": 2,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0270",
+    "en": "Popular",
+    "count": 2,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0271",
+    "en": "Portfolio & Case Studies",
+    "count": 2,
+    "where": "app/[locale]/features/browser-mockups/page.tsx, app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0272",
+    "en": "Portrait",
+    "count": 2,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx, components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s0273",
+    "en": "Preparing image",
+    "count": 2,
+    "where": "components/canvas/CanvasStageLoadingOverlay.tsx"
+  },
+  {
+    "id": "s0274",
+    "en": "Presets",
+    "count": 2,
+    "where": "components/editor/editor-right-panel.tsx, components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s0275",
+    "en": "Privacy Policy",
+    "count": 2,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0276",
+    "en": "Product",
+    "count": 2,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s0277",
+    "en": "Product Announcements",
+    "count": 2,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx, app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0278",
+    "en": "Quickstart",
+    "count": 2,
+    "where": "app/[locale]/developers/page.tsx, app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0279",
+    "en": "Red",
+    "count": 2,
+    "where": "components/editor/sections/AnnotateSection.tsx, components/ui/color-picker.tsx"
+  }
+]

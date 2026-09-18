@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s1120",
+    "en": "Instagram Story",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1121",
+    "en": "Installation",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s1122",
+    "en": "Invert",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s1123",
+    "en": "iPad Pro 12.9\"",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1124",
+    "en": "iPad Pro L",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1125",
+    "en": "iPhone 13",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1126",
+    "en": "iPhone 14 Pro",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1127",
+    "en": "iPhone 15",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1128",
+    "en": "iPhone 17",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1129",
+    "en": "iPhone 17 Pro",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1130",
+    "en": "iPhone 5.5\"",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1131",
+    "en": "iPhone 5.5\" L",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1132",
+    "en": "iPhone 6.5\"",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1133",
+    "en": "iPhone 6.5\" L",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1134",
+    "en": "Is it free, and is there a watermark?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1135",
+    "en": "Is my code uploaded anywhere?",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1136",
+    "en": "Is my data stored on your servers?",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1137",
+    "en": "Is Screenshot Studio free to use?",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1138",
+    "en": "Is Screenshot Studio really free?",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1139",
+    "en": "Is the code to image generator free?",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1140",
+    "en": "Is there a free screenshot editor I can use online?",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1141",
+    "en": "Is this code to image tool free?",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1142",
+    "en": "Isometric",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1143",
+    "en": "Isometric flatlay with leaf shadows",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1144",
+    "en": "Isometric L",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1145",
+    "en": "Isometric R",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1146",
+    "en": "Isometric Top",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1147",
+    "en": "It covers the same core workflow, themes, gradients, line numbers, and a window frame, built into Screenshot Studio's own editor, with shareable links and no account required.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1148",
+    "en": "It depends on the source. A screenshot saved as PNG often drops 60-80% when compressed to WebP or JPG, while a photo that is already a JPG typically saves 30-60% at the medium level. Each file shows its exact saving after processing, so you can try a level and adjust.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1149",
+    "en": "It is completely free with no signup, no account, no daily limit, and no watermark. Screenshot Studio is open source under the Apache 2.0 licence.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1150",
+    "en": "It works for UI and UX mockups, app store screenshots, landing page hero images, README previews, and social media graphics. If you have used tools like Shots, Moqups, Previewed, AppShots, or Pika Style, you will feel at home, except everything here is free and open source.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s1151",
+    "en": "Java",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1152",
+    "en": "javascript",
+    "count": 1,
+    "where": "components/code-image/CodeFrame.tsx"
+  },
+  {
+    "id": "s1153",
+    "en": "JavaScript",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1154",
+    "en": "JetBrains Mono",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1155",
+    "en": "Join thousands of creators making beautiful images.",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1156",
+    "en": "Join thousands of creators making professional graphics.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1157",
+    "en": "Join thousands of designers creating stunning visual content",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1158",
+    "en": "JPEG Quality",
+    "count": 1,
+    "where": "components/export/QualitySlider.tsx"
+  },
+  {
+    "id": "s1159",
+    "en": "JPG and WebP are lossy formats, so higher compression does discard detail. The Low level is visually lossless for most images and still saves meaningful space. PNG is lossless, so compressing to PNG only re-encodes the file; to make a PNG substantially smaller, convert it to WebP.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1160",
+    "en": "JPG cannot store transparency, so transparent pixels are filled with a solid colour. White is used by default and you can choose a different colour before converting.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1161",
+    "en": "JPG has no alpha channel, so transparent areas have to be filled with a solid colour. The tool paints white behind the image by default and lets you pick a different colour before converting.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1162",
+    "en": "Kanak Kumar Mahala",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s1163",
+    "en": "Karan Kendre",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s1164",
+    "en": "Kartik Labhshetwar",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s1165",
+    "en": "Keeping the original format. PNG is already lossless. To make a PNG meaningfully smaller, switch the output to WebP.",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1166",
+    "en": "Ken Burns",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1167",
+    "en": "Keyframe animation system with 8 easing functions (linear, ease-in, ease-out, cubic, expo)",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1168",
+    "en": "Kotlin",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1169",
+    "en": "Landing Page",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1170",
+    "en": "Landing Page Hero Images",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1171",
+    "en": "Landing Page Heroes",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1172",
+    "en": "Landing page redesigned with new hero, features, testimonials, and FAQ sections",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1173",
+    "en": "Landscape",
+    "count": 1,
+    "where": "components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s1174",
+    "en": "Landscape 16:9",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1175",
+    "en": "Landscape format for Instagram feed",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1176",
+    "en": "Laptop",
+    "count": 1,
+    "where": "components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s1177",
+    "en": "Laptop, phone, and watch together.",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1178",
+    "en": "Large",
+    "count": 1,
+    "where": "components/controls/ShadowControls.tsx"
+  },
+  {
+    "id": "s1179",
+    "en": "Last updated: August 23, 2026",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1180",
+    "en": "Last updated: June 2, 2026",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1181",
+    "en": "Latest updates, new features, and improvements to Screenshot Studio.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1182",
+    "en": "Launch new features with stunning visuals. Animated screenshots grab attention and clearly demonstrate what your product does.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1183",
+    "en": "Lay Flat",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1184",
+    "en": "Layout",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1185",
+    "en": "Layout Presets",
+    "count": 1,
+    "where": "components/editor/RightSettingsPanel.tsx"
+  },
+  {
+    "id": "s1186",
+    "en": "Layouts",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s1187",
+    "en": "Lean Back",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1188",
+    "en": "Lean Forward",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1189",
+    "en": "Learn more",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s1190",
+    "en": "left",
+    "count": 1,
+    "where": "components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s1191",
+    "en": "Lifted",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1192",
+    "en": "Light & Dark Modes",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1193",
+    "en": "Light & Shadow",
+    "count": 1,
+    "where": "components/editor/sections/BackgroundSection.tsx"
+  },
+  {
+    "id": "s1194",
+    "en": "Lighting Effects",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1195",
+    "en": "Lime",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1196",
+    "en": "Limit",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1197",
+    "en": "Limitations",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s1198",
+    "en": "Line",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s1199",
+    "en": "Line Numbers & Window Frame",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1200",
+    "en": "linear",
+    "count": 1,
+    "where": "components/GlobalDropZone.tsx"
+  },
+  {
+    "id": "s1201",
+    "en": "Lines",
+    "count": 1,
+    "where": "components/code-image/code-backgrounds.ts"
+  },
+  {
+    "id": "s1202",
+    "en": "LinkedIn",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1203",
+    "en": "LLMs Full Documentation",
+    "count": 1,
+    "where": "app/layout.tsx"
+  },
+  {
+    "id": "s1204",
+    "en": "llms-full.txt",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1205",
+    "en": "LLMs.txt",
+    "count": 1,
+    "where": "app/layout.tsx"
+  },
+  {
+    "id": "s1206",
+    "en": "Load",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1207",
+    "en": "Loading image...",
+    "count": 1,
+    "where": "components/GlobalDropZone.tsx"
+  },
+  {
+    "id": "s1208",
+    "en": "Lock aspect ratio",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1209",
+    "en": "Long",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1210",
+    "en": "Looking for something more than a quick fix? The",
+    "count": 1,
+    "where": "app/[locale]/tools/page.tsx"
+  },
+  {
+    "id": "s1211",
+    "en": "Loop disabled",
+    "count": 1,
+    "where": "components/timeline/TimelineControls.tsx"
+  },
+  {
+    "id": "s1212",
+    "en": "Loop enabled",
+    "count": 1,
+    "where": "components/timeline/TimelineControls.tsx"
+  },
+  {
+    "id": "s1213",
+    "en": "Lossless, supports transparency",
+    "count": 1,
+    "where": "components/export/FormatSelector.tsx"
+  },
+  {
+    "id": "s1214",
+    "en": "Loved by creators",
+    "count": 1,
+    "where": "components/landing/Testimonial.tsx"
+  },
+  {
+    "id": "s1215",
+    "en": "MacBook Air 15-inch",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1216",
+    "en": "MacBook Neo",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1217",
+    "en": "MacBook Pro",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1218",
+    "en": "MacBook Pro 14-inch",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1219",
+    "en": "MacBook Pro 16-inch",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1220",
+    "en": "macOS Dark",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s1221",
+    "en": "macOS Light",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s1222",
+    "en": "macOS, Windows, Arc browser frames and Polaroid borders with customizable width and opacity.",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s1223",
+    "en": "macOS, Windows, Arc, etc.",
+    "count": 1,
+    "where": "components/landing/FeaturesBento.tsx"
+  },
+  {
+    "id": "s1224",
+    "en": "Magazine",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1225",
+    "en": "Magazine Flatlay",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1226",
+    "en": "Magic Gradients",
+    "count": 1,
+    "where": "components/editor/sections/BackgroundSection.tsx"
+  },
+  {
+    "id": "s1227",
+    "en": "magic-bento-card--large",
+    "count": 1,
+    "where": "components/landing/MagicBento.tsx"
+  },
+  {
+    "id": "s1228",
+    "en": "Main image",
+    "count": 1,
+    "where": "components/canvas/html/HTMLMainImageLayer.tsx"
+  },
+  {
+    "id": "s1229",
+    "en": "Main image resize handles no longer deselect when clicked, fixing the resize-on-click bug for code snippets and tweet screenshots",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1230",
+    "en": "Make screenshot mockups in seconds. Browser frames, device mockups, 100+ gradient backgrounds, 3D effects, animations, and video export. Free, no signup.",
+    "count": 1,
+    "where": "app/[locale]/landing/page.tsx"
+  },
+  {
+    "id": "s1231",
+    "en": "Make your code, projects, and portfolio look professional. Add backgrounds, device frames, 3D effects, and animations to any screenshot. Free in your browser.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1232",
+    "en": "Make your open source projects stand out with polished screenshots in README files. Add backgrounds and shadows to app screenshots that show off your work at its best.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1233",
+    "en": "Make your product screenshots stand out on Twitter, LinkedIn, and Product Hunt with polished browser frames.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1234",
+    "en": "Make your SaaS product screenshots stand out on landing pages and marketing materials.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1235",
+    "en": "Make your screenshots look professional with realistic browser mockups.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1236",
+    "en": "Manage depth & assets",
+    "count": 1,
+    "where": "components/editor/sections/ImageOverlaySection.tsx"
+  },
+  {
+    "id": "s1237",
+    "en": "Manage Overlays",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s1238",
+    "en": "Many questions are already answered on the",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s1239",
+    "en": "Markdown",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1240",
+    "en": "Markdown content negotiation",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1241",
+    "en": "Marquee banner",
+    "count": 1,
+    "where": "components/landing/Marquee.tsx"
+  },
+  {
+    "id": "s1242",
+    "en": "Meadow",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s1243",
+    "en": "Meaning",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1244",
+    "en": "Menu",
+    "count": 1,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s1245",
+    "en": "mesh",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1246",
+    "en": "message",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1247",
+    "en": "Microlink",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1248",
+    "en": "Middle Left",
+    "count": 1,
+    "where": "components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s1249",
+    "en": "Middle Right",
+    "count": 1,
+    "where": "components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s1250",
+    "en": "Midnight",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s1251",
+    "en": "Midnight, Sunset, Candy, and more. Auto-detects your language or pick from 20+ manually.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1252",
+    "en": "Migrated to Next.js 16 with React 19 and React Compiler",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1253",
+    "en": "Mockup",
+    "count": 1,
+    "where": "components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s1254",
+    "en": "Mockups for Every Screen",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s1255",
+    "en": "mode",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1256",
+    "en": "Modern frosted glass effect",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1257",
+    "en": "Mono",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s1258",
+    "en": "More backgrounds, effects, and export options than Screely, all free.",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s1259",
+    "en": "More export options",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  }
+]

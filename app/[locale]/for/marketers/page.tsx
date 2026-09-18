@@ -13,9 +13,9 @@ import {
 } from "hugeicons-react";
 
 export const metadata: Metadata = {
-  title: "Screenshot Editor for Marketers",
+  title: "面向营销人员的截图编辑器",
   description:
-    "Create scroll-stopping product screenshots and mockups for landing pages, social media, and ads. Backgrounds, 3D effects, animations. Free, no design skills.",
+    "为落地页、社交媒体和广告制作令人停下滑动的产品截图和模型。背景、3D 效果、动画。免费，无需设计技能。",
   keywords: [
     "screenshot editor for marketers",
     "product screenshot tool",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     "comparison screenshot maker",
   ],
   openGraph: {
-    title: "Screenshot Editor for Marketers",
+    title: "面向营销人员的截图编辑器",
     description:
-      "Create professional product screenshots for campaigns, landing pages, and social media. Free, no signup.",
+      "为营销活动、落地页和社交媒体制作专业的产品截图。免费，无需注册。",
     url: "/for/marketers",
   },
   alternates: {
@@ -61,70 +61,70 @@ const INTER =
 const useCases = [
   {
     icon: Megaphone01Icon,
-    title: "Landing Page Hero Images",
+    title: "落地页主图",
     description:
-      "Turn raw product screenshots into polished hero images that convert. Add gradient backgrounds, shadows, and 3D perspective to showcase your product at its best.",
+      "把原始的产品截图变成能带来转化的精致首屏图。添加渐变背景、阴影和 3D 透视，以最佳方式展示你的产品。",
   },
   {
     icon: Share01Icon,
-    title: "Social Media Campaigns",
+    title: "社交媒体营销活动",
     description:
-      "Create consistent, branded graphics for Twitter, LinkedIn, and Instagram. Perfect dimensions for every platform, optimized for engagement.",
+      "为 Twitter、LinkedIn 和 Instagram 制作风格统一、带品牌感的图形。适配每个平台的完美尺寸，为互动率而优化。",
   },
   {
     icon: ChartIncreaseIcon,
-    title: "Ad Creatives",
+    title: "广告素材",
     description:
-      "Build ad images that stop the scroll. Beautified product screenshots with eye-catching backgrounds and angles outperform generic stock photos.",
+      "制作让人停下来看的广告图。经过美化的产品截图，配合吸睛的背景与角度，效果远胜普通的图库照片。",
   },
   {
     icon: Presentation01Icon,
-    title: "Pitch Decks & Proposals",
+    title: "路演幻灯片与提案",
     description:
-      "Impress investors and clients with professional product mockups. 3D perspective and device frames add credibility to any presentation.",
+      "用专业的产品模型打动投资者和客户。3D 透视和设备边框为任何演示增添可信度。",
   },
   {
     icon: ChartHistogramIcon,
-    title: "Product Announcements",
+    title: "产品公告",
     description:
-      "Launch new features with stunning visuals. Animated screenshots grab attention and clearly demonstrate what your product does.",
+      "用惊艳的视觉发布新功能。动画截图能吸引注意力，并清晰地展示你的产品能做什么。",
   },
   {
     icon: Image01Icon,
-    title: "Email Marketing",
+    title: "邮件营销",
     description:
-      "Create clean product images for newsletters and drip campaigns. High-res exports that look sharp on any device.",
+      "为电子报和邮件培育活动制作简洁的产品图片。高分辨率导出，在任何设备上都清晰锐利。",
   },
 ];
 
 const benefits = [
   {
-    title: "No Design Skills Required",
+    title: "无需设计技能",
     description:
-      "One-click presets handle the design work. Just upload a screenshot, pick a style, and export. Your whole team can create on-brand visuals.",
+      "一键预设包办设计工作。只需上传截图、挑选风格、导出即可。整个团队都能做出符合品牌调性的视觉内容。",
   },
   {
-    title: "Consistent Brand Assets",
+    title: "统一的品牌素材",
     description:
-      "Use the same backgrounds, shadows, and styling across all your marketing materials. Build recognition with visual consistency.",
+      "在所有营销物料中沿用相同的背景、阴影和样式。用一致的视觉强化辨识度。",
   },
   {
-    title: "Faster Than Figma or Canva",
+    title: "比 Figma 或 Canva 更快",
     description:
-      "Purpose-built for screenshots, not general design. What takes 15 minutes in Figma takes 30 seconds here. No learning curve.",
+      "专为截图打造，而非通用设计。在 Figma 里要花 15 分钟的事，这里 30 秒就能完成。没有学习成本。",
   },
   {
-    title: "Animated Content That Converts",
+    title: "能带来转化的动画内容",
     description:
-      "Create animated product demos with zoom and pan effects. Export as video or GIF for social media posts that outperform static images.",
+      "用缩放和平移效果制作动态产品演示。导出为视频或 GIF，用于社交媒体的帖子效果优于静态图片。",
   },
 ];
 
 const featureLinks = [
-  { href: "/features/screenshot-beautifier", label: "Screenshot Beautifier" },
-  { href: "/features/social-media-graphics", label: "Social Media Graphics" },
-  { href: "/features/animation-maker", label: "Animation Maker" },
-  { href: "/features/3d-effects", label: "3D Effects" },
+  { href: "/features/screenshot-beautifier", label: "截图美化" },
+  { href: "/features/social-media-graphics", label: "社交媒体图片" },
+  { href: "/features/animation-maker", label: "动画制作" },
+  { href: "/features/3d-effects", label: "3D 效果" },
 ];
 
 export default function ForMarketersPage() {
@@ -187,25 +187,28 @@ export default function ForMarketersPage() {
               className="mb-6 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground"
               style={{ fontFamily: INTER }}
             >
-              Built for Marketers
+              专为营销人员
+            
             </p>
             <h1
               className="mb-6 text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Screenshot Editor for Marketers
+              面向营销人员的截图编辑器
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Create scroll-stopping product visuals for landing pages, social
-              media, and ad creatives. No design skills needed, no Figma
-              required.
+              为落地页、社交媒体和广告素材制作令人停下滑动的产品视觉图。无需设计技能，无需 Figma。
+            
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/" className={ctaClassName}>
-                Create Marketing Images
+                创建营销图片
+              
               </Link>
               <Link href="/features" className={secondaryCtaClassName}>
-                See All Features
+                查看全部功能
+              
               </Link>
             </div>
           </div>
@@ -218,11 +221,12 @@ export default function ForMarketersPage() {
                 className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
                 style={{ fontFamily: INTER }}
               >
-                How Marketers Use Screenshot Studio
+                营销人员如何使用 Screenshot Studio
+              
               </h2>
               <p className="mx-auto max-w-2xl text-muted-foreground">
-                From landing page heroes to social campaigns, create visuals
-                that convert.
+                从落地页主视觉到社交营销活动，制作能带来转化的视觉内容。
+              
               </p>
             </div>
 
@@ -256,7 +260,8 @@ export default function ForMarketersPage() {
                 className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
                 style={{ fontFamily: INTER }}
               >
-                Why Marketing Teams Choose Screenshot Studio
+                营销团队为什么选择 Screenshot Studio
+              
               </h2>
             </div>
 
@@ -282,7 +287,8 @@ export default function ForMarketersPage() {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Explore Features
+              浏览功能
+            
             </h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {featureLinks.map((link) => (
@@ -311,13 +317,16 @@ export default function ForMarketersPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground md:text-4xl"
               style={{ fontFamily: INTER }}
             >
-              Create Marketing Visuals in Seconds
+              几秒创建营销视觉图
+            
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              Free forever. No signup. No watermarks.
+              永久免费。无需注册。无水印。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Open Editor
+              打开编辑器
+            
             </Link>
           </div>
         </section>

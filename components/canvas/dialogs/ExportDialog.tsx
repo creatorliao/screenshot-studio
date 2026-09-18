@@ -56,11 +56,12 @@ export function ExportDialog({
         <div className="p-6 pb-4">
           <DialogHeader className="pb-1">
             <DialogTitle className="text-xl font-semibold text-foreground">
-              {isExporting ? "Exporting Image" : "Export Canvas"}
+              {isExporting ? "正在导出图片" : "导出画布"}
             </DialogTitle>
             {isExporting && (
               <p className="text-sm text-muted-foreground pt-1">
-                Sit back while we render your creation
+                稍等片刻，我们正在渲染你的作品
+              
               </p>
             )}
           </DialogHeader>
@@ -95,7 +96,7 @@ export function ExportDialog({
             >
               <span className="flex items-center gap-2">
                 <Download01Icon size={16} />
-                Export as {formatLabel}
+                导出为  {formatLabel}
               </span>
             </Button>
           </div>

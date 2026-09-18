@@ -51,7 +51,7 @@ export const TextOverlayControls = () => {
   const handleAddText = () => {
     const availableWeights = getAvailableFontWeights('system');
     addTextOverlay({
-      text: 'Text',
+      text: '文字',
       position: { x: 50, y: 50 },
       fontSize: 24,
       fontWeight: availableWeights[0] || 'normal',
@@ -85,7 +85,7 @@ export const TextOverlayControls = () => {
         className="w-full flex items-center justify-center gap-2 py-3 rounded-xl border border-dashed border-border/60 hover:border-primary/40 hover:bg-primary/5 text-muted-foreground hover:text-primary transition-all duration-150"
       >
         <Add01Icon size={16} />
-        <span className="text-xs font-medium">Add Text</span>
+        <span className="text-xs font-medium">添加文字</span>
       </button>
 
       {/* Text overlay list */}
@@ -116,7 +116,7 @@ export const TextOverlayControls = () => {
                     !overlay.isVisible && 'text-muted-foreground line-through'
                   )}
                 >
-                  {overlay.text || 'Empty text'}
+                  {overlay.text || '文字为空'}
                 </span>
                 <button
                   onClick={(e) => {
@@ -148,7 +148,8 @@ export const TextOverlayControls = () => {
               onClick={clearTextOverlays}
               className="text-[10px] text-muted-foreground hover:text-destructive transition-colors px-2.5 py-1"
             >
-              Clear all
+              全部清除
+            
             </button>
           )}
         </div>
@@ -160,12 +161,12 @@ export const TextOverlayControls = () => {
 
           {/* Text content */}
           <div className="space-y-1.5">
-            <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Content</label>
+            <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">内容</label>
             <textarea
               ref={editInputRef}
               value={selectedOverlay.text}
               onChange={(e) => updateTextOverlay(selectedOverlay.id, { text: e.target.value })}
-              placeholder="Type your text..."
+              placeholder="输入你的文字..."
               rows={2}
               className="w-full px-3 py-2 text-sm rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary resize-none"
             />
@@ -173,7 +174,7 @@ export const TextOverlayControls = () => {
 
           {/* Color */}
           <div className="space-y-1.5">
-            <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Color</label>
+            <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">颜色</label>
             <div className="flex items-center gap-1.5">
               {QUICK_COLORS.map((color) => (
                 <button
@@ -203,7 +204,7 @@ export const TextOverlayControls = () => {
 
           {/* Typography */}
           <div className="space-y-2">
-            <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Typography</label>
+            <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">排版</label>
 
             {/* Font family */}
             <select
@@ -243,7 +244,7 @@ export const TextOverlayControls = () => {
               min={8}
               max={150}
               step={1}
-              label="Size"
+              label="大小"
               valueDisplay={`${selectedOverlay.fontSize}px`}
             />
           </div>
@@ -255,13 +256,13 @@ export const TextOverlayControls = () => {
             min={0}
             max={1}
             step={0.01}
-            label="Opacity"
+            label="不透明度"
             valueDisplay={`${Math.round(selectedOverlay.opacity * 100)}%`}
           />
 
           {/* Orientation */}
           <div className="space-y-1.5">
-            <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Orientation</label>
+            <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">方向</label>
             <div className="flex items-center gap-1 p-0.5 rounded-lg bg-muted/50 border border-border/20">
               {(['horizontal', 'vertical'] as const).map((dir) => (
                 <button
@@ -283,7 +284,7 @@ export const TextOverlayControls = () => {
           {/* Text Shadow */}
           <div className="space-y-2">
             <div className="flex items-center justify-between">
-              <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Shadow</label>
+              <label className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">阴影</label>
               <button
                 onClick={() => updateTextOverlay(selectedOverlay.id, {
                   textShadow: { ...selectedOverlay.textShadow, enabled: !selectedOverlay.textShadow.enabled },
@@ -312,7 +313,7 @@ export const TextOverlayControls = () => {
                   min={0}
                   max={20}
                   step={1}
-                  label="Blur"
+                  label="模糊"
                   valueDisplay={`${selectedOverlay.textShadow.blur}px`}
                 />
                 <Slider
@@ -323,7 +324,7 @@ export const TextOverlayControls = () => {
                   min={-20}
                   max={20}
                   step={1}
-                  label="X Offset"
+                  label="X 偏移"
                   valueDisplay={`${selectedOverlay.textShadow.offsetX}px`}
                 />
                 <Slider
@@ -334,7 +335,7 @@ export const TextOverlayControls = () => {
                   min={-20}
                   max={20}
                   step={1}
-                  label="Y Offset"
+                  label="Y 偏移"
                   valueDisplay={`${selectedOverlay.textShadow.offsetY}px`}
                 />
               </div>

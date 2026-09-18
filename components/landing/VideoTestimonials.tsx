@@ -67,7 +67,7 @@ export function VideoTestimonials({
 
   return (
     <section
-      aria-label={title || "Creator testimonials"}
+      aria-label={title || "创作者评价"}
       className="bg-background px-6 py-16 sm:py-20 md:py-24"
     >
       <div className="mx-auto w-full max-w-6xl">

@@ -43,12 +43,10 @@ export function EditorRightPanel() {
 
   const validateFile = (file: File): string | null => {
     if (!ALLOWED_IMAGE_TYPES.includes(file.type)) {
-      return `File type not supported. Please use: ${ALLOWED_IMAGE_TYPES.join(
-        ", "
-      )}`;
+      return `不支持该文件类型，请使用：${ALLOWED_IMAGE_TYPES.join(", ")}`;
     }
     if (file.size > MAX_IMAGE_SIZE) {
-      return `File size too large. Maximum size is ${
+      return `文件过大，最大支持 ${
         MAX_IMAGE_SIZE / 1024 / 1024
       }MB`;
     }
@@ -93,7 +91,8 @@ export function EditorRightPanel() {
       <div className="p-4 border-b border-border bg-background pr-12">
         <div className="flex items-center justify-between mb-3 gap-2">
           <h3 className="text-sm font-semibold text-foreground min-w-0 flex-1 truncate">
-            Canvas Settings
+            画布设置
+          
           </h3>
           <button
             onClick={() => setExpanded(!expanded)}
@@ -112,10 +111,12 @@ export function EditorRightPanel() {
             <div className="space-y-3">
               <div>
                 <h4 className="text-xs font-semibold text-foreground mb-1">
-                  Canvas Size
+                  画布尺寸
+                
                 </h4>
                 <p className="text-xs text-muted-foreground">
-                  Change aspect ratio to fit different platforms
+                  更改宽高比以适配不同平台
+                
                 </p>
               </div>
               <AspectRatioDropdown />
@@ -141,14 +142,16 @@ export function EditorRightPanel() {
                   className="data-[state=active]:bg-background rounded-md border-0 data-[state=active]:border-0 transition-all duration-200 text-sm font-medium"
                 >
                   <SparklesIcon className="size-4 mr-1.5" />
-                  Presets
+                  预设
+                
                 </TabsTrigger>
                 <TabsTrigger
                   value="settings"
                   className="data-[state=active]:bg-background rounded-md border-0 data-[state=active]:border-0 transition-all duration-200 text-sm font-medium"
                 >
                   <Settings02Icon className="size-4 mr-1.5" />
-                  Settings
+                  设置
+                
                 </TabsTrigger>
               </TabsList>
 
@@ -160,7 +163,8 @@ export function EditorRightPanel() {
                 {/* Background Section */}
                 <div className="space-y-4">
                   <h4 className="text-xs font-semibold text-foreground uppercase tracking-wide">
-                    Background
+                    背景
+                  
                   </h4>
 
                   {/* Opacity */}
@@ -174,7 +178,7 @@ export function EditorRightPanel() {
                     min={0}
                     max={1}
                     step={0.01}
-                    label="Opacity"
+                    label="不透明度"
                     valueDisplay={`${Math.round(
                       (backgroundConfig.opacity !== undefined
                         ? backgroundConfig.opacity
@@ -197,7 +201,8 @@ export function EditorRightPanel() {
                             : "border-border/50 hover:bg-accent text-foreground bg-background hover:border-border"
                         }`}
                       >
-                        Sharp Edge
+                        直角
+                      
                       </Button>
                       <Button
                         variant={
@@ -211,7 +216,8 @@ export function EditorRightPanel() {
                             : "border-border/50 hover:bg-accent text-foreground bg-background hover:border-border"
                         }`}
                       >
-                        Rounded
+                        圆角
+                      
                       </Button>
                     </div>
                     <Slider
@@ -222,7 +228,7 @@ export function EditorRightPanel() {
                       min={0}
                       max={100}
                       step={1}
-                      label="Radius"
+                      label="圆角"
                       valueDisplay={`${backgroundBorderRadius}px`}
                     />
                   </div>
@@ -233,7 +239,8 @@ export function EditorRightPanel() {
                   {/* Background Type Selector */}
                   <div className="space-y-3">
                     <Label className="text-xs font-medium text-muted-foreground">
-                      Background Type
+                      背景类型
+                    
                     </Label>
                     <div className="flex gap-2">
                       <Button
@@ -250,7 +257,8 @@ export function EditorRightPanel() {
                             : "border-border/50 hover:bg-accent text-foreground bg-background hover:border-border"
                         }`}
                       >
-                        Image
+                        图片
+                      
                       </Button>
                       <Button
                         variant={
@@ -277,7 +285,8 @@ export function EditorRightPanel() {
                             : "border-border/50 hover:bg-accent text-foreground bg-background hover:border-border"
                         }`}
                       >
-                        Solid
+                        纯色
+                      
                       </Button>
                       <Button
                         variant={
@@ -304,7 +313,8 @@ export function EditorRightPanel() {
                             : "border-border/50 hover:bg-accent text-foreground bg-background hover:border-border"
                         }`}
                       >
-                        Gradient
+                        渐变
+                      
                       </Button>
                     </div>
                   </div>
@@ -313,7 +323,8 @@ export function EditorRightPanel() {
                   {backgroundConfig.type === "gradient" && (
                     <div className="space-y-3">
                       <Label className="text-xs font-medium text-muted-foreground">
-                        Gradient
+                        渐变
+                      
                       </Label>
                       <div className="grid grid-cols-5 gap-2.5 max-h-64">
                         {(Object.keys(gradientColors) as GradientKey[]).map(
@@ -341,7 +352,8 @@ export function EditorRightPanel() {
                   {backgroundConfig.type === "solid" && (
                     <div className="space-y-3">
                       <Label className="text-xs font-medium text-muted-foreground">
-                        Color
+                        颜色
+                      
                       </Label>
                       <div className="grid grid-cols-5 gap-2.5">
                         {(Object.keys(solidColors) as SolidColorKey[]).map(
@@ -378,7 +390,8 @@ export function EditorRightPanel() {
                           )) && (
                           <div className="space-y-2">
                             <Label className="text-xs font-medium text-muted-foreground">
-                              Current Background
+                              当前背景
+                            
                             </Label>
                             <div className="relative rounded-lg overflow-hidden border border-border aspect-video bg-muted">
                               {(() => {
@@ -401,7 +414,7 @@ export function EditorRightPanel() {
                                   <>
                                     <img
                                       src={imageUrl}
-                                      alt="Current background"
+                                      alt="当前背景"
                                       className="w-full h-full object-cover"
                                     />
                                     <Button
@@ -428,7 +441,8 @@ export function EditorRightPanel() {
                                     >
                                       <Cancel01Icon className="size-3.5" />
                                       <span className="text-xs font-medium">
-                                        Remove
+                                        移除
+                                      
                                       </span>
                                     </Button>
                                   </>
@@ -443,7 +457,8 @@ export function EditorRightPanel() {
                         Object.keys(backgroundCategories).length > 0 && (
                           <div className="space-y-3">
                             <Label className="text-xs font-medium text-muted-foreground">
-                              Preset Backgrounds
+                              预设背景
+                            
                             </Label>
                             <div className="space-y-3">
                               {getAvailableCategories()
@@ -467,7 +482,8 @@ export function EditorRightPanel() {
                                   return (
                                     <div key={category} className="space-y-2">
                                       <Label className="text-xs font-medium text-muted-foreground capitalize">
-                                        {categoryDisplayName} Wallpapers
+                                        {categoryDisplayName} 壁纸
+                                      
                                       </Label>
                                       <div className="grid grid-cols-2 gap-2 overflow-y-auto pb-2 max-h-64">
                                         {categoryBackgrounds.map(
@@ -514,7 +530,8 @@ export function EditorRightPanel() {
                       {/* Upload Background Image */}
                       <div className="space-y-2">
                         <Label className="text-xs font-medium text-muted-foreground">
-                          Upload Background Image
+                          上传背景图片
+                        
                         </Label>
                         <div
                           {...getBgRootProps()}
@@ -536,15 +553,17 @@ export function EditorRightPanel() {
                           </div>
                           {isBgDragActive ? (
                             <p className="text-xs font-medium text-foreground text-center">
-                              Drop the image here...
+                              将图片拖到此处…
+                            
                             </p>
                           ) : (
                             <div className="space-y-1 text-center">
                               <p className="text-xs font-medium text-muted-foreground">
-                                Drag & drop an image here
+                                将图片拖放到此处
+                              
                               </p>
                               <p className="text-xs text-muted-foreground">
-                                or click to browse • PNG, JPG, WEBP up to{" "}
+                                或点击浏览 • 支持 PNG、JPG、WEBP，最大{" "}
                                 {MAX_IMAGE_SIZE / 1024 / 1024}MB
                               </p>
                             </div>

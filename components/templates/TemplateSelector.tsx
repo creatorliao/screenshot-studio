@@ -29,9 +29,10 @@ export function TemplateSelector({
   return (
     <div className={cn("space-y-4", className)}>
       <div>
-        <h2 className="text-lg font-semibold mb-2">Templates</h2>
+        <h2 className="text-lg font-semibold mb-2">模板</h2>
         <p className="text-sm text-muted-foreground">
-          Choose a background template for your showcase
+          为你的展示挑选背景模板
+        
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

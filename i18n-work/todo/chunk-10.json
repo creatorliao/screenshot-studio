@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s1400",
+    "en": "Preparing your image for the clipboard",
+    "count": 1,
+    "where": "components/canvas/dialogs/CopyProgressDialog.tsx"
+  },
+  {
+    "id": "s1401",
+    "en": "Present website designs with professional browser chrome for client portfolios.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1402",
+    "en": "Present your work with cinematic Ken Burns effects that add polish and professionalism.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1403",
+    "en": "Preset Backgrounds",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s1404",
+    "en": "Preset name",
+    "count": 1,
+    "where": "components/presets/PresetGallery.tsx"
+  },
+  {
+    "id": "s1405",
+    "en": "Preset Shadows",
+    "count": 1,
+    "where": "components/controls/ShadowControls.tsx"
+  },
+  {
+    "id": "s1406",
+    "en": "presets",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s1407",
+    "en": "Presets moved to a new Templates overlay, tab switching now has smooth transitions, and animation video export accuracy has been fixed.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1408",
+    "en": "Preview",
+    "count": 1,
+    "where": "components/editor/RightSettingsPanel.tsx"
+  },
+  {
+    "id": "s1409",
+    "en": "Pricing",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1410",
+    "en": "Priority support",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1411",
+    "en": "Privacy First",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1412",
+    "en": "Privacy policy",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s1413",
+    "en": "Privacy Policy for Screenshot Studio. What stays on your device, what is sent to our server, and which third parties are involved.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1414",
+    "en": "Pro",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1415",
+    "en": "Pro User",
+    "count": 1,
+    "where": "components/landing/Testimonial.tsx"
+  },
+  {
+    "id": "s1416",
+    "en": "Processing",
+    "count": 1,
+    "where": "components/tools/FileQueue.tsx"
+  },
+  {
+    "id": "s1417",
+    "en": "product analytics for feature usage. It sets a first-party identifier so repeat visits are recognized.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1418",
+    "en": "Product Demos",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1419",
+    "en": "Product Mockups",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1420",
+    "en": "Product Screenshots",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1421",
+    "en": "Product Shot",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1422",
+    "en": "Product Suite",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1423",
+    "en": "Professional graphics for LinkedIn posts that establish authority.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1424",
+    "en": "Professional Look",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1425",
+    "en": "Professional mockups without expensive 3D software or design skills.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1426",
+    "en": "Professional screenshots for tutorials, guides, and help documentation.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1427",
+    "en": "Professional Shadows",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1428",
+    "en": "Properties",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1429",
+    "en": "Proudly Open Source",
+    "count": 1,
+    "where": "components/editor/sidebar-left.tsx"
+  },
+  {
+    "id": "s1430",
+    "en": "Pull Close",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1431",
+    "en": "Pulls the image closer with loosening perspective",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1432",
+    "en": "Purple",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s1433",
+    "en": "Purpose-built for screenshots, not general design. What takes 15 minutes in Figma takes 30 seconds here. No learning curve.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1434",
+    "en": "Push Away",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1435",
+    "en": "Pushes the image away with tightening perspective",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1436",
+    "en": "px",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s1437",
+    "en": "Python",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1438",
+    "en": "Quick answers about Screenshot Studio, exports, and how it works in your browser.",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1439",
+    "en": "Quick look",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1440",
+    "en": "Quick Position",
+    "count": 1,
+    "where": "components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s1441",
+    "en": "Quick Presets",
+    "count": 1,
+    "where": "components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s1442",
+    "en": "Quick:",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-dropdown.tsx"
+  },
+  {
+    "id": "s1443",
+    "en": "Radiant",
+    "count": 1,
+    "where": "components/code-image/code-backgrounds.ts"
+  },
+  {
+    "id": "s1444",
+    "en": "Raindrop",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s1445",
+    "en": "Rate limiting:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1446",
+    "en": "Rate limits",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1447",
+    "en": "Ray.so",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1448",
+    "en": "Read the full",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1449",
+    "en": "Ready to Add Browser Frames?",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1450",
+    "en": "Ready to Beautify Your Screenshots?",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1451",
+    "en": "Ready to create?",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1452",
+    "en": "Ready to Create?",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s1453",
+    "en": "Ready to Elevate Your Design Presentations?",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s1454",
+    "en": "Ready to Turn Your Code Into an Image?",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1455",
+    "en": "Real-time animation preview with play, pause, loop, and scrub controls",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1456",
+    "en": "Realistic Browser Frames for Any Screenshot",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1457",
+    "en": "Realistic drop shadows with customizable blur, spread, offset, and color. Add depth in one click.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1458",
+    "en": "Realistic macOS Safari toolbar with traffic lights, sidebar, back/forward navigation, and centered address bar with lock icon.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1459",
+    "en": "Realistic Safari and Chrome browser frames with light and dark modes, adjustable header size, and custom URL.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1460",
+    "en": "Realistic shadows that follow your 3D transforms. Adjustable blur and distance.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1461",
+    "en": "Recompresses an image with Sharp and returns the optimized bytes. JPEG uses MozJPEG, WebP uses libwebp, PNG uses adaptive filtering. The response body is the image itself, not JSON.",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1462",
+    "en": "Rect",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s1463",
+    "en": "Redo (Cmd+Shift+Z)",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s1464",
+    "en": "Related resources",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1465",
+    "en": "Related tools",
+    "count": 1,
+    "where": "components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s1466",
+    "en": "Reload Page",
+    "count": 1,
+    "where": "components/ErrorBoundary.tsx"
+  },
+  {
+    "id": "s1467",
+    "en": "Remote images:",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1468",
+    "en": "Remove layer",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s1469",
+    "en": "Remove Overlay",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s1470",
+    "en": "Rendering each slide with your current style",
+    "count": 1,
+    "where": "components/canvas/dialogs/BatchExportProgressDialog.tsx"
+  },
+  {
+    "id": "s1471",
+    "en": "Rendering video…",
+    "count": 1,
+    "where": "lib/export-progress-overlay.tsx"
+  },
+  {
+    "id": "s1472",
+    "en": "Rendering your creation",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s1473",
+    "en": "Renders the page at the given URL and returns the screenshot as a base64-encoded PNG. Results are cached per URL, device type, and color scheme.",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1474",
+    "en": "Replace",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s1475",
+    "en": "Report a Bug",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s1476",
+    "en": "Request",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1477",
+    "en": "Request a Feature",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s1478",
+    "en": "Reset All Filters",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s1479",
+    "en": "Reset Background Filters",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s1480",
+    "en": "Reset rotation",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s1481",
+    "en": "Reset to defaults",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s1482",
+    "en": "resize",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1483",
+    "en": "Resize by",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1484",
+    "en": "Resize Image",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1485",
+    "en": "Resize Image Online: Exact Pixels or Percentage",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1486",
+    "en": "Resize images by pixel size or percentage with the aspect ratio locked. Batch resize in your browser. Free, no signup, no upload.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1487",
+    "en": "Resize overlays directly on the canvas, save your own presets, and fine-tune Arc frame borders with new width and opacity sliders.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1488",
+    "en": "Resolution",
+    "count": 1,
+    "where": "components/export/ScaleSlider.tsx"
+  },
+  {
+    "id": "s1489",
+    "en": "Response",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1490",
+    "en": "Returns the public tweet payload used to render a tweet as an image. The id is the numeric status ID from the tweet URL.",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1491",
+    "en": "Reveal the full picture from a focused starting point",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1492",
+    "en": "Reverse-engineer the Service beyond what the open-source license permits",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1493",
+    "en": "rgba(0, 0, 0, 0.3)",
+    "count": 1,
+    "where": "components/controls/ShadowControls.tsx"
+  },
+  {
+    "id": "s1494",
+    "en": "rgba(0,0,0,0.3)",
+    "count": 1,
+    "where": "components/code-image/BackgroundPicker.tsx"
+  },
+  {
+    "id": "s1495",
+    "en": "rgba(255,255,255,0.4)",
+    "count": 1,
+    "where": "components/code-image/BackgroundPicker.tsx"
+  },
+  {
+    "id": "s1496",
+    "en": "right",
+    "count": 1,
+    "where": "components/timeline/TimelineEditor.tsx"
+  },
+  {
+    "id": "s1497",
+    "en": "Right panel tab bar reduced from 6 to 5 tabs for a cleaner layout, with presets accessible from the Templates overlay",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1498",
+    "en": "Ring",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1499",
+    "en": "Rise & Settle",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1500",
+    "en": "Rises from below and settles into place",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1501",
+    "en": "Roboto Mono",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1502",
+    "en": "rotate",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1503",
+    "en": "Rotate",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1504",
+    "en": "Rotate -45°",
+    "count": 1,
+    "where": "components/canvas/OverlayToolbar.tsx"
+  },
+  {
+    "id": "s1505",
+    "en": "Rotate -90°",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s1506",
+    "en": "Rotate +45°",
+    "count": 1,
+    "where": "components/canvas/OverlayToolbar.tsx"
+  },
+  {
+    "id": "s1507",
+    "en": "Rotate +90°",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s1508",
+    "en": "Rotate Image",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1509",
+    "en": "Rotate Image Online: Turn and Flip, Free",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1510",
+    "en": "Rotate images 90, 180, or 270 degrees and flip them horizontally or vertically. Batch rotate in your browser. Free, no upload.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1511",
+    "en": "Rotate on X, Y, and Z axes. Create dramatic angles that grab attention.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1512",
+    "en": "Rotates to peek behind the card and returns",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1513",
+    "en": "Rotating turns the image around its centre. Flipping mirrors it, so text becomes reversed. Flips are applied first and the rotation second, matching what you see in the preview.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1514",
+    "en": "Rotation & Tilt",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1515",
+    "en": "Round",
+    "count": 1,
+    "where": "components/editor/sections/BorderSection.tsx"
+  },
+  {
+    "id": "s1516",
+    "en": "Rounded Corners & Padding",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1517",
+    "en": "Royal Purple",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s1518",
+    "en": "Ruby",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1519",
+    "en": "Ruler interval",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s1520",
+    "en": "Rust",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1521",
+    "en": "SaaS Hero",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1522",
+    "en": "SaaS Landing Pages",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1523",
+    "en": "SaaS Product Marketing",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1524",
+    "en": "Safari",
+    "count": 1,
+    "where": "components/editor/sections/BrowserMockupSection.tsx"
+  },
+  {
+    "id": "s1525",
+    "en": "Safari and Chrome browser frames for realistic app previews.",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s1526",
+    "en": "Safari Browser Frame",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s1527",
+    "en": "Safari browser frame (light & dark) with traffic lights, sidebar, back/forward, and centered address bar",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1528",
+    "en": "Safari Dark",
+    "count": 1,
+    "where": "components/editor/sections/BrowserMockupSection.tsx"
+  },
+  {
+    "id": "s1529",
+    "en": "Same",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1530",
+    "en": "Sample screenshot in the editor preview",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s1531",
+    "en": "Sandbox",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1532",
+    "en": "Saturation",
+    "count": 1,
+    "where": "components/editor/sections/SettingsSection.tsx"
+  },
+  {
+    "id": "s1533",
+    "en": "Save and reuse your own canvas configurations. One-click to apply any saved style.",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s1534",
+    "en": "Scale Down",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s1535",
+    "en": "Scale percentage",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1536",
+    "en": "Scale Up",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s1537",
+    "en": "Scan QR or copy UPI ID",
+    "count": 1,
+    "where": "components/SponsorButton.tsx"
+  },
+  {
+    "id": "s1538",
+    "en": "Scan to pay with any UPI app",
+    "count": 1,
+    "where": "components/SponsorButton.tsx"
+  },
+  {
+    "id": "s1539",
+    "en": "Screen zoom",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  }
+]

@@ -14,9 +14,9 @@ import { Footer } from "@/components/landing/Footer";
 import { OG_DEFAULTS } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = {
-  title: "Features: Screenshot & Mockup Tools",
+  title: "功能：截图与模型工具",
   description:
-    "All Screenshot Studio features: screenshot beautifier, browser mockups, app and UI mockups, social media graphics, animations, and 3D effects. Free, no signup.",
+    "Screenshot Studio 的全部功能：截图美化、浏览器模型、应用与 UI 模型、社交媒体图片、动画和 3D 效果。免费，无需注册。",
   keywords: [
     "screenshot editor features",
     "image editing tools",
@@ -67,9 +67,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Features - Screenshot Studio",
+    title: "功能 - Screenshot Studio",
     description:
-      "All tools and capabilities in one free editor. Beautify, animate, and transform screenshots.",
+      "所有工具和功能集于一个免费编辑器。美化、制作动画并转换截图。",
     url: "/features",
   },
   alternates: {
@@ -89,51 +89,54 @@ const cardSurface =
 const features = [
   {
     icon: MagicWand01Icon,
-    title: "Screenshot Beautifier",
+    title: "截图美化",
     description:
-      "Transform plain screenshots into professional visuals. Add backgrounds, shadows, and rounded corners.",
+      "把普通截图变成专业视觉作品。添加背景、阴影和圆角。",
     href: "/features/screenshot-beautifier",
-    keywords: ["backgrounds", "shadows", "corners", "padding"],
+    // 注意：这里是**页面上渲染出来的标签**，必须叫 tags。
+    // 叫 keywords 会与 metadata.keywords（仅供搜索引擎的英文关键词）同名同构，
+    // 汉化流水线无法区分两者，只能整组跳过 —— 参见 R20260914-01《05-执行记录》§6.1。
+    tags: ["背景", "阴影", "圆角", "内边距"],
   },
   {
     icon: Share08Icon,
-    title: "Social Media Graphics",
+    title: "社交媒体图片",
     description:
-      "Create perfectly sized graphics for Twitter, LinkedIn, and Instagram. No design skills needed.",
+      "为 Twitter、LinkedIn 和 Instagram 制作尺寸完美的图形。无需设计技能。",
     href: "/features/social-media-graphics",
-    keywords: ["Twitter", "LinkedIn", "Instagram", "posts"],
+    tags: ["Twitter", "LinkedIn", "Instagram", "帖子"],
   },
   {
     icon: Video01Icon,
-    title: "Animation Maker",
+    title: "动画制作",
     description:
-      "Bring screenshots to life with zoom, pan, and fade animations. Export as video or GIF.",
+      "用缩放、平移和淡入淡出动画让截图栩栩如生。可导出为视频或 GIF。",
     href: "/features/animation-maker",
-    keywords: ["zoom", "pan", "slideshow", "video export"],
+    tags: ["缩放", "平移", "幻灯片", "视频导出"],
   },
   {
     icon: CubeIcon,
-    title: "3D Effects",
+    title: "3D 效果",
     description:
-      "Add stunning 3D perspective, rotation, and depth to flat screenshots. Real-time preview.",
+      "为扁平截图添加惊艳的 3D 透视、旋转和层次感。实时预览。",
     href: "/features/3d-effects",
-    keywords: ["perspective", "rotation", "depth", "mockups"],
+    tags: ["透视", "旋转", "景深", "模型"],
   },
   {
     icon: BrowserIcon,
-    title: "Browser Mockups",
+    title: "浏览器模型",
     description:
-      "Add realistic Safari and Chrome browser frames to screenshots. Light and dark modes with custom URL.",
+      "为截图添加逼真的 Safari 和 Chrome 浏览器边框。支持亮色和暗色模式，可自定义 URL。",
     href: "/features/browser-mockups",
-    keywords: ["Safari", "Chrome", "browser frame", "URL bar"],
+    tags: ["Safari", "Chrome", "浏览器边框", "地址栏"],
   },
   {
     icon: SourceCodeIcon,
-    title: "Code Images",
+    title: "代码图片",
     description:
-      "Turn code into beautiful, shareable images. Syntax themes, gradient backgrounds, line numbers, and a window frame.",
+      "把代码变成精美、可分享的图片。语法主题、渐变背景、行号和窗口边框。",
     href: "/features/code-snippets",
-    keywords: ["syntax highlighting", "gradients", "line numbers", "shareable links"],
+    tags: ["语法高亮", "渐变", "行号", "可分享链接"],
   },
 ] as const;
 
@@ -168,11 +171,12 @@ export default function FeaturesPage() {
               className="mb-6 text-4xl font-semibold tracking-[-0.03em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              All Features
+              全部功能
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Everything you need to create stunning visuals from screenshots.
-              100% free, no signup required.
+              从截图创作出惊艳视觉所需的一切。100% 免费，无需注册。
+            
             </p>
           </div>
         </section>
@@ -199,17 +203,18 @@ export default function FeaturesPage() {
                   </h2>
                   <p className="mb-4 text-muted-foreground">{feature.description}</p>
                   <div className="mb-4 flex flex-wrap gap-2">
-                    {feature.keywords.map((keyword) => (
+                    {feature.tags.map((tag) => (
                       <span
-                        key={keyword}
+                        key={tag}
                         className="rounded-md bg-foreground/[0.04] px-2 py-1 text-xs text-muted-foreground ring-1 ring-border"
                       >
-                        {keyword}
+                        {tag}
                       </span>
                     ))}
                   </div>
                   <span className="inline-flex items-center gap-1 text-sm font-medium text-foreground/90 transition-colors group-hover:text-foreground">
-                    Learn more
+                    了解更多
+                    
                     <ArrowRight01Icon
                       className="size-3.5 transition-transform group-hover:translate-x-0.5"
                       aria-hidden
@@ -227,27 +232,21 @@ export default function FeaturesPage() {
               className="mb-6 text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Mockups for Every Screen
+              适配各种屏幕的模型
+            
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Screenshot Studio is a free mockup maker that runs entirely in
-                your browser. Drop in a screenshot of an app, website, or UI
-                design and turn it into a polished mockup online in seconds. No
-                account, no watermark, and nothing to install.
+                Screenshot Studio 是一款完全在浏览器中运行的免费模型生成器。拖入应用、网站或 UI 设计的截图，几秒内即可在线变成精致的模型。无需账号、无水印、无需安装任何东西。
+              
               </p>
               <p>
-                Wrap any screen in a Safari or Chrome browser mockup, place it on
-                a gradient or solid background, and add shadows, padding, and
-                rounded corners. Tilt it in 3D for a perspective mockup, or
-                animate it into a short product video for a launch post.
+                把任意界面套进 Safari 或 Chrome 浏览器模型，放到渐变或纯色背景上，再加阴影、内边距和圆角。用 3D 倾斜做出透视模型，或做成一段短产品视频用于发布。
+              
               </p>
               <p>
-                It works for UI and UX mockups, app store screenshots, landing
-                page hero images, README previews, and social media graphics. If
-                you have used tools like Shots, Moqups, Previewed, AppShots, or
-                Pika Style, you will feel at home, except everything here is
-                free and open source.
+                它适用于 UI 和 UX 模型、应用商店截图、落地页主图、README 预览和社交媒体配图。如果你用过 Shots、Moqups、Previewed、AppShots 或 Pika Style 这类工具，会觉得很熟悉，只是这里的一切都免费且开源。
+              
               </p>
             </div>
           </div>
@@ -259,13 +258,16 @@ export default function FeaturesPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Ready to Create?
+              准备好开始创作了吗？
+            
             </h2>
             <p className="mb-8 text-muted-foreground">
-              All features, zero cost. Start creating in seconds.
+              所有功能，零成本。几秒即可开始创作。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Open Editor
+              打开编辑器
+            
             </Link>
           </div>
         </section>

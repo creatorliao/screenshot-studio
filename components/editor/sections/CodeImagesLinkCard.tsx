@@ -13,10 +13,12 @@ export function CodeImagesLinkCard() {
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-sm font-medium text-foreground">
-            Code Images
+            代码图片
+          
           </span>
           <span className="block truncate text-xs text-muted-foreground">
-            Turn code into beautiful shareable images
+            把代码变成精美的可分享图片
+          
           </span>
         </span>
         <ArrowRight01Icon

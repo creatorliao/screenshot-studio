@@ -186,7 +186,7 @@ export function EditorCanvas() {
                       removeSlide(slide.id);
                     }}
                     className="absolute top-1 right-1 z-10 flex h-5 w-5 cursor-pointer items-center justify-center rounded-md border border-foreground/10 bg-card/90 text-muted-foreground transition-colors hover:bg-destructive hover:text-foreground hover:border-destructive"
-                    title="Delete slide"
+                    title="删除幻灯片"
                   >
                     <Cancel01Icon size={10} />
                   </button>

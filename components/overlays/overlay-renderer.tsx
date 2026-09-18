@@ -156,7 +156,7 @@ export function OverlayRenderer() {
             <div className="relative w-full h-full">
               <img
                 src={imageUrl}
-                alt="Overlay"
+                alt="叠加层"
                 className="object-contain w-full h-full"
                 draggable={false}
                 style={{

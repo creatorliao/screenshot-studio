@@ -6,9 +6,9 @@ import { SectionWrapper } from './SectionWrapper';
 import { cn } from '@/lib/utils';
 
 const borderPresets = [
-  { value: 0, label: 'Sharp' },
-  { value: 12, label: 'Curved' },
-  { value: 20, label: 'Round' },
+  { value: 0, label: '直角' },
+  { value: 12, label: '弧形' },
+  { value: 20, label: '圆形' },
 ] as const;
 
 function BorderPreview({ radius }: { radius: number }) {
@@ -43,7 +43,7 @@ function ScaleSlider() {
       min={0.1}
       max={2}
       step={0.01}
-      label="Scale"
+      label="缩放"
       valueDisplay={(imageScale / 100).toFixed(1)}
     />
   );
@@ -54,7 +54,7 @@ export function BorderSection() {
   const setBorderRadius = useImageStore((s) => s.setBorderRadius);
 
   return (
-    <SectionWrapper title="Border" defaultOpen={true}>
+    <SectionWrapper title="边框" defaultOpen={true}>
       <div className="space-y-3">
         <div className="grid grid-cols-3 gap-2 p-1">
           {borderPresets.map(({ value, label }) => {
@@ -95,7 +95,7 @@ export function BorderSection() {
           min={0}
           max={50}
           step={1}
-          label="Radius"
+          label="圆角"
           valueDisplay={borderRadius}
         />
         <ScaleSlider />

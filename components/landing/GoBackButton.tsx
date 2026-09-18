@@ -53,7 +53,8 @@ export function GoBackButton(): React.JSX.Element {
       onClick={handleClick}
       className="inline-flex h-10 cursor-pointer items-center justify-center rounded-md px-4 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground active:scale-[0.99]"
     >
-      Go back
+      返回
+    
     </button>
   );
 }

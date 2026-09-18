@@ -462,7 +462,8 @@ export function PresetGallery({ onPresetSelect }: PresetGalleryProps) {
             onClick={() => setShowSaveForm(true)}
             className="w-full rounded-md border border-dashed border-foreground/15 hover:border-foreground/30 hover:bg-foreground/[0.04] p-4 text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
           >
-            + Save Current as Preset
+            + 将当前保存为预设
+          
           </button>
         ) : (
           <div className="flex gap-2">
@@ -475,7 +476,7 @@ export function PresetGallery({ onPresetSelect }: PresetGalleryProps) {
                 if (e.key === 'Enter') handleSavePreset();
                 if (e.key === 'Escape') { setShowSaveForm(false); setPresetName(''); }
               }}
-              placeholder="Preset name"
+              placeholder="预设名称"
               className="h-9 text-sm bg-foreground/[0.04] border-foreground/10"
             />
             <button
@@ -483,7 +484,8 @@ export function PresetGallery({ onPresetSelect }: PresetGalleryProps) {
               disabled={!presetName.trim()}
               className="shrink-0 h-9 px-3 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-foreground/90 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
             >
-              Save
+              保存
+            
             </button>
           </div>
         )}
@@ -492,7 +494,8 @@ export function PresetGallery({ onPresetSelect }: PresetGalleryProps) {
       {customPresets.length > 0 && (
         <>
           <div className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">
-            My Presets
+            我的预设
+          
           </div>
           {customPresets.map((preset) => (
             <div key={preset.id} className="group relative">
@@ -514,7 +517,8 @@ export function PresetGallery({ onPresetSelect }: PresetGalleryProps) {
             </div>
           ))}
           <div className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">
-            Built-in Presets
+            内置预设
+          
           </div>
         </>
       )}
@@ -532,7 +536,8 @@ export function PresetGallery({ onPresetSelect }: PresetGalleryProps) {
       {!uploadedImageUrl && !screenshot?.src && (
         <div className="p-4 rounded-md bg-foreground/[0.04] border border-foreground/10 text-center">
           <p className="text-xs text-muted-foreground">
-            Upload an image to see preset previews
+            上传图片以查看预设预览
+          
           </p>
         </div>
       )}

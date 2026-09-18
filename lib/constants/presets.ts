@@ -35,8 +35,8 @@ export const presets: PresetConfig[] = [
   // 1. Spotlight - Dramatic dark with focused light
   {
     id: 'spotlight',
-    name: 'Spotlight',
-    description: 'Dramatic dark with focused attention',
+    name: '聚光灯',
+    description: '戏剧化的暗调，聚焦注意力',
     aspectRatio: '16_9',
     backgroundConfig: {
       type: 'image',
@@ -69,8 +69,8 @@ export const presets: PresetConfig[] = [
    // 8. Magazine Flatlay - Lying on textured surface with leaf shadows
    {
     id: 'magazine-flatlay',
-    name: 'Magazine Flatlay',
-    description: 'Isometric flatlay with leaf shadows',
+    name: '杂志平铺',
+    description: '带有叶片阴影的等距平铺',
     aspectRatio: '16_9',
     backgroundConfig: {
       type: 'image',
@@ -116,8 +116,8 @@ export const presets: PresetConfig[] = [
   // 2. Lifted - Floating with hard shadow
   {
     id: 'lifted',
-    name: 'Lifted',
-    description: 'Bold floating effect with hard shadow',
+    name: '悬浮',
+    description: '带硬阴影的醒目悬浮效果',
     aspectRatio: '1_1',
     backgroundConfig: {
       type: 'image',
@@ -154,8 +154,8 @@ export const presets: PresetConfig[] = [
   // 3. Neon Dreams - Vibrant with colored glow
   {
     id: 'neon-dreams',
-    name: 'Neon Dreams',
-    description: 'Vibrant glow for creative content',
+    name: '霓虹梦境',
+    description: '适合创意内容的鲜亮光晕',
     aspectRatio: '16_9',
     backgroundConfig: {
       type: 'image',
@@ -188,8 +188,8 @@ export const presets: PresetConfig[] = [
   // 4. Editorial - Clean magazine style
   {
     id: 'editorial',
-    name: 'Editorial',
-    description: 'Clean magazine-style presentation',
+    name: '杂志风',
+    description: '简洁的杂志风格展示',
     aspectRatio: '4_5',
     backgroundConfig: {
       type: 'image',
@@ -226,8 +226,8 @@ export const presets: PresetConfig[] = [
    // 9. Desktop View - Tilted on magic gradient
    {
     id: 'desktop-view',
-    name: 'Desktop View',
-    description: 'Tilted view with magic gradient',
+    name: '桌面视图',
+    description: '带魔法渐变的倾斜视角',
     aspectRatio: '16_9',
     backgroundConfig: {
       type: 'gradient',
@@ -269,8 +269,8 @@ export const presets: PresetConfig[] = [
   // 5. Glass Card - Modern glassmorphism
   {
     id: 'glass-card',
-    name: 'Glass Card',
-    description: 'Modern frosted glass effect',
+    name: '玻璃卡片',
+    description: '现代磨砂玻璃效果',
     aspectRatio: '16_9',
     backgroundConfig: {
       type: 'image',
@@ -303,8 +303,8 @@ export const presets: PresetConfig[] = [
   // 7. Sunset Fade - Warm gradient vibes
   {
     id: 'sunset-fade',
-    name: 'Sunset Fade',
-    description: 'Warm tones for lifestyle content',
+    name: '日落渐隐',
+    description: '适合生活方式内容的暖色调',
     aspectRatio: 'og_image',
     backgroundConfig: {
       type: 'image',

@@ -89,7 +89,7 @@ function EditorMain() {
             className="h-8 gap-1.5 rounded-md px-2.5 text-xs text-muted-foreground hover:text-foreground hover:bg-foreground/[0.06] border border-foreground/10 bg-foreground/[0.04]"
           >
             <Settings02Icon size={15} />
-            <span>Settings</span>
+            <span>设置</span>
           </Button>
         </div>
       )}
@@ -125,7 +125,7 @@ function EditorMain() {
                 )}
               >
                 <VideoReplayIcon size={15} className="text-foreground" />
-                <span>Animate</span>
+                <span>动画</span>
               </button>
             )}
           </div>
@@ -142,7 +142,7 @@ function EditorMain() {
               showCloseButton={false}
               className="h-full w-full max-w-[min(100%,460px)] gap-0 overflow-hidden p-0 sm:max-w-[min(100%,460px)]"
             >
-              <SheetTitle className="sr-only">Editor settings</SheetTitle>
+              <SheetTitle className="sr-only">编辑器设置</SheetTitle>
               <UnifiedRightPanel
                 onClose={() => handleMobileSheetOpenChange(false)}
               />

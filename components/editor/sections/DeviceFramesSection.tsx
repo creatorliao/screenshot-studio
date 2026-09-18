@@ -32,7 +32,7 @@ export function DeviceFramesSection(): React.JSX.Element {
   }, [contentKey, view]);
 
   return (
-    <SectionWrapper title="Devices">
+    <SectionWrapper title="设备">
       <div
         className="min-w-0 transition-[opacity,transform] duration-150 ease-out motion-reduce:transition-none"
         style={{

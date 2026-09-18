@@ -19,7 +19,7 @@ export const QUALITY_PRESETS: Record<QualityPreset, QualitySettings> = {
 
 export const QUALITY_PRESET_LABELS: Record<QualityPreset, { label: string; description: Record<ExportFormat, string> }> = {
   high: {
-    label: 'High',
+    label: '高',
     description: {
       png: 'Best quality, larger file',
       jpeg: '85% quality, sharp & shareable',
@@ -27,7 +27,7 @@ export const QUALITY_PRESET_LABELS: Record<QualityPreset, { label: string; descr
     },
   },
   medium: {
-    label: 'Medium',
+    label: '中等',
     description: {
       png: 'Lossless, better compression',
       jpeg: '75% quality, good compression',
@@ -35,7 +35,7 @@ export const QUALITY_PRESET_LABELS: Record<QualityPreset, { label: string; descr
     },
   },
   low: {
-    label: 'Low',
+    label: '低',
     description: {
       png: 'Lossless, max compression',
       jpeg: '60% quality, maximum compression',

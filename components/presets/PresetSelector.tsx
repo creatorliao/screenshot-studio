@@ -126,15 +126,16 @@ export function PresetSelector() {
           size="sm"
           className="w-full h-10 justify-center gap-2.5 rounded-lg bg-background hover:bg-accent text-foreground border border-border hover:border-border/80 transition-all duration-200 font-semibold text-sm px-3 overflow-hidden"
         >
-          <span className="truncate">Presets</span>
+          <span className="truncate">预设</span>
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-80 p-0" align="start">
         <div className="p-4">
           <div className="mb-3">
-            <h3 className="text-sm font-semibold text-foreground">Quick Presets</h3>
+            <h3 className="text-sm font-semibold text-foreground">快速预设</h3>
             <p className="text-xs text-muted-foreground mt-1">
-              Apply pre-configured styles instantly
+              立即应用预设样式
+            
             </p>
           </div>
           
@@ -169,30 +170,34 @@ export function PresetSelector() {
                     </div>
                     <div className="mt-2 flex items-center gap-2 flex-wrap">
                       <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-medium">
-                        {preset.aspectRatio === '1_1' ? 'Square' :
-                         preset.aspectRatio === '9_16' ? 'Story' :
-                         preset.aspectRatio === '16_9' ? 'Landscape' :
-                         preset.aspectRatio === '4_5' ? 'Portrait' :
+                        {preset.aspectRatio === '1_1' ? '正方形' :
+                         preset.aspectRatio === '9_16' ? '故事' :
+                         preset.aspectRatio === '16_9' ? '横版' :
+                         preset.aspectRatio === '4_5' ? '竖版' :
                          preset.aspectRatio}
                       </span>
                       {preset.borderRadius > 0 && (
                         <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-medium">
-                          Rounded
+                          圆角
+                        
                         </span>
                       )}
                       {preset.imageShadow.enabled && (
                         <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-medium">
-                          Shadow
+                          阴影
+                        
                         </span>
                       )}
                       {preset.backgroundBlur && preset.backgroundBlur > 0 && (
                         <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-medium">
-                          Blur
+                          模糊
+                        
                         </span>
                       )}
                       {preset.backgroundNoise && preset.backgroundNoise > 0 && (
                         <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-medium">
-                          Grain
+                          颗粒
+                        
                         </span>
                       )}
                     </div>
@@ -205,7 +210,8 @@ export function PresetSelector() {
           {!uploadedImageUrl && (
             <div className="mt-4 p-3 rounded-lg bg-muted/50 border border-border">
               <p className="text-xs text-muted-foreground text-center">
-                Upload an image to use presets
+                上传图片以使用预设
+              
               </p>
             </div>
           )}

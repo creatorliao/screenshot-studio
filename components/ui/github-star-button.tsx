@@ -88,7 +88,7 @@ export function GitHubStarButton({ compact }: { compact?: boolean }) {
       aria-label={
         stars != null && stars > 0
           ? `GitHub repository, ${formatStarCount(stars)} stars`
-          : "GitHub repository"
+          : "GitHub 仓库"
       }
       className={cn(
         "inline-flex items-center justify-center gap-1.5 rounded-md font-medium tabular-nums",

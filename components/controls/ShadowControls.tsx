@@ -15,10 +15,10 @@ interface ShadowControlsProps {
 
 export function ShadowControls({ shadow, onShadowChange }: ShadowControlsProps) {
   const presetShadows = [
-    { blur: 24, offsetX: 0, offsetY: 6, spread: 3, label: 'Floating' },
-    { blur: 4, offsetX: 0, offsetY: 2, spread: 0, label: 'Small' },
-    { blur: 10, offsetX: 0, offsetY: 4, spread: 0, label: 'Medium' },
-    { blur: 20, offsetX: 0, offsetY: 8, spread: 0, label: 'Large' },
+    { blur: 24, offsetX: 0, offsetY: 6, spread: 3, label: '悬浮' },
+    { blur: 4, offsetX: 0, offsetY: 2, spread: 0, label: '小' },
+    { blur: 10, offsetX: 0, offsetY: 4, spread: 0, label: '中等' },
+    { blur: 20, offsetX: 0, offsetY: 8, spread: 0, label: '大' },
     { blur: 40, offsetX: 0, offsetY: 16, spread: 0, label: 'XL' },
   ];
 
@@ -26,11 +26,12 @@ export function ShadowControls({ shadow, onShadowChange }: ShadowControlsProps) 
     <div className="space-y-5">
       <div className="space-y-4">
         <Label className="text-sm font-semibold text-foreground">
-          Shadow
+          阴影
+        
         </Label>
 
         <div className="space-y-4">
-          <Label className="text-sm font-semibold text-foreground">Preset Shadows</Label>
+          <Label className="text-sm font-semibold text-foreground">预设阴影</Label>
           <div className="grid grid-cols-2 gap-2">
             {presetShadows.map((preset, index) => (
               <Button
@@ -61,7 +62,7 @@ export function ShadowControls({ shadow, onShadowChange }: ShadowControlsProps) 
             min={0}
             max={50}
             step={1}
-            label="Blur"
+            label="模糊"
             valueDisplay={`${shadow.blur}px`}
           />
           <Slider
@@ -70,7 +71,7 @@ export function ShadowControls({ shadow, onShadowChange }: ShadowControlsProps) 
             min={-20}
             max={20}
             step={1}
-            label="H Offset"
+            label="水平偏移"
             valueDisplay={`${shadow.offsetX}px`}
           />
           <Slider
@@ -79,7 +80,7 @@ export function ShadowControls({ shadow, onShadowChange }: ShadowControlsProps) 
             min={-20}
             max={20}
             step={1}
-            label="V Offset"
+            label="垂直偏移"
             valueDisplay={`${shadow.offsetY}px`}
           />
           <Slider
@@ -88,13 +89,13 @@ export function ShadowControls({ shadow, onShadowChange }: ShadowControlsProps) 
             min={-10}
             max={20}
             step={1}
-            label="Spread"
+            label="扩散"
             valueDisplay={`${shadow.spread}px`}
           />
         </div>
 
         <div className="space-y-4">
-          <Label className="text-sm font-semibold text-foreground">Shadow Color</Label>
+          <Label className="text-sm font-semibold text-foreground">阴影颜色</Label>
           <div className="flex items-center gap-3">
             <input
               type="color"
@@ -132,7 +133,7 @@ export function ShadowControls({ shadow, onShadowChange }: ShadowControlsProps) 
                   className="border-0 bg-transparent text-sm focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
               </GlassInputWrapper>
-              <div className="text-xs text-muted-foreground whitespace-nowrap font-medium">Opacity</div>
+              <div className="text-xs text-muted-foreground whitespace-nowrap font-medium">不透明度</div>
               <GlassInputWrapper className="w-16">
                 <Input
                   type="number"

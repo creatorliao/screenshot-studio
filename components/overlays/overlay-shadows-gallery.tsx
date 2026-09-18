@@ -51,7 +51,7 @@ export function OverlayShadowsGallery() {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold text-sm text-foreground">Overlay Shadows</h3>
+        <h3 className="font-semibold text-sm text-foreground">叠加层阴影</h3>
       </div>
 
       <div className="overflow-y-auto scrollbar-hide p-1.5 max-h-64">
@@ -62,7 +62,8 @@ export function OverlayShadowsGallery() {
             onClick={handleRemoveShadows}
             className="flex items-center justify-center w-16 h-9 text-xs text-muted-foreground cursor-pointer hover:scale-105 transition-all duration-200"
           >
-            None
+            无
+          
           </button>
           {OVERLAY_SHADOW_URLS.map((shadowUrl, index) => (
             <button

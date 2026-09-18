@@ -57,7 +57,8 @@ export function MockupControls(): React.JSX.Element {
     <div className="space-y-4">
       <div className="flex items-center justify-between gap-3">
         <p className="text-xs text-muted-foreground">
-          {mockups.length} of {MAX_DEVICE_MOCKUPS} devices
+          {mockups.length} 共  {MAX_DEVICE_MOCKUPS} 设备
+        
         </p>
         <Button
           variant="outline"
@@ -67,7 +68,8 @@ export function MockupControls(): React.JSX.Element {
           onClick={() => openGallery("add")}
         >
           <Add01Icon size={14} />
-          Add
+          添加
+        
         </Button>
       </div>
 
@@ -102,7 +104,7 @@ export function MockupControls(): React.JSX.Element {
                   updateMockup(mockup.id, { isVisible: !mockup.isVisible });
                 }}
                 className="flex size-7 items-center justify-center rounded text-muted-foreground max-[768px]:size-11 hover:bg-foreground/[0.06] hover:text-foreground"
-                aria-label={mockup.isVisible ? "Hide device" : "Show device"}
+                aria-label={mockup.isVisible ? "隐藏设备" : "显示设备"}
               >
                 {mockup.isVisible ? <ViewIcon size={13} /> : <ViewOffSlashIcon size={13} />}
               </button>
@@ -113,14 +115,15 @@ export function MockupControls(): React.JSX.Element {
 
       <div className="space-y-2">
         <div className="flex items-center justify-between">
-          <span className="text-xs font-medium text-foreground">Layouts</span>
+          <span className="text-xs font-medium text-foreground">布局</span>
           {activeLayoutId ? (
             <button
               type="button"
               onClick={() => applyDeviceLayout(activeLayoutId)}
               className="flex min-h-6 items-center gap-1 text-xs text-muted-foreground max-[768px]:min-h-11 hover:text-foreground"
             >
-              <RotateClockwiseIcon size={12} /> Reset
+              <RotateClockwiseIcon size={12} /> 重置
+            
             </button>
           ) : null}
         </div>
@@ -160,14 +163,16 @@ export function MockupControls(): React.JSX.Element {
       {selected ? (
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-medium text-foreground">Selected device</span>
+            <span className="text-xs font-medium text-foreground">已选设备</span>
             <button type="button" onClick={() => openGallery("change")} className="min-h-6 text-xs text-muted-foreground max-[768px]:min-h-11 hover:text-foreground">
-              Change
+              更改
+            
             </button>
           </div>
 
           <p className="rounded-md bg-foreground/[0.05] px-2.5 py-2 text-xs leading-relaxed text-muted-foreground">
-            Click an empty device screen to upload. Double-click a filled screen to replace its image.
+            点击空白设备屏幕即可上传。双击已填充的屏幕可替换其中的图片。
+          
           </p>
 
           <div className={cn("grid gap-1.5", editingScreenDeviceId === selected.id ? "grid-cols-3" : "grid-cols-2")}>
@@ -177,7 +182,7 @@ export function MockupControls(): React.JSX.Element {
               className="min-w-0 text-xs leading-none max-[768px]:min-h-11"
               onClick={() => fileInputRef.current?.click()}
             >
-              <Image01Icon className="size-[13px]" /> {selected.screen.src ? "Replace" : "Upload"}
+              <Image01Icon className="size-[13px]" /> {selected.screen.src ? "替换" : "上传"}
             </Button>
             <Button
               variant="outline"
@@ -186,7 +191,7 @@ export function MockupControls(): React.JSX.Element {
               onClick={() => setEditingScreenDeviceId(editingScreenDeviceId === selected.id ? null : selected.id)}
               aria-pressed={editingScreenDeviceId === selected.id}
             >
-              {editingScreenDeviceId === selected.id ? "Done" : "Crop"}
+              {editingScreenDeviceId === selected.id ? "完成" : "裁剪"}
             </Button>
             {editingScreenDeviceId === selected.id ? (
               <Button
@@ -197,7 +202,8 @@ export function MockupControls(): React.JSX.Element {
                   screen: { ...selected.screen, scale: 1, offset: { x: 0, y: 0 } },
                 })}
               >
-                Reset
+                重置
+              
               </Button>
             ) : null}
           </div>
@@ -215,14 +221,14 @@ export function MockupControls(): React.JSX.Element {
 
           <SegmentedControl
             size="sm"
-            ariaLabel="Screen fit"
+            ariaLabel="适配屏幕"
             value={selected.screen.fit}
             onChange={(fit) => updateMockup(selected.id, {
               screen: { ...selected.screen, fit: fit as "cover" | "contain" },
             })}
             options={[
-              { id: "cover", label: "Fill" },
-              { id: "contain", label: "Fit" },
+              { id: "cover", label: "填充" },
+              { id: "contain", label: "适应" },
             ]}
           />
 
@@ -232,7 +238,7 @@ export function MockupControls(): React.JSX.Element {
             step={0.05}
             value={[selected.screen.scale]}
             onValueChange={([scale]) => updateMockup(selected.id, { screen: { ...selected.screen, scale } })}
-            label="Screen zoom"
+            label="屏幕缩放"
             valueDisplay={`${Math.round(selected.screen.scale * 100)}%`}
           />
           <Slider
@@ -241,7 +247,7 @@ export function MockupControls(): React.JSX.Element {
             step={1}
             value={[selected.rotation]}
             onValueChange={([rotation]) => updateMockup(selected.id, { rotation })}
-            label="Rotation"
+            label="旋转"
             valueDisplay={`${selected.rotation}°`}
           />
           <Slider
@@ -250,7 +256,7 @@ export function MockupControls(): React.JSX.Element {
             step={0.01}
             value={[selected.size]}
             onValueChange={([size]) => updateMockup(selected.id, { size })}
-            label="Size"
+            label="大小"
             valueDisplay={`${Math.round(selected.size * 100)}%`}
           />
           <Slider
@@ -259,15 +265,15 @@ export function MockupControls(): React.JSX.Element {
             step={0.01}
             value={[selected.opacity]}
             onValueChange={([opacity]) => updateMockup(selected.id, { opacity })}
-            label="Opacity"
+            label="不透明度"
             valueDisplay={`${Math.round(selected.opacity * 100)}%`}
           />
 
           <div className="grid grid-cols-4 gap-1">
-            <button type="button" onClick={() => reorderMockup(selected.id, "down")} className="flex h-8 items-center justify-center rounded-md text-muted-foreground max-[768px]:h-11 hover:bg-foreground/[0.05] hover:text-foreground" aria-label="Move layer down"><ArrowDown01Icon size={14} /></button>
-            <button type="button" onClick={() => reorderMockup(selected.id, "up")} className="flex h-8 items-center justify-center rounded-md text-muted-foreground max-[768px]:h-11 hover:bg-foreground/[0.05] hover:text-foreground" aria-label="Move layer up"><ArrowUp01Icon size={14} /></button>
-            <button type="button" disabled={mockups.length >= MAX_DEVICE_MOCKUPS} onClick={() => { const id = duplicateMockup(selected.id); if (id) setSelectedDeviceId(id); }} className="flex h-8 items-center justify-center rounded-md text-muted-foreground max-[768px]:h-11 hover:bg-foreground/[0.05] hover:text-foreground disabled:opacity-35" aria-label="Duplicate device"><Copy01Icon size={14} /></button>
-            <button type="button" onClick={() => { removeMockup(selected.id); setSelectedDeviceId(null); }} className="flex h-8 items-center justify-center rounded-md text-muted-foreground max-[768px]:h-11 hover:bg-destructive/10 hover:text-destructive" aria-label="Delete device"><Delete02Icon size={14} /></button>
+            <button type="button" onClick={() => reorderMockup(selected.id, "down")} className="flex h-8 items-center justify-center rounded-md text-muted-foreground max-[768px]:h-11 hover:bg-foreground/[0.05] hover:text-foreground" aria-label="下移图层"><ArrowDown01Icon size={14} /></button>
+            <button type="button" onClick={() => reorderMockup(selected.id, "up")} className="flex h-8 items-center justify-center rounded-md text-muted-foreground max-[768px]:h-11 hover:bg-foreground/[0.05] hover:text-foreground" aria-label="上移图层"><ArrowUp01Icon size={14} /></button>
+            <button type="button" disabled={mockups.length >= MAX_DEVICE_MOCKUPS} onClick={() => { const id = duplicateMockup(selected.id); if (id) setSelectedDeviceId(id); }} className="flex h-8 items-center justify-center rounded-md text-muted-foreground max-[768px]:h-11 hover:bg-foreground/[0.05] hover:text-foreground disabled:opacity-35" aria-label="复制设备"><Copy01Icon size={14} /></button>
+            <button type="button" onClick={() => { removeMockup(selected.id); setSelectedDeviceId(null); }} className="flex h-8 items-center justify-center rounded-md text-muted-foreground max-[768px]:h-11 hover:bg-destructive/10 hover:text-destructive" aria-label="删除设备"><Delete02Icon size={14} /></button>
           </div>
         </div>
       ) : null}

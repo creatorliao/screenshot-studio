@@ -27,22 +27,22 @@ import { isMp4Supported, type VideoFormat, type VideoQuality } from "@/lib/expor
 type ExportMode = "slideshow" | "animation";
 
 const FORMAT_OPTIONS: { value: VideoFormat; label: string; description: string }[] = [
-  { value: "mp4", label: "MP4 (H.264)", description: "Best compatibility, smaller file size" },
-  { value: "webm", label: "WebM (VP8)", description: "Open format, web-optimized" },
+  { value: "mp4", label: "MP4（H.264）", description: "兼容性最佳，文件更小" },
+  { value: "webm", label: "WebM (VP8)", description: "开放格式，针对网页优化" },
 ];
 
 const QUALITY_OPTIONS: { value: VideoQuality; label: string; bitrate: string }[] = [
-  { value: "high", label: "High", bitrate: "25 Mbps" },
-  { value: "medium", label: "Medium", bitrate: "10 Mbps" },
-  { value: "low", label: "Low", bitrate: "5 Mbps" },
+  { value: "high", label: "高", bitrate: "25 Mbps" },
+  { value: "medium", label: "中等", bitrate: "10 Mbps" },
+  { value: "low", label: "低", bitrate: "5 Mbps" },
 ];
 
 const EXPORT_MESSAGES = [
-  "Capturing frames...",
-  "Assembling your masterpiece...",
-  "Encoding pixels with care...",
-  "Almost there, hang tight...",
-  "Polishing the final cut...",
+  "正在截取帧...",
+  "正在合成你的作品...",
+  "正在细致编码像素...",
+  "就快好了，请稍候...",
+  "正在打磨成片...",
 ];
 
 function ExportProgressView({ progress, format }: { progress: number; format: string }) {
@@ -105,7 +105,7 @@ function ExportProgressView({ progress, format }: { progress: number; format: st
       {/* Format tag */}
       <div className="px-3 py-1 rounded-full bg-accent border border-border/50">
         <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-medium">
-          Exporting as {format.toUpperCase()}
+          导出为  {format.toUpperCase()}
         </span>
       </div>
     </div>
@@ -171,8 +171,8 @@ export function ExportSlideshowDialog({
         origin: { y: 0.6 },
       });
 
-      toast.success('Video exported successfully!', {
-        description: `Saved as ${result.format.toUpperCase()}`,
+      toast.success('视频导出成功！', {
+        description: `已保存为 ${result.format.toUpperCase()}`,
       });
     } catch (error) {
       // User cancelled — not a failure, no error toast.
@@ -180,7 +180,7 @@ export function ExportSlideshowDialog({
         return;
       }
       console.error('Video export failed:', error);
-      toast.error('Video export failed', {
+      toast.error('视频导出失败', {
         description: error instanceof Error ? error.message : 'Please try again.',
         duration: 1500,
       });
@@ -193,7 +193,7 @@ export function ExportSlideshowDialog({
   const handleOpenChange = (next: boolean) => {
     if (!next && exporting) {
       abort();
-      toast('Export cancelled', { id: 'export-cancelled', duration: 1500 });
+      toast('导出已取消', { id: 'export-cancelled', duration: 1500 });
     }
     onOpenChange(next);
   };
@@ -205,9 +205,10 @@ export function ExportSlideshowDialog({
           /* ---- Fun export progress view ---- */
           <div>
             <DialogHeader>
-              <DialogTitle>Exporting Video</DialogTitle>
+              <DialogTitle>正在导出视频</DialogTitle>
               <DialogDescription>
-                Sit back while we render your creation
+                稍等片刻，我们正在渲染你的作品
+              
               </DialogDescription>
             </DialogHeader>
             <ExportProgressView progress={progress} format={format} />
@@ -216,16 +217,18 @@ export function ExportSlideshowDialog({
               className="w-full"
               onClick={() => handleOpenChange(false)}
             >
-              Cancel
+              取消
+            
             </Button>
           </div>
         ) : (
           /* ---- Settings view ---- */
           <>
             <DialogHeader>
-              <DialogTitle>Export Video</DialogTitle>
+              <DialogTitle>导出视频</DialogTitle>
               <DialogDescription>
-                Configure your video export settings
+                配置视频导出设置
+              
               </DialogDescription>
             </DialogHeader>
 
@@ -233,7 +236,7 @@ export function ExportSlideshowDialog({
               {/* Export Mode Selection */}
               {(hasAnimation || hasSlides) && (
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground/90">Export Type</label>
+                  <label className="text-sm font-medium text-foreground/90">导出类型</label>
                   <div className="grid grid-cols-2 gap-2">
                     <button
                       onClick={() => setExportMode("animation")}
@@ -245,9 +248,10 @@ export function ExportSlideshowDialog({
                         }
                       `}
                     >
-                      <div className="font-medium text-sm text-foreground/90">Animation</div>
+                      <div className="font-medium text-sm text-foreground/90">动画</div>
                       <div className="text-xs text-muted-foreground mt-0.5">
-                        {(timeline.duration / 1000).toFixed(1)}s video
+                        {(timeline.duration / 1000).toFixed(1)}秒视频
+                      
                       </div>
                     </button>
                     <button
@@ -260,9 +264,9 @@ export function ExportSlideshowDialog({
                         }
                       `}
                     >
-                      <div className="font-medium text-sm text-foreground/90">Slideshow</div>
+                      <div className="font-medium text-sm text-foreground/90">幻灯片</div>
                       <div className="text-xs text-muted-foreground mt-0.5">
-                        {slides.length > 0 ? `${slides.length} slide${slides.length > 1 ? 's' : ''}` : 'Single image'}
+                        {slides.length > 0 ? `共 ${slides.length} 张幻灯片` : '单张图片'}
                       </div>
                     </button>
                   </div>
@@ -271,7 +275,7 @@ export function ExportSlideshowDialog({
 
               {/* Format Selection */}
               <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground/90">Format</label>
+                <label className="text-sm font-medium text-foreground/90">格式</label>
                 <div className="grid grid-cols-2 gap-2">
                   {FORMAT_OPTIONS.map((opt) => {
                     const isDisabled = opt.value === "mp4" && !mp4Supported;
@@ -292,7 +296,7 @@ export function ExportSlideshowDialog({
                         <div className="font-medium text-sm text-foreground/90">{opt.label}</div>
                         <div className="text-xs text-muted-foreground mt-0.5">{opt.description}</div>
                         {isDisabled && (
-                          <div className="text-xs text-amber-400 mt-1">Browser not supported</div>
+                          <div className="text-xs text-amber-400 mt-1">浏览器不受支持</div>
                         )}
                       </button>
                     );
@@ -302,7 +306,7 @@ export function ExportSlideshowDialog({
 
               {/* Quality Selection */}
               <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground/90">Quality</label>
+                <label className="text-sm font-medium text-foreground/90">质量</label>
                 <div className="flex gap-2">
                   {QUALITY_OPTIONS.map((opt) => (
                     <button
@@ -327,7 +331,8 @@ export function ExportSlideshowDialog({
               {exportMode === "slideshow" && (
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground/90">
-                    Slide Duration
+                    幻灯片时长
+                  
                   </label>
                   <div className="flex items-center gap-3">
                     <Input
@@ -341,7 +346,7 @@ export function ExportSlideshowDialog({
                       }
                       className="flex-1"
                     />
-                    <span className="text-sm text-muted-foreground">seconds per slide</span>
+                    <span className="text-sm text-muted-foreground">每张幻灯片秒数</span>
                   </div>
                 </div>
               )}
@@ -350,13 +355,15 @@ export function ExportSlideshowDialog({
               {exportMode === "animation" && (
                 <div className="p-3 rounded-lg bg-card border border-border">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-foreground/70">Animation Duration</span>
+                    <span className="text-sm text-foreground/70">动画时长</span>
                     <span className="text-sm font-medium text-foreground/90">
-                      {(timeline.duration / 1000).toFixed(1)} seconds
+                      {(timeline.duration / 1000).toFixed(1)} 秒
+                    
                     </span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">
-                    Adjust duration in the timeline controls
+                    在时间轴控件中调整时长
+                  
                   </p>
                 </div>
               )}
@@ -367,13 +374,14 @@ export function ExportSlideshowDialog({
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
                 size="lg"
               >
-                Export as {format.toUpperCase()}
+                导出为  {format.toUpperCase()}
               </Button>
 
               {/* Info */}
               {!mp4Supported && format === "webm" && (
                 <p className="text-xs text-muted-foreground text-center">
-                  MP4 export requires a browser with WebCodecs support (Chrome 94+, Edge 94+)
+                  MP4 导出需要支持 WebCodecs 的浏览器（Chrome 94+、Edge 94+）
+                
                 </p>
               )}
             </div>

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s0420",
+    "en": "Add captions, labels, and annotations with 25+ fonts. Layer stickers and arrows for tutorials.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0421",
+    "en": "Add depth with perspective transforms. Make flat screenshots look like real product shots.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0422",
+    "en": "Add Image to Canvas",
+    "count": 1,
+    "where": "components/editor/sections/ImageOverlaySection.tsx"
+  },
+  {
+    "id": "s0423",
+    "en": "Add its screen image on the canvas.",
+    "count": 1,
+    "where": "components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s0424",
+    "en": "Add keyframe animations with 20+ presets and export as MP4, WebM, or GIF. Bring static screenshots to life.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0425",
+    "en": "Add one or more screenshots to create a slideshow or animate a single image.",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0426",
+    "en": "Add polish without hiring a designer or learning complex 3D software.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0427",
+    "en": "Add realistic Safari and Chrome browser frames to screenshots. Light and dark modes with custom URL.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0428",
+    "en": "Add realistic Safari and Chrome browser frames to screenshots. Light and dark modes, custom URL. Free, no signup.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0429",
+    "en": "Add realistic Safari and Chrome browser frames to your screenshots. Light and dark modes, custom URL, adjustable header size.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0430",
+    "en": "Add realistic shadows with customizable blur, spread, and opacity for depth.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0431",
+    "en": "Add Slide",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s0432",
+    "en": "Add stickers, overlays & more",
+    "count": 1,
+    "where": "components/editor/sections/ImageOverlaySection.tsx"
+  },
+  {
+    "id": "s0433",
+    "en": "Add stunning 3D effects to screenshots. Perspective tilt, rotation, depth shadows, and realistic lighting. Transform flat images into eye-catching 3D mockups.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0434",
+    "en": "Add stunning 3D effects to screenshots. Perspective, rotation, and realistic shadows.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0435",
+    "en": "Add stunning 3D perspective, rotation, and depth to flat screenshots. Real-time preview.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0436",
+    "en": "Add to canvas",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0437",
+    "en": "Added",
+    "count": 1,
+    "where": "components/timeline/AnimationPresetGallery.tsx"
+  },
+  {
+    "id": "s0438",
+    "en": "Adding",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s0439",
+    "en": "adds gradient backgrounds, browser mockups, shadows, 3D perspective, and annotations. You can also browse",
+    "count": 1,
+    "where": "components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s0440",
+    "en": "Aditya Garimella",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0441",
+    "en": "Adjust",
+    "count": 1,
+    "where": "components/editor/unified-right-panel.tsx"
+  },
+  {
+    "id": "s0442",
+    "en": "Adjust 3D effects with simple sliders. See changes in real-time as you experiment with different perspectives.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0443",
+    "en": "Adjust corner radius and padding to match any style or platform requirements.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0444",
+    "en": "Adjust duration in the timeline controls",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0445",
+    "en": "Adjust the size of the image (10% - 200%)",
+    "count": 1,
+    "where": "components/editor/style-tabs.tsx"
+  },
+  {
+    "id": "s0446",
+    "en": "Adjustable browser header size slider (50%–200%) for fine-tuning toolbar proportions",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0447",
+    "en": "ads are served on this site. Google may set cookies and use them for ad delivery, measurement, and personalization under its own policies. You can control this at",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0448",
+    "en": "Advanced Layering",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0449",
+    "en": "All features",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0450",
+    "en": "All features are free. No signup required.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0451",
+    "en": "All features, zero cost. Start creating in seconds.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0452",
+    "en": "All Screenshot Studio features: screenshot beautifier, browser mockups, app and UI mockups, social media graphics, animations, and 3D effects. Free, no signup.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0453",
+    "en": "All tools and capabilities in one free editor. Beautify, animate, and transform screenshots.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s0454",
+    "en": "Allow upscaling",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0455",
+    "en": "Alpha",
+    "count": 1,
+    "where": "components/ui/color-picker.tsx"
+  },
+  {
+    "id": "s0456",
+    "en": "Already optimised, original kept (",
+    "count": 1,
+    "where": "components/tools/FileQueue.tsx"
+  },
+  {
+    "id": "s0457",
+    "en": "Amber",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0458",
+    "en": "An asymmetric layout with room for copy.",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0459",
+    "en": "An error occurred while loading the editor.",
+    "count": 1,
+    "where": "components/ErrorBoundary.tsx"
+  },
+  {
+    "id": "s0460",
+    "en": "An unexpected error occurred while rendering this page. Try again, or open the editor to keep creating.",
+    "count": 1,
+    "where": "app/error.tsx"
+  },
+  {
+    "id": "s0461",
+    "en": "Analytics tracking added to editor, timeline controls, CTA, and hero sections",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0462",
+    "en": "Analytics, Ads, and Third Parties",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0463",
+    "en": "Animate",
+    "count": 1,
+    "where": "components/editor/EditorLayout.tsx"
+  },
+  {
+    "id": "s0464",
+    "en": "Animated Content That Converts",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s0465",
+    "en": "Animation",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0466",
+    "en": "Animation Duration",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0467",
+    "en": "Animation Effects",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s0468",
+    "en": "Animation preset gallery with category browsing in the right panel",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0469",
+    "en": "Animation video export now captures exact frame values. Previously, a CSS transition on the 3D overlay caused exported frames to show smoothed/lagged intermediate values instead of the intended animation",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0470",
+    "en": "Annotate and beautify screenshots for help docs, blog posts, and step-by-step guides.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0471",
+    "en": "Annotate section moved to the top of the Edit panel for faster access",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0472",
+    "en": "annotation",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0473",
+    "en": "Annotation stroke width slider max increased from 8 to 24. Previously too thin on large canvases",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0474",
+    "en": "Annotation Tools, Text Overlay Revamp & UI Polish",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0475",
+    "en": "Annotation tools. Draw arrows, curved arrows, lines, rectangles, circles, and blur regions on canvas",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0476",
+    "en": "Annotations auto-select after drawing for immediate color and stroke editing from the sidebar",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0477",
+    "en": "Anonymous Pro",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s0478",
+    "en": "Any page on this site also serves Markdown to clients that send an",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0479",
+    "en": "Any Platform",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s0480",
+    "en": "API authentication and rate limits",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s0481",
+    "en": "API docs, OpenAPI spec, authentication, quickstart requests, and the open-source repository.",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0482",
+    "en": "API keys",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s0483",
+    "en": "App Preview",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0484",
+    "en": "App Store",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s0485",
+    "en": "App Store Listings",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0486",
+    "en": "App Store Screenshots",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s0487",
+    "en": "Apple Showcase",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s0488",
+    "en": "Apple Watch Gold with Milanese Loop",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0489",
+    "en": "Apple Watch Gold with Orange Leather Band",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0490",
+    "en": "Apple Watch Midnight with Pride Sport Loop",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0491",
+    "en": "Apple Watch Red with Braided Solo Loop",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0492",
+    "en": "Apple Watch Silver with Blue Sport Band",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0493",
+    "en": "Apple Watch Ultra with Ocean Band",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0494",
+    "en": "Apple Watch Ultra with Trail Loop",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s0495",
+    "en": "Apply pre-configured styles instantly",
+    "count": 1,
+    "where": "components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s0496",
+    "en": "arc",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s0497",
+    "en": "Arc",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s0498",
+    "en": "Arc Dark",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s0499",
+    "en": "Arc frame borders now use dynamic width and opacity instead of hardcoded values across all render paths",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0500",
+    "en": "Arc frame opacity and width changes now reflect immediately on the canvas",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0501",
+    "en": "Arc frame width slider (1–20px) and opacity slider (0–100%) in Frames section and Border Controls",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0502",
+    "en": "Arc framed",
+    "count": 1,
+    "where": "components/canvas/overlays/ArcFrameOverlay.tsx"
+  },
+  {
+    "id": "s0503",
+    "en": "Arc Light",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s0504",
+    "en": "Are my images uploaded to a server?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s0505",
+    "en": "Arinjay Wyawhare",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0506",
+    "en": "Arrow",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0507",
+    "en": "Arrow heads redesigned with sleek notched shape and line shortening to prevent overlap",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0508",
+    "en": "ArrowLeft",
+    "count": 1,
+    "where": "components/ui/segmented-control.tsx"
+  },
+  {
+    "id": "s0509",
+    "en": "Arrows, shapes, blur regions, and text overlays. Annotate and highlight what matters.",
+    "count": 1,
+    "where": "components/landing/ValueProposition.tsx"
+  },
+  {
+    "id": "s0510",
+    "en": "Aspect ratio",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s0511",
+    "en": "Aspect Ratio",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-dropdown.tsx"
+  },
+  {
+    "id": "s0512",
+    "en": "Aspect ratio presets for Instagram, YouTube, Twitter, LinkedIn, and Open Graph",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0513",
+    "en": "aspect ratio, export settings, custom presets, theme, and recent exports.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0514",
+    "en": "Atharva Mhaske",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0515",
+    "en": "Attempt to interfere with the Service&apos;s operation or security",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s0516",
+    "en": "Aurora",
+    "count": 1,
+    "where": "components/landing/EditorPreview.tsx"
+  },
+  {
+    "id": "s0517",
+    "en": "Authentic Chrome toolbar with tab bar, active tab, colored traffic lights, and omnibox address bar.",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0518",
+    "en": "Authorization",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s0519",
+    "en": "Auto-detect picks up most popular languages automatically, or you can choose from 20+ languages manually, including TypeScript, Python, Rust, Go, and SQL.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s0520",
+    "en": "Backed by",
+    "count": 1,
+    "where": "components/landing/Hero.tsx"
+  },
+  {
+    "id": "s0521",
+    "en": "Backed by the Vercel Open Source Program",
+    "count": 1,
+    "where": "components/landing/BackedBy.tsx"
+  },
+  {
+    "id": "s0522",
+    "en": "Background behind transparency",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0523",
+    "en": "Background colour",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0524",
+    "en": "Background colour hex value",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0525",
+    "en": "Background Effects",
+    "count": 1,
+    "where": "components/controls/BackgroundEffects.tsx"
+  },
+  {
+    "id": "s0526",
+    "en": "Background Styling",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s0527",
+    "en": "Background Type",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s0528",
+    "en": "Balanced",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s0529",
+    "en": "Banner",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s0530",
+    "en": "Base URL",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s0531",
+    "en": "Bash",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s0532",
+    "en": "Basic",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s0533",
+    "en": "Basic canvas editor",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s0534",
+    "en": "Beautiful app preview images that increase downloads and conversions.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0535",
+    "en": "Beautiful gradients and solid colors for any brand",
+    "count": 1,
+    "where": "app/[locale]/for/designers/page.tsx"
+  },
+  {
+    "id": "s0536",
+    "en": "Beautify any screenshot in 3 easy steps using Screenshot Studio's free online editor.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0537",
+    "en": "Beautify any screenshot in seconds. Add backgrounds, shadows, 3D effects, and animations, then export as image or video. No signup, no downloads.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0538",
+    "en": "Beautify code screenshots, terminal output, and app UIs with backgrounds, 3D effects, and animations. Free screenshot mockup tool for developers, no signup.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0539",
+    "en": "Beautify code screenshots, terminal output, and project UIs. Free browser-based tool for developers.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s0540",
+    "en": "Beautify screenshots instantly with 100+ backgrounds, 3D effects, and animations. Free, no signup required.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s0541",
+    "en": "Beautify Your Screenshot",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s0542",
+    "en": "Become a sponsor and support Screenshot Studio development",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s0543",
+    "en": "Before You Reach Out",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s0544",
+    "en": "behind",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0545",
+    "en": "Behind Image",
+    "count": 1,
+    "where": "components/editor/sections/DepthSection.tsx"
+  },
+  {
+    "id": "s0546",
+    "en": "Best compatibility, smaller file size",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s0547",
+    "en": "Best compression, small & sharp",
+    "count": 1,
+    "where": "components/export/FormatSelector.tsx"
+  },
+  {
+    "id": "s0548",
+    "en": "Bitmap",
+    "count": 1,
+    "where": "components/code-image/code-themes-data.ts"
+  },
+  {
+    "id": "s0549",
+    "en": "Block cookies or use an ad or tracker blocker. The editor works without analytics and without ads.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s0550",
+    "en": "Blog & Documentation",
+    "count": 1,
+    "where": "app/[locale]/features/browser-mockups/page.tsx"
+  },
+  {
+    "id": "s0551",
+    "en": "Blur Regions",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s0552",
+    "en": "Blur tool. Draw regions on canvas that apply backdrop blur, with per-region intensity control",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s0553",
+    "en": "blur(0px)",
+    "count": 1,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s0554",
+    "en": "blur(12px)",
+    "count": 1,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s0555",
+    "en": "Bold floating effect with hard shadow",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s0556",
+    "en": "Border Dark",
+    "count": 1,
+    "where": "components/editor/sections/StyleSection.tsx"
+  },
+  {
+    "id": "s0557",
+    "en": "Border Radius",
+    "count": 1,
+    "where": "components/editor/style-tabs.tsx"
+  },
+  {
+    "id": "s0558",
+    "en": "Bottom",
+    "count": 1,
+    "where": "components/editor/sections/ImagePositionSection.tsx"
+  },
+  {
+    "id": "s0559",
+    "en": "Bottom Center",
+    "count": 1,
+    "where": "components/editor/sections/PositionSection.tsx"
+  }
+]

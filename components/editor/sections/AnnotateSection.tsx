@@ -13,7 +13,7 @@ import { Slider } from '@/components/ui/slider';
 const TOOLS: { id: AnnotationToolType; label: string; svg: React.ReactNode }[] = [
   {
     id: 'arrow',
-    label: 'Arrow',
+    label: '箭头',
     svg: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M5 15L15 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -24,7 +24,7 @@ const TOOLS: { id: AnnotationToolType; label: string; svg: React.ReactNode }[] =
   },
   {
     id: 'curved-arrow',
-    label: 'Curve',
+    label: '曲线',
     svg: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M5 14C5 14 6 6 11 6C14 6 15 8 15 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
@@ -34,7 +34,7 @@ const TOOLS: { id: AnnotationToolType; label: string; svg: React.ReactNode }[] =
   },
   {
     id: 'line',
-    label: 'Line',
+    label: '直线',
     svg: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M5 15L15 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -43,7 +43,7 @@ const TOOLS: { id: AnnotationToolType; label: string; svg: React.ReactNode }[] =
   },
   {
     id: 'rectangle',
-    label: 'Rect',
+    label: '矩形',
     svg: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <rect x="3.5" y="5" width="13" height="10" rx="1.5" stroke="currentColor" strokeWidth="1.5" />
@@ -52,7 +52,7 @@ const TOOLS: { id: AnnotationToolType; label: string; svg: React.ReactNode }[] =
   },
   {
     id: 'circle',
-    label: 'Circle',
+    label: '圆形',
     svg: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <circle cx="10" cy="10" r="6.5" stroke="currentColor" strokeWidth="1.5" />
@@ -61,7 +61,7 @@ const TOOLS: { id: AnnotationToolType; label: string; svg: React.ReactNode }[] =
   },
   {
     id: 'blur',
-    label: 'Blur',
+    label: '模糊',
     svg: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <rect x="3.5" y="5" width="13" height="10" rx="2" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2.5 2" />
@@ -72,18 +72,18 @@ const TOOLS: { id: AnnotationToolType; label: string; svg: React.ReactNode }[] =
 ];
 
 const COLORS = [
-  { value: '#ef4444', name: 'Red' },
-  { value: '#f97316', name: 'Orange' },
-  { value: '#eab308', name: 'Yellow' },
-  { value: '#22c55e', name: 'Green' },
-  { value: '#06b6d4', name: 'Cyan' },
-  { value: '#3b82f6', name: 'Blue' },
-  { value: '#8b5cf6', name: 'Purple' },
-  { value: '#ec4899', name: 'Pink' },
-  { value: '#f43f5e', name: 'Rose' },
-  { value: '#171717', name: 'Black' },
-  { value: '#6b7280', name: 'Gray' },
-  { value: '#ffffff', name: 'White' },
+  { value: '#ef4444', name: '红色' },
+  { value: '#f97316', name: '橙色' },
+  { value: '#eab308', name: '黄色' },
+  { value: '#22c55e', name: '绿色' },
+  { value: '#06b6d4', name: '青色' },
+  { value: '#3b82f6', name: '蓝色' },
+  { value: '#8b5cf6', name: '紫色' },
+  { value: '#ec4899', name: '粉色' },
+  { value: '#f43f5e', name: '玫瑰' },
+  { value: '#171717', name: '黑色' },
+  { value: '#6b7280', name: '灰色' },
+  { value: '#ffffff', name: '白色' },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -134,7 +134,7 @@ export function AnnotateSection() {
   const totalItems = annotations.length + blurRegions.length;
 
   return (
-    <SectionWrapper title="Draw & Markup" defaultOpen={true}>
+    <SectionWrapper title="绘制与标注" defaultOpen={true}>
       <div className="space-y-3">
 
         <div className="grid grid-cols-3 gap-1.5 p-1">
@@ -166,7 +166,7 @@ export function AnnotateSection() {
             </span>
             <span className="text-xs text-muted-foreground">
               {activeAnnotationTool === 'blur'
-                ? 'Draw a region on the canvas to blur'
+                ? '在画布上绘制要模糊的区域'
                 : `Click and drag on canvas to draw ${activeAnnotationTool}`}
             </span>
           </div>
@@ -176,7 +176,8 @@ export function AnnotateSection() {
           <div className="flex items-center gap-2 px-3 py-2 rounded-md bg-foreground/[0.04] border border-foreground/10">
             <div className="w-2.5 h-2.5 rounded-full bg-foreground/50 shrink-0" />
             <span className="text-xs text-muted-foreground">
-              Editing <span className="font-medium capitalize text-foreground">{selectedAnnotation.type}</span>. Click canvas to deselect
+              编辑  <span className="font-medium capitalize text-foreground">{selectedAnnotation.type}</span>。点击画布以取消选择
+            
             </span>
           </div>
         )}
@@ -184,7 +185,7 @@ export function AnnotateSection() {
         {activeAnnotationTool !== 'blur' && (
           <div className="space-y-3">
             <div className="space-y-2">
-              <span className="text-xs font-medium text-muted-foreground">Color</span>
+              <span className="text-xs font-medium text-muted-foreground">颜色</span>
               <div className="flex items-center gap-1.5 flex-wrap">
                 {COLORS.map(({ value, name }) => (
                   <button
@@ -207,7 +208,7 @@ export function AnnotateSection() {
                 ))}
                 <div className="w-px h-5 bg-foreground/10 mx-0.5" />
                 <label
-                  title="Pick any color"
+                  title="选择任意颜色"
                   className={cn(
                     'relative flex h-7 w-7 shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-full',
                     'border border-foreground/20 bg-foreground/[0.04] text-muted-foreground',
@@ -218,7 +219,7 @@ export function AnnotateSection() {
                     type="color"
                     value={currentColor}
                     onChange={(e) => handleColorChange(e.target.value)}
-                    aria-label="Pick any color"
+                    aria-label="选择任意颜色"
                     className="absolute inset-0 z-20 cursor-pointer opacity-0"
                   />
                   <ColorPickerIcon
@@ -235,7 +236,7 @@ export function AnnotateSection() {
             </div>
 
             <div className="space-y-1.5">
-              <span className="text-xs font-medium text-muted-foreground">Stroke</span>
+              <span className="text-xs font-medium text-muted-foreground">描边</span>
               <Slider
                 value={[currentWidth]}
                 onValueChange={(v) => handleWidthChange(v[0])}
@@ -250,7 +251,7 @@ export function AnnotateSection() {
 
         {blurRegions.length > 0 && (
           <div className="space-y-1.5">
-            <span className="text-xs font-medium text-muted-foreground">Blur Regions</span>
+            <span className="text-xs font-medium text-muted-foreground">模糊区域</span>
             {blurRegions.map((region, index) => (
               <div
                 key={region.id}
@@ -270,7 +271,7 @@ export function AnnotateSection() {
                 <button
                   onClick={() => removeBlurRegion(region.id)}
                   className="p-1 text-muted-foreground hover:text-destructive transition-colors shrink-0 rounded hover:bg-destructive/10"
-                  title="Remove"
+                  title="移除"
                 >
                   <Delete02Icon size={12} />
                 </button>
@@ -290,7 +291,8 @@ export function AnnotateSection() {
               onClick={() => { clearAnnotations(); clearBlurRegions(); }}
               className="text-xs font-medium text-muted-foreground hover:text-destructive transition-colors px-2 py-1 rounded-md hover:bg-destructive/10"
             >
-              Clear all
+              全部清除
+            
             </button>
           </div>
         )}

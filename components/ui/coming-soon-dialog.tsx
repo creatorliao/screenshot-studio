@@ -32,7 +32,8 @@ export function ComingSoonDialog({
             <Clock01Icon className="h-8 w-8 text-primary" />
           </div>
           <DialogTitle className="text-xl">
-            {feature} Coming Soon
+            {feature} 即将推出
+          
           </DialogTitle>
           <DialogDescription className="text-center">
             {description || `We're working hard to bring you ${feature.toLowerCase()}. Stay tuned for updates!`}
@@ -43,7 +44,8 @@ export function ComingSoonDialog({
             onClick={() => onOpenChange(false)}
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
           >
-            Got it
+            知道了
+          
           </Button>
         </div>
       </DialogContent>

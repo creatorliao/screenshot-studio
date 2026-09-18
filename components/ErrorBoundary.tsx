@@ -32,9 +32,10 @@ export class ErrorBoundary extends React.Component<
         <div className="min-h-screen flex items-center justify-center p-4">
           <Card className="max-w-md w-full">
             <CardHeader>
-              <CardTitle>Something went wrong</CardTitle>
+              <CardTitle>出错了</CardTitle>
               <CardDescription>
-                An error occurred while loading the editor.
+                加载编辑器时发生错误。
+              
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -52,7 +53,8 @@ export class ErrorBoundary extends React.Component<
                 showArrow={false}
                 className="w-full"
               >
-                Reload Page
+                重新加载页面
+              
               </Button>
             </CardContent>
           </Card>

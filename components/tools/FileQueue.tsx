@@ -23,7 +23,8 @@ function StatusBadge({ item }: { item: QueueItem }) {
     return (
       <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
         <Loading03Icon size={14} className="animate-spin" aria-hidden="true" />
-        Processing
+        处理中
+      
       </span>
     );
   }
@@ -48,7 +49,7 @@ function StatusBadge({ item }: { item: QueueItem }) {
             className="text-emerald-600 dark:text-emerald-500"
             aria-hidden="true"
           />
-          Already optimised, original kept ({formatBytes(item.bytes)})
+          已优化，保留原图（{formatBytes(item.bytes)})
         </span>
       );
     }
@@ -71,7 +72,7 @@ function StatusBadge({ item }: { item: QueueItem }) {
               : "text-muted-foreground"
           )}
         >
-          {saved > 0 ? `-${saved}%` : saved < 0 ? `+${Math.abs(saved)}%` : "same size"}
+          {saved > 0 ? `-${saved}%` : saved < 0 ? `+${Math.abs(saved)}%` : "相同尺寸"}
         </span>
         <span className="text-muted-foreground">
           {item.result.width} × {item.result.height}
@@ -92,7 +93,7 @@ export function FileQueue({ items, onRemove, disabled = false }: FileQueueProps)
   if (items.length === 0) return null;
 
   return (
-    <ul className="flex flex-col gap-2" aria-label="Images to process">
+    <ul className="flex flex-col gap-2" aria-label="待处理图片">
       {items.map((item) => (
         <li
           key={item.id}

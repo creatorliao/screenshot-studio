@@ -116,7 +116,7 @@ const TopBar = React.memo(function TopBar({
       <div className="flex items-center gap-2">
         <Link
           href="/"
-          aria-label="Open Screenshot Studio editor"
+          aria-label="打开 Screenshot Studio 编辑器"
           className="shrink-0 transition-opacity hover:opacity-80"
         >
           <Image
@@ -128,9 +128,10 @@ const TopBar = React.memo(function TopBar({
             priority
           />
         </Link>
-        <span className="text-sm font-medium text-white/90">Code Images</span>
+        <span className="text-sm font-medium text-white/90">代码图片</span>
         <span className="hidden text-xs text-white/40 sm:inline">
-          by Screenshot Studio
+          由 Screenshot Studio 提供
+        
         </span>
       </div>
 
@@ -139,32 +140,33 @@ const TopBar = React.memo(function TopBar({
           <DialogTrigger asChild>
             <Button type="button" variant="ghost" size="sm" className="text-white/70 hover:bg-white/10 hover:text-white">
               <InformationCircleIcon size={16} />
-              About
+              关于
+            
             </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Code Images</DialogTitle>
+              <DialogTitle>代码图片</DialogTitle>
               <DialogDescription>
-                Turn a code snippet into a beautiful, shareable image. Pick a
-                theme, background, and window style, then export a crisp PNG.
+                把代码片段变成精美、可分享的图片。选择主题、背景和窗口样式，然后导出清晰的 PNG。
+              
               </DialogDescription>
             </DialogHeader>
             <div className="space-y-1.5 text-sm text-muted-foreground">
               <div className="flex items-center justify-between">
-                <span>Export image</span>
+                <span>导出图片</span>
                 <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 text-xs">Cmd/Ctrl+S</kbd>
               </div>
               <div className="flex items-center justify-between">
-                <span>Copy image</span>
+                <span>复制图片</span>
                 <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 text-xs">Cmd/Ctrl+Shift+C</kbd>
               </div>
               <div className="flex items-center justify-between">
-                <span>Indent / dedent line</span>
+                <span>增加 / 减少行缩进</span>
                 <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 text-xs">Tab / Shift+Tab</kbd>
               </div>
               <div className="flex items-center justify-between">
-                <span>Exit editing</span>
+                <span>退出编辑</span>
                 <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 text-xs">Esc</kbd>
               </div>
             </div>
@@ -184,14 +186,14 @@ const TopBar = React.memo(function TopBar({
             ) : (
               <Download04Icon size={16} />
             )}
-            {justExported ? 'Exported' : exporting ? 'Exporting…' : `Export Image`}
+            {justExported ? '已导出' : exporting ? '导出中…' : `Export Image`}
           </Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
                 type="button"
                 size="sm"
-                aria-label="More export options"
+                aria-label="更多导出选项"
                 className="rounded-l-none border-l border-l-black/15 px-2"
               >
                 <ArrowDown01Icon size={14} />
@@ -200,15 +202,17 @@ const TopBar = React.memo(function TopBar({
             <DropdownMenuContent align="end" className="w-48">
               <DropdownMenuItem onSelect={onExportPng}>
                 <Download04Icon size={15} />
-                Export PNG
+                导出 PNG
+              
               </DropdownMenuItem>
               <DropdownMenuItem onSelect={onCopyImage} disabled={copying}>
                 <Copy01Icon size={15} />
-                {copying ? 'Copying…' : 'Copy Image'}
+                {copying ? '正在复制…' : '复制图片'}
               </DropdownMenuItem>
               <DropdownMenuItem onSelect={onCopyUrl}>
                 <Link01Icon size={15} />
-                Copy URL
+                复制 URL
+              
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               {SCALE_OPTIONS.map((scale) => (
@@ -221,7 +225,7 @@ const TopBar = React.memo(function TopBar({
                       exportScale === scale ? 'font-medium text-foreground' : ''
                     }
                   >
-                    Export at {scale}x
+                    导出尺寸  {scale}x
                   </span>
                 </DropdownMenuItem>
               ))}
@@ -282,7 +286,7 @@ const BottomControls = React.memo(function BottomControls({
       }`}
     >
       <div className="scrollbar-none flex items-end gap-5 overflow-x-auto sm:overflow-visible px-4 py-3">
-        <ControlField label="Theme">
+        <ControlField label="主题">
           <Select value={theme} onValueChange={onThemeChange}>
             <SelectTrigger size="sm" className="w-[150px] border-white/10 bg-white/[0.04] text-white">
               <SelectValue />
@@ -300,9 +304,9 @@ const BottomControls = React.memo(function BottomControls({
 
         <Divider />
 
-        <ControlField label="Background">
+        <ControlField label="背景">
           <div className="flex items-center gap-2">
-            <Switch checked={showBackground} onCheckedChange={onShowBackgroundChange} aria-label="Background" />
+            <Switch checked={showBackground} onCheckedChange={onShowBackgroundChange} aria-label="背景" />
             <BackgroundPicker
               theme={activeTheme}
               dark={dark}
@@ -313,17 +317,17 @@ const BottomControls = React.memo(function BottomControls({
           </div>
         </ControlField>
 
-        <ControlField label="Dark mode">
-          <Switch checked={dark} onCheckedChange={onDarkChange} aria-label="Dark mode" />
+        <ControlField label="深色模式">
+          <Switch checked={dark} onCheckedChange={onDarkChange} aria-label="深色模式" />
         </ControlField>
 
-        <ControlField label="Line numbers">
-          <Switch checked={lineNumbers} onCheckedChange={onLineNumbersChange} aria-label="Line numbers" />
+        <ControlField label="行号">
+          <Switch checked={lineNumbers} onCheckedChange={onLineNumbersChange} aria-label="行号" />
         </ControlField>
 
         <Divider />
 
-        <ControlField label="Padding">
+        <ControlField label="内边距">
           <SegmentedControl
             size="sm"
             className="w-[168px] bg-white/[0.04]"
@@ -333,12 +337,12 @@ const BottomControls = React.memo(function BottomControls({
           />
         </ControlField>
 
-        <ControlField label="Window">
+        <ControlField label="窗口">
           <SegmentedControl
             size="sm"
             className="w-20 bg-white/[0.04]"
             options={[
-              { id: 'none', label: 'None' },
+              { id: 'none', label: '无' },
               { id: 'mac', label: 'Mac' },
             ]}
             value={windowStyle}
@@ -348,7 +352,7 @@ const BottomControls = React.memo(function BottomControls({
 
         <Divider />
 
-        <ControlField label="Language">
+        <ControlField label="语言">
           <Select value={lang} onValueChange={onLangChange}>
             <SelectTrigger size="sm" className="w-[150px] border-white/10 bg-white/[0.04] text-white">
               <SelectValue />
@@ -421,7 +425,8 @@ const MobileActionBar = React.memo(function MobileActionBar({
           className="text-white/70 hover:bg-white/10 hover:text-white"
         >
           <Settings02Icon size={18} />
-          Customize
+          自定义
+        
         </Button>
         <div className="flex-1" />
         <Button
@@ -432,7 +437,8 @@ const MobileActionBar = React.memo(function MobileActionBar({
           className="text-white/70 hover:bg-white/10 hover:text-white"
         >
           <Share01Icon size={18} />
-          Share
+          分享
+        
         </Button>
         <Button
           type="button"
@@ -441,7 +447,7 @@ const MobileActionBar = React.memo(function MobileActionBar({
           disabled={exporting}
         >
           {justExported ? <CheckmarkCircle02Icon size={16} /> : <Download04Icon size={16} />}
-          {justExported ? 'Exported' : exporting ? 'Exporting…' : 'Export'}
+          {justExported ? '已导出' : exporting ? '导出中…' : '导出'}
         </Button>
       </div>
     </div>
@@ -497,12 +503,12 @@ const MobileControlsDrawer = React.memo(function MobileControlsDrawer({
         <Drawer.Overlay className="fixed inset-0 z-40 bg-black/40" />
         <Drawer.Content className="fixed inset-x-0 bottom-0 z-50 max-h-[80dvh] rounded-t-2xl bg-[#1f1f1f] text-white outline-none">
           <div className="mx-auto mt-3 h-1.5 w-12 rounded-full bg-white/30" />
-          <Drawer.Title className="sr-only">Customize</Drawer.Title>
+          <Drawer.Title className="sr-only">自定义</Drawer.Title>
           <div
             className="space-y-1 overflow-y-auto px-5 pt-4"
             style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom, 0px))' }}
           >
-            <MobileControlRow label="Theme">
+            <MobileControlRow label="主题">
               <Select value={theme} onValueChange={onThemeChange}>
                 <SelectTrigger size="sm" className="w-[160px] border-white/10 bg-white/[0.04] text-white">
                   <SelectValue />
@@ -518,7 +524,7 @@ const MobileControlsDrawer = React.memo(function MobileControlsDrawer({
               </Select>
             </MobileControlRow>
 
-            <MobileControlRow label="Language">
+            <MobileControlRow label="语言">
               <Select value={lang} onValueChange={onLangChange}>
                 <SelectTrigger size="sm" className="w-[160px] border-white/10 bg-white/[0.04] text-white">
                   <SelectValue />
@@ -535,7 +541,7 @@ const MobileControlsDrawer = React.memo(function MobileControlsDrawer({
 
             <div className="h-px bg-white/10" />
 
-            <MobileControlRow label="Background">
+            <MobileControlRow label="背景">
               <div className="flex items-center gap-3">
                 <BackgroundPicker
                   theme={activeTheme}
@@ -548,17 +554,17 @@ const MobileControlsDrawer = React.memo(function MobileControlsDrawer({
               </div>
             </MobileControlRow>
 
-            <MobileControlRow label="Dark mode">
+            <MobileControlRow label="深色模式">
               <Switch checked={dark} onCheckedChange={onDarkChange} />
             </MobileControlRow>
 
-            <MobileControlRow label="Line numbers">
+            <MobileControlRow label="行号">
               <Switch checked={lineNumbers} onCheckedChange={onLineNumbersChange} />
             </MobileControlRow>
 
             <div className="h-px bg-white/10" />
 
-            <MobileControlRow label="Padding">
+            <MobileControlRow label="内边距">
               <SegmentedControl
                 size="sm"
                 className="w-[180px] bg-white/[0.04]"
@@ -568,12 +574,12 @@ const MobileControlsDrawer = React.memo(function MobileControlsDrawer({
               />
             </MobileControlRow>
 
-            <MobileControlRow label="Window">
+            <MobileControlRow label="窗口">
               <SegmentedControl
                 size="sm"
                 className="w-[110px] bg-white/[0.04]"
                 options={[
-                  { id: 'none', label: 'None' },
+                  { id: 'none', label: '无' },
                   { id: 'mac', label: 'Mac' },
                 ]}
                 value={windowStyle}
@@ -652,12 +658,12 @@ export function CodeImageEditor() {
       a.download = `${state.title || 'code-image'}.png`;
       a.click();
       URL.revokeObjectURL(url);
-      toast.success('Image exported');
+      toast.success('图片已导出');
       setJustExported(true);
       setTimeout(() => setJustExported(false), 1500);
     } catch (error) {
       console.error('Code image export failed', error);
-      toast.error('Could not export image');
+      toast.error('无法导出图片');
     } finally {
       setExporting(false);
     }
@@ -671,10 +677,10 @@ export function CodeImageEditor() {
       await navigator.clipboard.write([
         new ClipboardItem({ [blob.type]: blob }),
       ]);
-      toast.success('Image copied to clipboard');
+      toast.success('图片已复制到剪贴板');
     } catch (error) {
       console.error('Code image copy failed', error);
-      toast.error('Could not copy image');
+      toast.error('无法复制图片');
     } finally {
       setCopying(false);
     }
@@ -682,8 +688,8 @@ export function CodeImageEditor() {
 
   const handleCopyUrl = React.useCallback(() => {
     navigator.clipboard.writeText(window.location.href).then(
-      () => toast.success('URL copied'),
-      () => toast.error('Could not copy URL'),
+      () => toast.success('网址已复制'),
+      () => toast.error('无法复制网址'),
     );
   }, []);
 
@@ -702,11 +708,11 @@ export function CodeImageEditor() {
         return;
       }
       await navigator.clipboard.writeText(window.location.href);
-      toast.success('URL copied to clipboard');
+      toast.success('网址已复制到剪贴板');
     } catch (error) {
       if ((error as Error).name !== 'AbortError') {
         await navigator.clipboard.writeText(window.location.href).catch(() => {});
-        toast.success('URL copied to clipboard');
+        toast.success('网址已复制到剪贴板');
       }
     }
   }, [captureBlob, exportScale, state.title]);

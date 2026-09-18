@@ -8,15 +8,15 @@ import { cn } from '@/lib/utils';
 
 // Position preset definitions (3x3 grid)
 const positionPresets = [
-  { name: 'Top Left', translateX: -5, translateY: -5 },
-  { name: 'Top Center', translateX: 0, translateY: -5 },
-  { name: 'Top Right', translateX: 5, translateY: -5 },
-  { name: 'Middle Left', translateX: -5, translateY: 0 },
-  { name: 'Center', translateX: 0, translateY: 0 },
-  { name: 'Middle Right', translateX: 5, translateY: 0 },
-  { name: 'Bottom Left', translateX: -5, translateY: 5 },
-  { name: 'Bottom Center', translateX: 0, translateY: 5 },
-  { name: 'Bottom Right', translateX: 5, translateY: 5 },
+  { name: '左上', translateX: -5, translateY: -5 },
+  { name: '顶部居中', translateX: 0, translateY: -5 },
+  { name: '右上', translateX: 5, translateY: -5 },
+  { name: '中左', translateX: -5, translateY: 0 },
+  { name: '居中', translateX: 0, translateY: 0 },
+  { name: '中右', translateX: 5, translateY: 0 },
+  { name: '左下', translateX: -5, translateY: 5 },
+  { name: '底部居中', translateX: 0, translateY: 5 },
+  { name: '右下', translateX: 5, translateY: 5 },
 ];
 
 export function PositionSection() {
@@ -40,9 +40,9 @@ export function PositionSection() {
   const activePosition = getActivePosition();
 
   return (
-    <SectionWrapper title="Position" defaultOpen={false}>
+    <SectionWrapper title="位置" defaultOpen={false}>
       <div className="flex flex-col items-center">
-        <span className="text-xs text-muted-foreground mb-2">Quick Position</span>
+        <span className="text-xs text-muted-foreground mb-2">快速定位</span>
         <div className="grid grid-cols-3 gap-1.5 w-24">
           {positionPresets.map((preset, index) => (
             <button
@@ -74,7 +74,7 @@ export function PositionSection() {
           min={-10}
           max={10}
           step={0.5}
-          label="Horizontal"
+          label="水平"
           valueDisplay={`${perspective3D.translateX}%`}
         />
         <Slider
@@ -83,7 +83,7 @@ export function PositionSection() {
           min={-10}
           max={10}
           step={0.5}
-          label="Vertical"
+          label="垂直"
           valueDisplay={`${perspective3D.translateY}%`}
         />
         <Slider
@@ -92,7 +92,7 @@ export function PositionSection() {
           min={-45}
           max={45}
           step={1}
-          label="Rotation"
+          label="旋转"
           valueDisplay={`${perspective3D.rotateZ}°`}
         />
       </div>

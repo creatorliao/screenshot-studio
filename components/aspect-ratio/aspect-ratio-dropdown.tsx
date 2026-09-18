@@ -41,10 +41,10 @@ export const AspectRatioDropdown = () => {
               />
               <div className="flex-1 min-w-0 text-left">
                 <div className="text-sm font-medium text-foreground truncate">
-                  {current?.name || 'Aspect Ratio'}
+                  {current?.name || '宽高比'}
                 </div>
                 <div className="text-xs text-muted-foreground">
-                  {current ? `${current.width}:${current.height}` : 'Select ratio'}
+                  {current ? `${current.width}:${current.height}` : '选择宽高比'}
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export const AspectRatioDropdown = () => {
         </PopoverTrigger>
 
         <div className="flex items-center gap-1.5">
-          <span className="text-xs text-muted-foreground">Quick:</span>
+          <span className="text-xs text-muted-foreground">快速：</span>
           <div className="flex items-center gap-1.5 flex-1">
             {popularRatios.map((id) => {
               const ratio = aspectRatios.find((ar) => ar.id === id);

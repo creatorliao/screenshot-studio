@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils";
 import type { DeviceFamily } from "@/types/mockup";
 
 const categories: { id: DeviceFamily; label: string }[] = [
-  { id: "phone", label: "Phone" },
-  { id: "watch", label: "Watch" },
-  { id: "laptop", label: "Laptop" },
+  { id: "phone", label: "手机" },
+  { id: "watch", label: "手表" },
+  { id: "laptop", label: "笔记本电脑" },
 ];
 
 export function MockupGallery(): React.JSX.Element {
@@ -62,10 +62,10 @@ export function MockupGallery(): React.JSX.Element {
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
           <p className="text-xs font-medium text-foreground">
-            {isChangingSelected ? "Choose a new frame" : "Choose a frame"}
+            {isChangingSelected ? "选择新边框" : "选择边框"}
           </p>
           <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">
-            {uploadedImageUrl ? "Your image is added automatically." : "Add its screen image on the canvas."}
+            {uploadedImageUrl ? "你的图片会自动添加。" : "在画布上添加它的屏幕图像。"}
           </p>
         </div>
         {mockups.length > 0 ? (
@@ -74,14 +74,15 @@ export function MockupGallery(): React.JSX.Element {
             onClick={closeGallery}
             className="h-7 shrink-0 rounded-md px-2 text-xs text-muted-foreground max-[768px]:h-11 transition-colors hover:bg-foreground/[0.05] hover:text-foreground"
           >
-            Back
+            返回
+          
           </button>
         ) : null}
       </div>
 
       <SegmentedControl
         size="sm"
-        ariaLabel="Device family"
+        ariaLabel="设备系列"
         value={family}
         onChange={(value) => setFamily(value as DeviceFamily)}
         options={categories.map((category) => ({

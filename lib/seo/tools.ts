@@ -52,32 +52,32 @@ export interface ToolDefinition {
 
 /** FAQ answers every tool repeats, phrased once so the claims stay consistent. */
 const PRIVACY_FAQ: ToolFaq = {
-  question: "Are my images uploaded to a server?",
+  question: "我的图片会上传到服务器吗？",
   answer:
-    "No. Every tool on this page runs entirely in your browser using the Canvas and Web Worker APIs. Your files are read from disk, processed in the tab, and written straight back to your downloads folder. Nothing is uploaded, stored, or logged, which also means the tool keeps working if you go offline after the page loads.",
+    "不会。本页所有工具都完全在浏览器中使用 Canvas 和 Web Worker API 运行。文件从磁盘读取，在当前标签页中处理，然后直接写回下载文件夹。不会上传、存储或记录任何内容，这也意味着页面加载后即使断网，工具仍能继续使用。",
 };
 
 const FREE_FAQ: ToolFaq = {
-  question: "Is it free, and is there a watermark?",
+  question: "免费吗，会有水印吗？",
   answer:
-    "It is completely free with no signup, no account, no daily limit, and no watermark. Screenshot Studio is open source under the Apache 2.0 licence.",
+    "它完全免费，无需注册、无需账号、没有每日限制，也没有水印。Screenshot Studio 基于 Apache 2.0 许可证开源。",
 };
 
 const BATCH_FAQ: ToolFaq = {
-  question: "Can I process several images at once?",
+  question: "我可以一次处理多张图片吗？",
   answer:
-    "Yes. Drop in as many images as you like and they are processed one after another in the background. A single image downloads directly; multiple images are bundled into one zip file.",
+    "可以。随意拖入任意数量的图片，它们会在后台依次处理。单张图片直接下载；多张图片会打包成一个 zip 文件。",
 };
 
 export const TOOLS: ToolDefinition[] = [
   {
     slug: "/compress-image",
     engine: "compress",
-    name: "Compress Image",
-    h1: "Compress Image",
-    title: "Compress Image Online: Free, Private, No Upload",
+    name: "压缩图片",
+    h1: "压缩图片",
+    title: "在线压缩图片：免费、隐私安全、无需上传",
     description:
-      "Shrink JPG, PNG, and WebP files in your browser. Batch compression with a live size preview. Free, no signup, no watermark, no upload.",
+      "在浏览器中压缩 JPG、PNG 和 WebP 文件。支持批量压缩和实时体积预览。免费、无需注册、无水印、无需上传。",
     keywords: [
       "compress image",
       "compress image online",
@@ -93,24 +93,24 @@ export const TOOLS: ToolDefinition[] = [
       "iloveimg alternative",
     ],
     intro:
-      "Make image files smaller without sending them anywhere. Pick a compression level, see exactly how many kilobytes each file saves, and download the results one by one or as a zip.",
+      "无需上传即可缩小图片文件。选择压缩级别，看清每个文件具体节省多少 KB，然后逐个下载结果，或打包成 zip 下载。",
     features: [
-      "Four compression levels from light to extreme",
-      "Live before and after file size for every image",
-      "Batch compression with a single zip download",
-      "Optional format switch to WebP for the biggest savings",
-      "Runs fully in the browser, no upload",
+      "四档压缩，从轻度到极限",
+      "每张图实时显示压缩前后体积",
+      "批量压缩，一次打包下载 zip",
+      "可选切换到 WebP 格式，压缩收益最大",
+      "完全在浏览器中运行，无需上传",
     ],
     faqs: [
       {
-        question: "How much smaller will my images get?",
+        question: "我的图片能缩小多少？",
         answer:
-          "It depends on the source. A screenshot saved as PNG often drops 60-80% when compressed to WebP or JPG, while a photo that is already a JPG typically saves 30-60% at the medium level. Each file shows its exact saving after processing, so you can try a level and adjust.",
+          "这取决于源文件。以 PNG 保存的截图压缩为 WebP 或 JPG 时通常能减小 60-80%，而本身已是 JPG 的照片在中档通常能节省 30-60%。处理完成后每个文件都会显示实际节省的空间，因此你可以先试一个档位再调整。",
       },
       {
-        question: "Does compressing lose quality?",
+        question: "压缩会损失画质吗？",
         answer:
-          "JPG and WebP are lossy formats, so higher compression does discard detail. The Low level is visually lossless for most images and still saves meaningful space. PNG is lossless, so compressing to PNG only re-encodes the file; to make a PNG substantially smaller, convert it to WebP.",
+          "JPG 和 WebP 是有损格式，压缩率越高确实会丢弃更多细节。低档对大多数图片来说视觉上几乎无损，同时仍能明显减小体积。PNG 是无损格式，因此压缩为 PNG 只是重新编码文件；要让 PNG 明显变小，请将其转换为 WebP。",
       },
       BATCH_FAQ,
       PRIVACY_FAQ,
@@ -122,11 +122,11 @@ export const TOOLS: ToolDefinition[] = [
   {
     slug: "/convert-image",
     engine: "convert",
-    name: "Convert Image",
-    h1: "Convert Image Format",
-    title: "Convert Image Format Online: PNG, JPG, WebP",
+    name: "转换图片",
+    h1: "转换图片格式",
+    title: "在线转换图片格式：PNG、JPG、WebP",
     description:
-      "Convert between PNG, JPG, and WebP in your browser. Batch conversion, quality control, no upload. Free, no signup, no watermark.",
+      "在浏览器中在 PNG、JPG 和 WebP 之间转换。支持批量转换、质量控制、无需上传。免费、无需注册、无水印。",
     keywords: [
       "convert image",
       "image converter",
@@ -140,29 +140,29 @@ export const TOOLS: ToolDefinition[] = [
       "convert image without uploading",
     ],
     intro:
-      "Change an image's format without installing anything. Choose PNG, JPG, or WebP, set the quality, and convert a whole folder at once.",
+      "无需安装任何东西即可更改图片格式。选择 PNG、JPG 或 WebP，设置质量，一次转换整个文件夹。",
     features: [
-      "PNG, JPG, and WebP in every direction",
-      "Quality slider for the lossy formats",
-      "Choose the background colour behind transparency",
-      "Batch conversion with a single zip download",
-      "Runs fully in the browser, no upload",
+      "支持任意方向的 PNG、JPG 与 WebP",
+      "有损格式提供质量滑块",
+      "选择透明区域的底色",
+      "批量转换，一次打包下载 zip",
+      "完全在浏览器中运行，无需上传",
     ],
     faqs: [
       {
-        question: "Which formats are supported?",
+        question: "支持哪些格式？",
         answer:
-          "You can read PNG, JPG, WebP, GIF, BMP, and AVIF, and write PNG, JPG, and WebP. WebP writing depends on your browser and is hidden automatically if it is unavailable. AVIF output is not offered because no current browser can encode AVIF from a canvas.",
+          "你可以读取 PNG、JPG、WebP、GIF、BMP 和 AVIF，并写出 PNG、JPG 和 WebP。WebP 的写出取决于你的浏览器，不可用时会自动隐藏。我们不提供 AVIF 输出，因为目前没有浏览器能从 canvas 编码 AVIF。",
       },
       {
-        question: "What happens to transparency when I convert to JPG?",
+        question: "转换为 JPG 时透明度会怎样？",
         answer:
-          "JPG has no alpha channel, so transparent areas have to be filled with a solid colour. The tool paints white behind the image by default and lets you pick a different colour before converting.",
+          "JPG 没有 Alpha 通道，因此透明区域必须填充为纯色。该工具默认在图片后方填充白色，并允许你在转换前选择其他颜色。",
       },
       {
-        question: "Which format should I choose?",
+        question: "我该选哪种格式？",
         answer:
-          "WebP for the web, where it is typically 25-35% smaller than JPG at the same quality. JPG for maximum compatibility with older software. PNG when you need transparency or a pixel-exact lossless copy, such as a UI screenshot.",
+          "WebP 适合网页，在相同质量下通常比 JPG 小 25-35%。JPG 适合与较旧软件的兼容性最大化。需要透明度或像素级无损副本（例如 UI 截图）时使用 PNG。",
       },
       BATCH_FAQ,
       PRIVACY_FAQ,
@@ -173,11 +173,11 @@ export const TOOLS: ToolDefinition[] = [
   {
     slug: "/resize-image",
     engine: "resize",
-    name: "Resize Image",
-    h1: "Resize Image",
-    title: "Resize Image Online: Exact Pixels or Percentage",
+    name: "调整图片尺寸",
+    h1: "调整图片尺寸",
+    title: "在线调整图片尺寸：精确像素或百分比",
     description:
-      "Resize images by pixel size or percentage with the aspect ratio locked. Batch resize in your browser. Free, no signup, no upload.",
+      "按像素尺寸或百分比调整图片大小，锁定宽高比。在浏览器中批量调整。免费，无需注册，无需上传。",
     keywords: [
       "resize image",
       "resize image online",
@@ -191,29 +191,29 @@ export const TOOLS: ToolDefinition[] = [
       "free image resizer",
     ],
     intro:
-      "Set an exact width and height, or scale by a percentage, and resize one image or a hundred. The aspect ratio stays locked unless you unlock it, and images are downscaled in steps so text stays sharp.",
+      "设置精确的宽度和高度，或按百分比缩放，一张图或上百张都能处理。宽高比默认锁定，除非你手动解锁；图片分步缩小，文字保持清晰。",
     features: [
-      "Resize by exact pixels or by percentage",
-      "Aspect ratio lock with automatic second axis",
-      "Optional upscaling, off by default",
-      "Stepped downscaling that keeps screenshot text legible",
-      "Batch resize with a single zip download",
+      "按精确像素或百分比调整尺寸",
+      "宽高比锁定，自动推算另一轴",
+      "可选放大，默认关闭",
+      "分级降采样，保持截图文字清晰可读",
+      "批量调整尺寸，一次打包下载 zip",
     ],
     faqs: [
       {
-        question: "Will resizing make my image blurry?",
+        question: "调整尺寸会让图片变模糊吗？",
         answer:
-          "Downscaling is done in successive halving steps rather than one large jump, which preserves far more detail than a single resize. The difference is obvious on screenshots containing small text. Upscaling cannot invent detail, so it is switched off by default; enable it only when you need to hit a specific pixel size.",
+          "缩小采用逐级减半的方式，而非一次大幅跳变，因此比单次缩放保留的细节多得多。对于包含小字的截图，差别非常明显。放大无法凭空生成细节，所以默认关闭；仅当你需要达到特定像素尺寸时才启用。",
       },
       {
-        question: "How do I keep the aspect ratio?",
+        question: "如何保持宽高比？",
         answer:
-          "The lock is on by default: type one dimension and the other is calculated for you. Unlock it if you deliberately want to stretch an image to exact dimensions.",
+          "锁定默认开启：输入一个尺寸，另一个会自动计算。如果你确实想把图片拉伸到精确尺寸，可以解锁。",
       },
       {
-        question: "Can I resize images to the same size in bulk?",
+        question: "我可以批量把图片调整到相同尺寸吗？",
         answer:
-          "Yes. Drop in a batch, set one target width, and every image is resized to that width with its own height derived from its aspect ratio. Percentage mode scales each image relative to its own size instead.",
+          "支持。批量拖入图片，设置一个目标宽度，每张图都会缩放到该宽度，高度按其自身宽高比推算。百分比模式则按每张图自身尺寸的比例缩放。",
       },
       PRIVACY_FAQ,
       FREE_FAQ,
@@ -224,11 +224,11 @@ export const TOOLS: ToolDefinition[] = [
   {
     slug: "/crop-image",
     engine: "crop",
-    name: "Crop Image",
-    h1: "Crop Image",
-    title: "Crop Image Online: Free Cropper With Ratio Presets",
+    name: "裁剪图片",
+    h1: "裁剪图片",
+    title: "在线裁剪图片：带比例预设的免费裁剪工具",
     description:
-      "Crop an image by dragging a selection or typing exact pixels. Social media ratio presets included. Free, in your browser, no upload.",
+      "通过拖拽选区或输入精确像素来裁剪图片。内置社交媒体比例预设。免费，在浏览器中完成，无需上传。",
     keywords: [
       "crop image",
       "crop image online",
@@ -242,29 +242,29 @@ export const TOOLS: ToolDefinition[] = [
       "crop image without uploading",
     ],
     intro:
-      "Drag a selection over your image or type exact pixel values. Ratio presets cover square, 16:9, 4:3, and the common social sizes, and the crop is applied at full source resolution.",
+      "在图片上拖拽选区，或直接输入精确的像素值。比例预设涵盖正方形、16:9、4:3 以及常见的社交尺寸，裁剪按原始分辨率应用。",
     features: [
-      "Drag to select, or enter exact pixel coordinates",
-      "Ratio presets: free, square, 16:9, 4:3, 3:2, 9:16",
-      "Cropped at full source resolution, not preview resolution",
-      "Live output dimensions as you drag",
-      "Runs fully in the browser, no upload",
+      "拖拽选择，或输入精确像素坐标",
+      "比例预设：自由、正方形、16:9、4:3、3:2、9:16",
+      "按原始分辨率裁剪，而非预览分辨率",
+      "拖拽时实时显示输出尺寸",
+      "完全在浏览器中运行，无需上传",
     ],
     faqs: [
       {
-        question: "Does cropping reduce the resolution?",
+        question: "裁剪会降低分辨率吗？",
         answer:
-          "Only by the amount you crop away. The selection is mapped back onto the original pixels, so cropping the middle 50% of a 4000px-wide image gives you a 2000px-wide result at full quality, not a scaled-down preview.",
+          "只取决于你裁掉的部分。选区会映射回原始像素，因此从一张 4000px 宽的图片中裁掉中间 50%，得到的是全画质的 2000px 宽结果，而不是缩小后的预览。",
       },
       {
-        question: "Can I crop to a specific aspect ratio?",
+        question: "我可以按指定宽高比裁剪吗？",
         answer:
-          "Yes. Pick a ratio preset and the selection is constrained to it while you drag. Choose Free to crop to any shape.",
+          "可以。选择宽高比预设后，拖动时选区会被限制在该比例内。选择“自由”即可裁剪成任意形状。",
       },
       {
-        question: "Can I crop several images at once?",
+        question: "我可以一次裁剪多张图片吗？",
         answer:
-          "Cropping is per-image, because the right selection depends on what is in each picture. To apply identical dimensions across a batch, use the resize tool instead.",
+          "裁剪需逐张进行，因为合适的选区取决于每张图片的内容。若要对一批图片应用相同尺寸，请改用调整尺寸工具。",
       },
       PRIVACY_FAQ,
       FREE_FAQ,
@@ -275,11 +275,11 @@ export const TOOLS: ToolDefinition[] = [
   {
     slug: "/rotate-image",
     engine: "rotate",
-    name: "Rotate Image",
-    h1: "Rotate and Flip Image",
-    title: "Rotate Image Online: Turn and Flip, Free",
+    name: "旋转图片",
+    h1: "旋转与翻转图片",
+    title: "在线旋转图片：旋转与翻转，免费",
     description:
-      "Rotate images 90, 180, or 270 degrees and flip them horizontally or vertically. Batch rotate in your browser. Free, no upload.",
+      "将图片旋转 90、180 或 270 度，并水平或垂直翻转。在浏览器中批量旋转。免费，无需上传。",
     keywords: [
       "rotate image",
       "rotate image online",
@@ -293,24 +293,24 @@ export const TOOLS: ToolDefinition[] = [
       "turn image sideways",
     ],
     intro:
-      "Turn an image in quarter steps and mirror it on either axis. Rotation is lossless in shape: the pixels are re-drawn at full size, and a batch can be corrected in one pass.",
+      "以四分之一圈为单位旋转图片，并可沿任一轴镜像。旋转不损失形状：像素以完整尺寸重绘，一批图片也能一次矫正到位。",
     features: [
-      "Rotate 90, 180, or 270 degrees",
-      "Flip horizontally or vertically",
-      "Live preview before you commit",
-      "Batch rotate with a single zip download",
-      "Runs fully in the browser, no upload",
+      "旋转 90、180 或 270 度",
+      "水平或垂直翻转",
+      "确认前实时预览",
+      "批量旋转，一次打包下载 zip",
+      "完全在浏览器中运行，无需上传",
     ],
     faqs: [
       {
-        question: "Why is my photo sideways in the first place?",
+        question: "我的照片一开始为什么方向就不对？",
         answer:
-          "Phone cameras usually store the picture in one orientation and record the intended rotation in an EXIF tag. Software that ignores the tag shows it sideways. This tool reads the EXIF orientation on load, so what you see is already upright, and any rotation you add is baked into the output pixels.",
+          "手机相机通常以某一个方向存储照片，并在 EXIF 标签中记录实际的旋转方向。忽略该标签的软件会把照片显示成侧向。本工具在加载时读取 EXIF 方向，因此你看到的就是已经摆正的画面，你添加的旋转也会烘焙进输出的像素中。",
       },
       {
-        question: "What is the difference between rotating and flipping?",
+        question: "旋转和翻转有什么区别？",
         answer:
-          "Rotating turns the image around its centre. Flipping mirrors it, so text becomes reversed. Flips are applied first and the rotation second, matching what you see in the preview.",
+          "旋转会让图片绕中心转动。翻转会镜像图片，文字也会反向。先应用翻转，再应用旋转，与你在预览中看到的一致。",
       },
       BATCH_FAQ,
       PRIVACY_FAQ,
@@ -335,7 +335,7 @@ const CONVERSION_PAGES: {
     from: "PNG",
     to: "jpeg",
     toLabel: "JPG",
-    why: "JPG files are far smaller than PNG for photographs and are accepted everywhere, which makes the conversion useful for email attachments and upload forms with a size limit.",
+    why: "对于照片来说，JPG 文件比 PNG 小得多，而且到处都被接受，因此这种转换对邮件附件和有大小限制的上传表单很有用。",
     keywords: ["png to jpg", "png to jpeg", "convert png to jpg", "png to jpg converter"],
   },
   {
@@ -343,7 +343,7 @@ const CONVERSION_PAGES: {
     from: "JPG",
     to: "png",
     toLabel: "PNG",
-    why: "PNG is lossless, so converting to it stops further quality loss when you plan to edit and re-save an image repeatedly.",
+    why: "PNG 是无损格式，如果你打算反复编辑并保存同一张图片，转成 PNG 就能避免画质进一步下降。",
     keywords: ["jpg to png", "jpeg to png", "convert jpg to png", "jpg to png converter"],
   },
   {
@@ -351,7 +351,7 @@ const CONVERSION_PAGES: {
     from: "PNG",
     to: "webp",
     toLabel: "WebP",
-    why: "WebP keeps transparency like PNG but is dramatically smaller, which usually makes it the best format for images on a website.",
+    why: "WebP 和 PNG 一样保留透明度，但体积小得多，因此通常是网站图片的最佳格式。",
     keywords: ["png to webp", "convert png to webp", "png to webp converter"],
   },
   {
@@ -359,7 +359,7 @@ const CONVERSION_PAGES: {
     from: "WebP",
     to: "png",
     toLabel: "PNG",
-    why: "Some older software and design tools still cannot open WebP. Converting to PNG keeps transparency and works everywhere.",
+    why: "一些较旧的软件和设计工具仍无法打开 WebP。转成 PNG 可保留透明度，并且到处都能用。",
     keywords: ["webp to png", "convert webp to png", "webp to png converter"],
   },
   {
@@ -367,7 +367,7 @@ const CONVERSION_PAGES: {
     from: "JPG",
     to: "webp",
     toLabel: "WebP",
-    why: "WebP is typically 25-35% smaller than JPG at the same visual quality, which is the single easiest page-speed win for an image-heavy site.",
+    why: "在相同视觉质量下，WebP 通常比 JPG 小 25-35%，这是图片较多的网站最容易拿到的页面速度提升。",
     keywords: ["jpg to webp", "jpeg to webp", "convert jpg to webp"],
   },
   {
@@ -375,7 +375,7 @@ const CONVERSION_PAGES: {
     from: "WebP",
     to: "jpeg",
     toLabel: "JPG",
-    why: "JPG is the safest format to hand to software that predates WebP, including many print services and older photo editors.",
+    why: "对于早于 WebP 的软件，包括许多印刷服务和较旧的图片编辑器，JPG 是最安全的格式。",
     keywords: ["webp to jpg", "webp to jpeg", "convert webp to jpg"],
   },
 ];
@@ -387,10 +387,10 @@ for (const page of CONVERSION_PAGES) {
     slug,
     engine: "convert",
     preset: { targetFormat: to, sourceLabel: from },
-    name: `${from} to ${toLabel}`,
-    h1: `Convert ${from} to ${toLabel}`,
-    title: `${from} to ${toLabel} Converter: Free, No Upload`,
-    description: `Convert ${from} to ${toLabel} in your browser. Batch conversion with quality control, no signup, no watermark, and nothing uploaded.`,
+    name: `${from} 转 ${toLabel}`,
+    h1: `${from} 转 ${toLabel}`,
+    title: `${from} 转 ${toLabel} 转换器：免费、无需上传`,
+    description: `在浏览器中把 ${from} 转成 ${toLabel}。支持批量转换与质量控制，无需注册、无水印，也不上传任何文件。`,
     keywords: [
       ...keywords,
       `${from.toLowerCase()} to ${toLabel.toLowerCase()} online`,
@@ -398,32 +398,32 @@ for (const page of CONVERSION_PAGES) {
       `batch ${from.toLowerCase()} to ${toLabel.toLowerCase()}`,
       "convert image without uploading",
     ],
-    intro: `Turn ${from} files into ${toLabel} without uploading them anywhere. Drop in one image or a whole folder, adjust the quality, and download the results.`,
+    intro: `把 ${from} 文件转成 ${toLabel}，无需上传到任何地方。拖入一张图片或整个文件夹，调整质量，然后下载结果。`,
     features: [
-      `${from} to ${toLabel} at full resolution`,
-      "Batch conversion with a single zip download",
-      "Quality control for the output file size",
-      "Runs fully in the browser, no upload",
-      "Free, no signup, no watermark",
+      `${from} 转 ${toLabel}，保持原始分辨率`,
+      "批量转换，一次打包下载 zip",
+      "可控制输出文件体积",
+      "完全在浏览器中运行，无需上传",
+      "免费，无需注册、无水印",
     ],
     faqs: [
       {
-        question: `Why convert ${from} to ${toLabel}?`,
+        question: `为什么要转换 ${from} 到 ${toLabel}？`,
         answer: why,
       },
       ...(to === "jpeg"
         ? [
             {
-              question: "What happens to transparent areas?",
+              question: "透明区域会怎样？",
               answer:
-                "JPG cannot store transparency, so transparent pixels are filled with a solid colour. White is used by default and you can choose a different colour before converting.",
+                "JPG 无法保存透明度，因此透明像素会被填充为纯色。默认使用白色，你也可以在转换前选择其他颜色。",
             },
           ]
         : []),
       {
-        question: `Is there a limit on how many ${from} files I can convert?`,
+        question: `转换 ${from} 文件有数量限制吗？`,
         answer:
-          "No. Because the conversion happens on your own machine there is no server quota to hit. The practical limit is your device's memory, and files are processed one at a time to keep that manageable.",
+          "没有。因为转换在你自己的设备上完成，不存在会触顶的服务器配额。实际限制取决于设备内存，文件会逐个处理，以保证一切可控。",
       },
       PRIVACY_FAQ,
       FREE_FAQ,

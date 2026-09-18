@@ -1,0 +1,752 @@
+[
+  {
+    "id": "s1820",
+    "en": "Upload an image to use presets",
+    "count": 1,
+    "where": "components/presets/PresetSelector.tsx"
+  },
+  {
+    "id": "s1821",
+    "en": "Upload Background Image",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s1822",
+    "en": "Upload image to device screen",
+    "count": 1,
+    "where": "components/mockups/DeviceShell.tsx"
+  },
+  {
+    "id": "s1823",
+    "en": "Upload Your Screenshots",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1824",
+    "en": "Use custom backgrounds and colors to match your brand identity across all posts.",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1825",
+    "en": "Use the same backgrounds, shadows, and styling across all your marketing materials. Build recognition with visual consistency.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1826",
+    "en": "Use the Service in any way that violates applicable laws or regulations",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1827",
+    "en": "Use the Service to create or distribute harmful content",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1828",
+    "en": "Use the timeline at the bottom to resize and reorder clips.",
+    "count": 1,
+    "where": "components/timeline/AnimationPresetGallery.tsx"
+  },
+  {
+    "id": "s1829",
+    "en": "V Offset",
+    "count": 1,
+    "where": "components/controls/ShadowControls.tsx"
+  },
+  {
+    "id": "s1830",
+    "en": "Vary: Accept, Accept-Encoding",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1831",
+    "en": "Vedant Lamba",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s1832",
+    "en": "Vercel logo",
+    "count": 1,
+    "where": "components/landing/BackedBy.tsx"
+  },
+  {
+    "id": "s1833",
+    "en": "Vercel OSS Program",
+    "count": 1,
+    "where": "components/landing/Hero.tsx"
+  },
+  {
+    "id": "s1834",
+    "en": "Vertical",
+    "count": 1,
+    "where": "components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s1835",
+    "en": "Vertical panning for long screenshots and pages",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1836",
+    "en": "Vertical video format for reels",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1837",
+    "en": "Vibrant glow for creative content",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1838",
+    "en": "Vibrant purple gradient",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s1839",
+    "en": "Video",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1840",
+    "en": "Video export in MP4, WebM, and GIF formats with quality presets (High/Medium/Low)",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1841",
+    "en": "View on GitHub",
+    "count": 1,
+    "where": "components/landing/FinalCTA.tsx"
+  },
+  {
+    "id": "s1842",
+    "en": "visible",
+    "count": 1,
+    "where": "components/code-image/CodeFrame.tsx"
+  },
+  {
+    "id": "s1843",
+    "en": "Visually lossless, modest saving",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1844",
+    "en": "vs",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s1845",
+    "en": "Wallpapers",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s1846",
+    "en": "Warm orange gradient",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s1847",
+    "en": "Warm tones for lifestyle content",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1848",
+    "en": "Watch",
+    "count": 1,
+    "where": "components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s1849",
+    "en": "Watermarks",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s1850",
+    "en": "We do not run cross-site advertising pixels of our own, and we do not sell or share your data with data brokers.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1851",
+    "en": "We may update this policy from time to time. Changes will be reflected on this page with an updated date.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1852",
+    "en": "We reserve the right to modify these terms at any time. Changes will be posted on this page with an updated date. Continued use of the Service after changes constitutes acceptance of the new terms.",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1853",
+    "en": "We set one cookie ourselves,",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1854",
+    "en": "webm",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s1855",
+    "en": "WebM (VP8)",
+    "count": 1,
+    "where": "lib/export-slideshow-dialog.tsx"
+  },
+  {
+    "id": "s1856",
+    "en": "WebP for the web, where it is typically 25-35% smaller than JPG at the same quality. JPG for maximum compatibility with older software. PNG when you need transparency or a pixel-exact lossless copy, such as a UI screenshot.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1857",
+    "en": "Website Screenshot",
+    "count": 1,
+    "where": "components/controls/UploadDropzone.tsx"
+  },
+  {
+    "id": "s1858",
+    "en": "Website screenshot capture via Screen-Shot.xyz (desktop and mobile viewports)",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1859",
+    "en": "Website URL",
+    "count": 1,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s1860",
+    "en": "What Can You Create?",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1861",
+    "en": "What export formats are supported?",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1862",
+    "en": "What export formats does Screenshot Studio support?",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1863",
+    "en": "What frames and styles are available?",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1864",
+    "en": "What happens to transparency when I convert to JPG?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1865",
+    "en": "What happens to transparent areas?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1866",
+    "en": "What is Screenshot Studio?",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1867",
+    "en": "What is the difference between rotating and flipping?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1868",
+    "en": "What kind of backgrounds can I use?",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1869",
+    "en": "What Leaves Your Device",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1870",
+    "en": "What makes Screenshot Studio different from other screenshot editors?",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1871",
+    "en": "What Stays On Your Device",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1872",
+    "en": "What this tool does",
+    "count": 1,
+    "where": "components/tools/ToolPage.tsx"
+  },
+  {
+    "id": "s1873",
+    "en": "What We Offer",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s1874",
+    "en": "What you can do here",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s1875",
+    "en": "When reporting a bug, include your browser and operating system, the steps you took, and a screenshot or exported file if you can. GitHub issues are usually answered within a few days; email may take a little longer.",
+    "count": 1,
+    "where": "app/[locale]/contact/page.tsx"
+  },
+  {
+    "id": "s1876",
+    "en": "When the limit is exceeded the response carries",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1877",
+    "en": "when you export, the rendered image is sent to our",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1878",
+    "en": "Whether you are a developer, marketer, designer, or content creator, Screenshot Studio has you covered.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1879",
+    "en": "Whether you&apos;re a developer, marketer, or content creator, our screenshot beautifier helps you create stunning visuals.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1880",
+    "en": "Which format should I choose?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1881",
+    "en": "Which formats are supported?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1882",
+    "en": "Which languages are supported?",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1883",
+    "en": "white",
+    "count": 1,
+    "where": "components/editor/editor-right-panel.tsx"
+  },
+  {
+    "id": "s1884",
+    "en": "Who it is for",
+    "count": 1,
+    "where": "components/seo/AgentSummary.tsx"
+  },
+  {
+    "id": "s1885",
+    "en": "Why Add 3D Effects?",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1886",
+    "en": "Why Creators Choose Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1887",
+    "en": "Why Developers Choose Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1888",
+    "en": "Why is my photo sideways in the first place?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1889",
+    "en": "Why Marketing Teams Choose Screenshot Studio",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1890",
+    "en": "Why We Built This",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s1891",
+    "en": "Widescreen landscape format",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1892",
+    "en": "Width",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s1893",
+    "en": "Width (px)",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1894",
+    "en": "Will resizing make my image blurry?",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1895",
+    "en": "win",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s1896",
+    "en": "Window title",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s1897",
+    "en": "Windows",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s1898",
+    "en": "Windows Dark",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s1899",
+    "en": "Windows Light",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s1900",
+    "en": "with a Markdown body listing where to look next.",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1901",
+    "en": "Wrap screenshots in macOS, Windows, Arc, or Polaroid frames. Perfect for product marketing.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1902",
+    "en": "Write something...",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s1903",
+    "en": "X offset",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s1904",
+    "en": "X Offset",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s1905",
+    "en": "X Position",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s1906",
+    "en": "X-RateLimit-Limit",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1907",
+    "en": "X-RateLimit-Remaining",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1908",
+    "en": "X-RateLimit-Reset",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1909",
+    "en": "x.com/",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s1910",
+    "en": "Y offset",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s1911",
+    "en": "Y Offset",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s1912",
+    "en": "Y Position",
+    "count": 1,
+    "where": "components/overlays/overlay-controls.tsx"
+  },
+  {
+    "id": "s1913",
+    "en": "Yellow",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s1914",
+    "en": "Yes, Screenshot Studio is 100% free with no hidden costs or premium tiers. You get unlimited exports, full feature access, and no watermarks on your images.",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1915",
+    "en": "Yes, Screenshot Studio is a completely free screenshot editor online. It runs entirely in your browser — no downloads, no installation, no signup. Just open the editor and start beautifying your screenshots with backgrounds, shadows, 3D effects, and more.",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1916",
+    "en": "Yes. Drop in as many images as you like and they are processed one after another in the background. A single image downloads directly; multiple images are bundled into one zip file.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1917",
+    "en": "Yes. Every theme, background, and export option is free, with no signup and no watermark.",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1918",
+    "en": "Yes. It is completely free, with no signup, no watermark, and no paid tier.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1919",
+    "en": "Yes. Paste any tweet URL to capture it as a high-resolution screenshot with light or dark theme support. The code snippet generator supports 20+ syntax themes, 20 programming languages, and 10 monospace fonts — ideal for sharing beautiful code on social media.",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1920",
+    "en": "Yes. Pick a ratio preset and the selection is constrained to it while you drag. Choose Free to crop to any shape.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1921",
+    "en": "Yes. Screenshot Studio includes a timeline editor with 20+ animation presets including zoom, pan, rotate, and 3D perspective effects. You can add keyframes, preview in real-time, and export as MP4, WebM, or GIF.",
+    "count": 1,
+    "where": "components/landing/StructuredData.tsx"
+  },
+  {
+    "id": "s1922",
+    "en": "Yes. Screenshot Studio is 100% free with no hidden costs. Unlimited exports, all features, no watermarks. No signup required.",
+    "count": 1,
+    "where": "components/landing/FAQ.tsx"
+  },
+  {
+    "id": "s1923",
+    "en": "Yes. Set the background to \"Transparent\" before exporting and the PNG will have no backdrop.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1924",
+    "en": "Yes. Turn the Background switch off before exporting and the PNG keeps a transparent backdrop.",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1925",
+    "en": "You agree to use the Service only for lawful purposes. You may not:",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1926",
+    "en": "You can now paste it anywhere",
+    "count": 1,
+    "where": "hooks/useExport.ts"
+  },
+  {
+    "id": "s1927",
+    "en": "You can read PNG, JPG, WebP, GIF, BMP, and AVIF, and write PNG, JPG, and WebP. WebP writing depends on your browser and is hidden automatically if it is unavailable. AVIF output is not offered because no current browser can encode AVIF from a canvas.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1928",
+    "en": "You will review the screenshot before it reaches the canvas.",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s1929",
+    "en": "Your browser blocked the download. Try again.",
+    "count": 1,
+    "where": "components/tools/useToolQueue.ts"
+  },
+  {
+    "id": "s1930",
+    "en": "Your Choices",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1931",
+    "en": "Your image is added automatically.",
+    "count": 1,
+    "where": "components/mockups/MockupGallery.tsx"
+  },
+  {
+    "id": "s1932",
+    "en": "your in-progress canvas is autosaved to IndexedDB and deleted automatically after 7 days.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1933",
+    "en": "yourapp.com",
+    "count": 1,
+    "where": "components/editor/sections/BrowserMockupSection.tsx"
+  },
+  {
+    "id": "s1934",
+    "en": "YouTube",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1935",
+    "en": "YouTube embeds on landing page no longer blocked by Cross-Origin-Embedder-Policy headers",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1936",
+    "en": "YouTube Thumbnail",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1937",
+    "en": "YouTube video thumbnail size",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1938",
+    "en": "Zero Cost",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1939",
+    "en": "Zoom Bottom",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1940",
+    "en": "Zoom Center",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1941",
+    "en": "Zoom Left",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1942",
+    "en": "Zoom Right",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1943",
+    "en": "Zoom Soft",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s1944",
+    "en": "Zoom Top",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  }
+]

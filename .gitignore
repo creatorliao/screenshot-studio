@@ -41,7 +41,20 @@ yarn-error.log*
 next-env.d.ts
 
 public/backgrounds
-/scripts
+
+# 一次性运维脚本不入库；但汉化 codemod 工具链要入库
+# （它是"带闸门"的可复用工具，不是一次性脚本 —— 见
+#  docs/01-Projects/R20260914-01-简体中文界面/05-执行记录_汉化落地.md §4）
+/scripts/*
+!/scripts/i18n-*.ts
+!/scripts/lib/
+!/scripts/lib/i18n-detect.ts
+
+# 汉化工作目录：字典、清单、对照快照要入库；备份树不入库
+# （backup/ 与 backup-original-en/ 是 156 个源文件的整树副本，
+#  与 git 历史重复，回退请用 git checkout）
+/i18n-work/backup/
+/i18n-work/backup-original-en/
 
 prisma/migrations
 /lib/generated/prisma

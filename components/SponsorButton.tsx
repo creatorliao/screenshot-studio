@@ -38,7 +38,7 @@ export function SponsorButton({ className, variant = 'bar' }: SponsorButtonProps
           <PopoverTrigger asChild>
             <Button
               className="h-14 w-14 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all"
-              aria-label="Sponsor"
+              aria-label="赞助"
             >
               <FavouriteIcon className="h-6 w-6" />
             </Button>
@@ -68,7 +68,7 @@ export function SponsorButton({ className, variant = 'bar' }: SponsorButtonProps
           className="gap-2 bg-background hover:bg-accent text-foreground border border-border"
         >
           <FavouriteIcon className="h-6 w-6 text-red-400" />
-          <span>Sponsor</span>
+          <span>赞助</span>
         </MovingBorderButton>
       </PopoverTrigger>
       <PopoverContent 
@@ -105,7 +105,8 @@ function SponsorContent({
           <Coffee02Icon className="h-5 w-5 text-white" />
         </div>
         <span className="text-sm font-medium text-foreground group-hover:text-foreground">
-          Buy Me Coffee
+          请我喝咖啡
+        
         </span>
       </a>
 
@@ -132,14 +133,15 @@ function SponsorContent({
           </div>
           <div className="flex-1">
             <span className="text-sm font-medium text-foreground block">
-              UPI Payment
+              UPI 支付
+            
             </span>
             <div className="flex items-center gap-2 mt-1">
-              <span className="text-xs text-muted-foreground">Scan QR or copy UPI ID</span>
+              <span className="text-xs text-muted-foreground">扫描二维码或复制 UPI ID</span>
               <button
                 onClick={onCopy}
                 className="p-1 hover:bg-accent rounded transition-colors"
-                aria-label="Copy UPI ID"
+                aria-label="复制 UPI ID"
               >
                 {copied ? (
                   <Tick02Icon className="h-3 w-3 text-green-500" />
@@ -156,15 +158,15 @@ function SponsorContent({
           <div className="w-48 h-48 border-2 border-border rounded-lg flex items-center justify-center bg-background relative overflow-hidden">
             <img 
               src="/qr.jpeg" 
-              alt="UPI QR Code" 
+              alt="UPI 二维码" 
               className="w-full h-full object-contain rounded-lg"
             />
           </div>
         </div>
         
         <div className="text-center">
-          <p className="text-xs font-medium text-foreground mb-1">UPI ID: {upiId}</p>
-          <p className="text-xs text-muted-foreground">Scan to pay with any UPI app</p>
+          <p className="text-xs font-medium text-foreground mb-1">UPI ID：  {upiId}</p>
+          <p className="text-xs text-muted-foreground">扫描即可用任意 UPI 应用付款</p>
         </div>
       </div>
     </div>

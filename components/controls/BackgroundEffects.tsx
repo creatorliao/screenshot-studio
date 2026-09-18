@@ -14,7 +14,7 @@ export function BackgroundEffects() {
 
   return (
     <div className="space-y-3">
-      <h4 className="text-xs font-semibold text-foreground uppercase tracking-wide">Background Effects</h4>
+      <h4 className="text-xs font-semibold text-foreground uppercase tracking-wide">背景效果</h4>
       <div className="space-y-2">
         <Slider
           value={[backgroundBlur]}
@@ -22,7 +22,7 @@ export function BackgroundEffects() {
           min={0}
           max={50}
           step={1}
-          label="Blur"
+          label="模糊"
           valueDisplay={`${backgroundBlur}px`}
         />
         <Slider
@@ -31,7 +31,7 @@ export function BackgroundEffects() {
           min={0}
           max={100}
           step={1}
-          label="Noise"
+          label="噪点"
           valueDisplay={`${backgroundNoise}%`}
         />
       </div>

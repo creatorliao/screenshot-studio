@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import { LandingPage } from "@/components/landing/LandingPage";
 
 export const metadata: Metadata = {
-  title: "Screenshot Mockup Maker",
+  title: "截图模型生成器",
   description:
-    "Make screenshot mockups in seconds. Browser frames, device mockups, 100+ gradient backgrounds, 3D effects, animations, and video export. Free, no signup.",
+    "几秒内制作截图模型。浏览器边框、设备模型、100+ 渐变背景、3D 效果、动画和视频导出。免费，无需注册。",
   keywords: [
     "screenshot beautifier",
     "screenshot mockup maker",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     "code snippet to image",
   ],
   openGraph: {
-    title: "Screenshot Studio - Screenshot Mockup Maker",
+    title: "Screenshot Studio - 截图模型生成器",
     description:
-      "Transform screenshots into professional graphics. 100+ backgrounds, browser mockups, 3D effects, animations, and video export. No signup required.",
+      "把截图变成专业图形。100+ 背景、浏览器模型、3D 效果、动画和视频导出。无需注册。",
     url: "/landing",
   },
   alternates: {
@@ -35,18 +35,18 @@ export const metadata: Metadata = {
 const howItWorks = [
   {
     step: 1,
-    title: "Drop Your Image",
-    description: "Drag any screenshot or photo into the editor to get started.",
+    title: "拖入你的图片",
+    description: "把任意截图或照片拖进编辑器即可开始。",
   },
   {
     step: 2,
-    title: "Style It",
-    description: "Add backgrounds, shadows, frames, and text in a few clicks.",
+    title: "美化",
+    description: "几次点击即可添加背景、阴影、边框和文字。",
   },
   {
     step: 3,
-    title: "Export",
-    description: "Download a polished image ready to share in seconds.",
+    title: "导出",
+    description: "几秒钟下载一张可直接分享的精美图片。",
   },
 ];
 
@@ -66,14 +66,14 @@ const videoTestimonials = [
 export default function LandingPageRoute() {
   return (
     <LandingPage
-      heroTitle="Beautiful images. Zero effort."
-      heroSubtitle="Screenshots, ready to ship."
-      heroDescription="The free browser editor that makes your screenshots, tweets, and code look professional. Browser mockups, 3D effects, and more."
-      ctaLabel="Open Editor"
+      heroTitle="漂亮的图片。毫不费力。"
+      heroSubtitle="截图，随时可发布。"
+      heroDescription="免费的浏览器编辑器，让你的截图、推文和代码看起来更专业。浏览器模型、3D 效果等。"
+      ctaLabel="打开编辑器"
       ctaHref="/"
       howItWorks={howItWorks}
       videoTestimonials={videoTestimonials}
-      videoTestimonialsTitle="Creators Love Screenshot Studio"
+      videoTestimonialsTitle="创作者喜爱 Screenshot Studio"
       brandName="Screenshot Studio"
     />
   );

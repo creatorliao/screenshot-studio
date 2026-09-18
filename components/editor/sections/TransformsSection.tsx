@@ -20,11 +20,11 @@ interface TransformPreset {
 
 // Perspective in px (150em ≈ 2400px at 16px base)
 const PRESETS: TransformPreset[] = [
-  { name: 'Default', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 0, scale: 1 } },
-  { name: 'Tilted', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: -8, translateX: 0, translateY: 0, scale: 0.95 } },
-  { name: 'Dramatic Left', values: { perspective: 2400, rotateX: 10, rotateY: -20, rotateZ: 8, translateX: -4, translateY: -2, scale: 0.95 } },
-  { name: 'Dramatic Right', values: { perspective: 2400, rotateX: 10, rotateY: 20, rotateZ: -8, translateX: 4, translateY: -2, scale: 0.95 } },
-  { name: 'Top Down', values: { perspective: 2400, rotateX: 40, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -5, scale: 0.95 } },
+  { name: '默认', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: 0, translateX: 0, translateY: 0, scale: 1 } },
+  { name: '倾斜', values: { perspective: 2400, rotateX: 0, rotateY: 0, rotateZ: -8, translateX: 0, translateY: 0, scale: 0.95 } },
+  { name: '左侧强透视', values: { perspective: 2400, rotateX: 10, rotateY: -20, rotateZ: 8, translateX: -4, translateY: -2, scale: 0.95 } },
+  { name: '右侧强透视', values: { perspective: 2400, rotateX: 10, rotateY: 20, rotateZ: -8, translateX: 4, translateY: -2, scale: 0.95 } },
+  { name: '俯视', values: { perspective: 2400, rotateX: 40, rotateY: 0, rotateZ: 0, translateX: 0, translateY: -5, scale: 0.95 } },
 ];
 
 export function TransformsSection() {
@@ -56,7 +56,7 @@ export function TransformsSection() {
   };
 
   return (
-    <SectionWrapper title="Transforms" defaultOpen={true}>
+    <SectionWrapper title="变换" defaultOpen={true}>
       <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
         {PRESETS.map((preset, index) => {
           const isSelected = selectedIndex === index;

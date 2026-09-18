@@ -11,9 +11,9 @@ import { Navigation } from "@/components/landing/Navigation";
 import { Footer } from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
-  title: "3D Screenshot Effects & Mockups",
+  title: "3D 截图效果与模型",
   description:
-    "Add stunning 3D effects to screenshots. Perspective tilt, rotation, depth shadows, and realistic lighting. Transform flat images into eye-catching 3D mockups.",
+    "为截图添加惊艳的 3D 效果。透视倾斜、旋转、深度阴影和逼真光照。把扁平图片变成吸睛的 3D 模型。",
   keywords: [
     "free online 3d mockup generator",
     "3d mockup generator",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     "landing page screenshot 3d",
   ],
   openGraph: {
-    title: "Free 3D Screenshot Effects - Add Perspective & Depth",
+    title: "免费 3D 截图效果 - 添加透视与纵深感",
     description:
-      "Add stunning 3D effects to screenshots. Perspective, rotation, and realistic shadows.",
+      "为截图添加惊艳的 3D 效果。透视、旋转和逼真阴影。",
     url: "/features/3d-effects",
   },
   alternates: {
@@ -59,75 +59,75 @@ const chipLinkClassName =
 const effects = [
   {
     icon: CubeIcon,
-    title: "3D Perspective",
+    title: "3D 透视",
     description:
-      "Add depth with perspective transforms. Make flat screenshots look like real product shots.",
+      "用透视变换增加层次感。让扁平的截图看起来像真实的产品图。",
   },
   {
     icon: RotateClockwiseIcon,
-    title: "Rotation & Tilt",
+    title: "旋转与倾斜",
     description:
-      "Rotate on X, Y, and Z axes. Create dramatic angles that grab attention.",
+      "沿 X、Y、Z 轴旋转。打造引人注目的夸张角度。",
   },
   {
     icon: Layers01Icon,
-    title: "Depth Shadows",
+    title: "深度阴影",
     description:
-      "Realistic shadows that follow your 3D transforms. Adjustable blur and distance.",
+      "跟随 3D 变换的逼真阴影。模糊和距离可调。",
   },
   {
     icon: IdeaIcon,
-    title: "Lighting Effects",
+    title: "光照效果",
     description:
-      "Simulated lighting that responds to your perspective for realistic results.",
+      "随透视变化的模拟光照，呈现真实效果。",
   },
 ] as const;
 
 const useCases = [
   {
-    title: "App Store Screenshots",
+    title: "App Store 截图",
     description:
-      "Create professional app preview images with 3D perspective that increase downloads.",
+      "用 3D 透视制作专业的应用预览图，提升下载量。",
   },
   {
-    title: "Landing Page Heroes",
+    title: "落地页主图",
     description:
-      "Eye-catching hero images that showcase your product from dynamic angles.",
+      "引人注目的主视觉图片，从动态角度展示你的产品。",
   },
   {
-    title: "Social Media Posts",
+    title: "社交媒体帖子",
     description:
-      "Stand out with 3D styled screenshots that stop the scroll.",
+      "用能让人停下滚动的 3D 风格截图脱颖而出。",
   },
   {
-    title: "Product Mockups",
+    title: "产品模型",
     description:
-      "Professional mockups without expensive 3D software or design skills.",
+      "无需昂贵的 3D 软件或设计技能，也能做出专业模型。",
   },
 ];
 
 const whyPoints = [
   {
-    title: "Higher Engagement",
+    title: "更高互动率",
     description:
-      "3D images get 30% more clicks than flat screenshots in social media posts.",
+      "在社交媒体帖子中，3D 图片的点击量比平面截图高 30%。",
   },
   {
-    title: "Professional Look",
+    title: "专业外观",
     description:
-      "Add polish without hiring a designer or learning complex 3D software.",
+      "无需聘请设计师或学习复杂的 3D 软件，也能提升质感。",
   },
   {
-    title: "Stand Out",
+    title: "脱颖而出",
     description:
-      "Differentiate your content in crowded feeds where everyone uses flat images.",
+      "在所有人都用平面图片的拥挤信息流中，让你的内容脱颖而出。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/features/screenshot-beautifier", label: "Screenshot Beautifier" },
-  { href: "/features/social-media-graphics", label: "Social Media Graphics" },
-  { href: "/features/animation-maker", label: "Animation Maker" },
+  { href: "/features/screenshot-beautifier", label: "截图美化" },
+  { href: "/features/social-media-graphics", label: "社交媒体图片" },
+  { href: "/features/animation-maker", label: "动画制作" },
 ] as const;
 
 export default function ThreeDEffectsPage() {
@@ -198,21 +198,22 @@ export default function ThreeDEffectsPage() {
               className="mb-6 text-4xl font-semibold tracking-[-0.03em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Free 3D Screenshot Effects
+              免费 3D 截图效果
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Transform flat screenshots into stunning 3D visuals. Add
-              perspective, rotation, and realistic shadows without any design
-              skills.
+              把平面的截图变成惊艳的 3D 视觉效果。无需任何设计技能，即可添加透视、旋转和逼真的阴影。
+            
             </p>
             <div className="flex flex-col items-center">
               <Link href="/" className={ctaClassName}>
-                Add 3D Effects Free
+                免费添加 3D 效果
+              
               </Link>
               <p className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground/70">
-                <span>100% Free</span>
+                <span>100% 免费</span>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>No Signup Required</span>
+                <span>无需注册</span>
               </p>
             </div>
           </div>
@@ -224,7 +225,8 @@ export default function ThreeDEffectsPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              3D Effects & Transforms
+              3D 效果与变换
+            
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {effects.map((effect) => (
@@ -254,26 +256,27 @@ export default function ThreeDEffectsPage() {
               className="mb-4 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Easy-to-Use Controls
+              易用的控制项
+            
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-              Adjust 3D effects with simple sliders. See changes in real-time as
-              you experiment with different perspectives.
+              用简单的滑块调整 3D 效果。尝试不同透视时实时查看变化。
+            
             </p>
             <div className="grid gap-4 md:grid-cols-3">
               {[
                 {
-                  title: "Rotate X",
+                  title: "X 轴旋转",
                   description:
-                    "Tilt forward or backward for dramatic perspective",
+                    "前后倾斜，呈现戏剧化的透视效果",
                 },
                 {
-                  title: "Rotate Y",
-                  description: "Turn left or right to show different angles",
+                  title: "Y 轴旋转",
+                  description: "左右旋转，展示不同角度",
                 },
                 {
-                  title: "Rotate Z",
-                  description: "Spin for creative diagonal compositions",
+                  title: "Z 轴旋转",
+                  description: "旋转，打造富有创意的对角构图",
                 },
               ].map((item) => (
                 <div
@@ -294,7 +297,8 @@ export default function ThreeDEffectsPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Perfect For
+              适用场景
+            
             </h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               {useCases.map((useCase) => (
@@ -317,7 +321,8 @@ export default function ThreeDEffectsPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Why Add 3D Effects?
+              为什么要添加 3D 效果？
+            
             </h2>
             <div className="space-y-6">
               {whyPoints.map((point) => (
@@ -344,7 +349,8 @@ export default function ThreeDEffectsPage() {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Explore More Features
+              探索更多功能
+            
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {relatedLinks.map((link) => (
@@ -370,13 +376,16 @@ export default function ThreeDEffectsPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Add 3D Effects to Your Screenshots
+              为你的截图添加 3D 效果
+            
             </h2>
             <p className="mb-8 text-muted-foreground">
-              No 3D software required. Create stunning visuals in your browser.
+              无需 3D 软件。直接在浏览器中创建惊艳的视觉效果。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Try 3D Effects Free
+              免费试用 3D 效果
+            
             </Link>
           </div>
         </section>

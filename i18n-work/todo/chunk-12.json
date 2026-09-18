@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s1680",
+    "en": "Start here",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1681",
+    "en": "Starts flipped, rotates to reveal with a bounce",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1682",
+    "en": "Starts tilted back, lands flat — classic SaaS hero entrance",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1683",
+    "en": "State management rebuilt with Zustand + temporal middleware",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1684",
+    "en": "Status",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1685",
+    "en": "Stickers",
+    "count": 1,
+    "where": "components/editor/sections/ImageOverlaySection.tsx"
+  },
+  {
+    "id": "s1686",
+    "en": "Stop",
+    "count": 1,
+    "where": "components/tools/ToolWorkspace.tsx"
+  },
+  {
+    "id": "s1687",
+    "en": "Streams a Twitter-hosted image through this origin so it can be drawn onto a canvas without tainting it. Only pbs.twimg.com, abs.twimg.com, ton.twitter.com, and video.twimg.com are allowed.",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1688",
+    "en": "Stroke",
+    "count": 1,
+    "where": "components/editor/sections/AnnotateSection.tsx"
+  },
+  {
+    "id": "s1689",
+    "en": "Stroke width range increased to 24px with preset buttons and fine-control slider",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1690",
+    "en": "Subtle floating motion — great for looping ambient effects",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1691",
+    "en": "Suhail Roshan",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s1692",
+    "en": "Sunset Fade",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1693",
+    "en": "Sunset Glow",
+    "count": 1,
+    "where": "lib/canvas/templates.ts"
+  },
+  {
+    "id": "s1694",
+    "en": "Support",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1695",
+    "en": "Supported formats: PNG, JPG, WebP, GIF, BMP, AVIF.",
+    "count": 1,
+    "where": "components/tools/useToolQueue.ts"
+  },
+  {
+    "id": "s1696",
+    "en": "Swift",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1697",
+    "en": "Swing",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1698",
+    "en": "Tab / Shift+Tab",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s1699",
+    "en": "Table Left",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1700",
+    "en": "Take a screenshot with your OS shortcut, then Cmd+V directly into the editor. No saving files first.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1701",
+    "en": "Technical Blog Posts",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1702",
+    "en": "Templates overlay opens/closes with a smooth slide-in animation and supports Escape key to dismiss",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1703",
+    "en": "Templates overlay. Presets gallery moved from the tab bar to a dedicated slide-in panel accessible via the \"Templates\" button above tabs",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1704",
+    "en": "Templates Sidebar, Tab Transitions & Export Fix",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1705",
+    "en": "Terminal & CLI Output",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1706",
+    "en": "Terms and Conditions for using Screenshot Studio, the free, open-source screenshot beautifier.",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1707",
+    "en": "Terms of service",
+    "count": 1,
+    "where": "components/landing/Footer.tsx"
+  },
+  {
+    "id": "s1708",
+    "en": "Text & Overlays",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1709",
+    "en": "Text editing",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1710",
+    "en": "Text overlay controls completely redesigned. Compact inline editing, quick color swatches, native font/weight selectors, shadow toggle",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1711",
+    "en": "Text overlays with 25+ fonts, custom colors, shadows, and positioning",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1712",
+    "en": "text/html",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1713",
+    "en": "text/markdown",
+    "count": 1,
+    "where": "app/[locale]/docs/page.tsx"
+  },
+  {
+    "id": "s1714",
+    "en": "The best trade-off for most images",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1715",
+    "en": "The code card is rendered and exported entirely in your browser, so your code is not sent to a server to create the image.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1716",
+    "en": "The code snippet generator is now a standalone editor at /code, with its own full-page workspace and shareable links.",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1717",
+    "en": "The image may be too large for this browser to process.",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s1718",
+    "en": "The images you create with Screenshot Studio belong to you. We claim no ownership or rights over content you produce using the tool. The Screenshot Studio software itself is open source and licensed under the terms specified in our",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1719",
+    "en": "The lock is on by default: type one dimension and the other is calculated for you. Unlock it if you deliberately want to stretch an image to exact dimensions.",
+    "count": 1,
+    "where": "lib/seo/tools.ts"
+  },
+  {
+    "id": "s1720",
+    "en": "the numeric post id is sent to X&apos;s public syndication API to fetch the post content that gets rendered on your canvas.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1721",
+    "en": "The public Screenshot Studio API is unauthenticated. There is no API key to request, no token to rotate, and no account to create. Send the request and it is served. Access is shaped by per-IP rate limits rather than credentials.",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1722",
+    "en": "the screenshot API keeps your IP address in server memory for up to 60 seconds to enforce its per-minute limit. It is not written to a database.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1723",
+    "en": "The Screenshot Studio API requires no API key, token, or account. Read how anonymous access, per-IP rate limits, 429 responses, and Retry-After headers work.",
+    "count": 1,
+    "where": "app/[locale]/docs/authentication/page.tsx"
+  },
+  {
+    "id": "s1724",
+    "en": "The Service is provided &quot;as is&quot; and &quot;as available&quot; without warranties of any kind, either express or implied. We do not guarantee that the Service will be uninterrupted, error-free, or free of harmful components.",
+    "count": 1,
+    "where": "app/[locale]/terms/page.tsx"
+  },
+  {
+    "id": "s1725",
+    "en": "the site runs on Vercel behind Cloudflare. Both keep standard request logs, which include IP addresses, for security and reliability.",
+    "count": 1,
+    "where": "app/[locale]/privacy-policy/page.tsx"
+  },
+  {
+    "id": "s1726",
+    "en": "The Verdict",
+    "count": 1,
+    "where": "app/[locale]/compare/[slug]/page.tsx"
+  },
+  {
+    "id": "s1727",
+    "en": "Theme gradient",
+    "count": 1,
+    "where": "components/code-image/BackgroundPicker.tsx"
+  },
+  {
+    "id": "s1728",
+    "en": "There are none, and there is nothing to sign up for. The public API is anonymous and governed by per-IP rate limits instead of credentials. Details are in",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1729",
+    "en": "There is no separate sandbox host. Production is safe to experiment against: the endpoints are read-only with respect to your data, nothing is stored against an account, and the editor itself never uploads your images. To run the full stack locally instead:",
+    "count": 1,
+    "where": "app/[locale]/developers/page.tsx"
+  },
+  {
+    "id": "s1730",
+    "en": "This may take a few seconds",
+    "count": 1,
+    "where": "components/controls/WebsiteScreenshotInput.tsx"
+  },
+  {
+    "id": "s1731",
+    "en": "This page does not exist or was moved. Go back, or open the editor to keep creating.",
+    "count": 1,
+    "where": "app/not-found.tsx"
+  },
+  {
+    "id": "s1732",
+    "en": "This page does not exist. Go back, or open the Screenshot Studio editor.",
+    "count": 1,
+    "where": "app/not-found.tsx"
+  },
+  {
+    "id": "s1733",
+    "en": "This will permanently delete your saved draft and clear the current canvas. This action cannot be undone.",
+    "count": 1,
+    "where": "components/editor/DraftIndicator.tsx"
+  },
+  {
+    "id": "s1734",
+    "en": "Three devices in a compact fan.",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1735",
+    "en": "Thumbnail",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1736",
+    "en": "tilt",
+    "count": 1,
+    "where": "components/editor/RightSettingsPanel.tsx"
+  },
+  {
+    "id": "s1737",
+    "en": "Tilt Left",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1738",
+    "en": "Tilt Right",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  },
+  {
+    "id": "s1739",
+    "en": "Tilt Up/Down",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1740",
+    "en": "Tilt, rotate, and scale with real-time 3D transforms. Create eye-catching angles for presentations.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1741",
+    "en": "Tilted",
+    "count": 1,
+    "where": "components/editor/sections/TransformsSection.tsx"
+  },
+  {
+    "id": "s1742",
+    "en": "Tilted view with magic gradient",
+    "count": 1,
+    "where": "lib/constants/presets.ts"
+  },
+  {
+    "id": "s1743",
+    "en": "Timeline duration",
+    "count": 1,
+    "where": "components/timeline/TimelineControls.tsx"
+  },
+  {
+    "id": "s1744",
+    "en": "Timeline Editor",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1745",
+    "en": "Timeline editor with interactive playhead, ruler, and animation tracks",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1746",
+    "en": "Title",
+    "count": 1,
+    "where": "components/controls/BorderControls.tsx"
+  },
+  {
+    "id": "s1747",
+    "en": "Toggle line numbers, a macOS-style title bar or none at all, and resize the frame to fit your code.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1748",
+    "en": "Toggle rulers",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s1749",
+    "en": "Tools",
+    "count": 1,
+    "where": "app/[locale]/tools/page.tsx"
+  },
+  {
+    "id": "s1750",
+    "en": "top",
+    "count": 1,
+    "where": "components/canvas/html/HTMLImageOverlayLayer.tsx"
+  },
+  {
+    "id": "s1751",
+    "en": "Top",
+    "count": 1,
+    "where": "components/editor/sections/ImagePositionSection.tsx"
+  },
+  {
+    "id": "s1752",
+    "en": "Top Center",
+    "count": 1,
+    "where": "components/editor/sections/PositionSection.tsx"
+  },
+  {
+    "id": "s1753",
+    "en": "Total:",
+    "count": 1,
+    "where": "components/landing/Sponsors.tsx"
+  },
+  {
+    "id": "s1754",
+    "en": "traffic",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s1755",
+    "en": "transform",
+    "count": 1,
+    "where": "components/tools/ToolOptions.tsx"
+  },
+  {
+    "id": "s1756",
+    "en": "Transform flat screenshots into stunning 3D visuals. Add perspective, rotation, and realistic shadows without any design skills.",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1757",
+    "en": "Transform plain screenshots into professional visuals in 3 easy steps using Screenshot Studio.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1758",
+    "en": "Transform plain screenshots into professional-looking visuals in seconds. Add stunning backgrounds, shadows, and export in high resolution.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1759",
+    "en": "Transform plain screenshots into stunning visuals. Add backgrounds, shadows, and export in high resolution.",
+    "count": 1,
+    "where": "app/[locale]/features/screenshot-beautifier/page.tsx"
+  },
+  {
+    "id": "s1760",
+    "en": "Transform screenshots into professional graphics. 100+ backgrounds, browser mockups, 3D effects, animations, and video export. No signup required.",
+    "count": 1,
+    "where": "app/[locale]/landing/page.tsx"
+  },
+  {
+    "id": "s1761",
+    "en": "Translate X",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s1762",
+    "en": "Translate Y",
+    "count": 1,
+    "where": "components/controls/Perspective3DControls.tsx"
+  },
+  {
+    "id": "s1763",
+    "en": "Transparent",
+    "count": 1,
+    "where": "components/editor/sections/BackgroundSection.tsx"
+  },
+  {
+    "id": "s1764",
+    "en": "Trio Fan",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1765",
+    "en": "Try 3D Effects Free",
+    "count": 1,
+    "where": "app/[locale]/features/3d-effects/page.tsx"
+  },
+  {
+    "id": "s1766",
+    "en": "Try a PNG, JPG, WebP, GIF, BMP, or AVIF file.",
+    "count": 1,
+    "where": "components/tools/CropWorkspace.tsx"
+  },
+  {
+    "id": "s1767",
+    "en": "Try again",
+    "count": 1,
+    "where": "app/error.tsx"
+  },
+  {
+    "id": "s1768",
+    "en": "Try Again",
+    "count": 1,
+    "where": "app/global-error.tsx"
+  },
+  {
+    "id": "s1769",
+    "en": "Try Animation Maker Free",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1770",
+    "en": "Try Code Images",
+    "count": 1,
+    "where": "components/landing/Navigation.tsx"
+  },
+  {
+    "id": "s1771",
+    "en": "Try Free Now",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1772",
+    "en": "Try it",
+    "count": 1,
+    "where": "components/editor/CodeImagesBanner.tsx"
+  },
+  {
+    "id": "s1773",
+    "en": "Turn a code snippet into a beautiful, shareable image. Pick a theme, background, and window style, then export a crisp PNG.",
+    "count": 1,
+    "where": "components/code-image/CodeImageEditor.tsx"
+  },
+  {
+    "id": "s1774",
+    "en": "Turn any X post into an image",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s1775",
+    "en": "Turn code into a shareable image. 14 themes plus gradient, image, and pattern backgrounds, export a crisp PNG. Free, no signup, no watermark.",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1776",
+    "en": "Turn Code Into Beautiful Images",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1777",
+    "en": "Turn code into beautiful shareable images",
+    "count": 1,
+    "where": "components/editor/sections/CodeImagesLinkCard.tsx"
+  },
+  {
+    "id": "s1778",
+    "en": "Turn code into beautiful, shareable images. 14 themes, gradients, images, and window frames. Free, no signup.",
+    "count": 1,
+    "where": "app/[locale]/code/page.tsx"
+  },
+  {
+    "id": "s1779",
+    "en": "Turn code into beautiful, shareable images. Syntax themes, gradient backgrounds, line numbers, and a window frame.",
+    "count": 1,
+    "where": "app/[locale]/features/page.tsx"
+  },
+  {
+    "id": "s1780",
+    "en": "Turn code into beautiful, shareable images. Themes, gradients, line numbers, and window frames. Free, no signup.",
+    "count": 1,
+    "where": "app/[locale]/features/code-snippets/page.tsx"
+  },
+  {
+    "id": "s1781",
+    "en": "Turn off all Animations",
+    "count": 1,
+    "where": "components/timeline/TimelineControls.tsx"
+  },
+  {
+    "id": "s1782",
+    "en": "Turn raw product screenshots into polished hero images for landing pages, pitch decks, and ad creatives.",
+    "count": 1,
+    "where": "app/[locale]/free-screenshot-editor/page.tsx"
+  },
+  {
+    "id": "s1783",
+    "en": "Turn raw product screenshots into polished hero images that convert. Add gradient backgrounds, shadows, and 3D perspective to showcase your product at its best.",
+    "count": 1,
+    "where": "app/[locale]/for/marketers/page.tsx"
+  },
+  {
+    "id": "s1784",
+    "en": "Turn raw terminal output into clean visuals for documentation and tutorials. Add macOS window frames and subtle shadows for a professional finish.",
+    "count": 1,
+    "where": "app/[locale]/for/developers/page.tsx"
+  },
+  {
+    "id": "s1785",
+    "en": "Turn tweets and code snippets into beautiful shareable images.",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s1786",
+    "en": "turns a plain screenshot into a finished graphic with gradient backgrounds, browser mockups, shadows, 3D perspective, annotations, and video export, and",
+    "count": 1,
+    "where": "app/[locale]/tools/page.tsx"
+  },
+  {
+    "id": "s1787",
+    "en": "turns any snippet into a beautiful shareable image with 14 themes and 150+ backgrounds.",
+    "count": 1,
+    "where": "components/editor/CodeImagesBanner.tsx"
+  },
+  {
+    "id": "s1788",
+    "en": "Turntable",
+    "count": 1,
+    "where": "lib/animation/presets.ts"
+  },
+  {
+    "id": "s1789",
+    "en": "Tutorial Screenshots",
+    "count": 1,
+    "where": "app/[locale]/features/social-media-graphics/page.tsx"
+  },
+  {
+    "id": "s1790",
+    "en": "Tutorial Videos",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1791",
+    "en": "Tweet",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1792",
+    "en": "Tweet & Code Import",
+    "count": 1,
+    "where": "app/[locale]/about/page.tsx"
+  },
+  {
+    "id": "s1793",
+    "en": "Tweet dark theme uses X's \"Lights out\" pure black instead of the default blue \"Dim\" theme",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1794",
+    "en": "Tweet Import, Code Snippets & Overlay Improvements",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1795",
+    "en": "Tweet Import. Paste any tweet URL to preview and capture it as a high-res screenshot with light/dark theme toggle",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1796",
+    "en": "Tweet imported",
+    "count": 1,
+    "where": "components/landing/BentoCardVisuals.tsx"
+  },
+  {
+    "id": "s1797",
+    "en": "Tweet URL",
+    "count": 1,
+    "where": "components/editor/sections/TweetImportSection.tsx"
+  },
+  {
+    "id": "s1798",
+    "en": "Twitter",
+    "count": 1,
+    "where": "components/aspect-ratio/aspect-ratio-picker.tsx"
+  },
+  {
+    "id": "s1799",
+    "en": "Twitter/X Post",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1800",
+    "en": "Two devices presented side by side.",
+    "count": 1,
+    "where": "lib/constants/mockups.ts"
+  },
+  {
+    "id": "s1801",
+    "en": "Type your text...",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s1802",
+    "en": "TypeScript",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1803",
+    "en": "Typography",
+    "count": 1,
+    "where": "components/text-overlay/text-overlay-controls.tsx"
+  },
+  {
+    "id": "s1804",
+    "en": "Ubuntu Mono",
+    "count": 1,
+    "where": "components/code-image/code-themes.ts"
+  },
+  {
+    "id": "s1805",
+    "en": "Ultrawide 21:9",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1806",
+    "en": "Ultrawide format",
+    "count": 1,
+    "where": "lib/constants.ts"
+  },
+  {
+    "id": "s1807",
+    "en": "Undo (Cmd+Z)",
+    "count": 1,
+    "where": "components/editor/EditorHeader.tsx"
+  },
+  {
+    "id": "s1808",
+    "en": "Undo/Redo",
+    "count": 1,
+    "where": "lib/seo/comparisons.ts"
+  },
+  {
+    "id": "s1809",
+    "en": "Undo/redo with unlimited history via Zundo",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1810",
+    "en": "Unlimited exports",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1811",
+    "en": "Unlimited Exports",
+    "count": 1,
+    "where": "app/[locale]/features/animation-maker/page.tsx"
+  },
+  {
+    "id": "s1812",
+    "en": "Upgrade to Pro",
+    "count": 1,
+    "where": "components/landing/Pricing.tsx"
+  },
+  {
+    "id": "s1813",
+    "en": "Upgraded to Tailwind CSS 4 with new theming system",
+    "count": 1,
+    "where": "app/[locale]/changelog/page.tsx"
+  },
+  {
+    "id": "s1814",
+    "en": "UPI ID:",
+    "count": 1,
+    "where": "components/SponsorButton.tsx"
+  },
+  {
+    "id": "s1815",
+    "en": "UPI Payment",
+    "count": 1,
+    "where": "components/SponsorButton.tsx"
+  },
+  {
+    "id": "s1816",
+    "en": "UPI QR Code",
+    "count": 1,
+    "where": "components/SponsorButton.tsx"
+  },
+  {
+    "id": "s1817",
+    "en": "Upload",
+    "count": 1,
+    "where": "components/mockups/MockupControls.tsx"
+  },
+  {
+    "id": "s1818",
+    "en": "Upload an image to see preset previews",
+    "count": 1,
+    "where": "components/presets/PresetGallery.tsx"
+  },
+  {
+    "id": "s1819",
+    "en": "Upload an image to see transform previews",
+    "count": 1,
+    "where": "components/editor/sections/TransformsGallery.tsx"
+  }
+]

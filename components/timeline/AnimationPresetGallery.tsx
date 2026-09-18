@@ -88,10 +88,12 @@ export function AnimationPresetGallery() {
         <div className="flex items-center justify-between p-3 bg-foreground/[0.04] border border-foreground/10 rounded-md">
           <div>
             <span className="text-xs font-medium text-foreground">
-              {animationClips.length} animation{animationClips.length > 1 ? 's' : ''} added
+              {animationClips.length} 动画{animationClips.length > 1 ? 's' : ''} 已添加
+            
             </span>
             <p className="text-[10px] text-muted-foreground mt-0.5">
-              Click presets to add more, or drag clips in timeline
+              点击预设可继续添加，或在时间轴中拖动片段
+            
             </p>
           </div>
           <Button
@@ -101,7 +103,8 @@ export function AnimationPresetGallery() {
             onClick={handleClearAnimation}
           >
             <Delete02Icon size={14} className="mr-1" />
-            Clear All
+            全部清除
+          
           </Button>
         </div>
       )}
@@ -163,7 +166,8 @@ export function AnimationPresetGallery() {
 
                     {isApplied ? (
                       <div className="absolute top-1 left-1 px-1 py-0.5 bg-card border border-foreground/20 rounded-md text-[7px] text-foreground font-medium">
-                        Added
+                        已添加
+                      
                       </div>
                     ) : null}
                   </div>
@@ -181,18 +185,20 @@ export function AnimationPresetGallery() {
       {!previewImageUrl && (
         <div className="p-3 rounded-md bg-foreground/[0.04] border border-foreground/10 text-center">
           <p className="text-xs text-muted-foreground">
-            Upload an image to see animation previews
+            上传图片以预览动画
+          
           </p>
         </div>
       )}
 
       <div className="p-3 rounded-md bg-foreground/[0.04] border border-foreground/10 space-y-1">
         <p className="text-xs text-muted-foreground">
-          Click any preset to add it to the timeline.
-          You can add multiple animations and arrange them.
+          点击任意预设即可添加到时间轴。你可以添加多个动画并调整它们的顺序。
+        
         </p>
         <p className="text-[10px] text-muted-foreground/70">
-          Use the timeline at the bottom to resize and reorder clips.
+          使用底部的时间轴调整片段长度并重新排序。
+        
         </p>
       </div>
     </div>

@@ -12,9 +12,9 @@ import { Footer } from "@/components/landing/Footer";
 import { OG_DEFAULTS } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = {
-  title: "Free Screenshot Animation Maker",
+  title: "免费截图动画制作工具",
   description:
-    "Create stunning animations from screenshots. Build slideshows with zoom, pan, and fade effects. Export to video or GIF. Free browser-based animation tool.",
+    "从截图创建出色的动画。用缩放、平移和淡入淡出效果搭建幻灯片。可导出为视频或 GIF。免费的浏览器端动画工具。",
   keywords: [
     "animation maker",
     "screenshot animation",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     ...OG_DEFAULTS,
-    title: "Free Animation Maker - Create Animated Screenshots & Slideshows",
+    title: "免费动画制作工具 - 创建动画截图与幻灯片",
     description:
-      "Create stunning animations from screenshots. Zoom, pan, and fade effects with video export.",
+      "从截图创建出色的动画。缩放、平移和淡入淡出效果，支持视频导出。",
     url: "/features/animation-maker",
   },
   alternates: {
@@ -58,106 +58,106 @@ const chipLinkClassName =
 
 const animations = [
   {
-    name: "Zoom In",
-    description: "Dramatic zoom effect that draws attention to key details",
+    name: "放大",
+    description: "戏剧化的缩放效果，把注意力引向关键细节",
   },
   {
-    name: "Zoom Out",
-    description: "Reveal the full picture from a focused starting point",
+    name: "缩小",
+    description: "从聚焦的起点揭示完整画面",
   },
   {
-    name: "Pan Left/Right",
-    description: "Smooth horizontal movement across wide screenshots",
+    name: "向左/向右平移",
+    description: "在宽幅截图上平滑横向移动",
   },
   {
     name: "Ken Burns",
-    description: "Classic documentary-style slow zoom and pan combo",
+    description: "经典纪录片风格的缓慢缩放与平移组合",
   },
   {
-    name: "Tilt Up/Down",
-    description: "Vertical panning for long screenshots and pages",
+    name: "上下倾斜",
+    description: "长截图和长页面的垂直平移",
   },
   {
-    name: "Fade Transitions",
-    description: "Elegant crossfade between multiple slides",
+    name: "淡入淡出过渡",
+    description: "多张幻灯片之间优雅的交叉淡化",
   },
 ];
 
 const features = [
   {
     icon: MagicWand01Icon,
-    title: "20+ Animation Presets",
+    title: "20+ 动画预设",
     description:
-      "One-click animations including zoom, pan, tilt, rotate, and Ken Burns effects.",
+      "一键动画，包括缩放、平移、倾斜、旋转和 Ken Burns 效果。",
   },
   {
     icon: PlayIcon,
-    title: "Timeline Editor",
+    title: "时间轴编辑器",
     description:
-      "Fine-tune timing with our visual timeline. Adjust duration, easing, and keyframes.",
+      "用可视化时间轴精细调整时序。调整时长、缓动和关键帧。",
   },
   {
     icon: Video01Icon,
-    title: "Video Export",
+    title: "视频导出",
     description:
-      "Export as MP4 video or animated GIF. Perfect for social media and presentations.",
+      "导出为 MP4 视频或动图 GIF。非常适合社交媒体和演示。",
   },
   {
     icon: SparklesIcon,
-    title: "Slideshow Builder",
+    title: "幻灯片生成器",
     description:
-      "Combine multiple screenshots into animated slideshows with transitions.",
+      "把多张截图合成带转场的动画幻灯片。",
   },
 ] as const;
 
 const useCases = [
   {
-    title: "Product Demos",
+    title: "产品演示",
     description:
-      "Create engaging product walkthroughs that highlight key features with smooth zoom and pan animations.",
+      "制作吸引人的产品演示，用流畅的缩放和平移动画突出关键功能。",
   },
   {
-    title: "Social Media Content",
+    title: "社交媒体内容",
     description:
-      "Stand out with animated posts that capture attention in crowded feeds on Twitter, LinkedIn, and more.",
+      "用动态帖子在 Twitter、LinkedIn 等拥挤的信息流中脱颖而出，抓住注意力。",
   },
   {
-    title: "Tutorial Videos",
+    title: "教程视频",
     description:
-      "Build step-by-step tutorials by combining screenshots into animated slideshows with clear transitions.",
+      "把截图组合成带清晰转场的动画幻灯片，制作分步教程。",
   },
   {
-    title: "Portfolio Showcases",
+    title: "作品集展示",
     description:
-      "Present your work with cinematic Ken Burns effects that add polish and professionalism.",
+      "用电影感的 Ken Burns 效果展示你的作品，增添精致与专业感。",
   },
 ];
 
 const howToSteps = [
   {
     step: "1",
-    title: "Upload Your Screenshots",
+    title: "上传你的截图",
     description:
-      "Add one or more screenshots to create a slideshow or animate a single image.",
+      "添加一张或多张截图，制作幻灯片或为单张图片添加动画。",
   },
   {
     step: "2",
-    title: "Choose Animation Preset",
+    title: "选择动画预设",
     description:
-      "Select from 20+ presets like zoom, pan, Ken Burns, or create custom animations with the timeline.",
+      "从 zoom、pan、Ken Burns 等 20+ 预设中选择，或用时间轴创建自定义动画。",
   },
   {
     step: "3",
-    title: "Export as Video",
+    title: "导出为视频",
     description:
-      "Download as MP4 video or GIF. Share directly to social media or embed anywhere.",
+      "下载为 MP4 视频或 GIF。直接分享到社交媒体或嵌入任何位置。",
   },
 ];
 
 const relatedLinks = [
-  { href: "/features/screenshot-beautifier", label: "Screenshot Beautifier" },
-  { href: "/features/social-media-graphics", label: "Social Media Graphics" },
-  { href: "/features/3d-effects", label: "3D Effects" },
+  { href: "/features/screenshot-beautifier", label: "截图美化" },
+  { href: "/features/social-media-graphics", label: "社交媒体图片" },
+  { href: "/features/3d-effects", label: "3D 效果" },
 ] as const;
 
 export default function AnimationMakerPage() {
@@ -250,23 +250,24 @@ export default function AnimationMakerPage() {
               className="mb-6 text-4xl font-semibold tracking-[-0.03em] text-foreground md:text-6xl"
               style={{ fontFamily: INTER }}
             >
-              Free Screenshot Animation Maker
+              免费截图动画制作工具
+            
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Bring your screenshots to life with stunning animations. Create
-              zoom effects, smooth pans, and animated slideshows. Export to
-              video or GIF.
+              用出色的动画让截图栩栩如生。制作缩放效果、流畅平移和动画幻灯片，导出为视频或 GIF。
+            
             </p>
             <div className="flex flex-col items-center">
               <Link href="/" className={ctaClassName}>
-                Create Animation Free
+                免费创建动画
+              
               </Link>
               <p className="mt-4 inline-flex flex-wrap items-center justify-center gap-2 text-sm font-medium text-muted-foreground/70">
-                <span>No Signup</span>
+                <span>无需注册</span>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>No Watermarks</span>
+                <span>无水印</span>
                 <span className="h-3 w-px bg-border" aria-hidden />
-                <span>Unlimited Exports</span>
+                <span>无限次导出</span>
               </p>
             </div>
           </div>
@@ -278,7 +279,8 @@ export default function AnimationMakerPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Powerful Animation Tools
+              强大的动画工具
+            
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {features.map((feature) => (
@@ -308,11 +310,12 @@ export default function AnimationMakerPage() {
               className="mb-4 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Animation Effects
+              动画效果
+            
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-              Choose from our library of professional animation presets or
-              customize your own with the timeline editor.
+              从我们的专业动画预设库中挑选，或用时间轴编辑器自定义。
+            
             </p>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {animations.map((animation) => (
@@ -335,7 +338,8 @@ export default function AnimationMakerPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Perfect For
+              适用场景
+            
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {useCases.map((useCase) => (
@@ -356,7 +360,8 @@ export default function AnimationMakerPage() {
               className="mb-12 text-center text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              How to Create Animations
+              如何创建动画
+            
             </h2>
             <div className="space-y-8">
               {howToSteps.map((item) => (
@@ -382,7 +387,8 @@ export default function AnimationMakerPage() {
               className="mb-8 text-center text-2xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Explore More Features
+              探索更多功能
+            
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {relatedLinks.map((link) => (
@@ -408,14 +414,16 @@ export default function AnimationMakerPage() {
               className="mb-4 text-3xl font-semibold tracking-[-0.03em] text-foreground"
               style={{ fontFamily: INTER }}
             >
-              Start Creating Animations Today
+              立即开始创作动画
+            
             </h2>
             <p className="mb-8 text-muted-foreground">
-              No video editing experience required. Create professional
-              animations in minutes.
+              无需视频剪辑经验。几分钟即可做出专业动画。
+            
             </p>
             <Link href="/" className={ctaClassName}>
-              Try Animation Maker Free
+              免费试用动画制作器
+            
             </Link>
           </div>
         </section>

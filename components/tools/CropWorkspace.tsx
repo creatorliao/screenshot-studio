@@ -35,7 +35,7 @@ import { ToolDropzone } from "./ToolDropzone";
 import { OptionGroup } from "./ToolOptions";
 
 const RATIO_PRESETS: { id: string; label: string; ratio: number | null }[] = [
-  { id: "free", label: "Free", ratio: null },
+  { id: "free", label: "免费", ratio: null },
   { id: "1:1", label: "1:1", ratio: 1 },
   { id: "16:9", label: "16:9", ratio: 16 / 9 },
   { id: "4:3", label: "4:3", ratio: 4 / 3 },
@@ -172,8 +172,8 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
         setRatioId("free");
         setResult(null);
       } catch {
-        toast.error("Could not read that image", {
-          description: "Try a PNG, JPG, WebP, GIF, BMP, or AVIF file.",
+        toast.error("无法读取该图片", {
+          description: "请尝试 PNG、JPG、WebP、GIF、BMP 或 AVIF 文件。",
         });
       }
     },
@@ -270,8 +270,8 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
       });
       setResult(processed);
     } catch {
-      toast.error("Crop failed", {
-        description: "The image may be too large for this browser to process.",
+      toast.error("裁剪失败", {
+        description: "该图片可能过大，此浏览器无法处理。",
       });
     } finally {
       setIsRunning(false);
@@ -346,7 +346,7 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
 
           <div
             role="group"
-            aria-label="Crop selection"
+            aria-label="裁剪选区"
             onPointerDown={beginDrag("move")}
             className="absolute cursor-move border-2 border-white shadow-[0_0_0_1px_rgba(0,0,0,0.35)]"
             style={{
@@ -371,7 +371,7 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
       </div>
 
       <aside className="flex h-fit flex-col gap-5 rounded-xl border border-border bg-card p-5 lg:sticky lg:top-24">
-        <OptionGroup label="Aspect ratio">
+        <OptionGroup label="宽高比">
           <SegmentedControl
             options={RATIO_PRESETS.slice(0, 3).map((preset) => ({
               id: preset.id,
@@ -379,7 +379,7 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
             }))}
             value={RATIO_PRESETS.slice(0, 3).some((p) => p.id === ratioId) ? ratioId : "free"}
             onChange={handleRatioChange}
-            ariaLabel="Aspect ratio"
+            ariaLabel="宽高比"
             size="sm"
           />
           <SegmentedControl
@@ -389,12 +389,12 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
             }))}
             value={RATIO_PRESETS.slice(3).some((p) => p.id === ratioId) ? ratioId : "free"}
             onChange={handleRatioChange}
-            ariaLabel="More aspect ratios"
+            ariaLabel="更多宽高比"
             size="sm"
           />
         </OptionGroup>
 
-        <OptionGroup label="Selection" hint={`Source image: ${source.width} × ${source.height}`}>
+        <OptionGroup label="选区" hint={`Source image: ${source.width} × ${source.height}`}>
           <div className="grid grid-cols-2 gap-3">
             {(
               [
@@ -431,13 +431,13 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
             ) : (
               <CropIcon size={16} aria-hidden="true" />
             )}
-            Crop to {crop.width} × {crop.height}
+            裁剪为  {crop.width} × {crop.height}
           </Button>
 
           {result ? (
             <Button variant="secondary" onClick={handleDownload} className="w-full">
               <Download04Icon size={16} aria-hidden="true" />
-              Download ({formatBytes(result.bytes)})
+              下载（{formatBytes(result.bytes)})
             </Button>
           ) : null}
 
@@ -448,13 +448,14 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
             className="w-full text-muted-foreground"
           >
             <Delete02Icon size={15} aria-hidden="true" />
-            Choose another image
+            选择其他图片
+          
           </Button>
         </div>
 
         <p className="text-xs text-muted-foreground">
-          Cropped at full resolution from the original file. The preview above is
-          only scaled for display. Nothing is uploaded.
+          按原文件的完整分辨率裁剪。上方预览仅为显示而缩放。不会上传任何内容。
+        
         </p>
       </aside>
     </div>

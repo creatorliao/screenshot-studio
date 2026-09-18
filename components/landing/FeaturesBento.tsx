@@ -10,43 +10,43 @@ import {
 
 const FEATURE_CARDS: MagicBentoCard[] = [
   {
-    title: "Device Frames",
-    description: "macOS, Windows, Arc, etc.",
-    label: "Frames",
+    title: "设备边框",
+    description: "macOS、Windows、Arc 等",
+    label: "边框",
     visual: <FramesVisual />,
   },
   {
-    title: "3D Transforms",
-    description: "30+ perspective presets with realistic tilt.",
-    label: "Depth",
+    title: "3D 变换",
+    description: "30+ 透视预设，倾斜效果逼真。",
+    label: "深度",
     visual: <TransformsVisual />,
   },
   {
-    title: "Beautiful Backgrounds",
+    title: "精美背景",
     description:
-      "100+ gradients, solids, images, blur, and noise. One click polish.",
-    label: "Style",
+      "100+ 渐变、纯色、图片、模糊和噪点。一键美化。",
+    label: "样式",
     visual: <BackgroundsVisual />,
     large: true,
   },
   {
-    title: "Animations & Video",
+    title: "动画与视频",
     description:
-      "20+ presets plus a timeline editor. Export MP4, WebM, or GIF.",
-    label: "Motion",
+      "20+ 预设，外加时间轴编辑器。可导出 MP4、WebM 或 GIF。",
+    label: "动效",
     visual: <MotionVisual />,
     large: true,
   },
   {
-    title: "Tweet & Code Snippets",
-    description: "Paste a tweet URL or drop code.",
-    label: "Capture",
+    title: "推文与代码片段",
+    description: "粘贴推文 URL，或拖入代码。",
+    label: "截取",
     visual: <CaptureVisual />,
   },
   {
-    title: "High-Res Export",
-    description: "PNG or JPG up to 5×.",
-    label: "Export",
+    title: "高分辨率导出",
+    description: "支持最高 5× 的 PNG 或 JPG。",
+    label: "导出",
     visual: <ExportVisual />,
   },
 ];
@@ -63,9 +63,11 @@ export function FeaturesBento(): React.JSX.Element {
                 'Inter, "Inter Fallback", Arial, Helvetica, sans-serif',
             }}
           >
-            Everything you need.
+            你需要的，全都有。
+            
             <br />
-            Nothing you don&apos;t.
+            没有多余的。
+          
           </h2>
         </div>
 
