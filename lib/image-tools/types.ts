@@ -16,8 +16,6 @@ export const DECODABLE_MIME_TYPES = [
   "image/png",
   "image/jpeg",
   "image/webp",
-  "image/gif",
-  "image/bmp",
   "image/avif",
 ] as const;
 

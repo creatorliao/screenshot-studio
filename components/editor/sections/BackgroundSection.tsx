@@ -6,6 +6,8 @@ import { useDropzone } from 'react-dropzone';
 import { useResponsiveCanvasDimensions } from '@/hooks/useAspectRatioDimensions';
 import { ALLOWED_IMAGE_TYPES, MAX_IMAGE_SIZE } from '@/lib/constants';
 import {
+  BACKGROUND_CATEGORY_LABELS,
+  BACKGROUND_CATEGORY_ORDER,
   backgroundCategories,
   getBackgroundThumbnailUrl,
 } from '@/lib/r2-backgrounds';
@@ -49,22 +51,98 @@ const OVERLAY_SHADOW_IDS = [
 ];
 const OVERLAY_SHADOW_URLS = OVERLAY_SHADOW_IDS.map((id) => `/overlay-shadow/${id}.webp`);
 
-// Category display names (ordered)
-// `demo` 原本不在这个列表里，导致 `r2-backgrounds.ts` 里已定义的 11 张图
-// 在界面上永远不可达（见 02-调查 §2.3）。现在补回来。
-const CATEGORY_ORDER = ['assets', 'mac', 'radiant', 'mesh', 'demo', 'raycast', 'paper', 'pattern'] as const;
-const CATEGORY_LABELS: Record<string, string> = {
-  assets: '抽象',
-  mac: 'macOS 桌面',
-  radiant: '光晕',
-  mesh: '网格',
-  demo: '示例',
-  raycast: 'Raycast',
-  paper: '纸感',
-  pattern: '图案',
-};
+// 分类顺序与显示名统一用 `lib/r2-backgrounds.ts` 里的共享常量
+// （`StoreSidePanels` 也用同一份），本地不再各留一套。
+// 注意：共享常量里原本漏了 `demo`，导致那 11 张图在界面上永远不可达
+// （见 R20260915-01 的 02-调查 §2.3），已在常量定义处补回。
 
 type GradientGroup = 'classic' | 'magic' | 'mesh';
+
+/* ── 自定义渐变的取色/十六进制输入（来自上游 feat/revamp-editor） ────────── */
+
+const normalizeHexColor = (value: string): string | null => {
+  const trimmed = value.trim();
+  const match = trimmed.match(/^#?([\da-f]{3}|[\da-f]{6})$/i);
+  if (!match) return null;
+  const digits = match[1];
+  return `#${digits.length === 3
+    ? digits.split('').map((character) => character.repeat(2)).join('')
+    : digits}`.toUpperCase();
+};
+
+const rgbToHex = (red: string, green: string, blue: string): string =>
+  `#${[red, green, blue]
+    .map((channel) => Math.max(0, Math.min(255, Number(channel))).toString(16).padStart(2, '0'))
+    .join('')}`.toUpperCase();
+
+const parseLinearGradient = (gradient: string): { from: string; to: string; angle: number } | null => {
+  if (!gradient.startsWith('linear-gradient(')) return null;
+
+  const hexColors = gradient.match(/#[\da-f]{6}\b/gi)?.map((color) => color.toUpperCase()) ?? [];
+  const rgbColors = Array.from(
+    gradient.matchAll(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/gi),
+    (match) => rgbToHex(match[1], match[2], match[3]),
+  );
+  const colors = hexColors.length >= 2 ? hexColors : rgbColors;
+  if (colors.length < 2) return null;
+
+  const angle = Number(gradient.match(/linear-gradient\(\s*(-?[\d.]+)deg/i)?.[1] ?? 135);
+  return { from: colors[0], to: colors[colors.length - 1], angle };
+};
+
+function HexColorField({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+}) {
+  const inputRef = React.useRef<HTMLInputElement>(null);
+  const [draft, setDraft] = React.useState(value);
+
+  React.useEffect(() => {
+    if (document.activeElement !== inputRef.current) setDraft(value);
+  }, [value]);
+
+  const commit = () => {
+    const normalized = normalizeHexColor(draft);
+    if (normalized) onChange(normalized);
+    else setDraft(value);
+  };
+
+  return (
+    <label className="block min-w-0 space-y-1.5 text-[10px] text-muted-foreground">
+      <span>{label}</span>
+      <span className="flex h-8 items-center gap-1.5 rounded-md border border-foreground/10 bg-foreground/[0.035] px-1.5 focus-within:border-foreground/25 focus-within:ring-1 focus-within:ring-foreground/10">
+        <input
+          aria-label={`${label}渐变颜色`}
+          type="color"
+          value={value}
+          onChange={(event) => onChange(event.target.value.toUpperCase())}
+          className="size-5 shrink-0 cursor-pointer rounded border-0 bg-transparent p-0"
+        />
+        <input
+          ref={inputRef}
+          aria-label={`${label}渐变十六进制色值`}
+          value={draft}
+          onChange={(event) => setDraft(event.target.value)}
+          onBlur={commit}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter') event.currentTarget.blur();
+            if (event.key === 'Escape') {
+              setDraft(value);
+              event.currentTarget.blur();
+            }
+          }}
+          spellCheck={false}
+          className="min-w-0 flex-1 bg-transparent font-mono text-[10px] uppercase text-foreground outline-none"
+        />
+      </span>
+    </label>
+  );
+}
 
 const TAB_OPTIONS: { id: BackgroundTab; label: string }[] = [
   { id: 'solid', label: '纯色' },
@@ -216,13 +294,37 @@ export function BackgroundSection() {
   const [bgUploadError, setBgUploadError] = React.useState<string | null>(null);
   const [tab, setTab] = React.useState<BackgroundTab>('gradient');
   const [gradientGroup, setGradientGroup] = React.useState<GradientGroup>('classic');
-  const [imageCategory, setImageCategory] = React.useState<string>(CATEGORY_ORDER[0]);
+  const [imageCategory, setImageCategory] = React.useState<string>(BACKGROUND_CATEGORY_ORDER[0]);
   const [query, setQuery] = React.useState('');
   const [recent, setRecent] = React.useState<BackgroundRef[]>([]);
   const [favorites, setFavorites] = React.useState<BackgroundRef[]>([]);
   const [shadowOpacity, setShadowOpacity] = React.useState(50);
   /** 上一张自定义上传背景，用于"删除"时真正回退（改造前会强行设成某个橙色渐变） */
   const previousBackgroundRef = React.useRef<{ type: string; value: string } | null>(null);
+  // 上游新增：自定义渐变（From/To/角度）。折进本面板的「渐变」Tab，见下方自定义渐变一行。
+  const [customGradient, setCustomGradient] = React.useState({
+    from: '#090A0C',
+    to: '#F43F5E',
+    angle: 145,
+  });
+
+  React.useEffect(() => {
+    if (backgroundConfig.type !== 'gradient') return;
+    const value = backgroundConfig.value;
+    const gradient = typeof value === 'string' && value.startsWith('linear-gradient(')
+      ? value
+      : gradientColors[value as GradientKey];
+    if (!gradient) return;
+    const parsed = parseLinearGradient(gradient);
+    if (parsed) setCustomGradient(parsed);
+  }, [backgroundConfig.type, backgroundConfig.value]);
+
+  const updateCustomGradient = (updates: Partial<typeof customGradient>) => {
+    const next = { ...customGradient, ...updates };
+    setCustomGradient(next);
+    setBackgroundType('gradient');
+    setBackgroundValue(`linear-gradient(${next.angle}deg, ${next.from}, ${next.to})`);
+  };
 
   // 偏好只在客户端读取，避免 SSR/CSR 不一致
   React.useEffect(() => {
@@ -372,9 +474,8 @@ export function BackgroundSection() {
     });
   };
 
-  const availableCategories = React.useMemo(
-    () => CATEGORY_ORDER.filter((cat) => backgroundCategories[cat]?.length > 0),
-    [],
+  const availableCategories = BACKGROUND_CATEGORY_ORDER.filter(
+    (cat) => backgroundCategories[cat]?.length > 0
   );
 
   const normalizedQuery = query.trim().toLowerCase();
@@ -418,7 +519,7 @@ export function BackgroundSection() {
     const paths = backgroundCategories[imageCategory] ?? [];
     return paths.map((path, idx) => ({
       value: path,
-      label: `${CATEGORY_LABELS[imageCategory] ?? imageCategory} ${idx + 1}`,
+      label: `${BACKGROUND_CATEGORY_LABELS[imageCategory] ?? imageCategory} ${idx + 1}`,
     }));
   }, [imageCategory]);
 
@@ -607,6 +708,30 @@ export function BackgroundSection() {
                 )}
               </div>
 
+              {/* 自定义渐变（来自上游 feat/revamp-editor，折进本面板的「渐变」Tab）。
+                  两个十六进制输入直接写出一段 CSS linear-gradient，
+                  `lib/constants/backgrounds.ts` 已支持原样渲染。 */}
+              <div className="space-y-1.5">
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                  自定义渐变
+                </p>
+                <div className="grid grid-cols-2 gap-2">
+                  <HexColorField
+                    label="起始色"
+                    value={customGradient.from}
+                    onChange={(from) => updateCustomGradient({ from })}
+                  />
+                  <HexColorField
+                    label="结束色"
+                    value={customGradient.to}
+                    onChange={(to) => updateCustomGradient({ to })}
+                  />
+                </div>
+                <p className="text-[10px] text-muted-foreground">
+                  角度 {Math.round(customGradient.angle)}°（沿用当前背景的角度）
+                </p>
+              </div>
+
               <p className="text-[10px] text-muted-foreground">
                 共 {gradientItems.length} 个，当前显示 {filteredGradients.length} 个
               </p>
@@ -654,7 +779,7 @@ export function BackgroundSection() {
                         : 'border-foreground/10 bg-foreground/[0.04] text-muted-foreground hover:border-foreground/20 hover:text-foreground',
                     )}
                   >
-                    {CATEGORY_LABELS[category] ?? category}
+                    {BACKGROUND_CATEGORY_LABELS[category] ?? category}
                   </button>
                 ))}
               </div>

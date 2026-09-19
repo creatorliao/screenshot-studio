@@ -20,8 +20,6 @@ const ACCEPTED_TYPES = [
   "image/jpeg",
   "image/jpg",
   "image/webp",
-  "image/gif",
-  "image/bmp",
   "image/avif",
 ];
 
@@ -29,8 +27,6 @@ export const TOOL_DROPZONE_ACCEPT: Record<string, string[]> = {
   "image/png": [".png"],
   "image/jpeg": [".jpg", ".jpeg"],
   "image/webp": [".webp"],
-  "image/gif": [".gif"],
-  "image/bmp": [".bmp"],
   "image/avif": [".avif"],
 };
 
@@ -125,7 +121,7 @@ export function useToolQueue(toolSlug: string) {
     if (rejectedType > 0) {
       toast.error(
         `${rejectedType} file${rejectedType === 1 ? "" : "s"} skipped`,
-        { description: "支持的格式：PNG、JPG、WebP、GIF、BMP、AVIF。" }
+        { description: "支持的格式：PNG、JPG、WebP、AVIF。" }
       );
     }
     if (rejectedSize > 0) {

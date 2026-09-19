@@ -21,6 +21,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    {
+      path: "/store-screenshots",
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     { path: "/code", changeFrequency: "weekly", priority: 0.9 },
     { path: TOOLS_HUB_PATH, changeFrequency: "weekly", priority: 0.9 },
 

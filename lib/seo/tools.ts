@@ -124,9 +124,9 @@ export const TOOLS: ToolDefinition[] = [
     engine: "convert",
     name: "转换图片",
     h1: "转换图片格式",
-    title: "在线转换图片格式：PNG、JPG、WebP",
+    title: "在线转换图片格式：PNG、JPG、WebP、AVIF",
     description:
-      "在浏览器中在 PNG、JPG 和 WebP 之间转换。支持批量转换、质量控制、无需上传。免费、无需注册、无水印。",
+      "在浏览器中在 PNG、JPG、WebP 与 AVIF 之间转换。支持批量转换、质量控制、无需上传。免费、无需注册、无水印。",
     keywords: [
       "convert image",
       "image converter",
@@ -140,9 +140,9 @@ export const TOOLS: ToolDefinition[] = [
       "convert image without uploading",
     ],
     intro:
-      "无需安装任何东西即可更改图片格式。选择 PNG、JPG 或 WebP，设置质量，一次转换整个文件夹。",
+      "无需安装任何东西即可更改图片格式。选择 PNG、JPG、WebP 或 AVIF，设置质量，一次转换整个文件夹。",
     features: [
-      "支持任意方向的 PNG、JPG 与 WebP",
+      "支持任意方向的 PNG、JPG、WebP 与 AVIF",
       "有损格式提供质量滑块",
       "选择透明区域的底色",
       "批量转换，一次打包下载 zip",
@@ -152,7 +152,7 @@ export const TOOLS: ToolDefinition[] = [
       {
         question: "支持哪些格式？",
         answer:
-          "你可以读取 PNG、JPG、WebP、GIF、BMP 和 AVIF，并写出 PNG、JPG 和 WebP。WebP 的写出取决于你的浏览器，不可用时会自动隐藏。我们不提供 AVIF 输出，因为目前没有浏览器能从 canvas 编码 AVIF。",
+          "拖入 PNG、JPG、WebP 或 AVIF，再转成这四种中的任意一种。输出格式选择器只会显示你的浏览器真正能产出的格式，所以选了就是能拿到的。",
       },
       {
         question: "转换为 JPG 时透明度会怎样？",
@@ -329,6 +329,7 @@ const CONVERSION_PAGES: {
   toLabel: string;
   why: string;
   keywords: string[];
+  extraFaqs?: ToolFaq[];
 }[] = [
   {
     slug: "/png-to-jpg",
@@ -378,10 +379,58 @@ const CONVERSION_PAGES: {
     why: "对于早于 WebP 的软件，包括许多印刷服务和较旧的图片编辑器，JPG 是最安全的格式。",
     keywords: ["webp to jpg", "webp to jpeg", "convert webp to jpg"],
   },
+  {
+    slug: "/avif-to-jpg",
+    from: "AVIF",
+    to: "jpeg",
+    toLabel: "JPG",
+    why: "AVIF is very efficient but still unsupported by plenty of older apps, editors, and upload forms. JPG is the safest thing to hand them.",
+    keywords: ["avif to jpg", "convert avif to jpg", "avif to jpeg"],
+  },
+  {
+    slug: "/avif-to-png",
+    from: "AVIF",
+    to: "png",
+    toLabel: "PNG",
+    why: "PNG opens anywhere and keeps transparency, which AVIF also supports, so nothing is lost in the move apart from file size.",
+    keywords: ["avif to png", "convert avif to png", "avif to png converter"],
+  },
+  {
+    slug: "/png-to-avif",
+    from: "PNG",
+    to: "avif",
+    toLabel: "AVIF",
+    why: "AVIF is the most efficient image format in wide use and keeps transparency like PNG. A screenshot or graphic converted to AVIF is routinely 80-95% smaller than the PNG it came from.",
+    keywords: ["png to avif", "convert png to avif", "png to avif converter"],
+  },
+  {
+    slug: "/jpg-to-avif",
+    from: "JPG",
+    to: "avif",
+    toLabel: "AVIF",
+    why: "AVIF typically halves a JPG at the same visual quality, which makes it the biggest single page-speed win available for a photo-heavy site.",
+    keywords: ["jpg to avif", "jpeg to avif", "convert jpg to avif"],
+  },
+  {
+    slug: "/webp-to-avif",
+    from: "WebP",
+    to: "avif",
+    toLabel: "AVIF",
+    why: "AVIF usually beats WebP by another 20% or so at matching quality, so it is worth the move for anything you serve at scale.",
+    keywords: ["webp to avif", "convert webp to avif"],
+  },
+  {
+    slug: "/avif-to-webp",
+    from: "AVIF",
+    to: "webp",
+    toLabel: "WebP",
+    why: "WebP is supported by every browser and by plenty of older software that still cannot open AVIF, while staying far smaller than PNG or JPG.",
+    keywords: ["avif to webp", "convert avif to webp"],
+  },
 ];
 
 for (const page of CONVERSION_PAGES) {
-  const { slug, from, to, toLabel, why, keywords } = page;
+  const { slug, from, to, toLabel, why, keywords, extraFaqs } = page;
 
   TOOLS.push({
     slug,
@@ -411,6 +460,7 @@ for (const page of CONVERSION_PAGES) {
         question: `为什么要转换 ${from} 到 ${toLabel}？`,
         answer: why,
       },
+      ...(extraFaqs ?? []),
       ...(to === "jpeg"
         ? [
             {

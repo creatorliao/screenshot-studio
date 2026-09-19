@@ -11,6 +11,30 @@ export interface BackgroundCategory {
   [category: string]: string[];
 }
 
+export const BACKGROUND_CATEGORY_ORDER = [
+  'assets',
+  'mac',
+  'radiant',
+  'mesh',
+  // `demo` 在 backgroundCategories 里有 11 张图，但早先的列表漏了它，
+  // 导致这批图在界面上永远不可达（见 R20260915-01 的 02-调查 §2.3）。
+  'demo',
+  'raycast',
+  'paper',
+  'pattern',
+] as const;
+
+export const BACKGROUND_CATEGORY_LABELS: Record<string, string> = {
+  assets: '抽象',
+  mac: 'macOS 桌面',
+  radiant: '光晕',
+  mesh: '网格',
+  demo: '示例',
+  raycast: 'Raycast',
+  paper: '纸感',
+  pattern: '图案',
+};
+
 // Background image paths in R2 (with actual file extensions)
 export const backgroundCategories: BackgroundCategory = {
   "assets": [

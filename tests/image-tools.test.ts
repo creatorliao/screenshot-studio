@@ -217,7 +217,7 @@ test("format metadata matches what canvas encoders expect", () => {
 test("formatFromMime is case-insensitive and rejects what we cannot encode", () => {
   assert.equal(formatFromMime("image/PNG"), "png");
   assert.equal(formatFromMime(" image/jpg "), "jpeg");
-  assert.equal(formatFromMime("image/gif"), null);
+  assert.equal(formatFromMime("image/tiff"), null);
   assert.equal(formatFromMime("image/svg+xml"), null);
 });
 
@@ -299,8 +299,8 @@ test("resolveOutputFormat keeps the source format on auto", () => {
 });
 
 test("resolveOutputFormat falls back to PNG for decode-only sources", () => {
-  assert.equal(resolveOutputFormat("auto", "image/gif"), "png");
-  assert.equal(resolveOutputFormat("auto", "image/bmp"), "png");
+  assert.equal(resolveOutputFormat("auto", "image/tiff"), "png");
+  assert.equal(resolveOutputFormat("auto", ""), "png");
 });
 
 test("each batch engine only sends the pipeline the options it uses", () => {
@@ -382,4 +382,19 @@ test("output names only gain a suffix when they would overwrite the source", () 
   assert.equal(buildOutputName("resize", "shot.jpg", "jpeg"), "shot-resized.jpg");
   assert.equal(buildOutputName("rotate", "shot.PNG", "png"), "shot-rotated.png");
   assert.equal(buildOutputName("crop", "shot.webp", "png"), "shot.png");
+});
+
+test("output names keep the extension the source arrived with", () => {
+  // ".jpeg" and ".jpg" are one format, so an operation that does not change
+  // the format must not rename the file between them.
+  assert.equal(buildOutputName("resize", "shot.jpeg", "jpeg"), "shot-resized.jpeg");
+  assert.equal(buildOutputName("compress", "shot.jpeg", "jpeg"), "shot-compressed.jpeg");
+  // Rewriting the extension used to hide the collision, dropping the suffix.
+  assert.equal(buildOutputName("rotate", "shot.JPEG", "jpeg"), "shot-rotated.jpeg");
+  // A real conversion still takes the target format's canonical extension.
+  assert.equal(buildOutputName("convert", "shot.jpeg", "webp"), "shot.webp");
+  // JPEG's rarer spellings are just as much JPEG; ".jfif" is what Windows and
+  // older Chrome wrote, so those files are still in circulation.
+  assert.equal(buildOutputName("resize", "shot.jfif", "jpeg"), "shot-resized.jfif");
+  assert.equal(buildOutputName("resize", "shot.jpe", "jpeg"), "shot-resized.jpe");
 });

@@ -42,37 +42,66 @@ function StatusBadge({ item }: { item: QueueItem }) {
     const saved = savingsPercent(item.bytes, item.result.bytes);
 
     if (item.keptOriginal) {
+      // Naming the reason matters most for PNG, where nothing the compressor
+      // does can shrink the file and an unchanged size looks like a failure.
+      const lossless = item.file.type === "image/png";
       return (
-        <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
+        <span
+          className="flex items-center gap-1.5 text-xs text-muted-foreground"
+          title={
+            lossless
+              ? "PNG stores every pixel exactly, so there is nothing to discard. Re-encoding produced a file no smaller than yours, so your original was kept. Pick another output format for a real reduction."
+              : "Re-encoding produced a file no smaller than yours, so your original was kept."
+          }
+        >
           <CheckmarkCircle02Icon
             size={14}
             className="text-emerald-600 dark:text-emerald-500"
             aria-hidden="true"
           />
-          已优化，保留原图（{formatBytes(item.bytes)})
+          {lossless
+            ? `PNG 是无损格式 —— 没有可压缩的内容，保留原图（${formatBytes(item.bytes)}）`
+            : `已优化，保留原图（${formatBytes(item.bytes)}）`}
         </span>
       );
     }
 
+    // A file that came back bigger is not a success, whatever the user asked
+    // for, so it does not get the green tick that every other result carries.
+    const grew = saved < 0;
+
     return (
       <span className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs">
         <span className="flex items-center gap-1.5 text-muted-foreground">
-          <CheckmarkCircle02Icon
-            size={14}
-            className="text-emerald-600 dark:text-emerald-500"
-            aria-hidden="true"
-          />
+          {grew ? (
+            <Alert02Icon
+              size={14}
+              className="text-amber-600 dark:text-amber-500"
+              aria-hidden="true"
+            />
+          ) : (
+            <CheckmarkCircle02Icon
+              size={14}
+              className="text-emerald-600 dark:text-emerald-500"
+              aria-hidden="true"
+            />
+          )}
           {formatBytes(item.bytes)} → {formatBytes(item.result.bytes)}
         </span>
         <span
           className={cn(
             "font-medium",
-            saved > 0
-              ? "text-emerald-600 dark:text-emerald-500"
-              : "text-muted-foreground"
+            saved > 0 && "text-emerald-600 dark:text-emerald-500",
+            grew && "text-amber-600 dark:text-amber-500",
+            saved === 0 && "text-muted-foreground"
           )}
+          title={
+            grew
+              ? "该输出格式比原图存储的数据更多，所以文件变大了。想变小请换一种输出格式。"
+              : undefined
+          }
         >
-          {saved > 0 ? `-${saved}%` : saved < 0 ? `+${Math.abs(saved)}%` : "相同尺寸"}
+          {saved > 0 ? `-${saved}%` : grew ? `+${Math.abs(saved)}% 更大` : "尺寸相同"}
         </span>
         <span className="text-muted-foreground">
           {item.result.width} × {item.result.height}

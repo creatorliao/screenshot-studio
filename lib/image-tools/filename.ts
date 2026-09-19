@@ -24,6 +24,14 @@ export function baseName(name: string): string {
   return dot > 0 ? sanitized.slice(0, dot) : sanitized;
 }
 
+/** "shot.final.PNG" -> "png". Null when the name carries no extension. */
+export function extensionOf(name: string): string | null {
+  const sanitized = sanitizeFilename(name);
+  const dot = sanitized.lastIndexOf(".");
+  // A leading dot is part of the name (".gitignore"), not an extension.
+  return dot > 0 ? sanitized.slice(dot + 1).toLowerCase() : null;
+}
+
 /** "shot.png" + "webp" -> "shot.webp" */
 export function swapExtension(name: string, format: RasterFormat): string {
   return `${baseName(name)}.${extensionFor(format)}`;
@@ -36,11 +44,16 @@ export function swapExtension(name: string, format: RasterFormat): string {
 export function outputFilename(
   name: string,
   format: RasterFormat,
-  suffix?: string
+  suffix?: string,
+  /**
+   * Overrides the format's canonical extension, so a file that arrived as
+   * ".jpeg" is not handed back as ".jpg".
+   */
+  extension?: string
 ): string {
   const base = baseName(name);
   const tag = suffix ? `-${sanitizeFilename(suffix)}` : "";
-  return `${base}${tag}.${extensionFor(format)}`;
+  return `${base}${tag}.${extension ?? extensionFor(format)}`;
 }
 
 /**

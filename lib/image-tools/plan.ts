@@ -3,8 +3,13 @@
  * the result downloads as. Pure, no DOM, safe to unit test.
  */
 
-import { formatFromMime, qualityForLevel, type CompressionLevel } from "./format";
-import { outputFilename, sanitizeFilename } from "./filename";
+import {
+  formatFromExtension,
+  formatFromMime,
+  qualityForLevel,
+  type CompressionLevel,
+} from "./format";
+import { extensionOf, outputFilename, sanitizeFilename } from "./filename";
 import { IDENTITY_TRANSFORM } from "./types";
 import type {
   CropRect,
@@ -82,7 +87,7 @@ const ENGINE_SUFFIX: Record<ToolEngineName, string> = {
 
 /**
  * Resolves the encoding format. "auto" keeps the source format, falling back to
- * PNG for sources we can decode but not encode (GIF, BMP).
+ * PNG when the source format is not one we can write.
  */
 export function resolveOutputFormat(
   choice: OutputFormatChoice,
@@ -137,10 +142,16 @@ export function buildOutputName(
   sourceName: string,
   format: RasterFormat
 ): string {
-  const plain = outputFilename(sourceName, format);
+  const sourceExtension = extensionOf(sourceName);
+  const extension =
+    sourceExtension && formatFromExtension(sourceExtension) === format
+      ? sourceExtension
+      : undefined;
+
+  const plain = outputFilename(sourceName, format, undefined, extension);
   const collides =
     plain.toLowerCase() === sanitizeFilename(sourceName).toLowerCase();
   return collides
-    ? outputFilename(sourceName, format, ENGINE_SUFFIX[engine])
+    ? outputFilename(sourceName, format, ENGINE_SUFFIX[engine], extension)
     : plain;
 }

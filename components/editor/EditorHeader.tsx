@@ -6,6 +6,17 @@ import Image from "next/image";
 import { NewTwitterIcon } from "hugeicons-react";
 import { Button } from "@/components/ui/button";
 import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import {
   Download04Icon,
   Copy01Icon,
   AspectRatioIcon,
@@ -532,19 +543,43 @@ export function EditorHeader() {
             <>
               <div className="w-px h-4 bg-foreground/10 shrink-0" aria-hidden />
               <div className="flex items-center gap-1">
-                {uploadedImageUrl ? (
-                  <button
-                    onClick={resetCanvasSettings}
-                    className={cn(
-                      "flex items-center justify-center w-8 h-8 rounded-md shrink-0 cursor-pointer",
-                      "text-muted-foreground transition-all duration-150",
-                      "hover:text-foreground active:scale-95",
-                    )}
-                    title="重置为默认值"
-                  >
-                    <RefreshIcon size={16} />
-                  </button>
-                ) : null}
+                <AlertDialog>
+                  <AlertDialogTrigger asChild>
+                    <button
+                      type="button"
+                      className={cn(
+                        "inline-flex h-8 shrink-0 cursor-pointer items-center justify-center gap-1.5 rounded-md px-2.5",
+                        "text-xs font-medium leading-none text-muted-foreground transition-[color,background-color,transform] duration-150",
+                        "hover:bg-muted hover:text-foreground active:scale-[0.98]",
+                      )}
+                      aria-label="重新开始"
+                      title="重置设计与动画"
+                    >
+                      <RefreshIcon size={14} />
+                      <span>重新开始</span>
+                    </button>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent className="sm:max-w-[420px]">
+                    <AlertDialogHeader>
+                      <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-destructive/10 text-destructive sm:mx-0">
+                        <RefreshIcon aria-hidden="true" size={18} />
+                      </div>
+                      <AlertDialogTitle>重新开始？</AlertDialogTitle>
+                      <AlertDialogDescription>
+                        这会重置当前设计、叠加层与动画。你上传的素材会保留，且此操作可以撤销。
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                      <AlertDialogCancel>取消</AlertDialogCancel>
+                      <AlertDialogAction
+                        onClick={resetCanvasSettings}
+                        className="bg-destructive text-destructive-foreground hover:bg-destructive/90 focus-visible:ring-destructive/30"
+                      >
+                        重新开始
+                      </AlertDialogAction>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
                 {hasImage ? (
                   <Button
                     onClick={clearImage}

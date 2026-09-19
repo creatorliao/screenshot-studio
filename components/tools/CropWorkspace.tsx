@@ -173,7 +173,7 @@ export function CropWorkspace({ tool }: CropWorkspaceProps) {
         setResult(null);
       } catch {
         toast.error("无法读取该图片", {
-          description: "请尝试 PNG、JPG、WebP、GIF、BMP 或 AVIF 文件。",
+          description: "请使用 PNG、JPG、WebP 或 AVIF 文件。",
         });
       }
     },

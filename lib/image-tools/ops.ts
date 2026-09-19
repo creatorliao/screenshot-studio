@@ -14,6 +14,7 @@ import {
   dimensionsAfterRotation,
 } from "./geometry";
 import { clampQuality, mimeFor, supportsTransparency } from "./format";
+import { encodeAvif } from "./avif";
 import type {
   CropRect,
   Dimensions,
@@ -94,18 +95,19 @@ async function canvasToBlob(
 let encodeSupportPromise: Promise<Set<RasterFormat>> | null = null;
 
 /**
- * Which formats this browser can actually *encode*.
+ * Which formats we can actually encode here.
  *
  * Canvas encoders fall back to PNG silently when asked for a type they do not
  * support, so the only reliable check is to encode a pixel and read the MIME
- * type back. Notably no shipping browser encodes AVIF from a canvas today.
+ * type back. AVIF is in the baseline because we ship our own WebAssembly
+ * encoder for it rather than relying on the canvas.
  */
 export function detectEncodeSupport(): Promise<Set<RasterFormat>> {
   if (encodeSupportPromise) return encodeSupportPromise;
 
   encodeSupportPromise = (async () => {
-    const supported = new Set<RasterFormat>(["png", "jpeg"]);
-    const candidates: RasterFormat[] = ["webp", "avif"];
+    const supported = new Set<RasterFormat>(["png", "jpeg", "avif"]);
+    const candidates: RasterFormat[] = ["webp"];
 
     try {
       const canvas = createCanvas(1, 1);
@@ -119,7 +121,7 @@ export function detectEncodeSupport(): Promise<Set<RasterFormat>> {
         }
       }
     } catch {
-      // No canvas at all; the PNG/JPEG baseline is the safest answer.
+      // No canvas at all; the baseline set is the safest answer.
     }
 
     return supported;
@@ -217,6 +219,13 @@ function renderCropAndTransform(
   return canvas;
 }
 
+/** Reads the full pixel buffer back off a canvas, for encoders that need raw RGBA. */
+function readPixels(canvas: AnyCanvas): ImageData {
+  const width = (canvas as { width: number }).width;
+  const height = (canvas as { height: number }).height;
+  return get2dContext(canvas).getImageData(0, 0, width, height);
+}
+
 /** Paints a solid colour behind the image for formats with no alpha channel. */
 function flattenOnto(canvas: AnyCanvas, background: string): AnyCanvas {
   const width = (canvas as { width: number }).width;
@@ -271,11 +280,12 @@ export async function processBitmap(
     canvas = flattenOnto(canvas, background ?? "#ffffff");
   }
 
-  const blob = await canvasToBlob(
-    canvas,
-    mimeFor(format),
-    clampQuality(quality, format)
-  );
+  const blob =
+    format === "avif"
+      ? // Canvas cannot encode AVIF, so the pixels go to the WebAssembly
+        // encoder instead of through toBlob.
+        await encodeAvif(readPixels(canvas), clampQuality(quality, format))
+      : await canvasToBlob(canvas, mimeFor(format), clampQuality(quality, format));
 
   return {
     blob,

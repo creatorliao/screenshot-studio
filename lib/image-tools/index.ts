@@ -9,7 +9,7 @@ export * from "./types";
 export * from "./format";
 export * from "./geometry";
 export * from "./filename";
-export * from "./plan";export * from "./filename";
+export * from "./plan";
 
 export { decodeImage, readImageSize, detectEncodeSupport, processBitmap, processFile } from "./ops";
 export { imageToolsWorker } from "./worker-client";

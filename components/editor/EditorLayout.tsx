@@ -12,7 +12,7 @@ import { PostImportHint } from "./PostImportHint";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Settings02Icon, VideoReplayIcon } from "hugeicons-react";
+import { Settings02Icon, Upload01Icon, VideoReplayIcon } from "hugeicons-react";
 import { useAutosaveDraft } from "@/hooks/useAutosaveDraft";
 import { MobileBanner } from "./MobileBanner";
 import { CodeImagesBanner } from "./CodeImagesBanner";
@@ -21,15 +21,105 @@ import { useImageStore } from "@/lib/store";
 import { trackEditorOpen } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 import { useHasRenderableContent } from "@/hooks/use-has-renderable-content";
+import { StoreScreenshotsShortcut } from "@/components/store-screenshots/StoreScreenshotsFeatureCard";
+import { TemplateLibraryDrawer } from "@/components/templates/TemplateLibraryDrawer";
+import { ALLOWED_IMAGE_TYPES, MAX_IMAGE_SIZE } from "@/lib/constants";
+import { useDeviceUIStore } from "@/lib/store/device-ui";
+import {
+  hasTemplateDemoMedia,
+  isTemplateDemoMedia,
+} from "@/lib/templates/demo-media";
+
+function TemplateMediaPrompt() {
+  const imageName = useImageStore((state) => state.imageName);
+  const uploadedImageUrl = useImageStore((state) => state.uploadedImageUrl);
+  const editorMode = useImageStore((state) => state.editorMode);
+  const mockups = useImageStore((state) => state.mockups);
+  const replaceTemplateMedia = useImageStore((state) => state.replaceTemplateMedia);
+  const selectedDeviceId = useDeviceUIStore((state) => state.selectedDeviceId);
+  const [error, setError] = React.useState<string | null>(null);
+  const isUsingTemplateDemo = editorMode === "device"
+    ? hasTemplateDemoMedia(mockups.map((mockup) => mockup.screen))
+    : isTemplateDemoMedia(uploadedImageUrl, imageName);
+
+  if (!isUsingTemplateDemo) return null;
+
+  const handleUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    event.target.value = "";
+    if (!file) return;
+
+    if (!ALLOWED_IMAGE_TYPES.includes(file.type) || file.size > MAX_IMAGE_SIZE) {
+      setError(`请选择 ${MAX_IMAGE_SIZE / 1024 / 1024} MB 以内的 PNG、JPG 或 WEBP`);
+      return;
+    }
+
+    setError(null);
+
+    const target = editorMode === "device"
+      ? mockups.find((mockup) => mockup.id === selectedDeviceId)
+        ?? mockups.find((mockup) => (
+          isTemplateDemoMedia(mockup.screen.src, mockup.screen.name)
+        ))
+        ?? mockups[0]
+      : null;
+    if (editorMode === "device" && !target) return;
+
+    const previousState = useImageStore.getState();
+    const previousBlobUrls = new Set([
+      previousState.uploadedImageUrl,
+      ...previousState.mockups.map((mockup) => mockup.screen.src),
+    ].filter((url): url is string => !!url?.startsWith("blob:")));
+    const src = URL.createObjectURL(file);
+    const temporalStore = useImageStore.temporal.getState();
+
+    try {
+      temporalStore.pause();
+      replaceTemplateMedia(src, file.name, target?.id);
+      temporalStore.clear();
+
+      const currentState = useImageStore.getState();
+      const retainedUrls = new Set([
+        currentState.uploadedImageUrl,
+        ...currentState.mockups.map((mockup) => mockup.screen.src),
+      ]);
+      previousBlobUrls.forEach((url) => {
+        if (!retainedUrls.has(url)) URL.revokeObjectURL(url);
+      });
+    } catch {
+      URL.revokeObjectURL(src);
+      setError("无法读取该图片，请换一个文件。");
+    } finally {
+      temporalStore.resume();
+    }
+  };
+
+  return (
+    <div className="absolute left-1/2 top-3 z-20 -translate-x-1/2">
+      <label className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-md border border-foreground/10 bg-card/95 px-3 text-xs font-medium text-foreground shadow-md backdrop-blur-md transition-[background-color,transform] duration-150 hover:bg-muted active:scale-[0.98]">
+        <input
+          type="file"
+          accept="image/png,image/jpeg,image/webp"
+          onChange={(event) => void handleUpload(event)}
+          className="sr-only"
+        />
+        <Upload01Icon size={14} />
+        <span>{error ?? "上传你的素材"}</span>
+      </label>
+    </div>
+  );
+}
 
 function EditorMain() {
   const isMobile = useIsMobile();
   const [mobileSheetOpen, setMobileSheetOpen] = React.useState(false);
   const {
+    uploadedImageUrl,
+    imageName,
+    mockups,
+    editorMode,
     showTimeline,
     toggleTimeline,
-    showTemplates,
-    setShowTemplates,
   } = useImageStore();
 
   // enable autosave
@@ -37,6 +127,9 @@ function EditorMain() {
 
   // 全仓统一判据，见 hooks/use-has-renderable-content.ts
   const hasContent = useHasRenderableContent();
+  const isUsingTemplateDemo = editorMode === "device"
+    ? hasTemplateDemoMedia(mockups.map((mockup) => mockup.screen))
+    : isTemplateDemoMedia(uploadedImageUrl, imageName);
 
   React.useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -46,19 +139,8 @@ function EditorMain() {
     };
   }, []);
 
-  // Templates overlay lives in UnifiedRightPanel, which only mounts when the
-  // sheet is open. Opening Templates from the header must open the sheet too.
-  React.useEffect(() => {
-    if (isMobile && showTemplates) {
-      setMobileSheetOpen(true);
-    }
-  }, [isMobile, showTemplates]);
-
   const handleMobileSheetOpenChange = (open: boolean): void => {
     setMobileSheetOpen(open);
-    if (!open) {
-      setShowTemplates(false);
-    }
   };
 
   return (
@@ -69,84 +151,98 @@ function EditorMain() {
       <CodeImagesBanner />
 
       <EditorHeader />
+      <TemplateLibraryDrawer />
 
       <PostImportHint />
 
-      {isMobile && hasContent && (
-        <div className="bg-background border-b border-foreground/10 flex items-center justify-end px-3 py-2 z-10 shrink-0">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setMobileSheetOpen(true)}
-            className="h-8 gap-1.5 rounded-md px-2.5 text-xs text-muted-foreground hover:text-foreground hover:bg-foreground/[0.06] border border-foreground/10 bg-foreground/[0.04]"
-          >
-            <Settings02Icon size={15} />
-            <span>设置</span>
-          </Button>
+      {isMobile && (
+        <div className="bg-background border-b border-foreground/10 flex items-center justify-between gap-2 px-3 py-2 z-10 shrink-0">
+          {!isUsingTemplateDemo ? (
+            <StoreScreenshotsShortcut compact className="min-w-0" />
+          ) : null}
+          {/*
+            空画布时不渲染「设置」入口 —— 没有可设置的东西，
+            点进去只会看到一堆无效控件。见 `03-分析报告_现状诊断.md` §3 R1。
+          */}
+          {hasContent && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setMobileSheetOpen(true)}
+              className="h-8 gap-1.5 rounded-md px-2.5 text-xs text-muted-foreground hover:text-foreground hover:bg-foreground/[0.06] border border-foreground/10 bg-foreground/[0.04]"
+            >
+              <Settings02Icon size={15} />
+              <span>设置</span>
+            </Button>
+          )}
         </div>
       )}
 
-      <div className="flex-1 flex overflow-hidden">
-        {/*
-          空画布时收起左右两个属性面板。
-          改造前它们照常全量渲染（左 9 个区块、右 34 个 3D 预设），控件可点但什么
-          都不会发生 —— 用户进来看到的是"一个已经开好的编辑器和一堆控件"，而不是
-          "请先放一张图"。见 `03-分析报告_现状诊断.md` §3 R1。
-        */}
-        {!isMobile && hasContent && <LeftEditPanel />}
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+        <div className="flex min-h-0 flex-1 overflow-hidden">
+          {/*
+            空画布时收起左右两个属性面板。
+            改造前它们照常全量渲染（左 9 个区块、右 34 个 3D 预设），控件可点但什么
+            都不会发生 —— 用户进来看到的是"一个已经开好的编辑器和一堆控件"，而不是
+            "请先放一张图"。见 `03-分析报告_现状诊断.md` §3 R1。
+          */}
+          {!isMobile && hasContent && <LeftEditPanel />}
 
-        <div className="flex-1 flex flex-col overflow-hidden bg-background relative min-w-0">
-          <div
-            className={cn(
-              "flex-1 flex items-center justify-center overflow-y-auto overflow-x-hidden relative min-h-0",
-              // Dock space for the Animate chip so portrait stages don't sit under it
-              hasContent && !showTimeline && !isMobile && "pb-14"
-            )}
-          >
-            <EditorContent>
-              <EditorCanvas />
-            </EditorContent>
+          <div className="relative flex min-w-0 flex-1 flex-col overflow-hidden bg-background">
+            <div
+              className={cn(
+                "relative flex min-h-0 flex-1 items-center justify-center overflow-hidden",
+                // Dock space for the Animate chip so portrait stages don't sit under it
+                hasContent && !showTimeline && !isMobile && "pb-14"
+              )}
+            >
+              <EditorContent>
+                <EditorCanvas />
+              </EditorContent>
 
-            {hasContent && !showTimeline && !isMobile && (
-              <button
-                type="button"
-                onClick={toggleTimeline}
-                className={cn(
-                  'absolute bottom-3 left-1/2 z-20 -translate-x-1/2',
-                  'inline-flex h-9 cursor-pointer items-center gap-2 rounded-md px-4',
-                  'bg-card text-sm font-medium text-foreground',
-                  'border border-foreground/10',
-                  'shadow-lg',
-                  'transition-all duration-150 ease-out',
-                  'hover:bg-muted hover:border-foreground/15',
-                  'active:scale-[0.98]'
-                )}
-              >
-                <VideoReplayIcon size={15} className="text-foreground" />
-                <span>动画</span>
-              </button>
-            )}
+              <TemplateMediaPrompt />
+
+              {hasContent && !showTimeline && !isMobile && (
+                <button
+                  type="button"
+                  onClick={toggleTimeline}
+                  className={cn(
+                    'absolute bottom-3 left-1/2 z-20 -translate-x-1/2',
+                    'inline-flex h-9 cursor-pointer items-center gap-2 rounded-md px-4',
+                    'bg-card text-sm font-medium text-foreground',
+                    'border border-foreground/10',
+                    'shadow-lg',
+                    'transition-all duration-150 ease-out',
+                    'hover:bg-muted hover:border-foreground/15',
+                    'active:scale-[0.98]'
+                  )}
+                >
+                  <VideoReplayIcon size={15} className="text-foreground" />
+                  <span>动画</span>
+                </button>
+              )}
+            </div>
           </div>
 
-          {hasContent && showTimeline && !isMobile && <TimelineEditor />}
+          {!isMobile && hasContent && <RightSettingsPanel />}
+
+          {isMobile && (
+            <Sheet open={mobileSheetOpen} onOpenChange={handleMobileSheetOpenChange}>
+              <SheetContent
+                side="left"
+                showCloseButton={false}
+                className="h-full w-full max-w-[min(100%,460px)] gap-0 overflow-hidden p-0 sm:max-w-[min(100%,460px)]"
+              >
+                <SheetTitle className="sr-only">编辑器设置</SheetTitle>
+                <UnifiedRightPanel
+                  onClose={() => handleMobileSheetOpenChange(false)}
+                />
+              </SheetContent>
+            </Sheet>
+          )}
         </div>
 
-        {!isMobile && hasContent && <RightSettingsPanel />}
-
-        {isMobile && (
-          <Sheet open={mobileSheetOpen} onOpenChange={handleMobileSheetOpenChange}>
-            <SheetContent
-              side="left"
-              showCloseButton={false}
-              className="h-full w-full max-w-[min(100%,460px)] gap-0 overflow-hidden p-0 sm:max-w-[min(100%,460px)]"
-            >
-              <SheetTitle className="sr-only">编辑器设置</SheetTitle>
-              <UnifiedRightPanel
-                onClose={() => handleMobileSheetOpenChange(false)}
-              />
-            </SheetContent>
-          </Sheet>
-        )}
+        {hasContent && showTimeline && !isMobile && <TimelineEditor />}
       </div>
     </div>
   );

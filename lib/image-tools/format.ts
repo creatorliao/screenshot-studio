@@ -63,6 +63,38 @@ const FORMAT_BY_MIME: Record<string, RasterFormat> = {
   "image/avif": "avif",
 };
 
+/**
+ * Every extension spelling that denotes a format we encode, so an operation
+ * that leaves the format alone can leave the filename alone too. JPEG has
+ * collected the most aliases; ".jfif" in particular is what Windows and older
+ * Chrome versions wrote, and those files are still in people's folders.
+ *
+ * Animated spellings (".apng", ".avifs") are deliberately absent: the pipeline
+ * decodes a single frame, so that output really is a still image and should be
+ * renamed to say so.
+ */
+const FORMAT_BY_EXTENSION: Record<string, RasterFormat> = {
+  png: "png",
+  jpg: "jpeg",
+  jpeg: "jpeg",
+  jpe: "jpeg",
+  jfif: "jpeg",
+  jif: "jpeg",
+  pjpeg: "jpeg",
+  webp: "webp",
+  avif: "avif",
+};
+
+/**
+ * Maps a file extension (no dot, any case) onto a format, or null.
+ *
+ * Several spellings share one format, which is why an extension cannot simply
+ * be regenerated from the format without renaming the user's file.
+ */
+export function formatFromExtension(extension: string): RasterFormat | null {
+  return FORMAT_BY_EXTENSION[extension.toLowerCase().trim()] ?? null;
+}
+
 /** Maps a MIME type onto an output format we can encode, or null if we cannot. */
 export function formatFromMime(mime: string): RasterFormat | null {
   return FORMAT_BY_MIME[mime.toLowerCase().trim()] ?? null;
